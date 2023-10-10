@@ -1,3 +1,4 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <!doctype html>
 <html lang="en" data-bs-theme="auto">
 <head>
@@ -15,9 +16,6 @@
 
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
-
-    <link href="../../../../../../../Downloads/bootstrap-5.3.1-examples/bootstrap-5.3.1-examples/assets/dist/css/bootstrap.min.css"
-          rel="stylesheet">
 
     <style>
         .bd-placeholder-img {
