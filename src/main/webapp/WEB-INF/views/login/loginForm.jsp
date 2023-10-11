@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>PickCom:견적추천 커뮤니티</title>
-    <link rel="shortcut icon" type="image/x-icon" href="../../img/favicon.png"/>
+    <link rel="shortcut icon" type="image/x-icon" href="../../../img/favicon.png"/>
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
@@ -21,7 +21,7 @@
 </head>
 <body>
 <div id="wrapper">
-    <form action="/login/login.do" method="post">
+    <form action="/loginAction.do" method="post">
         <main id="member">
 
             <div class="login">
@@ -51,12 +51,12 @@
                     </table>
                     <button type="submit" class="btn btn-secondary" name="memberLogin">로그인</button>
                     <span>
-            <%--<label>
+            <label>
               <input type="checkbox" name="auto">자동 로그인
             </label>
             <a href="#">아이디찾기</a>
-            <a href="#">비밀번호찾기</a>--%>
-            <a href="/views/login/join_terms.jsp">회원가입</a>
+            <a href="#">비밀번호찾기</a>
+            <a href="/joinTerms">회원가입</a>
           </span>
                 </form>
             </div>

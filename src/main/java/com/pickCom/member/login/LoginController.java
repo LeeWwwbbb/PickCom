@@ -23,7 +23,7 @@ public class LoginController {
     @Autowired
     private JoinService joinService;
 
-    @RequestMapping(value = "/loginForm.do")
+    @RequestMapping(value = "/login")
     public ModelAndView loginForm(CommandMap commandMap) throws Exception {
         ModelAndView mv = new ModelAndView("login/loginForm");
 

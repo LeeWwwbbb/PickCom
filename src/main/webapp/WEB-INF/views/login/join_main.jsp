@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>PickCom:견적추천 커뮤니티</title>
-    <link rel="shortcut icon" type="image/x-icon" href="../../img/favicon.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../../img/favicon.png" />
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
@@ -22,7 +22,7 @@
             <nav>
                 <h1>일반 회원가입</h1>
             </nav>
-            <form action="/join/join.do" method="post" name="joinForm"
+            <form action="/joinAction.do" method="post" name="joinForm"
                   onsubmit="return validateForm(this);">
 
                 <section>

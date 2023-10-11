@@ -18,10 +18,19 @@ public class JoinController {
     @Autowired
     private JoinService joinService;
 
+    // 회원가입 약관
+    @RequestMapping(value="/joinTerms")
+    public ModelAndView joinTerms(CommandMap commandMap) throws Exception {
+        ModelAndView mv = new ModelAndView("login/join_terms");
+
+
+        return mv;
+    }
+
     // 회원가입 폼
-    @RequestMapping(value="/joinMain.do")
+    @RequestMapping(value="/join")
     public ModelAndView joinForm(CommandMap commandMap) throws Exception {
-        ModelAndView mv = new ModelAndView("views/login/join_main");
+        ModelAndView mv = new ModelAndView("login/join_main");
 
 
         return mv;
@@ -57,7 +66,7 @@ public class JoinController {
             joinService.memberInsert(commandMap.getMap());
 
             mv.addObject("MEMBER_NAME", commandMap.get("MEMBER_NAME"));
-            mv.setViewName("/views/login/joinAction");
+            mv.setViewName("login/joinAction");
         }
         return mv;
     }

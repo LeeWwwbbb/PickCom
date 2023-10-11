@@ -1,4 +1,5 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ include file="layout/header.jsp"%>
 <!doctype html>
 <html lang="en" data-bs-theme="auto">
 <head>
@@ -131,15 +132,6 @@
 </svg>
 
 <div class="container">
-    <header class="border-bottom lh-1 py-3">
-        <div class="row flex-nowrap justify-content-between align-items-center">
-            <div class="col text-center">
-                <a href="index.jsp">
-                    <img src="../img/header_logo.png" alt="로고">
-                </a>
-            </div>
-        </div>
-    </header>
 
     <div class="nav-scroller py-1 mb-3 border-bottom">
         <nav class="nav nav-underline justify-content-between">
@@ -163,21 +155,21 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="../img/i8209863839.jpg" class="d-block w-100" alt="...">
+                <img src="../../img/i8209863839.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>신듀얼리티: 에코 오브 에이다 체험기</h5>
                     <p>묵직한 메카닉 액션 담아낸 PvPvE 슈터</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="../img/i8231234455.jpg" class="d-block w-100" alt="...">
+                <img src="../../img/i8231234455.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>브레이커스</h5>
                     <p>"오리지널 IP를 더욱 가깝게, 대중적으로"</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="../img/i8252919678.png" class="d-block w-100" alt="...">
+                <img src="../../img/i8252919678.png" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>파판7 리버스 체험기</h5>
                     <p>넓어진 무대, 연계로 더욱 깊어진 전투의 맛</p>
@@ -316,16 +308,14 @@
             </div>
         </div>
     </div>
-
+    <footer class="py-5 text-center text-body-secondary bg-body-tertiary">
+        <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.
+        </p>
+        <p class="mb-0">
+            <a href="#">Back to top</a>
+        </p>
+    </footer>
 </main>
-
-<footer class="py-5 text-center text-body-secondary bg-body-tertiary">
-    <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.
-    </p>
-    <p class="mb-0">
-        <a href="#">Back to top</a>
-    </p>
-</footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
