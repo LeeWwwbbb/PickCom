@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="my">
+  <!--  로그인 한 회원의 상품 주문 일자, 총 주문 금액, 주문상태 출력 -->
+    <select id="selectOrderList" parameterType="hashmap" resultType="hashmap">
+		<![CDATA[
+        SELECT
+            ORDER_DATE,
+            ORDER_TOTALPRICE,
+            ORDER_STATE
+        FROM
+            ORDER
+        WHERE
+            MEMBER_ID = #{MEMBER_ID}
+        ]]>
+	</select>
+
+    <!-- 로그인 한 회원의 정보 출력 (마이페이지 회원정보 수정) -->
+    <select id="memberModify" parameterType="hashmap" resultType="hashmap">
+		<![CDATA[
+        SELECT
+            MEMBER_NUM,
+            MEMBER_ID,
+            MEMBER_NAME,
+            MEMBER_NICKNAME,
+            MEMBER_PASSWD,
+            MEMBER_EMAIL,
+            MEMBER_RANK,
+            TO_CHAR(MEMBER_REGDATE, 'YYYY/MM/DD') MEMBER_REGDATE,
+            TO_CHAR(MEMBER_LASTDATE, 'YYYY/MM/DD') MEMBER_LASTDATE,
+            MEMBER_DELETE,
+            MEMBER_VISITCOUNT
+        FROM
+            MEMBER
+        WHERE
+            MEMBER_ID = #{MEMBER_ID}
+        ]]>
+	</select>
+
+    <!-- 회원정보 수정 전 비밀번호 확인 -->
+    <select id="passwdCheck" parameterType="hashMap" resultType="String">
+	<![CDATA[
+        SELECT
+            MEMBER_ID
+        FROM
+            MEMBER
+        WHERE
+            MEMBER_PASSWD = #{MEMBER_PASSWD} AND MEMBER_ID = #{MEMBER_ID}
+        ]]>
+	</select>
+
+    <!-- 비밀번호 변경, 회원정보 업데이트 -->
+    <update id="passwdChange" parameterType="hashmap">
+        UPDATE MEMBER SET
+        MEMBER_NAME = #{MEMBER_NAME},
+        <if test="MEMBER_NEWPASSWD != null and MEMBER_NEWPASSWD != ''">
+            MEMBER_PASSWD = #{MEMBER_NEWPASSWD}
+        </if>
+        WHERE
+        MEMBER_NO = #{MEMBER_NO}
+    </update>
+
+    <update id="memberDelete">
+        UPDATE MEMBER SET
+            MEMBER_STAT = false
+        WHERE
+            MEMBER_ID = #{MEMBER_ID}
+    </update>
+
+    <!-- 게시글 좋아요 목록 -->
+    <select id="boardLikeList" parameterType="hashmap" resultType="hashmap">
+		<![CDATA[
+        SELECT
+            LIKE_NUM,
+            BOARD_NUM,
+            LIKE_CREATEDDATE
+        FROM
+            BOARD_LIKE
+        WHERE
+            MEMBER_NUM = #{MEMBER_NUM}
+        ]]>
+	</select>
+
+    <!-- QNA 목록 -->
+    <!--<select id="boardList" parameterType="hashmap" resultType="hashmap">
+		<![CDATA[
+        SELECT
+            Q.GOODS_QNA_NO, Q.GOODS_NO, Q.GOODS_QNA_CONTENT,
+            Q.GOODS_QNA_TITLE, Q.GOODS_QNA_LEVEL, Q.GOODS_QNA_DATE,
+            Q.GOODS_QNA_SECRET, Q.GOODS_QNA_AN, G.GOODS_NAME, G.GOODS_THUMBNAIL
+        FROM
+            GOODS_QNA Q, GOODS G
+        WHERE
+            MEMBER_NO = #{MEMBER_NO}
+          AND Q.GOODS_NO = G.GOODS_NO
+        ]]>
+	</select>-->
+
+    <!-- 댓글 목록 -->
+    <select id="commentList" parameterType="hashmap" resultType="hashmap">
+		<![CDATA[
+        SELECT
+            LIKE_NUM,
+            BOARD_NUM,
+            LIKE_CREATEDDATE
+        FROM
+            COMMENT
+        WHERE
+            MEMBER_NUM = #{MEMBER_NUM}
+        ]]>
+	</select>
+
+    <!-- 리뷰 목록 -->
+    <select id="reviewList" parameterType="hashmap" resultType="hashmap">
+		<![CDATA[
+        SELECT
+            REVIEW_NUM,
+            MEMBER_NUM,
+            PRODUCT_NUM,
+            REVIEW_CONTENT,
+            TO_CHAR(REVIEW_LASTDATE, 'YYYY/MM/DD') REVIEW_LASTDATE
+        FROM
+            REVIEW
+        WHERE
+            MEMBER_NUM = #{MEMBER_NUM}
+        ]]>
+	</select>
+
+
+
+
+
+</mapper>

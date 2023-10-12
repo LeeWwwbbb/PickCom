@@ -1,142 +1,180 @@
 package com.pickCom.admin;
 
-import com.pickCom.common.CommandMap;
-import com.pickCom.common.AbstractDAO;
-import org.springframework.stereotype.Repository;
-
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.Timestamp;
+import java.text.SimpleDateFormat;
 import java.util.List;
 import java.util.Map;
+import java.util.Vector;
 
-@Repository("adminDao")
-public class AdminDao extends AbstractDAO {
-	// 로그값을 받기 위해 AbstractDao를 상속한다 AbstractDao에서 MyBatis와 로그, 커넥션을 가져와 처리한다
-	// 굳이 따로 빼서 처리가 필요없다면 adminDao에서 커넥션을 받아와 바로 처리한다
+import common.DBConnPool;
+import member.MemberDTO;
 
-	@SuppressWarnings("unchecked")
-	public List<Map<String,Object>> dashBoard(CommandMap map) throws Exception { //adminMain대쉬보드
-		
-		return (List<Map<String,Object>>) dashBoard("admin.dash_count",map);
+public class AdminDAO {
+	private DBConnPool db;
+
+	// 검색 조건에 맞는 유저리스트 개수를 반환
+	public int selectCount(Map<String, Object> map) {
+		Connection con = null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		int totalCount = 0;
+
+		String query = "SELECT COUNT(*) FROM member";
+		if (map.get("searchWord") != null) {
+			query += " WHERE " + map.get("searchField") + " LIKE '%" + map.get("searchWord") + "%'";
+		}
+		try {
+			db = new DBConnPool();
+			con = db.getConnection();
+			pstmt = con.prepareStatement(query);
+			rs = pstmt.executeQuery();
+			if (rs.next()) {
+				totalCount = rs.getInt(1);
+			}
+		} catch (Exception e) {
+			System.out.println("사용자 카운트 중 예외 발생");
+			e.printStackTrace();
+		} finally {
+			db.close();
+		}
+
+		return totalCount;
+	}
+
+	// 검색 조건에 맞는 유저리스트 목록을 반환
+	public List<MemberDTO> selectListUser(Map<String, Object> map) {
+		Connection con = null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		List<MemberDTO> member = new Vector<MemberDTO>();
+
+		String query = "SELECT * FROM ( " +
+				"    SELECT Tb.*, @rownum := @rownum + 1 AS rNum FROM ( " +
+				"        SELECT * FROM member WHERE member_rank=? ";
+			if (map.get("searchWord") != null) {
+				query += " AND " + map.get("searchField") + " LIKE '%" + map.get("searchWord") + "%'";
+			}
+			query += "    ) Tb, (SELECT @rownum := 0) R " +
+				") AS result " +
+				"WHERE rNum BETWEEN ? AND ?";
+
+
+		try {
+			db = new DBConnPool();
+			con = db.getConnection();
+			System.out.println("query ==> " + query);
+			pstmt = con.prepareStatement(query);
+			pstmt.setString(1, "일반");
+			pstmt.setString(2, map.get("start").toString());
+			pstmt.setString(3, map.get("end").toString());
+			rs = pstmt.executeQuery();
+
+			while (rs.next()) {
+				MemberDTO dto = new MemberDTO();
+				SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+				Timestamp regDate = rs.getTimestamp("member_regDate");
+				String regDateString = sdf.format(regDate);
+				if (rs.getTimestamp("member_statDate") != null) {
+					Timestamp statDate = rs.getTimestamp("member_statDate");
+					String statDateString = sdf.format(statDate);
+					dto.setMember_statDate(statDateString);
+				}
+				
+				dto.setMember_no(rs.getInt("member_no"));
+				dto.setMember_id(rs.getString("member_id"));
+				dto.setMember_name(rs.getString("member_name"));
+				dto.setMember_password(rs.getString("member_password"));
+				dto.setMember_email(rs.getString("member_email"));
+				dto.setMember_rank(rs.getString("member_rank"));
+				dto.setMember_regDate(regDateString);
+				dto.setMember_stat(rs.getBoolean("member_stat"));
+				dto.setMember_reason(rs.getString("member_reason"));
+
+				member.add(dto);
+			}
+		} catch (Exception e) {
+			System.out.println("사용자 조회 중 예외 발생");
+			e.printStackTrace();
+		} finally {
+			db.close();
+		}
+		return member;
+	}
+
+	// 사용자 정보 수정
+	public int updateUser(int num, String name) {
+		Connection con = null;
+		PreparedStatement pstmt = null;
+		int result = 0;
+
+		String query = "UPDATE member SET member_name=? "
+				+ "WHERE member_no=?";
+		try {
+			db = new DBConnPool();
+			con = db.getConnection();
+			System.out.println("query ==> " + query);
+			pstmt = con.prepareStatement(query);
+			pstmt.setString(1, name);
+			pstmt.setInt(2, num);
+			result = pstmt.executeUpdate();
+		} catch (Exception e) {
+			System.out.println("Exception[updateUser] : " + e.getMessage());
+		} finally {
+			db.close();
+		}
+		return result;
 	}
 	
-	@SuppressWarnings("unchecked")
-	public List<Map<String,Object>> order_admin_a(CommandMap map) throws Exception { //admin주문현황 
-		
-		return (List<Map<String,Object>>) order_admin_a("admin.order_admin_a",map.getMap());
-	}
+	// 사용자 이용 정지
+	public int suspendUser(int idx, int day, String reason) {
+		Connection con = null;
+		PreparedStatement pstmt = null;
+		int result = 0;
 
-	@SuppressWarnings("unchecked")
-	public void order_state(CommandMap map) throws Exception {  // 주문상태 변경
-		// TODO Auto-generated method stub
-		order_state("admin.order_state",map.getMap());
+		String query = "UPDATE member SET member_stat=?,member_reason=?,"
+				+ "member_statDate = DATE_ADD(NOW(), INTERVAL ? DAY) "
+				+ "WHERE member_no=?";
+		try {
+			db = new DBConnPool();
+			con = db.getConnection();
+			pstmt = con.prepareStatement(query);
+			pstmt.setBoolean(1, true);
+			pstmt.setString(2, reason);
+			pstmt.setInt(3, day);
+			pstmt.setInt(4, idx);
+			result = pstmt.executeUpdate();
+		} catch (Exception e) {
+			System.out.println("Exception[suspendUser] : " + e.getMessage());
+		} finally {
+			db.close();
+		}
+		return result;
 	}
 	
-	@SuppressWarnings("unchecked")
-	public void order_state_ex(CommandMap commandMap) throws Exception {
-		// TODO Auto-generated method stub
-		order_state_ex("admin.order_state_ex",commandMap.getMap());
+	// 이용 정지 해제?
+	
+	// 사용자 정보 삭제
+	public int deleteUser(int idx) {
+		Connection con = null;
+		PreparedStatement pstmt = null;
+		int result = 0;
+        
+		String query = "DELETE FROM member WHERE member_no=?";
+        try {
+        	db = new DBConnPool();
+        	con = db.getConnection();
+        	System.out.println("query ==> " + query);
+            pstmt = con.prepareStatement(query);
+            pstmt.setInt(1, idx);
+            result = pstmt.executeUpdate();
+        } catch (Exception e) {
+            System.out.println("Exception[deleteUser] : " + e.getMessage());
+        } finally {
+			db.close();
+		}
+        return result;
 	}
-
-	@SuppressWarnings("unchecked")
-	public List<Map<String, Object>> order_detail(CommandMap commandMap) throws Exception {
-		// TODO Auto-generated method stub
-		return (List<Map<String,Object>>) order_detail("admin.order_detail", commandMap.getMap());
-	}
-
-	@SuppressWarnings("unchecked")
-	public List<Map<String, Object>> order_detail_sub(CommandMap commandMap) throws Exception {
-		// TODO Auto-generated method stub
-		return (List<Map<String,Object>>) order_detail_sub("admin.order_detail_sub", commandMap.getMap());
-	}
-
-	public List<Map<String, Object>> as_admin_list(CommandMap commandMap) throws Exception {
-		// TODO Auto-generated method stub
-		return (List<Map<String,Object>>) as_admin_list("admin.as_admin_list", commandMap.getMap());
-	}
-
-	public void as_cancle_a(CommandMap commandMap) throws Exception {
-		// TODO Auto-generated method stub
-		as_cancle_a("admin.as_cancle_a",commandMap.getMap());
-	}
-
-	public void order_list_cancle(CommandMap commandMap) throws Exception {
-		// TODO Auto-generated method stub
-		order_list_cancle("admin.order_list_cancle",commandMap.getMap());
-	}
-
-	public void as_ok_state(CommandMap commandMap) throws Exception {
-		// TODO Auto-generated method stub
-		as_ok_state("admin.as_ok_state",commandMap.getMap());
-	}
-
-	public void as_ok_orderState(CommandMap commandMap) throws Exception {
-		// TODO Auto-generated method stub
-		as_ok_orderState("admin.as_ok_orderState",commandMap.getMap());
-	}
-
-	public List<Map<String, Object>> change_form_a(CommandMap commandMap) throws Exception {
-		// TODO Auto-generated method stub
-		return (List<Map<String,Object>>) change_form_a("admin.change_form_a", commandMap.getMap());
-	}
-
-	public List<Map<String, Object>> change_form_b(CommandMap commandMap) throws Exception {
-		// TODO Auto-generated method stub
-		return (List<Map<String,Object>>) change_form_b("admin.change_form_b", commandMap.getMap());
-	}
-
-	public void change_detail_insert(CommandMap commandMap) throws Exception {
-		// TODO Auto-generated method stub
-		change_detail_insert("admin.change_detail_insert",commandMap.getMap());
-	}
-
-	public void change_detail_state(CommandMap commandMap) throws Exception {
-		// TODO Auto-generated method stub
-		change_detail_state("admin.change_detail_state",commandMap.getMap());
-	}
-
-	/*public void change_goods_att_plus(CommandMap commandMap) throws Exception {
-		// TODO Auto-generated method stub
-		change_goods_att_plus("admin.change_goods_att_plus",commandMap.getMap());
-	}
-
-	public void change_goods_att_minus(CommandMap commandMap) throws Exception {
-		// TODO Auto-generated method stub
-		change_goods_att_minus("admin.change_goods_att_minus",commandMap.getMap());
-	}*/
-
-	public void as_final_state(CommandMap commandMap) throws Exception {
-		// TODO Auto-generated method stub
-		as_final_state("admin.as_final_state",commandMap.getMap());
-	}
-
-	public void change_final_orderState(CommandMap commandMap) throws Exception {
-		// TODO Auto-generated method stub
-		change_final_orderState("admin.as_final_state",commandMap.getMap());
-	}
-
-	public void order_list_chagam(CommandMap commandMap) throws Exception {
-		// TODO Auto-generated method stub
-		order_list_chagam("admin.order_list_chagam",commandMap.getMap());
-	}
-
-	public void point_chagam(CommandMap commandMap) throws Exception {
-		// TODO Auto-generated method stub
-		point_chagam("admin.point_chagam",commandMap.getMap());
-	}
-
-	public List<Map<String, Object>> point_total(CommandMap commandMap) throws Exception {
-		// TODO Auto-generated method stub
-		return (List<Map<String,Object>>) point_total("admin.point_total", commandMap.getMap());
-	}
-
-	public void cashback_final_orderState(CommandMap commandMap) throws Exception {
-		// TODO Auto-generated method stub
-		cashback_final_orderState("admin.cashback_final_orderState",commandMap.getMap());
-	}
-
-	@SuppressWarnings("unchecked")
-	public List<Map<String, Object>> selectMemberList(Map<String, Object> map) throws Exception {
-		System.out.println("맵,,.: "+map);
-		return (List<Map<String, Object>>) selectPagingList("admin.selectMemberList", map);
-	}
-
 }

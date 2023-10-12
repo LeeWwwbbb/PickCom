@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="join">
+    <!-- 회원추가 -->
+    <insert id="insertMember" parameterType="hashmap">
+		<![CDATA[
+        INSERT INTO MEMBER
+        (
+            MEMBER_ID,
+         	MEMBER_NAME,
+         	MEMBER_NICKNAME,
+         	MEMBER_PASSWD,
+         	MEMBER_EMAIL,
+         	MEMBER_RANK,
+         	MEMBER_DELETE,
+         	MEMBER_VISITCOUNT
+        )
+        VALUES
+            (
+                #{MEMBER_ID},
+                #{MEMBER_NAME},
+                #{MEMBER_NICKNAME},
+                #{MEMBER_PASSWD},
+                #{MEMBER_EMAIL},
+                #{MEMBER_RANK},
+                #{MEMBER_DELETE},
+                #{MEMBER_VISITCOUNT}
+            )
+        ]]>
+	</insert>
+
+    <!-- 아이디 중복확인-->
+    <select id="selectIdCheck" parameterType="String" resultType="int">
+	<![CDATA[
+        SELECT
+            COUNT(*)
+        FROM
+            MEMBER
+        WHERE MEMBER_ID = #{MEMBER_ID}
+        ]]>
+	</select>
+
+	<!-- 이메일 중복확인 -->
+	<select id="selectEmailCheck" parameterType="String" resultType="int">
+	<![CDATA[
+		SELECT
+			COUNT(MEMBER_EMAIL) cnt
+		FROM
+			MEMBER
+		WHERE
+			MEMBER_EMAIL = #{MEMBER_EMAIL}
+		]]>
+	</select>
+</mapper>

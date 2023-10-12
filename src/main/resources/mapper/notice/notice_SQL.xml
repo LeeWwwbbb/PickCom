@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="notice">
+
+    <select id="selectNoticeList" parameterType="hashmap" resultType="hashmap">
+        <include refid="common1.pagingPre1"/>
+        <![CDATA[
+			SELECT
+				NOTICE_NUM,
+				MEMBER_NUM,
+				NOTICE_TITLE,
+				NOTICE_CONTENT,
+				NOTICE_CATE,
+				TO_CHAR(NOTICE_CREATEDATE, 'YYYY/MM/DD') NOTICE_CREATEDATE,
+				TO_CHAR(NOTICE_UPDATEDATE, 'YYYY/MM/DD') NOTICE_UPDATEDATE
+			FROM
+			    NOTICE
+			WHERE
+				NOTICE_CATE = #{NOTICE_CATE}
+		]]>
+        <include refid="common1.pagingPost1"/>
+    </select>
+
+    <insert id="insertNotice" parameterType="hashmap" useGeneratedKeys="true" keyProperty="NOTICE_NO">
+        <selectKey keyProperty="NOTICE_NO" resultType="string" order="BEFORE">
+            SELECT NOTICE_NO_SEQ.NEXTVAL FROM DUAL
+        </selectKey>
+        <![CDATA[
+			INSERT INTO NOTICE
+			(
+			    NOTICE_NUM,
+				MEMBER_NUM,
+				NOTICE_TITLE,
+				NOTICE_CONTENT,
+				NOTICE_CATE,
+			)
+			VALUES
+			(
+				#{NOTICE_NUM},
+			    #{MEMBER_NUM},
+				#{NOTICE_TITLE},
+				#{NOTICE_CONTENT},
+			    #{NOTICE_CATE}
+			)
+		]]>
+    </insert>
+
+    <select id="selectNoticeDetail" parameterType="hashmap" resultType="hashmap">
+		<![CDATA[
+        SELECT
+            NOTICE_NUM,
+            MEMBER_NUM,
+            NOTICE_TITLE,
+            NOTICE_CONTENT,
+            NOTICE_CATE,
+            TO_CHAR(NOTICE_CREATEDATE, 'YYYY/MM/DD') NOTICE_CREATEDATE,
+            TO_CHAR(NOTICE_UPDATEDATE, 'YYYY/MM/DD') NOTICE_UPDATEDATE
+        FROM
+            NOTICE
+        WHERE
+            NOTICE_NUM = #{NOTICE_NUM}
+        ]]>
+	</select>
+
+    <update id="updateNotice" parameterType="hashmap">
+		<![CDATA[
+        UPDATE NOTICE
+        SET
+            NOTICE_TITLE = #{NOTICE_TITLE},
+            NOTICE_CONTENT = #{NOTICE_CONTENT}
+        WHERE
+            NOTICE_NUM = #{NOTICE_NUM}
+        ]]>
+	</update>
+
+    <update id="deleteNotice" parameterType="hashmap">
+		<![CDATA[
+        DELETE
+        NOTICE
+			WHERE
+				NOTICE_NUM = #{NOTICE_NUM}
+        ]]>
+	</update>
+
+</mapper>
