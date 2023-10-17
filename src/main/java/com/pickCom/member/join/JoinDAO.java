@@ -2,7 +2,7 @@ package com.pickCom.member.join;
 
 
 import org.springframework.stereotype.Repository;
-import com.pickCom.common.AbstractDAO;
+import com.pickCom.common.dao.AbstractDAO;
 
 import java.util.Map;
 

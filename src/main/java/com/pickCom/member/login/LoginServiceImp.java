@@ -3,11 +3,12 @@ package com.pickCom.member.login;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
 import java.util.Map;
 
 @Service("loginService")
 public class LoginServiceImp implements LoginService {
-    @Autowired
+    @Resource(name = "loginDAO")
     private LoginDAO loginDAO;
 
     // 로그인

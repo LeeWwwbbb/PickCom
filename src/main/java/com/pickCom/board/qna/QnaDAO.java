@@ -1,7 +1,7 @@
 package com.pickCom.board.qna;
 
 
-import com.pickCom.common.AbstractDAO;
+import com.pickCom.common.dao.AbstractDAO;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;

@@ -1,2 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="board">
+    <!-- 게시글 리스트 검색 -->
+    <select id="selectBoardList" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+
+        ]]>
+    </select>
+
+    <!-- 댓글 리스트 출력 -->
+    <select id="selectCommentList" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+        SELECT c.*
+        FROM `comment` c
+                 INNER JOIN `board` b ON c.`board_num` = b.`board_num`
+        WHERE b.`board_num` = #{board_num}
+        ]]>
+    </select>
+
+    <!-- 게시글 검색 -->
+    <select id="selectBoardDetail" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+
+        ]]>
+    </select>
+
+    <!-- 글 추가 -->
+    <insert id="insertBoard" parameterType="hashmap">
+        <![CDATA[
+        INSERT INTO BOARD
+        (MEMBER_NUM,
+         BOARD_TITLE,
+         BOARD_CONTENT,
+         board_cate)
+        VALUES (#{member_num},
+                #{board_title},
+                #{BOARD_CONTENT},
+                #{board_cate})
+        ]]>
+    </insert>
+
+    <!-- 글 수정 -->
+    <update id="updateBoard" parameterType="hashmap">
+        <![CDATA[
+        UPDATE board
+        SET board_title   = #{board_title},
+            board_content = #{board_content},
+            board_cate    = #{board_cate}
+        WHERE board_num = #{board_num}
+        ]]>
+    </update>
+
+    <!-- 글 삭제 -->
+    <delete id="deleteBoard" parameterType="hashmap">
+        <![CDATA[
+        DELETE
+        FROM board
+        WHERE board_num = #{board_num}
+        ]]>
+    </delete>
+
+    <!-- 댓글 추가 -->
+    <insert id="insertComment" parameterType="hashmap">
+        <![CDATA[
+        INSERT INTO comment
+        (board_num,
+         comment_content)
+        values (#{board_num},
+                #{comment_content})
+        ]]>
+    </insert>
+
+    <!-- 댓글 수정 -->
+    <update id="updateComment" parameterType="hashmap">
+        <![CDATA[
+        UPDATE comment
+        SET comment_content = #{comment_content}
+        WHERE board_num = #{board_num}
+        ]]>
+    </update>
+
+    <!-- 댓글 삭제 -->
+    <delete id="deleteComment" parameterType="hashmap">
+        <![CDATA[
+        DELETE
+        FROM comment
+        WHERE comment_num = #{comment_num}
+        ]]>
+    </delete>
+</mapper>

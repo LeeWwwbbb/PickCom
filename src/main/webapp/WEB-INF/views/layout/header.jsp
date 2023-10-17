@@ -21,7 +21,7 @@
 				class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
 				<ul
 					class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-					<a href="../main.jsp">
+					<a href="/">
 						<img src="../../../img/header_logo.png" alt="로고">
 					</a>
 					<c:if test="${ sessionScope.num != null }">
@@ -51,9 +51,9 @@
 					</c:if>
 					<c:if test="${ sessionScope.num == null }">
 						<button type="button" class="btn btn-outline-light me-2"
-							onclick="location.href='/login';">Login</button>
+							onclick="location.href='/login'">Login</button>
 						<button type="button" class="btn btn-warning"
-							onclick="location.href='/join';">Sign-up</button>
+							onclick="location.href='/joinTerms'">Sign-up</button>
 					</c:if>
 				</div>
 			</div>

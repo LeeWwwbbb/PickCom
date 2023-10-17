@@ -1,21 +1,21 @@
 package com.pickCom.member.join;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
-import com.pickCom.common.CommandMap;
+import com.pickCom.common.common.CommandMap;
 
+import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.util.Random;
 
 @Controller
 public class JoinController {
-    @Autowired
+    @Resource(name = "joinService")
     private JoinService joinService;
 
     // 회원가입 약관
@@ -41,33 +41,10 @@ public class JoinController {
     public ModelAndView insertMember(CommandMap commandMap, HttpServletRequest request) throws Exception {
         ModelAndView mv = new ModelAndView();
 
-        /*// 이메일
-        String email = request.getParameter("MEMBER_EMAIL") + "@" + request.getParameter("MEMBER_EMAIL2");
-        System.out.println("이메일 : "+email);
-        // 직접입력일 경우
-        if(request.getParameter("MEMBER_EMAIL") == "") {
-            email = request.getParameter("MEMBER_EMAIL");
-        }
-        commandMap.remove("MEMBER_EMAIL");
-        commandMap.put("MEMBER_EMAIL", email);
+        joinService.memberInsert(commandMap.getMap());
 
-        String birth = request.getParameter("MEMBER_BIRTH")
-                + request.getParameter("MEMBER_BIRTH2")
-                + request.getParameter("MEMBER_BIRTH3");
-        commandMap.remove("MEMBER_BIRTH");
-        commandMap.put("MEMBER_BIRTH", birth);*/
-        if (!JoinPattern.idChk(request.getParameter("MEMBER_ID"))){
-
-        } else if (!JoinPattern.nameChk(request.getParameter("MEMBER_NICKNAME"))) {
-
-        } else if (!JoinPattern.pwdChk(request.getParameter("MEMBER_PASSWD"))) {
-
-        } else{
-            joinService.memberInsert(commandMap.getMap());
-
-            mv.addObject("MEMBER_NAME", commandMap.get("MEMBER_NAME"));
-            mv.setViewName("login/joinAction");
-        }
+        mv.addObject("MEMBER_NAME", commandMap.get("MEMBER_NAME"));
+        mv.setViewName("login/joinAction");
         return mv;
     }
 

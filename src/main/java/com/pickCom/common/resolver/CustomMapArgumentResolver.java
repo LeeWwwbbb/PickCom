@@ -5,7 +5,7 @@ import org.springframework.web.bind.support.WebDataBinderFactory;
 import org.springframework.web.context.request.NativeWebRequest;
 import org.springframework.web.method.support.HandlerMethodArgumentResolver;
 import org.springframework.web.method.support.ModelAndViewContainer;
-import com.pickCom.common.CommandMap;
+import com.pickCom.common.common.CommandMap;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.Enumeration;

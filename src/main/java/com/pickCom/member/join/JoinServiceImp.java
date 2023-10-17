@@ -3,11 +3,12 @@ package com.pickCom.member.join;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
 import java.util.Map;
 
 @Service("joinService")
 public class JoinServiceImp implements JoinService {
-    @Autowired
+    @Resource(name = "joinDAO")
     private JoinDAO joinDAO;
 
     // 회원가입

@@ -23,9 +23,9 @@
                 #{MEMBER_NICKNAME},
                 #{MEMBER_PASSWD},
                 #{MEMBER_EMAIL},
-                #{MEMBER_RANK},
-                #{MEMBER_DELETE},
-                #{MEMBER_VISITCOUNT}
+                '일반',
+                false,
+                0
             )
         ]]>
 	</insert>

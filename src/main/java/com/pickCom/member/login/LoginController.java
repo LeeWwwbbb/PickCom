@@ -1,27 +1,20 @@
 package com.pickCom.member.login;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
-import com.pickCom.common.CommandMap;
-import com.pickCom.member.join.JoinService;
+import com.pickCom.common.common.CommandMap;
 
+import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.util.Map;
 
 @Controller
 public class LoginController {
-    @Autowired
+    @Resource(name = "loginService")
     private LoginService loginService;
-
-    @Autowired
-    private JoinService joinService;
 
     @RequestMapping(value = "/login")
     public ModelAndView loginForm(CommandMap commandMap) throws Exception {
@@ -31,19 +24,19 @@ public class LoginController {
     }
 
     // 로그인 이후 메인페이지 이동
-    @RequestMapping(value = "/loginAction.do", method = RequestMethod.POST)
+    @PostMapping(value = "/loginAction.do")
     public ModelAndView loginAction(CommandMap commandMap, HttpServletRequest request) throws Exception {
         ModelAndView mv = new ModelAndView();
         HttpSession session = request.getSession();
-        boolean loggedIn = false;
 
         Map<String, Object> chk = loginService.memberLogin(commandMap.getMap());
+        System.out.println(chk);
 
         if (chk == null) {
             mv.setViewName("login/loginForm");
             mv.addObject("message", "해당 아이디 혹은 비밀번호가 일치하지 않습니다.");
         } else {
-            if (chk.get("MEMBER_DELETE").equals(true)) {
+            if (chk.get("MEMBER_stat").equals(true)) {
                 mv.setViewName("login/loginForm");
                 mv.addObject("message", "탈퇴한 회원 입니다.");
             } else {
@@ -51,11 +44,8 @@ public class LoginController {
                     session.setAttribute("SESSION_ID", chk.get("MEMBER_ID"));
                     session.setAttribute("SESSION_NICKNAME", chk.get("MEMBER_NICKNAME"));
 
-                    mv = new ModelAndView("redirect:/index.do");
+                    mv = new ModelAndView("redirect:/");
                     mv.addObject("MEMBER", chk);
-                    mv.addObject("loggedIn", loggedIn);
-
-                    session.getMaxInactiveInterval();
                 }
             }
         }

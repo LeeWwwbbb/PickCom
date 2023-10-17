@@ -1,29 +1,51 @@
 package com.pickCom.board.board;
 
+import com.pickCom.common.dao.AbstractDAO;
+import org.springframework.stereotype.Repository;
 
-public interface BoardDAO {
-    /*// 검색 조건에 맞는 게시물의 개수를 반환합니다.
-    public int selectCount(Map<String, Object> map);
+import java.util.List;
+import java.util.Map;
 
-    // 검색 조건에 맞는 게시물 목록을 반환합니다.
-    public List<BoardDTO> selectList(Map<String, Object> map);
+@Repository("boardDAO")
+public class BoardDAO extends AbstractDAO {
+    // 리스트 출력
+    public List<Map<String, Object>> selectBoardList(Map<String, Object> map) throws Exception{
+        return (List<Map<String, Object>>)selectPagingList("board.selectBoardList", map);
+    }
 
-    // 검색 조건에 맞는 게시물 목록을 반환합니다(페이징 기능 지원).
-    public List<BoardDTO> selectListPage(Map<String, Object> map);
+    // 글 검색
+    public Map<String, Object> selectBoardDetail(Map<String, Object> map) throws Exception{
+        return (Map<String, Object>) selectOne("board.selectBoardDetail", map);
+    }
 
-    // 게시글 데이터를 받아 DB에 추가합니다.
-    public int insertWrite(BoardDTO dto);
+    // 글 추가
+    public void insertBoard(Map<String, Object> map) throws Exception{
+        insert("board.insertBoard", map);
+    }
+
+    // 글 수정
+    public void updateBoard(Map<String, Object> map) throws Exception{
+        update("board.updateBoard", map);
+    }
+
+    // 글 삭제
+    public void deleteBoard(Map<String, Object> map) throws Exception{
+        delete("board.deleteBoard", map);
+    }
+
+    // 댓글 추가
+    public void insertComment(Map<String, Object> map) throws Exception{
+        insert("board.insetComment", map);
+    }
+
+    // 댓글 수정
+    public void updateComment(Map<String, Object> map) throws Exception{
+        update("board.updateComment", map);
+    }
 
 
-    // 지정한 게시물을 찾아 내용을 반환합니다.
-    public BoardDTO selectView(String num);
-
-    // 지정한 게시물의 조회수를 1 증가시킵니다.
-    public void updateVisitCount(String num);
-
-    // 지정한 게시물을 수정합니다.
-    public int updateEdit(BoardDTO dto);
-
-    // 지정한 게시물을 삭제합니다.
-    public int deletePost(BoardDTO dto);*/
+    // 댓글 삭제
+    public void deleteComment(Map<String, Object> map) throws Exception{
+        delete("board.deleteComment", map);
+    }
 }

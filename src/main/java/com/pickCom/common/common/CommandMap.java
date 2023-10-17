@@ -1,4 +1,4 @@
-package com.pickCom.common;
+package com.pickCom.common.common;
 
 import java.util.HashMap;
 import java.util.Map;

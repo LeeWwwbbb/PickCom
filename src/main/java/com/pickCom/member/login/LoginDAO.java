@@ -1,12 +1,14 @@
 package com.pickCom.member.login;
 
+import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.stereotype.Repository;
-import com.pickCom.common.AbstractDAO;
+import com.pickCom.common.dao.AbstractDAO;
 
 import java.util.Map;
 
 @Repository("loginDAO")
 public class LoginDAO extends AbstractDAO {
+    private SqlSessionTemplate sqlSession;
     // 로그인
     public Map<String, Object> memberLogin(Map<String, Object> map) throws Exception{
         return (Map<String, Object>)selectOne("login.loginAction", map);
