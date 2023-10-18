@@ -3,26 +3,53 @@
 <mapper namespace="board">
     <!-- 게시글 리스트 검색 -->
     <select id="selectBoardList" parameterType="hashmap" resultType="hashmap">
-        <![CDATA[
+        <include refid="common.pagingPre"/>
+        SELECT
+        ROW_NUMBER() over (ORDER BY board_num DESC) rnum,
+        board_num,
+        board_title,
+        board_cate,
+        TO_CHAR(board_createdDate, 'YYYY.MM.DD') AS board_date,
+        member.member_num,
+        member.member_name
+        FROM board
+        INNER JOIN member ON board.member_num = member.member_num
+        WHERE board.board_cate = #{cate}
+        <include refid="common.pagingPre"/>
+    </select>
 
-        ]]>
+    <!-- 글 검색 -->
+    <select id="openBoardDetail" parameterType="hashmap" resultType="hashmap">
+        SELECT *
+        FROM board
+        WHERE board_num = #{board_num}
     </select>
 
     <!-- 댓글 리스트 출력 -->
     <select id="selectCommentList" parameterType="hashmap" resultType="hashmap">
         <![CDATA[
         SELECT c.*
-        FROM `comment` c
-                 INNER JOIN `board` b ON c.`board_num` = b.`board_num`
-        WHERE b.`board_num` = #{board_num}
+        FROM comment c
+                 INNER JOIN board b ON c.board_num = b.board_num
+        WHERE b.board_num = #{board_num}
         ]]>
     </select>
 
     <!-- 게시글 검색 -->
     <select id="selectBoardDetail" parameterType="hashmap" resultType="hashmap">
-        <![CDATA[
-
-        ]]>
+        <include refid="common.pagingPre"/>
+        SELECT
+        ROW_NUMBER() over (ORDER BY board_num DESC) rnum,
+        board_num,
+        board_title,
+        board_cate,
+        TO_CHAR(board_createdDate, 'YYYY.MM.DD') AS board_date,
+        member.member_num,
+        member.member_name
+        FROM board
+        INNER JOIN member ON board.member_num = member.member_num
+        WHERE board.board_cate = #{cate} AND board_title LIKE '%' || #{keyword} || '%'
+        <include refid="common.pagingPre"/>
     </select>
 
     <!-- 글 추가 -->

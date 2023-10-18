@@ -1,18 +1,27 @@
 package com.pickCom.member.my;
 
+import com.pickCom.common.common.CommandMap;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
+
+import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+import java.util.Map;
 
 @Controller
 public class MyController {
-    /*
     @Resource(name = "myService")
     private MyService myService;
 
     // 마이페이지 메인
-    @RequestMapping(value = "/my/myMain.do", method = RequestMethod.GET)
+    @RequestMapping(value = "/myPage.do", method = RequestMethod.GET)
     public ModelAndView orderList(Map<String, Object> commandMap) throws Exception {
 
-        ModelAndView mv = new ModelAndView("my/myMain");
+        ModelAndView mv = new ModelAndView("/my/myPage");
 
         return mv;
     }
@@ -25,7 +34,7 @@ public class MyController {
         return mv;
     }
 
-    //회원 정보 수정 폼 이동
+    /*//회원 정보 수정 폼 이동
     @RequestMapping(value = "/my/memberModify.do", method = RequestMethod.POST)
     public ModelAndView select(CommandMap commandMap, HttpSession session) throws Exception {
         ModelAndView mv = new ModelAndView();
@@ -153,9 +162,9 @@ public class MyController {
         mv.addObject("list", list);
         System.out.println(list);
         return mv;
-    }
+    }*/
 
-    //좋아요 삭제
+    /*//좋아요 삭제
     @RequestMapping(value="/my/goodsLikeDelete.do")
     public ModelAndView goodsLikeDelete(CommandMap commandMap, HttpServletRequest request) throws Exception {
         ModelAndView mv = new ModelAndView("redirect:/my/myLikeList.do");
@@ -183,71 +192,5 @@ public class MyController {
         mv.addObject("mydashList", mydashList);
 
         return mv;
-    }
-
-    //상품QNA리스트 페이지 열기
-    @RequestMapping(value="/my/openMyGoodsQna.do")
-    public ModelAndView openQnaList(CommandMap commandMap) throws Exception{
-        ModelAndView mv = new ModelAndView("/my/myGoodsQnaList");
-
-        return mv;
-    }
-
-    //나의 상품QNA 출력
-    @RequestMapping(value="/my/myGoodsQnaList.do")
-    public ModelAndView myGoodsQnaList(CommandMap commandMap, HttpServletRequest request) throws Exception {
-        ModelAndView mv = new ModelAndView("jsonView");
-
-        Object MEMBER_NO = ""; //세션값 가져오기
-        HttpSession session = request.getSession();
-        MEMBER_NO = (Object)session.getAttribute("SESSION_NO");
-        commandMap.remove("MEMBER_NO"); // 기존 회원번호 데이터 삭제
-        commandMap.put("MEMBER_NO", MEMBER_NO); // 세션 값으로 적용
-        List<Map<String,Object>> list = myService.myGoodsQnaList(commandMap);
-        mv.addObject("list", list);
-        if (list.size() > 0) {
-            mv.addObject("TOTAL", list.get(0).get("TOTAL_COUNT"));
-        } else {
-            mv.addObject("TOTAL", 0);
-        }
-        return mv;
-    }
-
-    //나의 상품후기 리스트 페이지 열기
-    @RequestMapping(value="/my/openMyReview.do")
-    public ModelAndView openReviewList(CommandMap commandMap) throws Exception{
-        ModelAndView mv = new ModelAndView("/my/myReviewList");
-
-        return mv;
-    }
-
-    //나의 상품후기 출력
-    @RequestMapping(value="/my/myReviewList.do")
-    public ModelAndView myReviewList(CommandMap commandMap, HttpServletRequest request) throws Exception {
-
-        ModelAndView mv = new ModelAndView("jsonView");
-
-        Object MEMBER_NO = "";
-        //세션값 가져오기
-        HttpSession session = request.getSession();
-        MEMBER_NO = (Object)session.getAttribute("SESSION_NO");
-        commandMap.remove("MEMBER_NO");
-        // 기존 회원번호 데이터 삭제
-        commandMap.put("MEMBER_NO", MEMBER_NO);
-        // 세션 값으로 적용
-
-        List<Map<String,Object>> list = myService.myReviewList(commandMap);
-
-
-        System.out.println(list);
-
-        mv.addObject("list", list);
-        if (list.size() > 0) {
-            mv.addObject("TOTAL", list.get(0).get("TOTAL_COUNT"));
-        } else {
-            mv.addObject("TOTAL", 0);
-        }
-        return mv;
-    }
-    */
+    }*/
 }

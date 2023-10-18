@@ -43,6 +43,7 @@ public class LoginController {
             } else {
                 if (chk.get("MEMBER_PASSWD").equals(commandMap.get("MEMBER_PASSWD"))) {
                     session.setAttribute("num", chk.get("MEMBER_NUM"));
+                    session.setAttribute("name", chk.get("MEMBER_NICKNAME"));
                     session.setAttribute("rank", chk.get("MEMBER_RANK"));
 
                     mv = new ModelAndView("redirect:/");
@@ -50,23 +51,22 @@ public class LoginController {
                 }
             }
         }
+        System.out.println(session.getAttribute("num"));
 
         return mv;
     }
 
     // 로그아웃
-    @RequestMapping(value = "/logout.do", method = RequestMethod.POST)
-    @ResponseBody
-    public Map<String, Object> logout(HttpServletRequest request, @RequestBody Map<String, Object> map) throws Exception {
-
+    @RequestMapping(value = "/logout.do", method = RequestMethod.GET)
+    public ModelAndView logout(CommandMap commandMap, HttpServletRequest request) throws Exception {
+        ModelAndView mv = new ModelAndView("redirect:/");
         HttpSession session = request.getSession(false);
         if (session != null) session.invalidate();
 
-        String url = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort()
+        /*String url = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort()
                 + request.getContextPath() + "/";
-        map.put("URL", url);
-
-        return map;
+        map.put("URL", url);*/
+        return mv;
     }
 
     // 아이디 찾기 폼

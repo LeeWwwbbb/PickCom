@@ -19,13 +19,19 @@ public class BoardServiceImp implements BoardService{
         return boardDAO.selectBoardList(map);
     }
 
+    // 글 상세
+    @Override
+    public Map<String, Object> openBoardDetail(Map<String, Object> map) throws Exception{
+        Map<String, Object> resultMap = new HashMap<String,Object>();
+        Map<String, Object> tempMap = boardDAO.openBoardDetail(map);
+        resultMap.put("map", tempMap);
+        return resultMap;
+    }
+
     // 글 검색
     @Override
     public Map<String, Object> selectBoardDetail(Map<String, Object> map) throws Exception{
-        Map<String, Object> resultMap = new HashMap<String,Object>();
-        Map<String, Object> tempMap = boardDAO.selectBoardDetail(map);
-        resultMap.put("map", tempMap);
-        return resultMap;
+        return boardDAO.selectBoardDetail(map);
     }
 
     // 글 추가

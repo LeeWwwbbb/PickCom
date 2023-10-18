@@ -32,7 +32,7 @@
             <form action="search" method="get">
                 <div class="row">
                     <div class="col-10">
-                        <input type="text" class="form-control" name="searchWord"/>
+                        <input type="text" class="form-control" name="keyword"/>
                     </div>
                     <div class="col-2">
                         <button type="submit" class="btn btn-primary w-100">검색</button>
@@ -55,16 +55,16 @@
             <c:if test="${ sessionScope.num != null }">
                 <c:if test="${ sessionScope.rank }">
                     <button type="button" class="btn btn-outline-light me-2"
-                            onclick="location.href='/../admin/userList.do';">관리페이지
+                            onclick="location.href='/../admin/userList.do'">관리페이지
                     </button>
                 </c:if>
                 <c:if test="${ !sessionScope.rank }">
                     <button type="button" class="btn btn-outline-light me-2"
-                            onclick="location.href='/../my/myPage.do';">My Page
+                            onclick="location.href='/myPage.do'">My Page
                     </button>
                 </c:if>
                 <button type="button" class="btn btn-outline-light me-2"
-                        onclick="location.href='/../login/logout.do';">Logout
+                        onclick="location.href='/logout.do'">Logout
                 </button>
             </c:if>
             <c:if test="${ sessionScope.num == null }">

@@ -21,6 +21,7 @@
     <select id="loginAction" parameterType="hashmap" resultType="hashmap">
 		<![CDATA[
         SELECT
+            MEMBER_NUM,
             MEMBER_ID,
             MEMBER_NAME,
             MEMBER_NICKNAME,
