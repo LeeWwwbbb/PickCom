@@ -28,7 +28,7 @@
                         <caption>필수 정보입력</caption>
                         <tr>
                             <th>
-                                <span class="essential">*</span>
+                                <span class="text-danger">*</span>
                                 아이디
                             </th>
                             <td>
@@ -42,7 +42,7 @@
                         </tr>
                         <tr>
                             <th>
-                                <span class="essential">*</span>
+                                <span class="text-danger">*</span>
                                 이름
                             </th>
                             <td>
@@ -51,7 +51,7 @@
                         </tr>
                         <tr>
                             <th>
-                                <span class="essential">*</span>
+                                <span class="text-danger">*</span>
                                 비밀번호
                             </th>
                             <td>
@@ -62,7 +62,7 @@
                         </tr>
                         <tr>
                             <th>
-                                <span class="essential">*</span>
+                                <span class="text-danger">*</span>
                                 비밀번호확인
                             </th>
                             <td>
@@ -77,7 +77,7 @@
                             <caption>기본 정보입력</caption>
                             <tr>
                                 <th>
-                                    <span class="essential">*</span>
+                                    <span class="text-danger">*</span>
                                     닉네임
                                 </th>
                                 <td>
@@ -86,7 +86,7 @@
                             </tr>
                             <tr>
                                 <th>
-                                    <span class="essential">*</span>
+                                    <span class="text-danger">*</span>
                                     이메일
                                 </th>
                                 <td>
@@ -98,7 +98,7 @@
                             </tr>
                             <tr>
                                 <th>
-                                    <span class="essential">*</span>
+                                    <span class="text-danger">*</span>
                                     인증번호
                                 </th>
                                 <td>

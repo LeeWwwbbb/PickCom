@@ -20,25 +20,6 @@
 		class="position-absolute top-50 start-50 translate-middle h-75 d-inline-block"
 		style="width: 1000px;">
 		<main>
-			<!-- 검색 폼 -->
-			<form action="search" method="get">
-				<div class="row mb-4">
-					<div class="col-2">
-						<select name="searchField" class="form-select">
-							<option value="userId">아이디</option>
-							<option value="userName">닉네임</option>
-							<option value="email">이메일</option>
-							<option value="stat">상태</option>
-						</select>
-					</div>
-					<div class="col-8">
-						<input type="text" class="form-control" name="searchWord" />
-					</div>
-					<div class="col-2">
-						<button type="submit" class="btn btn-primary w-100">검색</button>
-					</div>
-				</div>
-			</form>
 
 			<h2 class="mb-4">
 				<span>${ cate } 게시판</span>
