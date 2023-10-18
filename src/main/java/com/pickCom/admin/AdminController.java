@@ -15,10 +15,9 @@ import java.util.Map;
 
 @Controller
 public class AdminController{
-    /*@Autowired
+    @Autowired
     private AdminService adminService;
-<<<<<<< Updated upstream
-
+/*
     @RequestMapping("/userList")
     public String userList(Model model,
                            @RequestParam(value = "searchField", required = false) String searchField,
@@ -54,7 +53,8 @@ public class AdminController{
         model.addAttribute("map", map);
 
         return "admin/userManager";
-    }*/
-=======
->>>>>>> Stashed changes
+
+    }
+ */
+
 }
