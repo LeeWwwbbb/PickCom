@@ -25,7 +25,7 @@
                     <strong>로그인</strong>
                 </p>
             </nav>
-            <form action="${root}/loginAction.do" method="post" id="frm" onsubmit="return validateForm(this);">
+            <form action="/loginAction.do" method="post" id="frm" onsubmit="return validateForm(this);">
                 <table border="0">
                     <tr>
                         <td>아이디

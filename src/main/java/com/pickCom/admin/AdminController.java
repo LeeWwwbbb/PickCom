@@ -1,6 +1,5 @@
 package com.pickCom.admin;
 
-import com.pickCom.common.CommandMap;
 import com.pickCom.member.MemberDTO;
 import com.pickCom.utils.BoardPage;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,7 +15,7 @@ import java.util.Map;
 
 @Controller
 public class AdminController{
-    @Autowired
+    /*@Autowired
     private AdminService adminService;
 
     @RequestMapping("/userList")
@@ -54,5 +53,5 @@ public class AdminController{
         model.addAttribute("map", map);
 
         return "admin/userManager";
-    }
+    }*/
 }

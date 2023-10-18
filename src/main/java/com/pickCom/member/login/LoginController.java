@@ -24,25 +24,26 @@ public class LoginController {
     }
 
     // 로그인 이후 메인페이지 이동
-    @PostMapping(value = "/loginAction.do")
+    @RequestMapping(value = "/loginAction.do", method = RequestMethod.POST)
     public ModelAndView loginAction(CommandMap commandMap, HttpServletRequest request) throws Exception {
         ModelAndView mv = new ModelAndView();
         HttpSession session = request.getSession();
 
         Map<String, Object> chk = loginService.memberLogin(commandMap.getMap());
+        System.out.println(commandMap.getMap());
         System.out.println(chk);
 
         if (chk == null) {
             mv.setViewName("login/loginForm");
             mv.addObject("message", "해당 아이디 혹은 비밀번호가 일치하지 않습니다.");
         } else {
-            if (chk.get("MEMBER_stat").equals(true)) {
+            if (chk.get("MEMBER_DELETE").equals(true)) {
                 mv.setViewName("login/loginForm");
                 mv.addObject("message", "탈퇴한 회원 입니다.");
             } else {
                 if (chk.get("MEMBER_PASSWD").equals(commandMap.get("MEMBER_PASSWD"))) {
-                    session.setAttribute("SESSION_ID", chk.get("MEMBER_ID"));
-                    session.setAttribute("SESSION_NICKNAME", chk.get("MEMBER_NICKNAME"));
+                    session.setAttribute("num", chk.get("MEMBER_NUM"));
+                    session.setAttribute("rank", chk.get("MEMBER_RANK"));
 
                     mv = new ModelAndView("redirect:/");
                     mv.addObject("MEMBER", chk);
@@ -62,7 +63,7 @@ public class LoginController {
         if (session != null) session.invalidate();
 
         String url = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort()
-                + request.getContextPath() + "/main.do";
+                + request.getContextPath() + "/";
         map.put("URL", url);
 
         return map;
