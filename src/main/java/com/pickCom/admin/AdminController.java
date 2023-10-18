@@ -17,6 +17,7 @@ import java.util.Map;
 public class AdminController{
     /*@Autowired
     private AdminService adminService;
+<<<<<<< Updated upstream
 
     @RequestMapping("/userList")
     public String userList(Model model,
@@ -54,4 +55,6 @@ public class AdminController{
 
         return "admin/userManager";
     }*/
+=======
+>>>>>>> Stashed changes
 }
