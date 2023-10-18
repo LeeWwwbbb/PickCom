@@ -1,5 +1,6 @@
 package com.pickCom.admin;
 
+import com.pickCom.common.common.CommandMap;
 import com.pickCom.member.MemberDTO;
 import com.pickCom.utils.BoardPage;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,15 +10,23 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.annotation.Resource;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 @Controller
 public class AdminController{
-    @Autowired
+    @Resource(name = "adminService")
     private AdminService adminService;
-/*
+
+    @RequestMapping(value = "/usermanage")
+    public ModelAndView admin(CommandMap commandMap) throws Exception{
+        ModelAndView mv = new ModelAndView("admin/userManager");
+
+        return mv;
+    }
+    /*
     @RequestMapping("/userList")
     public String userList(Model model,
                            @RequestParam(value = "searchField", required = false) String searchField,
@@ -55,6 +64,5 @@ public class AdminController{
         return "admin/userManager";
 
     }
- */
-
+*/
 }
