@@ -176,6 +176,12 @@
         WHERE member_no=#{num}
         ]]>
     </update>
+    <select id="user_list" parameterType="hashmap">
+        <![CDATA[
+        SELECT member_num, member_id, member_name, member_nickName, member_email, member_regDate
+        FROM member
+        ]]>
+    </select>
     <insert id="change_detail_insert" parameterType="hashmap"> <!--  -->
         <![CDATA[
 			insert into order_detail ( order_detail_no, order_no, goods_no, goods_att_no, order_detail_price,

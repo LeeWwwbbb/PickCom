@@ -26,7 +26,7 @@ public class AdminController{
 
         return mv;
     }
-    /*
+
     @RequestMapping("/userList")
     public String userList(Model model,
                            @RequestParam(value = "searchField", required = false) String searchField,
@@ -64,5 +64,4 @@ public class AdminController{
         return "admin/userManager";
 
     }
-*/
 }

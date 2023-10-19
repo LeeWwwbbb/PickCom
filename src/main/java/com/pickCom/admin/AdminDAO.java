@@ -15,4 +15,7 @@ public class AdminDAO extends AbstractDAO {
     public void MemberUpdate(Map<String, Object> map) throws Exception {
         update("admin.updateUser", map);
     }
+    public void MemberList(Map<String, Object> map) throws Exception{
+        selectList("admin.user_list", map);
+    }
 }
