@@ -57,15 +57,15 @@ public class BoardController {
 
     // 글 작성 폼
     @RequestMapping(value="/board/write.do")
-    public ModelAndView openQnaWrite(CommandMap commandMap) throws Exception{
+    public ModelAndView openBoardWrite(CommandMap commandMap) throws Exception{
         ModelAndView mv = new ModelAndView("/board/Write");
 
         return mv;
     }
 
     // 글 등록
-    @RequestMapping(value="/board/insert.do", method = RequestMethod.POST )
-    public ModelAndView insertQna(CommandMap commandMap, HttpServletRequest request) throws Exception{
+    @RequestMapping(value="/board/insertBoard.do", method = RequestMethod.POST )
+    public ModelAndView insertBoard(CommandMap commandMap, HttpServletRequest request) throws Exception{
         ModelAndView mv = new ModelAndView("redirect:/qna/openQnaList.do"); // 수정해야함
 
         boardService.insertBoard(commandMap.getMap(), request);
@@ -77,7 +77,7 @@ public class BoardController {
 
     // 글 수정 폼
     @RequestMapping(value="/board/openBoardUpdate.do")
-    public ModelAndView openQnaUpdate(CommandMap commandMap) throws Exception{
+    public ModelAndView openBoardUpdate(CommandMap commandMap) throws Exception{
         ModelAndView mv = new ModelAndView("/board/Edit");
 
         Map<String,Object> map = boardService.selectBoardDetail(commandMap.getMap());
@@ -89,7 +89,7 @@ public class BoardController {
 
     // 글 수정
     @RequestMapping(value="/board/updateBoard.do")
-    public ModelAndView updateQna(CommandMap commandMap, HttpServletRequest request) throws Exception{
+    public ModelAndView updateBoard(CommandMap commandMap, HttpServletRequest request) throws Exception{
         ModelAndView mv = new ModelAndView("redirect:/board/openQnaDetail.do"); // 수정해야함
 
         boardService.updateBoard(commandMap.getMap(), request);
@@ -100,7 +100,7 @@ public class BoardController {
 
     // 글 삭제
     @RequestMapping(value="/board/deleteBoard.do")
-    public ModelAndView deleteQna(CommandMap commandMap) throws Exception{
+    public ModelAndView deleteBoard(CommandMap commandMap) throws Exception{
         ModelAndView mv = new ModelAndView("redirect:/board/openQnaList.do"); // 수정해야함
 
         boardService.deleteBoard(commandMap.getMap());
@@ -109,8 +109,35 @@ public class BoardController {
     }
 
     // 댓글 추가
+    @RequestMapping(value="/board/insertComment.do", method = RequestMethod.POST )
+    public ModelAndView insertComment(CommandMap commandMap, HttpServletRequest request) throws Exception{
+        ModelAndView mv = new ModelAndView("redirect:/qna/openQnaList.do"); // 수정해야함
+
+        boardService.insertComment(commandMap.getMap(), request);
+
+
+
+        return mv;
+    }
 
     // 댓글 수정
+    @RequestMapping(value="/board/updateComment.do")
+    public ModelAndView updateComment(CommandMap commandMap, HttpServletRequest request) throws Exception{
+        ModelAndView mv = new ModelAndView("redirect:/board/openQnaDetail.do"); // 수정해야함
+
+        boardService.updateComment(commandMap.getMap(), request);
+
+        mv.addObject("BOARD_NUM", commandMap.get("BOARD_NUM"));
+        return mv;
+    }
 
     // 댓글 삭제
+    @RequestMapping(value="/board/deleteComment.do")
+    public ModelAndView deleteComment(CommandMap commandMap) throws Exception{
+        ModelAndView mv = new ModelAndView("redirect:/board/openQnaList.do"); // 수정해야함
+
+        boardService.deleteComment(commandMap.getMap());
+
+        return mv;
+    }
 }

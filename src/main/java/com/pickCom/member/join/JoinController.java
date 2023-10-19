@@ -11,6 +11,7 @@ import com.pickCom.common.common.CommandMap;
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+import java.net.http.HttpResponse;
 import java.util.Random;
 
 @Controller
@@ -49,32 +50,41 @@ public class JoinController {
     }
 
     //이메일 인증-회원가입
-    @RequestMapping(value = "/join_main.do", produces = "application/json")
+    @RequestMapping(value = "/joinEmail.do", produces = "application/json")
     @ResponseBody
-    public boolean sendMailAuth(HttpSession session, @RequestParam String user_email) {
-        int ran = new Random().nextInt(100000) + 10000; // 10000 ~ 99999
+    public boolean sendMailAuth(HttpSession session, @RequestParam String email) {
+        Integer ran = new Random().nextInt(100000) + 10000; // 10000 ~ 99999
         String joinCode = String.valueOf(ran);
         session.setAttribute("joinCode", joinCode);
 
         try{
-            new MailSender(user_email, ran);
+            new MailSender(email, ran);
             return true;
         }catch (Exception e) {
             e.printStackTrace();
         }
+        return false;
+    }
 
-
+    // 인증번호 확인
+    @RequestMapping(value = "/joinCode.do", produces = "application/json")
+    @ResponseBody
+    public boolean checkMailCode(HttpSession session, @RequestParam String code) {
+        Integer storedCode = (Integer)session.getAttribute("joinCode");
+        if (storedCode != null && code != null && storedCode.toString().equals(code)) {
+            return true;
+        }
         return false;
     }
 
     //아이디 중복 체크
-    @RequestMapping(value="/selectIdCheck.do", method=RequestMethod.GET)
+    @RequestMapping(value="/selectIdCheck.do", method=RequestMethod.POST)
     @ResponseBody
-    public int selectIdCheck(@RequestParam("mem_userid") String mem_userid) throws Exception{
+    public boolean selectIdCheck(@RequestParam("userId") String mem_userid) throws Exception{
 
         int cnt = joinService.idCheck(mem_userid);
 
-        return cnt;
+        return cnt > 0;
     }
 
 }

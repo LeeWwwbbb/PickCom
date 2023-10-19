@@ -17,7 +17,7 @@ public class MyController {
     @Resource(name = "myService")
     private MyService myService;
 
-    // 마이페이지 메인
+    /*// 마이페이지 메인
     @RequestMapping(value = "/myPage.do", method = RequestMethod.GET)
     public ModelAndView orderList(Map<String, Object> commandMap) throws Exception {
 
@@ -32,16 +32,16 @@ public class MyController {
         ModelAndView mv = new ModelAndView("my/pwdCheck");
 
         return mv;
-    }
+    }*/
 
-    /*//회원 정보 수정 폼 이동
-    @RequestMapping(value = "/my/memberModify.do", method = RequestMethod.POST)
-    public ModelAndView select(CommandMap commandMap, HttpSession session) throws Exception {
+    //회원 정보 수정 폼 이동
+    @RequestMapping(value = "/my/memberModify.do")
+    public ModelAndView selectMember(CommandMap commandMap, HttpSession session) throws Exception {
         ModelAndView mv = new ModelAndView();
-        System.out.println("비빌번호 입력시"+ commandMap.getMap());
+        int id = (int)session.getAttribute("num");
+        // System.out.println("비빌번호 입력시"+ commandMap.getMap());
         //세션값 가져오기
-        String id = (String) session.getAttribute("SESSION_ID");
-        commandMap.put("MEMBER_ID", id);
+        /*commandMap.put("MEMBER_ID", id);
 
         String pw = (String) myService.passwdCheck(commandMap.getMap(), "MEMBER_ID");
         Map<String, Object> MemberInfo;
@@ -55,7 +55,11 @@ public class MyController {
         } else {
             mv.addObject("alert", "비밀번호가 올바르지 않습니다.");
             mv.setViewName("my/pwdCheck");
-        }
+        }*/
+        Map<String, Object> MemberInfo;
+        mv.setViewName("my/myPage");
+        MemberInfo = myService.memberModify(id);
+        mv.addObject("MEMBER", MemberInfo);
         return mv;
     }
 
@@ -123,25 +127,25 @@ public class MyController {
     public ModelAndView memberDeleteAction(Map<String, Object> commandMap, HttpSession session, HttpServletRequest request) throws Exception{
         ModelAndView mv = new ModelAndView("jsonView");
 
-        String id = (String)session.getAttribute("SESSION_ID");
-        commandMap.put("MEMBER_ID", id);
+        int id = (int)session.getAttribute("num");
+        commandMap.put("MEMBER_NUM", id);
         myService.memberDelete(commandMap);
 
-        session.removeAttribute("SESSION_ID");
-        session.removeAttribute("SESSION_NO");
-        session.removeAttribute("SESSION_NAME");
+        session.removeAttribute("num");
+        session.removeAttribute("name");
+        session.removeAttribute("rank");
 
         String url = request.getScheme()+"://"
                 +request.getServerName()+":"
                 +request.getServerPort()
-                +request.getContextPath()+"/main.do";
+                +request.getContextPath()+"/index";
         mv.addObject("URL", url);
         mv.addObject("result", "complete");
 
         return mv;
     }
 
-    //좋아요 리스트 출력
+    /*//좋아요 리스트 출력
     @RequestMapping(value="/my/myLikeList.do")
     public ModelAndView myLikeList(CommandMap commandMap, HttpServletRequest request) throws Exception {
 

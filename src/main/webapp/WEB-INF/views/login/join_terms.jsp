@@ -12,6 +12,11 @@
             rel="stylesheet"
             integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
             crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://kit.fontawesome.com/20962f3e4b.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
 </head>
 <body>
 <div id="wrapper">
@@ -265,7 +270,7 @@
                         <부칙> 본 개정약관은 2023년 03월 24일부터 시행합니다.</textarea>
                 <br>
                 <label>
-                    <input type="checkbox" name="agree1" required>동의합니다.
+                    <input type="checkbox" name="agree1" id="agree1" required>동의합니다.
                 </label>
                 <h3>
                     <span class="essential">(필수)</span>
@@ -446,7 +451,7 @@
 ② 이 약관에 의한 거래와 관련하여 발생된 분쟁에 대하여 회사와 고객 사이에 소송의 필요가 생긴 경우에는 그 관할법원은「민사소송법」이 정한 바에 따른다.</textarea>
                 <br>
                 <label>
-                    <input type="checkbox" name="agree2" required>동의합니다.
+                    <input type="checkbox" name="agree2" id="agree2" required>동의합니다.
                 </label>
                 <h3>
                     <span class="essential">(필수)</span>
@@ -466,17 +471,32 @@
 ※ 위의 개인정보 제공에 대한 동의를 거부할 권리가 있으나, 거부할 경우 가입에 제한을 받을 수 있습니다</textarea>
                 <br>
                 <label>
-                    <input type="checkbox" name="agree3" required>동의합니다.
+                    <input type="checkbox" name="agree3" id="agree3" required>동의합니다.
                 </label>
             </section>
             <section>
                 <div class="banner"> 여기에 내용 삽입(혹은 광고 삽입)</div>
             </section>
             <div>
-                <Button type="button" class="btn btn-success btn-lg" onclick="location.href='/join'">동의하기</Button>
+                <Button type="button" class="btn btn-success btn-lg" onclick="checkAndSubmit()">동의하기</Button>
             </div>
         </div>
     </main>
 </div>
 </body>
+<script>
+    function checkAndSubmit() {
+        // 각 체크박스의 상태 확인
+        var checkbox1 = document.getElementById('agree1');
+        var checkbox2 = document.getElementById('agree2');
+        var checkbox3 = document.getElementById('agree3');
+
+        if (checkbox1.checked && checkbox2.checked && checkbox3.checked) {
+            // 모든 체크박스가 선택되었을 때 작업 수행
+            window.location.href = '/join';
+        } else {
+            alert('모든 체크박스를 선택해야 합니다.');
+        }
+    }
+</script>
 </html>

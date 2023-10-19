@@ -70,9 +70,9 @@ public class LoginController {
     }
 
     // 아이디 찾기 폼
-    @RequestMapping(value = "/findId.do")
+    @RequestMapping(value = "/findId")
     public ModelAndView findId(CommandMap commandMap) throws Exception {
-        ModelAndView mv = new ModelAndView("login/findId");
+        ModelAndView mv = new ModelAndView("login/id_find");
 
         return mv;
     }
@@ -99,9 +99,9 @@ public class LoginController {
     }
 
     // 비밀번호 초기화 폼
-    @RequestMapping(value = "/findPw.do")
+    @RequestMapping(value = "/findPw")
     public ModelAndView findPw(CommandMap commandMap) throws Exception {
-        ModelAndView mv = new ModelAndView("login/findPw");
+        ModelAndView mv = new ModelAndView("login/pw_find");
 
         return mv;
     }

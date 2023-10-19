@@ -19,7 +19,7 @@
   <hr>
   <ul class="nav nav-pills flex-column mb-auto">
     <li class="nav-item">
-      <a href="/my/myPage.do" class="nav-link link-dark" aria-current="page" >
+      <a href="/my/memberModify.do" class="nav-link link-dark" aria-current="page" >
         <svg class="bi pe-none me-2" width="16" height="16"></svg>
         개인정보
       </a>

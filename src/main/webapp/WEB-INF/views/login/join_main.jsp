@@ -12,6 +12,10 @@
             rel="stylesheet"
             integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
             crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://kit.fontawesome.com/20962f3e4b.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 </head>
 <body>
 <div id="wrapper">
@@ -149,12 +153,15 @@
         }
         if (!idChk) {
             alert("아이디 중복확인을 체크해주세요");
+            return false;
         }
         if (!emailChk) {
             alert("이메일 인증을 확인하세요");
+            return false;
         }
         if (!numberChk) {
             alert("인증코드를 확인하세요");
+            return false;
         }
         return true;
     }
@@ -186,14 +193,14 @@
 
             // AJAX를 사용하여 아이디 중복 확인 요청
             $.ajax({
-                url: "/join/idCheck.do",
+                url: "/selectIdCheck.do",
                 method: "post",
                 data: {
                     userId: id
                 },
                 success: function(result) {
                     var responseJson = JSON.parse(result);
-                    if (responseJson.isDuplicate) {
+                    if (responseJson) {
                         alert("중복된 아이디입니다.");
                     } else {
                         alert("사용 가능한 아이디입니다.");
@@ -217,14 +224,14 @@
         }
 
         $.ajax({
-            url: "/join/sendVerificationCode.do",
+            url: "/joinEmail.do",
             method: "post",
             data: {
                 email: userEmail
             },
             success: function(result) {
                 var responseJson = JSON.parse(result);
-                if (responseJson.isDuplicate) {
+                if (!responseJson) {
                     alert("이메일 전송 완료");
                     emailChk=true;
                 } else {
@@ -247,14 +254,14 @@
         }
 
         $.ajax({
-            url: "/join/verifyCode.do",
+            url: "/joinCode.do",
             method: "post",
             data: {
                 code: enteredCode
             },
             success: function(result) {
                 var responseJson = JSON.parse(result);
-                if (responseJson.isDuplicate) {
+                if (!responseJson) {
                     alert("인증번호가 일치하지 않습니다");
                 } else {
                     alert("인증번호가 일치합니다");

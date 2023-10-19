@@ -60,7 +60,7 @@
                 </c:if>
                 <c:if test="${ !sessionScope.rank }">
                     <button type="button" class="btn btn-outline-light me-2"
-                            onclick="location.href='/myPage.do'">My Page
+                            onclick="location.href='/my/memberModify.do'">My Page
                     </button>
                 </c:if>
                 <button type="button" class="btn btn-outline-light me-2"

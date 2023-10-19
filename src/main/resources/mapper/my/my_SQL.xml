@@ -3,7 +3,7 @@
 
 <mapper namespace="my">
     <!-- 로그인 한 회원의 정보 출력 (마이페이지 회원정보 수정) -->
-    <select id="memberModify" parameterType="hashmap" resultType="hashmap">
+    <select id="memberModify" parameterType="int" resultType="hashmap">
 		<![CDATA[
         SELECT MEMBER_NUM,
                MEMBER_ID,
@@ -17,7 +17,7 @@
                MEMBER_DELETE,
                MEMBER_VISITCOUNT
         FROM MEMBER
-        WHERE MEMBER_ID = #{MEMBER_ID}
+        WHERE MEMBER_NUM = #{MEMBER_NUM}
         ]]>
 	</select>
 
