@@ -3,6 +3,7 @@ package com.pickCom.admin;
 import com.pickCom.common.dao.AbstractDAO;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
 import java.util.Map;
 
 @Repository("adminDAO")
@@ -15,7 +16,7 @@ public class AdminDAO extends AbstractDAO {
     public void MemberUpdate(Map<String, Object> map) throws Exception {
         update("admin.updateUser", map);
     }
-    public void MemberList(Map<String, Object> map) throws Exception{
-        selectList("admin.user_list", map);
+    public List<Map<String,Object>> MemberList(Map<String, Object> map) throws Exception{
+        return (List<Map<String, Object>>)selectPagingList("admin.user_list", map);
     }
 }

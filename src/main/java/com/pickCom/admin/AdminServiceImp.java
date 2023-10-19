@@ -3,6 +3,7 @@ package com.pickCom.admin;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.List;
 import java.util.Map;
 
 @Service("adminService")
@@ -21,7 +22,7 @@ public class AdminServiceImp implements AdminService {
     }
 
     @Override
-    public void MemberList(Map<String, Object> map) throws Exception{
-        adminDAO.MemberList(map);
+    public List<Map<String, Object>> MemberList(Map<String, Object> map) throws Exception{
+        return adminDAO.MemberList(map);
     }
 }
