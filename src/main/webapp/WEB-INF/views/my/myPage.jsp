@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@ include file="/layout/myLayout.jsp"%>
+<%@ include file="../layout/myLayout.jsp"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -61,7 +61,7 @@
 					변경</button>
 			</div>
 			<div class="col">
-				<button type="button" data-bs-toggle="modal" data-bs-target="#modal" class="btn btn-danger w-100" 
+				<button type="button" data-bs-toggle="modal" data-bs-target="#modal" class="btn btn-danger w-100"
 					data-bs-toggle="modal">회원 탈퇴</button>
 			</div>
 		</div>

@@ -9,6 +9,11 @@ import java.util.Map;
 
 @Repository("myDAO")
 public class MyDAO extends AbstractDAO {
+    // 회원 정보 가져오기
+    public Map<String, Object> memberModify(int id) throws Exception{
+        return (Map<String, Object>)selectOne("my.memberModify", id);
+    }
+
     // 닉네임 변경
     public void nickNameChange(Map<String, Object> map) throws Exception{
         update("my.nickNameChange", map);

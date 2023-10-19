@@ -20,10 +20,6 @@
         <div class="position-absolute top-50 start-50 translate-middle h-75 d-inline-block">
             <nav>
                 <h1>로그인</h1>
-                <p>
-                    HOME >
-                    <strong>로그인</strong>
-                </p>
             </nav>
             <form action="/loginAction.do" method="post" id="frm" onsubmit="return validateForm(this);">
                 <table border="0">
@@ -44,11 +40,11 @@
                 </table>
                 <button type="submit" class="btn btn-secondary" name="memberLogin" id="login">로그인</button>
                 <span>
-            <label>
+            <%--<label>
               <input type="checkbox" name="auto">자동 로그인
-            </label>
-            <a href="#">아이디찾기</a>
-            <a href="#">비밀번호찾기</a>
+            </label>--%>
+            <a href="/findId">아이디찾기</a>
+            <a href="/findPw">비밀번호찾기</a>
             <a href="/joinTerms">회원가입</a>
           </span>
             </form>
