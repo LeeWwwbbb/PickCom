@@ -18,6 +18,8 @@ import java.util.Map;
 @Controller
 public class AdminController{
     @Resource(name = "adminService")
+
+    @Autowired
     private AdminService adminService;
 
     @RequestMapping(value = "/usermanage")
@@ -50,18 +52,18 @@ public class AdminController{
         map.put("start", start);
         map.put("end", end);
 
-        List<MemberDTO> userLists = dao.selectListUser(map);
+        List<Map<String, Object>> userLists = dao.MemberList(map);
 
-        String pagingImg = BoardPage.pagingStr(totalCount, pageSize, blockPage, pageNum, "/admin/userList");
-        map.put("pagingImg", pagingImg);
-        map.put("totalCount", totalCount);
+        //String pagingImg = BoardPage.pagingStr(totalCount, pageSize, blockPage, pageNum, "/admin/userList");
+        //map.put("pagingImg", pagingImg);
+        //map.put("totalCount", totalCount);
         map.put("pageSize", pageSize);
         map.put("pageNum", pageNum);
 
         model.addAttribute("userLists", userLists);
         model.addAttribute("map", map);
 
-        return "admin/userManager";
+        return "userList";
 
     }
 }

@@ -182,6 +182,22 @@
         FROM member
         ]]>
     </select>
+    <select id="selectListUser" resultType="MemberDTO" parameterType="map">
+        SELECT * FROM (
+        SELECT Tb.*, @rownum := @rownum + 1 AS rNum FROM (
+        SELECT * FROM member
+        <where>
+            <if test="map.searchWord != null">
+                AND ${map.searchField} LIKE '%' || #{map.searchWord} || '%'
+            </if>
+            <if test="map.memberRank != null">
+                AND member_rank = #{map.memberRank}
+            </if>
+        </where>
+        ) Tb, (SELECT @rownum := 0) R
+        ) AS result
+        WHERE rNum BETWEEN #{start} AND #{end}
+    </select>
     <insert id="change_detail_insert" parameterType="hashmap"> <!--  -->
         <![CDATA[
 			insert into order_detail ( order_detail_no, order_no, goods_no, goods_att_no, order_detail_price,
