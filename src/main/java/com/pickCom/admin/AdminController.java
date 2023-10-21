@@ -29,12 +29,10 @@ public class AdminController{
         return mv;
     }
 
-    @RequestMapping("/userList")
     public String userList(Model model,
                            @RequestParam(value = "searchField", required = false) String searchField,
                            @RequestParam(value = "searchWord", required = false) String searchWord,
                            @RequestParam(value = "pageNum", defaultValue = "1") int pageNum) {
-
         AdminDAO dao = new AdminDAO();
         Map<String, Object> map = new HashMap<>();
 
@@ -43,7 +41,7 @@ public class AdminController{
             map.put("searchWord", searchWord);
         }
 
-        int totalCount = dao.selectCount(map);
+        //int totalCount = dao.selectCount(map);
         int pageSize = Integer.parseInt("YOUR_PAGE_SIZE"); // 페이지 크기 설정
         int blockPage = Integer.parseInt("YOUR_BLOCK_SIZE"); // 페이지 블록 크기 설정
 
@@ -52,7 +50,16 @@ public class AdminController{
         map.put("start", start);
         map.put("end", end);
 
-        List<Map<String, Object>> userLists = dao.MemberList(map);
+        List<Map<String, Object>> userLists;
+
+        try {
+            userLists = adminService.MemberList(map);
+        } catch (Exception e) {
+            // 예외 처리를 수행하세요.
+            e.printStackTrace();
+            // 예외 처리 후 리턴값을 설정할 수 있습니다.
+            return "errorPage"; // 혹은 다른 오류 페이지로 리다이렉트
+        }
 
         //String pagingImg = BoardPage.pagingStr(totalCount, pageSize, blockPage, pageNum, "/admin/userList");
         //map.put("pagingImg", pagingImg);
@@ -64,6 +71,6 @@ public class AdminController{
         model.addAttribute("map", map);
 
         return "userList";
-
     }
+
 }
