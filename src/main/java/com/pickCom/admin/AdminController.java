@@ -33,7 +33,6 @@ public class AdminController{
                            @RequestParam(value = "searchField", required = false) String searchField,
                            @RequestParam(value = "searchWord", required = false) String searchWord,
                            @RequestParam(value = "pageNum", defaultValue = "1") int pageNum) {
-        AdminDAO dao = new AdminDAO();
         Map<String, Object> map = new HashMap<>();
 
         if (searchWord != null) {
@@ -41,7 +40,12 @@ public class AdminController{
             map.put("searchWord", searchWord);
         }
 
-        //int totalCount = dao.selectCount(map);
+        int totalCount = 0;
+        try {
+            totalCount = adminService.MemberCount(map);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         int pageSize = Integer.parseInt("YOUR_PAGE_SIZE"); // 페이지 크기 설정
         int blockPage = Integer.parseInt("YOUR_BLOCK_SIZE"); // 페이지 블록 크기 설정
 
@@ -50,20 +54,17 @@ public class AdminController{
         map.put("start", start);
         map.put("end", end);
 
-        List<Map<String, Object>> userLists;
+        List<Map<String, Object>> userLists = null;
 
         try {
             userLists = adminService.MemberList(map);
         } catch (Exception e) {
-            // 예외 처리를 수행하세요.
             e.printStackTrace();
-            // 예외 처리 후 리턴값을 설정할 수 있습니다.
-            return "errorPage"; // 혹은 다른 오류 페이지로 리다이렉트
         }
 
-        //String pagingImg = BoardPage.pagingStr(totalCount, pageSize, blockPage, pageNum, "/admin/userList");
-        //map.put("pagingImg", pagingImg);
-        //map.put("totalCount", totalCount);
+        String pagingImg = BoardPage.pagingStr(totalCount, pageSize, blockPage, pageNum, "/admin/userList");
+        map.put("pagingImg", pagingImg);
+        map.put("totalCount", totalCount);
         map.put("pageSize", pageSize);
         map.put("pageNum", pageNum);
 

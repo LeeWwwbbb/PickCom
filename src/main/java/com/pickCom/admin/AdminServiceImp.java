@@ -25,4 +25,9 @@ public class AdminServiceImp implements AdminService {
     public List<Map<String, Object>> MemberList(Map<String, Object> map) throws Exception{
         return adminDAO.MemberList(map);
     }
+
+    @Override
+    public int MemberCount(Map<String, Object> map) throws Exception {
+        return adminDAO.MemberCount(map);
+    }
 }
