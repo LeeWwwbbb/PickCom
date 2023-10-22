@@ -16,7 +16,7 @@ import java.util.Random;
 
 @Controller
 public class JoinController {
-    @Resource(name = "joinService")
+    @Resource(name = "joinServiceImp")
     private JoinService joinService;
 
     // 회원가입 약관

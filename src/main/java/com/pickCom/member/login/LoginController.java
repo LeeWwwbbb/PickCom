@@ -13,7 +13,7 @@ import java.util.Map;
 
 @Controller
 public class LoginController {
-    @Resource(name = "loginService")
+    @Resource(name = "loginServiceImp")
     private LoginService loginService;
 
     @RequestMapping(value = "/login")
@@ -24,7 +24,7 @@ public class LoginController {
     }
 
     // 로그인 이후 메인페이지 이동
-    @RequestMapping(value = "/loginAction.do", method = RequestMethod.POST)
+    @RequestMapping(value = "/loginAction.do")
     public ModelAndView loginAction(CommandMap commandMap, HttpServletRequest request) throws Exception {
         ModelAndView mv = new ModelAndView();
         HttpSession session = request.getSession();
@@ -56,16 +56,23 @@ public class LoginController {
         return mv;
     }
 
-    // 로그아웃
-    @RequestMapping(value = "/logout.do", method = RequestMethod.GET)
-    public ModelAndView logout(CommandMap commandMap, HttpServletRequest request) throws Exception {
-        ModelAndView mv = new ModelAndView("redirect:/");
+    @RequestMapping(value = "/logout.do")
+    public ModelAndView logout(HttpServletRequest request) throws Exception {
+        ModelAndView mv = new ModelAndView();
         HttpSession session = request.getSession(false);
-        if (session != null) session.invalidate();
 
-        /*String url = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort()
-                + request.getContextPath() + "/";
-        map.put("URL", url);*/
+        if (session != null) {
+            try {
+                session.invalidate();
+                mv.addObject("logout", "로그아웃 되었습니다.");
+            } catch (IllegalStateException e) {
+                mv.addObject("logout", "세션이 이미 종료되었습니다.");
+            }
+        } else {
+            mv.addObject("logout", "로그아웃 되었습니다.");
+        }
+
+        mv = new ModelAndView("redirect:/");
         return mv;
     }
 
@@ -107,7 +114,7 @@ public class LoginController {
     }
 
     // 비밀번호 초기화
-    @RequestMapping(value = "/findPwAction.do", method = RequestMethod.POST)
+    @RequestMapping(value = "/findPwAction.do")
     public String sendMailPassword(HttpSession session, CommandMap commandMap, RedirectAttributes ra) throws Exception {
         /*String email = (String) commandMap.get("MEMBER_EMAIL");
         String user = loginService.selectFindPw(commandMap.getMap());

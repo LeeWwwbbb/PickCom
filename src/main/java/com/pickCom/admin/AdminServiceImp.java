@@ -6,7 +6,7 @@ import javax.annotation.Resource;
 import java.util.List;
 import java.util.Map;
 
-@Service("adminService")
+@Service("adminServiceImp")
 public class AdminServiceImp implements AdminService {
     @Resource(name = "adminDAO")
     private AdminDAO adminDAO;

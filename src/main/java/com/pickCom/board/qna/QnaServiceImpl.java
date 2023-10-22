@@ -8,7 +8,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-@Service("qnaService")
+@Service("qnaServiceImp")
 public class QnaServiceImpl implements QnaService{
 
 	@Autowired

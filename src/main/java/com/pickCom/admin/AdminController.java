@@ -17,7 +17,7 @@ import java.util.Map;
 
 @Controller
 public class AdminController{
-    @Resource(name = "adminService")
+    @Resource(name = "adminServiceImp")
     private AdminService adminService;
 
     @RequestMapping(value = "/usermanage")

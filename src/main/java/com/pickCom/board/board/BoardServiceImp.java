@@ -8,7 +8,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-@Service("boardService")
+@Service("boardServiceImp")
 public class BoardServiceImp implements BoardService{
     @Resource(name = "boardDAO")
     private BoardDAO boardDAO;

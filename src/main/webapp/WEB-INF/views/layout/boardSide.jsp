@@ -19,31 +19,31 @@
   <hr>
   <ul class="nav nav-pills flex-column mb-auto">
     <li class="nav-item">
-      <a href="/../board/cateList.do?cate=공지" class="nav-link link-dark" aria-current="page" onclick="changeActiveClass(this)">
+      <a href="/board/notice" class="nav-link link-dark" aria-current="page" onclick="changeActiveClass(this)">
         <svg class="bi pe-none me-2" width="16" height="16"></svg>
         공지사항
       </a>
     </li>
     <li>
-      <a href="/../board/cateList.do?cate=자유" class="nav-link link-dark" onclick="changeActiveClass(this)">
+      <a href="/board/free" class="nav-link link-dark" onclick="changeActiveClass(this)">
         <svg class="bi pe-none me-2" width="16" height="16"></svg>
         자유 게시판
       </a>
     </li>
     <li>
-      <a href="/../board/cateList.do?cate=리뷰" class="nav-link link-dark" onclick="changeActiveClass(this)">
+      <a href="/board/review" class="nav-link link-dark" onclick="changeActiveClass(this)">
         <svg class="bi pe-none me-2" width="16" height="16"></svg>
         리뷰 게시판
       </a>
     </li>
     <li>
-      <a href="/../board/cateList.do?cate=사진" class="nav-link link-dark" onclick="changeActiveClass(this)">
+      <a href="/board/image" class="nav-link link-dark" onclick="changeActiveClass(this)">
         <svg class="bi pe-none me-2" width="16" height="16"></svg>
         사진 게시판
       </a>
     </li>
     <li>
-      <a href="/../board/cateList.do?cate=질문" class="nav-link link-dark" onclick="changeActiveClass(this)">
+      <a href="/board/question" class="nav-link link-dark" onclick="changeActiveClass(this)">
         <svg class="bi pe-none me-2" width="16" height="16"></svg>
        질문 게시판
       </a>

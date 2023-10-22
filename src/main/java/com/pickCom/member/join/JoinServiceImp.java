@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 import javax.annotation.Resource;
 import java.util.Map;
 
-@Service("joinService")
+@Service("joinServiceImp")
 public class JoinServiceImp implements JoinService {
     @Resource(name = "joinDAO")
     private JoinDAO joinDAO;

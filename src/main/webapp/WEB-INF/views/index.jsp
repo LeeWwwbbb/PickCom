@@ -136,7 +136,7 @@
     <div class="nav-scroller py-1 mb-3 border-bottom">
         <nav class="nav nav-underline justify-content-between">
             <a class="nav-item nav-link link-body-emphasis" href="#">뉴스</a>
-            <a class="nav-item nav-link link-body-emphasis" href="#">게시판</a>
+            <a class="nav-item nav-link link-body-emphasis" href="/board/free">게시판</a>
             <a class="nav-item nav-link link-body-emphasis" href="#">견적추천</a>
             <a class="nav-item nav-link link-body-emphasis" href="/usermanage">관리자페이지(테스트)</a>
         </nav>

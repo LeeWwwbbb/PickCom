@@ -14,7 +14,7 @@ import java.util.Map;
 
 @Controller
 public class MyController {
-    @Resource(name = "myService")
+    @Resource(name = "myServiceImp")
     private MyService myService;
 
     /*// 마이페이지 메인

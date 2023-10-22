@@ -5,17 +5,13 @@
     <select id="selectBoardList" parameterType="hashmap" resultType="hashmap">
         <include refid="common.pagingPre"/>
         SELECT
-        ROW_NUMBER() over (ORDER BY board_num DESC) rnum,
-        board_num,
-        board_title,
-        board_cate,
-        TO_CHAR(board_createdDate, 'YYYY.MM.DD') AS board_date,
-        member.member_num,
-        member.member_name
-        FROM board
-        INNER JOIN member ON board.member_num = member.member_num
-        WHERE board.board_cate = #{cate}
-        <include refid="common.pagingPre"/>
+        ROW_NUMBER() over (ORDER BY b.board_num DESC) rnum,
+        TO_CHAR(b.board_createdDate, 'YYYY.MM.DD') AS board_createDate,
+        b.*, m.member_name, COUNT(l.like_num) AS like_count FROM board b
+        LEFT JOIN member m ON b.member_num = m.member_num
+        LEFT JOIN `like` l ON b.board_num = l.board_num
+        WHERE b.board_cate = #{cate}
+        <include refid="common.pagingPost"/>
     </select>
 
     <!-- 글 검색 -->
@@ -56,9 +52,9 @@
     <insert id="insertBoard" parameterType="hashmap">
         <![CDATA[
         INSERT INTO BOARD
-        (MEMBER_NUM,
-         BOARD_TITLE,
-         BOARD_CONTENT,
+        (member_num,
+         board_title,
+         board_content,
          board_cate)
         VALUES (#{member_num},
                 #{board_title},

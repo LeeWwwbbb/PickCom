@@ -20,7 +20,7 @@
 		class="position-absolute top-50 start-50 translate-middle h-75 d-inline-block"
 		style="width: 1000px;">
 		<form name="writeFrm" method="post" enctype="multipart/form-data"
-			action="/../board/write.do" onsubmit="return validateForm(this);">
+			action="/board/insertBoard.do" onsubmit="return validateForm(this);">
 			<table class="table mb-4">
 				<colgroup>
 					<col width="15%" />

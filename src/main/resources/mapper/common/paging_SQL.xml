@@ -19,7 +19,7 @@
 		) AA
 			) AAA
 			WHERE
-			    AAA.RNUM BETWEEN #{START} AND #{END}
+			    AAA.RNUM BETWEEN #{start} AND #{end}
 		]]>
  	</sql>
 </mapper>
