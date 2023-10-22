@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="admin">
-    <select id="dash_count" parameterType="hashmap" resultType="hashmap"> <!-- adminMain대쉬보드 -->
+    <!--<select id="dash_count" parameterType="hashmap" resultType="hashmap"> &lt;!&ndash; adminMain대쉬보드 &ndash;&gt;
         <![CDATA[
 			select
 			(select count(member_no) from member) m_cnt,
@@ -19,7 +19,7 @@
 		]]>
     </select>
 
-    <select id="order_admin_a" parameterType="hashmap" resultType="hashmap"> <!-- 주문현황 보기 -->
+    <select id="order_admin_a" parameterType="hashmap" resultType="hashmap"> &lt;!&ndash; 주문현황 보기 &ndash;&gt;
         <![CDATA[
 			select l.order_date, d.order_no, m.member_no, m.member_id, m.member_name, g.goods_name,
   			      l.order_total_order_price, l.order_total_pay_price, TO_CHAR(l.order_date, 'YYYY-MM-DD HH24:MI:SS') order_date,
@@ -39,7 +39,7 @@
 		]]>
     </select>
 
-    <update id="order_state" parameterType="hashmap" > <!-- 주문상태 변경 -->
+    <update id="order_state" parameterType="hashmap" > &lt;!&ndash; 주문상태 변경 &ndash;&gt;
         <![CDATA[
 			UPDATE order_list
 
@@ -49,7 +49,7 @@
 		]]>
     </update>
 
-    <update id="order_state_ex" parameterType="hashmap" > <!-- 주문상태.배송 변경 -->
+    <update id="order_state_ex" parameterType="hashmap" > &lt;!&ndash; 주문상태.배송 변경 &ndash;&gt;
         <![CDATA[
 			UPDATE order_list
 
@@ -61,7 +61,7 @@
 		]]>
     </update>
 
-    <select id="order_detail" parameterType="hashmap" resultType="hashmap"> <!-- 주문list 상세보기 -->
+    <select id="order_detail" parameterType="hashmap" resultType="hashmap"> &lt;!&ndash; 주문list 상세보기 &ndash;&gt;
         <![CDATA[
 			select m.member_name, m.member_phone, m.member_email,
 	        l.order_name, l.order_zipcode, l.order_addr1, l.order_addr2, l.order_phone,
@@ -75,7 +75,7 @@
 		]]>
     </select>
 
-    <select id="order_detail_sub" parameterType="hashmap" resultType="hashmap"> <!-- 주문detail 상세보기 -->
+    <select id="order_detail_sub" parameterType="hashmap" resultType="hashmap"> &lt;!&ndash; 주문detail 상세보기 &ndash;&gt;
         <![CDATA[
 			select g.goods_no, g.goods_name, g.GOODS_THUMBNAIL, d.order_detail_color, d.order_detail_size, d.order_detail_amount,
 	        d.order_detail_price, d.coupon_discount, d.order_discount_apply
@@ -87,7 +87,7 @@
 		]]>
     </select>
 
-    <select id="as_admin_list" parameterType="hashmap" resultType="hashmap"> <!-- 주문detail 상세보기 -->
+    <select id="as_admin_list" parameterType="hashmap" resultType="hashmap"> &lt;!&ndash; 주문detail 상세보기 &ndash;&gt;
         <![CDATA[
 			select l.as_no, l.as_gubun, l.member_no, l.as_title, l.as_content, l.order_no, l.order_detail_no,
 	        l.as_state, l.order_state, TO_CHAR(l.as_sdate, 'YYYY-MM-DD HH24:MI:SS') as_sdate, TO_CHAR(l.as_edate, 'YYYY-MM-DD HH24:MI:SS') as_edate,
@@ -102,18 +102,18 @@
 		]]>
     </select>
 
-    <update id="as_cancle_a" parameterType="hashmap" > <!-- // as요청취소 - as_list state=3 edate갱싱  -->
+    <update id="as_cancle_a" parameterType="hashmap" > &lt;!&ndash; // as요청취소 - as_list state=3 edate갱싱  &ndash;&gt;
         <![CDATA[
 			UPDATE as_list
 			SET
 			as_state = 3,
-			as_title = ' ---- 요청내용 확인중 취소처리---- ',
+			as_title = ' &#45;&#45;&#45;&#45; 요청내용 확인중 취소처리&#45;&#45;&#45;&#45; ',
 			as_edate = TO_DATE(sysdate, 'YYYY-MM-DD HH24:MI:SS')
 			WHERE as_no = ${as_no}
 		]]>
     </update>
 
-    <update id="order_list_cancle" parameterType="hashmap" > <!-- as요청취소 - order_list 원상복구  -->
+    <update id="order_list_cancle" parameterType="hashmap" > &lt;!&ndash; as요청취소 - order_list 원상복구  &ndash;&gt;
         <![CDATA[
 			UPDATE order_list
 			SET
@@ -122,14 +122,14 @@
 		]]>
     </update>
 
-    <update id="as_ok_state" parameterType="hashmap" > <!-- 신규 as요청확인(AS_LIST state 확인중으로 변경)  -->
+    <update id="as_ok_state" parameterType="hashmap" > &lt;!&ndash; 신규 as요청확인(AS_LIST state 확인중으로 변경)  &ndash;&gt;
         <![CDATA[
 			UPDATE as_list
 			SET as_state = ${state_num}
 			WHERE as_no = ${as_no}
 		]]>
     </update>
-    <update id="as_ok_orderState" parameterType="hashmap" > <!-- 신규 as요청확인(Order_LIST STATE변경)  -->
+    <update id="as_ok_orderState" parameterType="hashmap" > &lt;!&ndash; 신규 as요청확인(Order_LIST STATE변경)  &ndash;&gt;
         <![CDATA[
 			UPDATE order_list
 			SET order_state = ${gubun_num}
@@ -137,8 +137,8 @@
 		]]>
     </update>
 
-    <!-- 상품교환 -->
-    <select id="change_form_a" parameterType="hashmap" resultType="hashmap"> <!-- AS_list에서 정보 가져옴 -->
+    &lt;!&ndash; 상품교환 &ndash;&gt;
+    <select id="change_form_a" parameterType="hashmap" resultType="hashmap"> &lt;!&ndash; AS_list에서 정보 가져옴 &ndash;&gt;
         <![CDATA[
 			select l.as_no, l.as_gubun, l.member_no, l.as_title, l.as_content, l.order_no, l.order_detail_no,
 	        TO_CHAR(l.as_sdate, 'YYYY-MM-DD HH24:MI:SS') as_sdate, d.order_detail_price, l.order_state,
@@ -152,7 +152,7 @@
 	        and as_no = ${as_no }
 		]]>
     </select>
-    <select id="change_form_b" parameterType="hashmap" resultType="hashmap"> <!-- 교환요청한 상품속성 가져옴 -->
+    <select id="change_form_b" parameterType="hashmap" resultType="hashmap"> &lt;!&ndash; 교환요청한 상품속성 가져옴 &ndash;&gt;
         <![CDATA[
 			select goods_att_no, goods_att_size, goods_att_color, goods_att_amount
 
@@ -160,29 +160,29 @@
 
 	        where goods_no = ${goods_no }
 		]]>
-    </select>
+    </select>-->
     <!-- 유저 삭제 -->
-    <delete id="deleteUser" parameterType="string">
+    <delete id="deleteUser" parameterType="hashmap">
     <![CDATA[
         DELETE FROM member
-        WHERE member_no = #{user_id}
+        WHERE member_num = #{user_id}
         ]]>
     </delete>
     <!-- 유저정보 업데이트 -->
-    <update id="updateUser">
+    <update id="updateUser" parameterType="hashmap">
         <![CDATA[
         UPDATE member
         SET member_name=#{name}
-        WHERE member_no=#{num}
+        WHERE member_num=#{num}
         ]]>
     </update>
     <select id="user_list" parameterType="hashmap">
-        <![CDATA[
+        <include refid="common.pagingPre"/>
         SELECT member_num, member_id, member_name, member_nickName, member_email, member_regDate
         FROM member
-        ]]>
+        <include refid="common.pagingPre"/>
     </select>
-    <select id="selectListUser" resultType="MemberDTO" parameterType="map">
+    <!--<select id="selectListUser" resultType="MemberDTO" parameterType="map">
         SELECT * FROM (
         SELECT Tb.*, @rownum := @rownum + 1 AS rNum FROM (
         SELECT * FROM member
@@ -198,7 +198,7 @@
         ) AS result
         WHERE rNum BETWEEN #{start} AND #{end}
     </select>
-    <insert id="change_detail_insert" parameterType="hashmap"> <!--  -->
+    <insert id="change_detail_insert" parameterType="hashmap"> &lt;!&ndash;  &ndash;&gt;
         <![CDATA[
 			insert into order_detail ( order_detail_no, order_no, goods_no, goods_att_no, order_detail_price,
 			order_detail_color, order_detail_size, order_detail_amount, coupon_no, coupon_discount,
@@ -208,28 +208,28 @@
 			  #{order_detail_color}, #{order_detail_size}, ${order_detail_amount}, 0, 0, ${order_discount_apply}, ${order_detail_save_point}, '10')
 		]]>
     </insert>
-    <update id="change_detail_state" parameterType="hashmap" > <!--   -->
+    <update id="change_detail_state" parameterType="hashmap" > &lt;!&ndash;   &ndash;&gt;
         <![CDATA[
 			UPDATE order_detail
 			SET order_detail_state = '20'
 			WHERE order_detail_no = ${order_detail_no}
 		]]>
     </update>
-    <update id="change_goods_att_plus" parameterType="hashmap" > <!--   -->
+    <update id="change_goods_att_plus" parameterType="hashmap" > &lt;!&ndash;   &ndash;&gt;
         <![CDATA[
 			UPDATE goods_attribute
 			SET goods_att_amount = goods_att_amount + ${order_detail_amount}
 			WHERE goods_att_no = ${old_goods_att_no}
 		]]>
     </update>
-    <update id="change_goods_att_minus" parameterType="hashmap" > <!--   -->
+    <update id="change_goods_att_minus" parameterType="hashmap" > &lt;!&ndash;   &ndash;&gt;
         <![CDATA[
 			UPDATE goods_attribute
 			SET goods_att_amount = goods_att_amount - ${order_detail_amount}
 			WHERE goods_att_no = ${new_goods_att_no}
 		]]>
     </update>
-    <update id="as_final_state" parameterType="hashmap" > <!-- )  -->
+    <update id="as_final_state" parameterType="hashmap" > &lt;!&ndash; )  &ndash;&gt;
         <![CDATA[
 			UPDATE as_list
 			SET
@@ -238,14 +238,14 @@
 			WHERE as_no = ${as_no}
 		]]>
     </update>
-    <update id="change_final_orderState" parameterType="hashmap" > <!--   -->
+    <update id="change_final_orderState" parameterType="hashmap" > &lt;!&ndash;   &ndash;&gt;
         <![CDATA[
 			UPDATE order_list
 			SET order_state = '2'
 			WHERE order_no = ${order_no}
 		]]>
     </update>
-    <update id="order_list_chagam" parameterType="hashmap" > <!--   -->
+    <update id="order_list_chagam" parameterType="hashmap" > &lt;!&ndash;   &ndash;&gt;
         <![CDATA[
 			UPDATE order_list
 			SET
@@ -254,7 +254,7 @@
 			WHERE order_no = ${order_no}
 		]]>
     </update>
-    <insert id="point_chagam" parameterType="hashmap"> <!--  -->
+    <insert id="point_chagam" parameterType="hashmap"> &lt;!&ndash;  &ndash;&gt;
         <![CDATA[
 			INSERT INTO POINT (POINT_NO, MEMBER_NO, POINT_VAL, POINT_USE_DATE, POINT_TOTAL)
 			VALUES
@@ -273,7 +273,7 @@
         where rownum = 1
         ]]>
 	</select>
-    <update id="cashback_final_orderState" parameterType="hashmap" > <!--   -->
+    <update id="cashback_final_orderState" parameterType="hashmap" > &lt;!&ndash;   &ndash;&gt;
         <![CDATA[
 			UPDATE order_list
 			SET order_state = ${order_state}
@@ -339,5 +339,5 @@
         )AAA
         WHERE
         AAA.RNUM BETWEEN #{START} AND #{END}
-    </select>
+    </select>-->
 </mapper>

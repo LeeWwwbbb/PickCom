@@ -18,8 +18,6 @@ import java.util.Map;
 @Controller
 public class AdminController{
     @Resource(name = "adminService")
-
-    @Autowired
     private AdminService adminService;
 
     @RequestMapping(value = "/usermanage")
@@ -29,6 +27,7 @@ public class AdminController{
         return mv;
     }
 
+    @RequestMapping(value = "/userList.do")
     public String userList(Model model,
                            @RequestParam(value = "searchField", required = false) String searchField,
                            @RequestParam(value = "searchWord", required = false) String searchWord,
@@ -50,7 +49,7 @@ public class AdminController{
         map.put("start", start);
         map.put("end", end);
 
-        List<Map<String, Object>> userLists;
+        List<Map<String, Object>> userLists = null;
 
         try {
             userLists = adminService.MemberList(map);
@@ -58,7 +57,7 @@ public class AdminController{
             // 예외 처리를 수행하세요.
             e.printStackTrace();
             // 예외 처리 후 리턴값을 설정할 수 있습니다.
-            return "errorPage"; // 혹은 다른 오류 페이지로 리다이렉트
+            /*return "errorPage"; // 혹은 다른 오류 페이지로 리다이렉트*/
         }
 
         //String pagingImg = BoardPage.pagingStr(totalCount, pageSize, blockPage, pageNum, "/admin/userList");
@@ -70,7 +69,7 @@ public class AdminController{
         model.addAttribute("userLists", userLists);
         model.addAttribute("map", map);
 
-        return "userList";
+        return "admin/userManager";
     }
 
 }
