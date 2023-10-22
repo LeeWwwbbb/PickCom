@@ -59,11 +59,11 @@ public class AdminController{
             userLists = adminService.MemberList(map);
         } catch (Exception e) {
             e.printStackTrace();
-<<<<<<< HEAD
+/*<<<<<<< HEAD
             // 예외 처리 후 리턴값을 설정할 수 있습니다.
-            /*return "errorPage"; // 혹은 다른 오류 페이지로 리다이렉트*/
+            *//*return "errorPage"; // 혹은 다른 오류 페이지로 리다이렉트*//*
 =======
->>>>>>> b132815cdd390c71ea5605a4f4e6819ce779e18a
+>>>>>>> b132815cdd390c71ea5605a4f4e6819ce779e18a*/
         }
 
         String pagingImg = BoardPage.pagingStr(totalCount, pageSize, blockPage, pageNum, "/admin/userList");
