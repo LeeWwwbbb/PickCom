@@ -10,5 +10,7 @@ public interface AdminService {
     public void MemberDelete(Map<String, Object> map) throws Exception;
     // 유저 정보 업데이트
     public void MemberUpdate(Map<String, Object> map) throws Exception;
+
+    int MemberCount(Map<String, Object> map) throws Exception;
 }
 

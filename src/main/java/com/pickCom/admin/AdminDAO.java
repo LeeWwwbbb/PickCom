@@ -19,4 +19,8 @@ public class AdminDAO extends AbstractDAO {
     public List<Map<String,Object>> MemberList(Map<String, Object> map) throws Exception{
         return (List<Map<String, Object>>)selectPagingList("admin.user_list", map);
     }
+    public int MemberCount(Map<String, Object> map) throws Exception{
+        AbstractDAO sqlSession = null;
+        return (int) sqlSession.selectOne("admin.selectCount",map);
+    }
 }

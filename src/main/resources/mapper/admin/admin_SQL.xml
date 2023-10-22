@@ -198,7 +198,17 @@
         ) AS result
         WHERE rNum BETWEEN #{start} AND #{end}
     </select>
+<<<<<<< HEAD
     <insert id="change_detail_insert" parameterType="hashmap"> &lt;!&ndash;  &ndash;&gt;
+=======
+    <select id="selectCount" resultType="int" parameterType="java.util.Map">
+        SELECT COUNT(*) FROM member
+        <if test="searchWord != null and searchField != null">
+            WHERE ${searchField} LIKE '%' || #{searchWord} || '%'
+        </if>
+    </select>
+    <insert id="change_detail_insert" parameterType="hashmap"> <!--  -->
+>>>>>>> b132815cdd390c71ea5605a4f4e6819ce779e18a
         <![CDATA[
 			insert into order_detail ( order_detail_no, order_no, goods_no, goods_att_no, order_detail_price,
 			order_detail_color, order_detail_size, order_detail_amount, coupon_no, coupon_discount,
