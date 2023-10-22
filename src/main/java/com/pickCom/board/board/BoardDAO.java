@@ -13,6 +13,11 @@ public class BoardDAO extends AbstractDAO {
         return (List<Map<String, Object>>)selectPagingList("board.selectBoardList", map);
     }
 
+    // 리스트 테스트
+    public List<Map<String, Object>> boardList(Map<String, Object> map) throws Exception{
+        return selectList("board.boardList", map);
+    }
+
     // 글 상세
     Map<String, Object> openBoardDetail(Map<String, Object> map) throws Exception{
         return (Map<String, Object>) selectOne("board.oepnBoardDetail", map);

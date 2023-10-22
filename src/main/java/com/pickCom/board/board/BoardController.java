@@ -24,7 +24,8 @@ public class BoardController {
     @RequestMapping(value="/boardList")
     public ModelAndView boardList(CommandMap commandMap) throws Exception {
         ModelAndView mv = new ModelAndView("/board/List");
-
+        List<Map<String, Object>> list = boardService.boardList(commandMap.getMap());
+        System.out.println(list);
 
         return mv;
     }

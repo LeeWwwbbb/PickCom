@@ -28,7 +28,7 @@
         <table border="1" width="90%" class="table">
             <thead class="table-light">
             <tr align="center">
-                <th width="10%" scope="col">분류</th>
+                <th width="10%" scope="col">번호</th>
                 <th width="*" scope="col" align="left" style="text-align: left;">제목</th>
                 <th width="15%" scope="col">작성자</th>
                 <th width="15%" scope="col">작성일</th>
@@ -62,7 +62,7 @@
                 <c:otherwise>
                     <c:forEach items="${ boardList }" var="row" varStatus="loop">
                         <tr align="center">
-                            <td>${ map.totalCount - (((map.pageNum-1) * map.pageSize) + loop.index)}<input type="hidden"
+                            <td>${ loop.index + 1 }<input type="hidden"
                                                               value="${ map.totalCount - (((map.pageNum-1) * map.pageSize) + loop.index)}"/>
                             </td>
                             <td align="left"><a

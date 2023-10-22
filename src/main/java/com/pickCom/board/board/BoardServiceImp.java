@@ -19,6 +19,11 @@ public class BoardServiceImp implements BoardService{
         return boardDAO.selectBoardList(map);
     }
 
+    // 리스트 테스트
+    public List<Map<String, Object>> boardList(Map<String, Object> map) throws Exception{
+        return boardDAO.boardList(map);
+    }
+
     // 글 상세
     @Override
     public Map<String, Object> openBoardDetail(Map<String, Object> map) throws Exception{

@@ -8,6 +8,9 @@ public interface BoardService {
     // 리스트 출력
     List<Map<String, Object>> selectBoardList(Map<String, Object> map) throws Exception;
 
+    // 리스트 테스트
+    public List<Map<String, Object>> boardList(Map<String, Object> map) throws Exception;
+
     // 글 상세
     Map<String, Object> openBoardDetail(Map<String, Object> map) throws Exception;
 
