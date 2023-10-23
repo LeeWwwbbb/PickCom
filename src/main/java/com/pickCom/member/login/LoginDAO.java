@@ -8,7 +8,6 @@ import java.util.Map;
 
 @Repository("loginDAO")
 public class LoginDAO extends AbstractDAO {
-    private SqlSessionTemplate sqlSession;
     // 로그인
     public Map<String, Object> memberLogin(Map<String, Object> map) throws Exception{
         return (Map<String, Object>)selectOne("login.loginAction", map);

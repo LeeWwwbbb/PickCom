@@ -24,7 +24,7 @@ public class LoginController {
     }
 
     // 로그인 이후 메인페이지 이동
-    @RequestMapping(value = "/loginAction.do")
+    @RequestMapping(value = "/loginAction.do", method = RequestMethod.POST)
     public ModelAndView loginAction(CommandMap commandMap, HttpServletRequest request) throws Exception {
         ModelAndView mv = new ModelAndView();
         HttpSession session = request.getSession();
@@ -34,11 +34,11 @@ public class LoginController {
         System.out.println(chk);
 
         if (chk == null) {
-            mv.setViewName("login/loginForm");
+            mv.setViewName("/login/loginForm");
             mv.addObject("message", "해당 아이디 혹은 비밀번호가 일치하지 않습니다.");
         } else {
             if (chk.get("MEMBER_DELETE").equals(true)) {
-                mv.setViewName("login/loginForm");
+                mv.setViewName("/login/loginForm");
                 mv.addObject("message", "탈퇴한 회원 입니다.");
             } else {
                 if (chk.get("MEMBER_PASSWD").equals(commandMap.get("MEMBER_PASSWD"))) {

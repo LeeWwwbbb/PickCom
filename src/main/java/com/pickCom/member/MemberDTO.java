@@ -1,5 +1,7 @@
 package com.pickCom.member;
 
+import lombok.Data;
+
 public class MemberDTO {
     private int member_num;
     private String member_id;

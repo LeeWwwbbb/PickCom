@@ -20,7 +20,8 @@ public class BoardDAO extends AbstractDAO {
 
     // 글 상세
     Map<String, Object> openBoardDetail(Map<String, Object> map) throws Exception{
-        return (Map<String, Object>) selectOne("board.oepnBoardDetail", map);
+        update("board.updateVisitCount", map);
+        return (Map<String, Object>) selectOne("board.openBoardDetail", map);
     }
 
     // 글 검색

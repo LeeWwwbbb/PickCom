@@ -66,9 +66,9 @@
                                                               value="${ map.totalCount - (((map.pageNum-1) * map.pageSize) + loop.index)}"/>
                             </td>
                             <td align="left"><a
-                                    href="../board/view.do?idx=${ row.board_num }">${ row.board_title }</a>
+                                    href="/board/${ row.board_cate }/${ row.board_num }">${ row.board_title }</a>
                             </td>
-                            <td>${ row.member_name }</td>
+                            <td>${ row.member_nickName }</td>
                             <td>${ row.board_createDate }</td>
                             <td>${ row.board_visitCount }</td>
                             <td>${ row.like_count }</td>

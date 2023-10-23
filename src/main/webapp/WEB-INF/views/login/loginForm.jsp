@@ -24,17 +24,15 @@
             <form action="/loginAction.do" method="post" id="frm" onsubmit="return validateForm(this);">
                 <table border="0">
                     <tr>
-                        <td>아이디
+                        <td>아이디</td>
                         <td>
-                        <td>
-                            <input type="text" name="MEMBER_ID" id="MEMBER_ID" placeholder="아이디 입력">
+                            <input type="text" class="form-label" name="MEMBER_ID" id="MEMBER_ID" placeholder="아이디 입력">
                         </td>
                     </tr>
                     <tr>
-                        <td>비밀번호
+                        <td>비밀번호</td>
                         <td>
-                        <td>
-                            <input type="password" name="MEMBER_PASSWD" id="MEMBER_PASSWD" placeholder="비밀번호 입력">
+                            <input type="password" class="form-label" name="MEMBER_PASSWD" id="MEMBER_PASSWD" placeholder="비밀번호 입력">
                         </td>
                     </tr>
                 </table>
@@ -43,9 +41,9 @@
             <%--<label>
               <input type="checkbox" name="auto">자동 로그인
             </label>--%>
-            <a href="/findId">아이디찾기</a>
-            <a href="/findPw">비밀번호찾기</a>
-            <a href="/joinTerms">회원가입</a>
+            <a href="/findId" class="link-dark">아이디찾기</a>
+            <a href="/findPw" class="link-dark">비밀번호찾기</a>
+            <a href="/joinTerms" class="link-success">회원가입</a>
           </span>
             </form>
         </div>
@@ -55,9 +53,10 @@
     </div>
 </div>
 <script type="text/javascript">
-    if('${message}' != "") {
+    if ('${message}' != "") {
         alert('${message}');
     }
+
     function validateForm(form) {
         if (!form.MEMBER_ID.value) {
             alert("아이디를 입력하세요.");
