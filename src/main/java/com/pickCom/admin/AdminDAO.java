@@ -9,18 +9,22 @@ import java.util.Map;
 @Repository("adminDAO")
 public class AdminDAO extends AbstractDAO {
     // 유저 강제 탈퇴
-    public void MemberDelete(Map<String, Object> map) throws Exception{
-        delete("admin.deleteUser", map);
+    public int MemberDelete(String user) throws Exception{
+        return (int) delete("admin.deleteUser", user);
     }
     // 유저 정보 업데이트
     public void MemberUpdate(Map<String, Object> map) throws Exception {
         update("admin.updateUser", map);
     }
-    public List<Map<String,Object>> MemberList(Map<String, Object> map) throws Exception{
+    // 유저 리스트 갖고오기
+    public List<Map<String, Object>> MemberList(Map<String, Object> map) throws Exception{
+        return dashBoard("admin.user_list",map);
+    }
+    /*public List<Map<String,Object>> MemberList(Map<String, Object> map) throws Exception{
         return (List<Map<String, Object>>)selectPagingList("admin.user_list", map);
     }
-    public int MemberCount(Map<String, Object> map) throws Exception{
+    public List<Map<String, Object>> MemberCount(Map<String, Object> map) throws Exception{
         AbstractDAO sqlSession = null;
-        return (int) sqlSession.selectOne("admin.selectCount",map);
-    }
+        return dashBoard("admin.selectCount",map);
+    }*/
 }

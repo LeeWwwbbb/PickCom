@@ -33,30 +33,6 @@ public class AbstractDAO {
         return sqlSession.selectList(queryId, map);
     }
 
-    public List<Map<String,Object>> hitProductList(String queryId, Object params) {
-        printQueryId(queryId);
-        return sqlSession.selectList(queryId,params);
-    }
-
-    public List<Map<String,Object>> recommendedProductList(String queryId, Object params) {
-        printQueryId(queryId);
-        return sqlSession.selectList(queryId,params);
-    }
-
-    public List<Map<String,Object>> bestProductList(String queryId, Object params) {
-        printQueryId(queryId);
-        return sqlSession.selectList(queryId,params);
-    }
-
-    public List<Map<String,Object>> newProductList(String queryId, Object params) {
-        printQueryId(queryId);
-        return sqlSession.selectList(queryId,params);
-    }
-
-    public List<Map<String,Object>> saleProductList(String queryId, Object params) {
-        printQueryId(queryId);
-        return sqlSession.selectList(queryId,params);
-    }
 
     //장바구니 리스트
     public List<Map<String,Object>> selectList(String queryId, Object params) {
@@ -110,34 +86,6 @@ public class AbstractDAO {
         return sqlSession.selectList(queryId,params);
     }
 
-    public List<Map<String,Object>> order_admin_a(String queryId, Object params) { // 주문/배송-신규주문
-        printQueryId(queryId);
-        return sqlSession.selectList(queryId,params);
-    }
-
-    public List<Map<String,Object>> order_state(String queryId, Object params) { // 주문상태 변경
-        printQueryId(queryId);
-        return sqlSession.selectList(queryId,params);
-    }
-
-    public List<Map<String,Object>> order_state_ex(String queryId, Object params) { // 주문상태.배송 변경
-        printQueryId(queryId);
-        return sqlSession.selectList(queryId,params);
-    }
-
-    public List<Map<String,Object>> order_detail(String queryId, Object params) { // 주문/배송 상세보기
-        printQueryId(queryId);
-        return sqlSession.selectList(queryId,params);
-    }
-
-    public List<Map<String,Object>> order_detail_sub(String queryId, Object params) { // 주문/배송 상세보기 상품
-        printQueryId(queryId);
-        return sqlSession.selectList(queryId,params);
-    }
-    public List<Map<String,Object>> as_admin_list(String queryId, Object params) { // 교환.환불.AS - 정보가져옴
-        printQueryId(queryId);
-        return sqlSession.selectList(queryId,params);
-    }
     public void as_cancle_a(String queryId, Object params) { // as요청취소 - as_list state=3 edate갱싱
         printQueryId(queryId);
         sqlSession.update(queryId,params);

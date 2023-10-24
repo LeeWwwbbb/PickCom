@@ -12,8 +12,9 @@ public class AdminServiceImp implements AdminService {
     private AdminDAO adminDAO;
 
     @Override
-    public void MemberDelete(Map<String, Object> map) throws Exception {
-        adminDAO.MemberDelete(map);
+    public int MemberDelete(String user) throws Exception {
+        adminDAO.MemberDelete(user);
+        return 0;
     }
 
     @Override
@@ -24,10 +25,5 @@ public class AdminServiceImp implements AdminService {
     @Override
     public List<Map<String, Object>> MemberList(Map<String, Object> map) throws Exception{
         return adminDAO.MemberList(map);
-    }
-
-    @Override
-    public int MemberCount(Map<String, Object> map) throws Exception {
-        return adminDAO.MemberCount(map);
     }
 }

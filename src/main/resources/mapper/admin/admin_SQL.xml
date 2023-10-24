@@ -176,7 +176,7 @@
         WHERE member_num=#{num}
         ]]>
     </update>
-    <select id="user_list" parameterType="hashmap">
+    <select id="user_list" resultType="hashmap">
         <include refid="common.pagingPre"/>
         SELECT member_num, member_id, member_name, member_nickName, member_email, member_regDate
         FROM member

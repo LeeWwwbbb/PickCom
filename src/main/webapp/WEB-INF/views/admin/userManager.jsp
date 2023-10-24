@@ -82,11 +82,11 @@
 					<div class="col text-center">${ map.pagingImg }</div>
 				</div>
 			</div>
-			
+
 			<input type="hidden" name="idx" id="idx"/>
 
 			<!-- 사용자 컨트롤 -->
-			<form action="/admin/userManage.do" method="post">
+			<form action="/admin/userManage.do" method="get">
 				<div class="row">
 					<div class="col-2">
 						<select name="statDays" class="form-select">
@@ -141,27 +141,27 @@
 		<script>
 		var selectedMemberNo = null;
     $(document).ready(function() {
-        
+
         $("table").on("click", "td", function() {
             var memberNo = $(this).closest("tr").find("input[type='hidden']").val();
             selectedMemberNo = memberNo;
         });
-        
+
         $("#userManageForm").submit(function(event) {
             event.preventDefault();
-            
+
             if (selectedMemberNo !== null) {
                 $(this).append("<input type='hidden' name='num' value='" + selectedMemberNo + "'>");
                 this.submit();
             }
         });
     });
-    
+
     function setSelectedMemberNo(memberNo) {
 		document.getElementById("idx").value = memberNo;
 	}
-    
-/*     
+
+/*
     function updateMemberName(userNo, userName) {
         $.ajax({
             url: "/admin/memberUpdate.do",
@@ -183,7 +183,7 @@
             }
         });
     }
-    
+
     $(document).ready(function() {
     	var selectedMemberNo = null;
 

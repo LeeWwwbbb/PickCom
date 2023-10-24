@@ -1,9 +1,8 @@
 package com.pickCom.admin;
 
 import com.pickCom.common.common.CommandMap;
-import com.pickCom.member.MemberDTO;
-import com.pickCom.utils.BoardPage;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.pickCom.paging.PageVo;
+import lombok.SneakyThrows;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -31,7 +30,11 @@ public class AdminController{
     public String userList(Model model,
                            @RequestParam(value = "searchField", required = false) String searchField,
                            @RequestParam(value = "searchWord", required = false) String searchWord,
-                           @RequestParam(value = "pageNum", defaultValue = "1") int pageNum) {
+                           @RequestParam(defaultValue = "1") int page,
+                           @RequestParam(defaultValue = "5") int pageSize) {
+        PageVo pageVo = new PageVo(page, pageSize);
+
+        model.addAttribute("pagesize", pageSize);
         Map<String, Object> map = new HashMap<>();
 
         if (searchWord != null) {
@@ -39,17 +42,11 @@ public class AdminController{
             map.put("searchWord", searchWord);
         }
 
-        int totalCount = 0;
-        try {
-            totalCount = adminService.MemberCount(map);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        int pageSize = Integer.parseInt("YOUR_PAGE_SIZE"); // 페이지 크기 설정
-        int blockPage = Integer.parseInt("YOUR_BLOCK_SIZE"); // 페이지 블록 크기 설정
+        pageSize = Integer.parseInt("YOUR_PAGE_SIZE"); // 페이지 크기 설정
+        page = Integer.parseInt("YOUR_BLOCK_SIZE"); // 페이지 블록 크기 설정
 
-        int start = (pageNum - 1) * pageSize + 1;
-        int end = pageNum * pageSize;
+        int start = (page - 1) * pageSize + 1;
+        int end = page * pageSize;
         map.put("start", start);
         map.put("end", end);
 
@@ -66,16 +63,23 @@ public class AdminController{
 >>>>>>> b132815cdd390c71ea5605a4f4e6819ce779e18a*/
         }
 
-        String pagingImg = BoardPage.pagingStr(totalCount, pageSize, blockPage, pageNum, "/admin/userList");
-        map.put("pagingImg", pagingImg);
-        map.put("totalCount", totalCount);
         map.put("pageSize", pageSize);
-        map.put("pageNum", pageNum);
+        map.put("pageNum", page);
 
         model.addAttribute("userLists", userLists);
         model.addAttribute("map", map);
 
         return "admin/userManager";
+    }
+
+    @SneakyThrows
+    @RequestMapping(path="deleteUser")
+    public String deleteUser(String userid) {
+        int cnt = adminService.MemberDelete(userid);
+        if(cnt == 1 ) {
+            return "redirect:pagingUser";
+        }
+        return "redirect:userModify?userid=" + userid;
     }
 
 }
