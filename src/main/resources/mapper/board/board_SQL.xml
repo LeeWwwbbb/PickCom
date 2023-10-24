@@ -41,9 +41,10 @@
     <!-- 댓글 리스트 출력 -->
     <select id="selectCommentList" parameterType="hashmap" resultType="hashmap">
         <![CDATA[
-        SELECT c.*
+        SELECT c.*, m.member_nickName
         FROM comment c
-                 INNER JOIN board b ON c.board_num = b.board_num
+                 LEFT JOIN board b ON b.board_num = c.board_num
+                LEFT JOIN member m ON m.member_num = c.member_num
         WHERE b.board_num = #{board_num}
         ]]>
     </select>
@@ -73,7 +74,7 @@
          board_cate)
         VALUES (#{member_num},
                 #{board_title},
-                #{BOARD_CONTENT},
+                #{board_content},
                 #{board_cate})
         ]]>
     </insert>
@@ -98,13 +99,40 @@
         ]]>
     </delete>
 
+    <!-- 좋아요 확인 -->
+    <select id="likeCheck" parameterType="hashmap" resultType="int">
+        <![CDATA[
+        SELECT  COUNT(*) AS cnt
+        FROM `like`
+        WHERE board_num = #{board_num} AND member_num = #{member_num}
+        ]]>
+    </select>
+
+    <!-- 좋아요 등록 -->
+    <insert id="insertLike" parameterType="hashmap">
+        <![CDATA[
+        INSERT INTO `like` (board_num, member_num)
+        VALUES (#{board_num}, #{member_num})
+        ]]>
+    </insert>
+
+    <!-- 좋아요 삭제 -->
+    <delete id="deleteLike" parameterType="hashmap">
+        <![CDATA[
+        DELETE FROM `like`
+        WHERE board_num = #{board_num} AND member_num = #{member_num}
+        ]]>
+    </delete>
+
     <!-- 댓글 추가 -->
     <insert id="insertComment" parameterType="hashmap">
         <![CDATA[
         INSERT INTO comment
         (board_num,
+         member_num,
          comment_content)
         values (#{board_num},
+                #{member_num},
                 #{comment_content})
         ]]>
     </insert>

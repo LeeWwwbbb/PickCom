@@ -44,9 +44,29 @@ public class BoardDAO extends AbstractDAO {
         delete("board.deleteBoard", map);
     }
 
+    // 좋아요 확인
+    public int likeCheck(Map<String, Object> map) throws Exception{
+        return (int) selectOne("board.likeCheck", map);
+    }
+
+    // 좋아요 추가
+    public void insertLike(Map<String, Object> map) throws Exception{
+        insert("board.insertLike", map);
+    }
+
+    // 좋아요 삭제
+    public void deleteLike(Map<String, Object> map) throws Exception{
+        insert("board.deleteLike", map);
+    }
+
+    // 댓글 리스트
+    public List<Map<String, Object>> selectCommentList(Map<String, Object> map) throws Exception{
+        return selectList("board.selectCommentList", map);
+    }
+
     // 댓글 추가
     public void insertComment(Map<String, Object> map) throws Exception{
-        insert("board.insetComment", map);
+        insert("board.insertComment", map);
     }
 
     // 댓글 수정

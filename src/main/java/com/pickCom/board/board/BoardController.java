@@ -13,6 +13,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import java.util.List;
 import java.util.Map;
 
@@ -73,13 +74,18 @@ public class BoardController {
 
     // 게시글 열기
     @RequestMapping(value = "/board/{category}/{idx}")
-    public ModelAndView openBoardDetail(CommandMap commandMap, @PathVariable String category, @PathVariable int idx) throws Exception{
+    public ModelAndView openBoardDetail(CommandMap commandMap, HttpSession session, @PathVariable String category, @PathVariable int idx) throws Exception{
         ModelAndView mv = new ModelAndView("/board/View");
         commandMap.put("board_num", idx);
+        commandMap.put("member_num", session.getAttribute("num"));
         Map<String, Object> map = boardService.openBoardDetail(commandMap.getMap());
+        List<Map<String, Object>> list = boardService.selectCommentList(commandMap.getMap());
+        boolean like = boardService.likeCheck(commandMap.getMap());
         String cate = TranslateCategory.translateCategory(category);
         mv.addObject("cate", cate);
         mv.addObject("map", map.get("map"));
+        mv.addObject("commentList", list);
+        mv.addObject("like", like);
         return mv;
     }
 
@@ -96,19 +102,20 @@ public class BoardController {
     public ModelAndView insertBoard(CommandMap commandMap, HttpServletRequest request) throws Exception{
 
         boardService.insertBoard(commandMap.getMap(), request);
-        ModelAndView mv = new ModelAndView("redirect:/board/{category}/{idx}");
+        String cate =  (String)commandMap.get("board_cate");
+        ModelAndView mv = new ModelAndView("redirect:/board/"+cate);
 
         return mv;
     }
 
     // 글 수정 폼
-    @RequestMapping(value="/board/openBoardUpdate.do")
-    public ModelAndView openBoardUpdate(CommandMap commandMap) throws Exception{
+    @RequestMapping(value="/board/openBoardUpdate/{idx}")
+    public ModelAndView openBoardUpdate(CommandMap commandMap, @PathVariable int idx) throws Exception{
         ModelAndView mv = new ModelAndView("/board/Edit");
+        commandMap.put("board_num", idx);
 
-        Map<String,Object> map = boardService.selectBoardDetail(commandMap.getMap());
+        Map<String,Object> map = boardService.openBoardDetail(commandMap.getMap());
         mv.addObject("map", map.get("map"));
-        mv.addObject("list", map.get("list"));
 
         return mv;
     }
@@ -116,28 +123,46 @@ public class BoardController {
     // 글 수정
     @RequestMapping(value="/board/updateBoard.do")
     public ModelAndView updateBoard(CommandMap commandMap, HttpServletRequest request) throws Exception{
-        ModelAndView mv = new ModelAndView("redirect:/board/{category}/{idx}");
+        String cate = (String)commandMap.get("board_cate");
+        ModelAndView mv = new ModelAndView("redirect:/board/"+ cate + "/" + commandMap.get("board_num"));
 
         boardService.updateBoard(commandMap.getMap(), request);
-
-        mv.addObject("BOARD_NUM", commandMap.get("board_num"));
         return mv;
     }
 
     // 글 삭제
-    @RequestMapping(value="/board/deleteBoard.do")
-    public ModelAndView deleteBoard(CommandMap commandMap) throws Exception{
-        ModelAndView mv = new ModelAndView("redirect:/board/{category}");
+    @RequestMapping(value="/board/deleteBoard/{category}/{idx}")
+    public ModelAndView deleteBoard(CommandMap commandMap,  @PathVariable String category, @PathVariable int idx) throws Exception{
+        ModelAndView mv = new ModelAndView("redirect:/board/"+ category);
+        commandMap.put("board_num", idx);
 
         boardService.deleteBoard(commandMap.getMap());
 
         return mv;
     }
 
+    // 글 추천
+    @RequestMapping(value="/board/like/{category}/{idx}")
+    public ModelAndView likeController(CommandMap commandMap, HttpSession session, @PathVariable String category, @PathVariable int idx) throws Exception{
+        ModelAndView mv = new ModelAndView("redirect:/board/"+ category +"/" + idx);
+        commandMap.put("board_num", idx);
+        commandMap.put("member_num", session.getAttribute("num"));
+        boolean like = boardService.likeCheck(commandMap.getMap());
+
+        if (like)
+            boardService.deleteLike(commandMap.getMap());
+        else
+            boardService.insertLike(commandMap.getMap());
+
+
+        return mv;
+    }
+
     // 댓글 추가
-    @RequestMapping(value="/board/insertComment.do", method = RequestMethod.POST )
+    @RequestMapping(value="/board/insertComment.do")
     public ModelAndView insertComment(CommandMap commandMap, HttpServletRequest request) throws Exception{
-        ModelAndView mv = new ModelAndView("redirect:/board/{category}/{idx}");
+        String cate = (String)commandMap.get("board_cate");
+        ModelAndView mv = new ModelAndView("redirect:/board/"+ cate + "/" + commandMap.get("board_num"));
 
         boardService.insertComment(commandMap.getMap(), request);
 
@@ -149,7 +174,7 @@ public class BoardController {
     // 댓글 수정
     @RequestMapping(value="/board/updateComment.do")
     public ModelAndView updateComment(CommandMap commandMap, HttpServletRequest request) throws Exception{
-        ModelAndView mv = new ModelAndView("redirect:/board/{category}/{idx}"); // 수정해야함
+        ModelAndView mv = new ModelAndView("redirect:/board/{category}/{idx}");
 
         boardService.updateComment(commandMap.getMap(), request);
 
@@ -158,10 +183,11 @@ public class BoardController {
     }
 
     // 댓글 삭제
-    @RequestMapping(value="/board/deleteComment.do")
-    public ModelAndView deleteComment(CommandMap commandMap) throws Exception{
-        ModelAndView mv = new ModelAndView("redirect:/board/{category}/{idx}"); // 수정해야함
+    @RequestMapping(value="/board/deleteComment/{category}/{idx}/{num}")
+    public ModelAndView deleteComment(CommandMap commandMap, @PathVariable String category, @PathVariable int idx, @PathVariable int num) throws Exception{
+        ModelAndView mv = new ModelAndView("redirect:/board/"+ category +"/" + idx);
 
+        commandMap.put("comment_num", num);
         boardService.deleteComment(commandMap.getMap());
 
         return mv;

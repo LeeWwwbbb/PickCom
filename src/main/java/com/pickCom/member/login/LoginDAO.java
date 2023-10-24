@@ -20,7 +20,7 @@ public class LoginDAO extends AbstractDAO {
 
     // 아이디 찾기
     public Map<String, Object> findId(Map<String, Object> map) throws Exception{
-        return (Map<String, Object>)selectOne("login.selectFindId", map);
+        return (Map<String, Object>) selectOne("login.selectFindId", map);
     }
 
     // 비밀번호 찾기

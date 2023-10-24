@@ -10,8 +10,8 @@ import java.util.Map;
 @Repository("myDAO")
 public class MyDAO extends AbstractDAO {
     // 회원 정보 가져오기
-    public Map<String, Object> memberModify(int id) throws Exception{
-        return (Map<String, Object>)selectOne("my.memberModify", id);
+    public Map<String, Object> memberModify(Map<String, Object> map) throws Exception{
+        return (Map<String, Object>)selectOne("my.memberModify", map);
     }
 
     // 닉네임 변경
@@ -34,18 +34,18 @@ public class MyDAO extends AbstractDAO {
         update("my.memberDelete", map);
     }
 
-    // 게시글 좋아요 목록
-    public List<Map<String, Object>> boardLikeList(CommandMap commandMap) throws Exception{
-        return (List<Map<String,Object>>) selectList("my.boardLikeList",commandMap.getMap());
+    // 좋아요 목록
+    public List<Map<String, Object>> likeList(Map<String, Object> map) throws Exception{
+        return (List<Map<String, Object>>)selectPagingList("my.likeList", map);
     }
 
     // 게시글 목록
-    public List<Map<String,Object>> boardList(CommandMap commandMap) throws Exception{
-        return (List<Map<String,Object>>) selectList("my.boardList",commandMap.getMap());
+    public List<Map<String, Object>> boardList(Map<String, Object> map) throws Exception{
+        return (List<Map<String, Object>>)selectPagingList("my.boardList", map);
     }
 
     // 댓글 목록
-    public List<Map<String,Object>> replyList(CommandMap commandMap) throws Exception{
-        return (List<Map<String,Object>>) selectList("my.replyList",commandMap.getMap());
+    public List<Map<String,Object>> commentList(Map<String, Object> map) throws Exception{
+        return (List<Map<String, Object>>)selectPagingList("my.commentList", map);
     }
 }

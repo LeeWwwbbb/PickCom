@@ -17,13 +17,44 @@ public class MailSender {
         Session session = Session.getInstance(props, new Authenticator() {
             @Override
             protected PasswordAuthentication getPasswordAuthentication() {
-                return new PasswordAuthentication("sendMail@gmail.com", "앱 비밀번호");
+                return new PasswordAuthentication("roozi8855@gmail.com", "glne qpno youy nmbf");
             }
         });
 
         String receiver = email; // 메일 받을 주소
         String title = "PickCom 계정 인증";
         String content = "<h2 style='color:blue'>인증번호는 " + ran + "입니다.</h2>";
+        Message message = new MimeMessage(session);
+        try {
+            message.setFrom(new InternetAddress("roozi8855@gmail.com", "관리자", "utf-8"));
+            message.addRecipient(Message.RecipientType.TO, new InternetAddress(receiver));
+            message.setSubject(title);
+            message.setContent(content, "text/html; charset=utf-8");
+
+            Transport.send(message);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    /*public MailSender(String email, String id) {
+        Properties props = new Properties();
+        props.put("mail.smtp.host", "smtp.gmail.com");
+        props.put("mail.smtp.port", "587");
+        props.put("mail.smtp.auth", "true");
+        props.put("mail.smtp.starttls.enable", "true");
+        props.put("mail.smtp.ssl.trust", "smtp.gmail.com");
+
+        Session session = Session.getInstance(props, new Authenticator() {
+            @Override
+            protected PasswordAuthentication getPasswordAuthentication() {
+                return new PasswordAuthentication("sendMail@gmail.com", "앱 비밀번호");
+            }
+        });
+
+        String receiver = email; // 메일 받을 주소
+        String title = "PickCom 계정 인증";
+        String content = "<h2 style='color:blue'>아이디는 " + id + "입니다.</h2>";
         Message message = new MimeMessage(session);
         try {
             message.setFrom(new InternetAddress("sendMail@gmail.com", "관리자", "utf-8"));
@@ -35,5 +66,5 @@ public class MailSender {
         } catch (Exception e) {
             e.printStackTrace();
         }
-    }
+    }*/
 }

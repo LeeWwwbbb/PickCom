@@ -26,7 +26,7 @@ public class LoginServiceImp implements LoginService {
     // 아이디 찾기
     @Override
     public Map<String, Object> findId(Map<String, Object> map) throws Exception{
-        return (Map<String, Object>) loginDAO.findId(map);
+        return loginDAO.findId(map);
     }
 
     // 비밀번호 찾기

@@ -57,6 +57,31 @@ public class BoardServiceImp implements BoardService{
         boardDAO.deleteBoard(map);
     }
 
+    // 좋아요 확인
+    @Override
+    public boolean likeCheck(Map<String, Object> map) throws Exception{
+        int like = boardDAO.likeCheck(map);
+        return like > 0;
+    }
+
+    // 좋아요 추가
+    @Override
+    public void insertLike(Map<String, Object> map) throws Exception{
+        boardDAO.insertLike(map);
+    }
+
+    // 좋아요 삭제
+    @Override
+    public void deleteLike(Map<String, Object> map) throws Exception{
+        boardDAO.deleteLike(map);
+    }
+
+    // 댓글 리스트
+    @Override
+    public List<Map<String, Object>> selectCommentList(Map<String, Object> map) throws Exception{
+        return boardDAO.selectCommentList(map);
+    }
+
     // 댓글 추가
     @Override
     public void insertComment(Map<String, Object> map, HttpServletRequest request) throws Exception{

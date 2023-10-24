@@ -23,7 +23,7 @@
                 #{MEMBER_NICKNAME},
                 #{MEMBER_PASSWD},
                 #{MEMBER_EMAIL},
-                '일반',
+                false,
                 false,
                 0
             )

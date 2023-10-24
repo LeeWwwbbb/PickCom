@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@ include file="/layout/myLayout.jsp"%>
+<%@ include file="../layout/myLayout.jsp"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,7 +22,7 @@
 			<h2>작성 글</h2>
 			<table border="1" width="90%" class="table">
 				<thead class="table-light">
-					<tr>
+					<tr align="center">
 						<th width="10%" scope="col">분류</th>
 						<th width="*" scope="col">제목</th>
 						<th width="15%" scope="col">작성자</th>
@@ -32,21 +32,21 @@
 					</tr>
 				</thead>
 				<c:choose>
-					<c:when test="${ empty boardLists }">
+					<c:when test="${ empty boardList }">
 						<tr>
 							<td colspan="6" align="center">작성한 게시글이 없습니다</td>
 						</tr>
 					</c:when>
 					<c:otherwise>
-						<c:forEach items="${ boardLists }" var="row" varStatus="loop">
+						<c:forEach items="${ boardList }" var="row" varStatus="loop">
 							<tr align="center">
-								<td>${ row.board_category }<input type="hidden"
+								<td>${ row.cate }<input type="hidden"
 									value="${ map.totalCount - (((map.pageNum-1) * map.pageSize) + loop.index)}" />
 								</td>
 								<td align="left"><a
-									href="../board/view.do?idx=${ row.board_no }">${ row.board_title }</a>
+									href="/board/${ row.board_cate }/${ row.board_num }">${ row.board_title }</a>
 								</td>
-								<td>${ row.member_name }</td>
+								<td>${ row.member_nickName }</td>
 								<td>${ row.board_createDate }</td>
 								<td>${ row.board_visitCount }</td>
 								<td>${ row.like_count }</td>
@@ -56,7 +56,11 @@
 				</c:choose>
 			</table>
 			<div class="row">
-				<div class="col text-center">${ map.pagingImg }</div>
+				<div class="col text-center"><c:if test="${not empty pagingStr}">
+					<div class="paging">
+							${pagingStr}
+					</div>
+				</c:if></div>
 			</div>
 		</div>
 	</main>

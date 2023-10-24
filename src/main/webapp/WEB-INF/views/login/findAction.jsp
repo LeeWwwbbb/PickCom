@@ -20,9 +20,9 @@
 <br>
 <br>
 <div class="position-absolute top-50 start-50 translate-middle h-75 d-inline-block">
+    <h1>PickCom: 견적추천 커뮤니티</h1>
     <p align="center" style="font-size:35px;">
-        환영합니다,${ MEMBER_NAME } 님! <br/>
-        회원가입이 완료되었습니다.
+        아이디는 ${ member_id }입니다.
     </p>
 </div>
 </body>

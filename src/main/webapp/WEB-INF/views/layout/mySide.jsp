@@ -25,19 +25,19 @@
       </a>
     </li>
     <li>
-      <a href="/my/myPost.do" class="nav-link link-dark">
+      <a href="/my/board" class="nav-link link-dark">
         <svg class="bi pe-none me-2" width="16" height="16"></svg>
         작성게시글
       </a>
     </li>
     <li>
-      <a href="/my/comment.do" class="nav-link link-dark">
+      <a href="/my/comment" class="nav-link link-dark">
         <svg class="bi pe-none me-2" width="16" height="16"></svg>
         작성댓글
       </a>
     </li>
     <li>
-      <a href="/my/likePost.do" class="nav-link link-dark">
+      <a href="/my/like" class="nav-link link-dark">
         <svg class="bi pe-none me-2" width="16" height="16"></svg>
         추천게시글
       </a>

@@ -14,19 +14,23 @@
             rel="stylesheet"
             integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
             crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://kit.fontawesome.com/20962f3e4b.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 </head>
 <body>
 <main>
     <div class="position-absolute top-50 start-50 translate-middle w-75 p-3 h-75 d-inline-block">
         <h2>비밀번호 찾기</h2>
-        <form action="/login/pwFind.do" method="post" name="pwFindForm"
+        <form action="/findPwAction" method="post" name="pwFindForm"
               onsubmit="return validateForm(this);">
             <div class="row">
                 <div class="col-2">
                     <label for="userId" class="form-label">아이디</label>
                 </div>
                 <div class="col-8">
-                    <input type="text" class="form-control" id="userId" name="userId"
+                    <input type="text" class="form-control" id="userId" name="member_id"
                            required>
                 </div>
             </div>
@@ -35,7 +39,7 @@
                     <label for="email" class="form-label">이메일</label>
                 </div>
                 <div class="col">
-                    <input type="email" id="email" name="email" class="form-control"/>
+                    <input type="email" id="email" name="MEMBER_EMAIL" class="form-control"/>
                 </div>
                 <%--<div class="col-2">
                     <select class="form-select" id="address" name="address"
@@ -46,7 +50,8 @@
                     </select>
                 </div>--%>
                 <div class="col-2">
-                    <button type="button" class="btn btn-secondary" id="sendBtn">인증번호
+                    <button type="button" class="btn btn-secondary" id="sendBtn" onclick="sendEmailVerificationCode()">
+                        인증번호
                         전송
                     </button>
                 </div>
@@ -56,10 +61,10 @@
                     <label for="email" class="form-label">인증번호</label>
                 </div>
                 <div class="col-8">
-                    <input type="text" class="form-control" id="authCode" required>
+                    <input type="text" class="form-control" id="authCode"/>
                 </div>
                 <div class="col-2">
-                    <button type="button" class="btn btn-secondary" id="codeBtn">인증번호
+                    <button type="button" class="btn btn-secondary" id="codeBtn" onclick="verifyEmailCode()">인증번호
                         확인
                     </button>
                 </div>
@@ -70,13 +75,16 @@
         </form>
     </div>
 </main>
-<script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-        crossorigin="anonymous"></script>
 <script>
+    var emailChk = false;
+    var numberChk = false;
+
+    if ('${message}' != "") {
+        alert('${message}');
+    }
+
     function validateForm(form) {
-        if (!form.userId.value) {
+        if (form.userId.value == "") {
             alert("아이디를 입력하세요.");
             return false;
         }
@@ -116,7 +124,7 @@
             },
             success: function (result) {
                 var responseJson = JSON.parse(result);
-                if (!responseJson) {
+                if (responseJson) {
                     alert("이메일 전송 완료");
                     emailChk = true;
                 } else {

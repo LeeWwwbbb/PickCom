@@ -3,7 +3,7 @@
 
 <mapper namespace="my">
     <!-- 로그인 한 회원의 정보 출력 (마이페이지 회원정보 수정) -->
-    <select id="memberModify" parameterType="int" resultType="hashmap">
+    <select id="memberModify" parameterType="hashmap" resultType="hashmap">
 		<![CDATA[
         SELECT MEMBER_NUM,
                MEMBER_ID,
@@ -17,7 +17,7 @@
                MEMBER_DELETE,
                MEMBER_VISITCOUNT
         FROM MEMBER
-        WHERE MEMBER_NUM = #{MEMBER_NUM}
+        WHERE MEMBER_NUM = #{member_num}
         ]]>
 	</select>
 
@@ -31,41 +31,62 @@
         ]]>
 	</select>
 
-    <!-- 비밀번호 변경, 회원정보 업데이트 -->
+    <!-- 비밀번호 변경 -->
     <update id="passwdChange" parameterType="hashmap">
-        UPDATE MEMBER SET
-        MEMBER_NAME = #{MEMBER_NAME},
-        <if test="MEMBER_NEWPASSWD != null and MEMBER_NEWPASSWD != ''">
-            MEMBER_PASSWD = #{MEMBER_NEWPASSWD}
-        </if>
-        WHERE
-        MEMBER_NUM = #{MEMBER_NUM}
+        UPDATE MEMBER
+        SET member_passwd = #{member_passwd}
+        WHERE member_id = #{member_id}
     </update>
 
     <update id="memberDelete">
         UPDATE MEMBER
         SET MEMBER_DELETE = true
-        WHERE MEMBER_ID = #{MEMBER_ID}
+        WHERE MEMBER_NUM = #{MEMBER_NUM}
     </update>
 
+    <!-- 작성 게시글 목록 -->
+    <select id="boardList" parameterType="hashmap" resultType="hashmap">
+        <include refid="common.pagingPre"/>
+        SELECT
+        ROW_NUMBER() over (ORDER BY b.board_num DESC) rnum,
+        TO_CHAR(b.board_createdDate, 'YYYY.MM.DD') AS board_createDate,
+        b.*, m.member_nickName, m.member_name, COUNT(l.like_num) AS like_count
+        FROM board b
+        LEFT JOIN member m ON b.member_num = m.member_num
+        LEFT JOIN `like` l ON b.board_num = l.board_num
+        WHERE m.member_num = #{member_num}
+        GROUP BY b.board_num ORDER BY b.board_num DESC
+        <include refid="common.pagingPost"/>
+	</select>
+
     <!-- 게시글 좋아요 목록 -->
-    <select id="boardLikeList" parameterType="hashmap" resultType="hashmap">
-		<![CDATA[
-        SELECT b.*
-        FROM `board` b
-                 INNER JOIN `like` l ON b.`board_num` = l.`board_num`
+    <select id="likeList" parameterType="hashmap" resultType="hashmap">
+        <include refid="common.pagingPre"/>
+        SELECT
+        ROW_NUMBER() over (ORDER BY b.board_num DESC) rnum,
+        TO_CHAR(b.board_createdDate, 'YYYY.MM.DD') AS board_createDate,
+        b.*, m.member_nickName, m.member_name,
+        COUNT(l.like_num) AS like_count
+        FROM board b
+        LEFT JOIN member m ON b.member_num = m.member_num
+        LEFT JOIN `like` l ON b.board_num = l.board_num
         WHERE l.member_num = #{member_num}
-        ]]>
+        GROUP BY b.board_num, b.board_createdDate, m.member_nickName, m.member_name
+        ORDER BY b.board_num DESC
+        <include refid="common.pagingPost"/>
 	</select>
 
     <!-- 댓글 목록 -->
     <select id="commentList" parameterType="hashmap" resultType="hashmap">
-		<![CDATA[
-        SELECT b.*
-        FROM `board` b
-                 INNER JOIN `comment` c ON b.`board_num` = c.`board_num`
-        WHERE c.`member_num` = #{member_num}
-        ]]>
+        <include refid="common.pagingPre"/>
+        SELECT
+        ROW_NUMBER() over (ORDER BY b.board_num DESC) rnum,
+        c.comment_num, c.comment_content, b.board_title, b.board_num, b.board_cate, m.member_nickName
+        FROM comment c
+        INNER JOIN member m ON c.member_num = m.member_num
+        INNER JOIN board b ON c.board_num = b.board_num
+        WHERE m.member_num = #{member_num}
+        <include refid="common.pagingPost"/>
 	</select>
 
 

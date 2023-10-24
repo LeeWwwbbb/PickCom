@@ -41,9 +41,14 @@ public class JoinController {
     @RequestMapping(value="/joinAction.do", method= RequestMethod.POST)
     public ModelAndView insertMember(CommandMap commandMap, HttpServletRequest request) throws Exception {
         ModelAndView mv = new ModelAndView();
+        int chk = joinService.selectEmailCheck((String)commandMap.get("MEMBER_EMAIL"));
 
+        if (chk>0){
+            mv = new ModelAndView("redirect:/join");
+            mv.addObject("message", "이메일이 중복됩니다.");
+            return mv;
+        }
         joinService.memberInsert(commandMap.getMap());
-
         mv.addObject("MEMBER_NAME", commandMap.get("MEMBER_NAME"));
         mv.setViewName("login/joinAction");
         return mv;
@@ -70,11 +75,8 @@ public class JoinController {
     @RequestMapping(value = "/joinCode.do", produces = "application/json")
     @ResponseBody
     public boolean checkMailCode(HttpSession session, @RequestParam String code) {
-        Integer storedCode = (Integer)session.getAttribute("joinCode");
-        if (storedCode != null && code != null && storedCode.toString().equals(code)) {
-            return true;
-        }
-        return false;
+        String storedCode = (String)session.getAttribute("joinCode");
+        return storedCode != null && code != null && storedCode.toString().equals(code);
     }
 
     //아이디 중복 체크

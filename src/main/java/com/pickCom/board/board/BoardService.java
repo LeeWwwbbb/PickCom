@@ -26,9 +26,17 @@ public interface BoardService {
     // 글 삭제
     void deleteBoard(Map<String, Object> map) throws Exception;
 
+    // 좋아요 확인
+    boolean likeCheck(Map<String, Object> map) throws Exception;
+
     // 좋아요 추가
+    void insertLike(Map<String, Object> map) throws Exception;
 
     // 좋아요 삭제
+    void deleteLike(Map<String, Object> map) throws Exception;
+
+    // 댓글 리스트
+    public List<Map<String, Object>> selectCommentList(Map<String, Object> map) throws Exception;
 
     // 댓글 추가
     void insertComment(Map<String, Object> map, HttpServletRequest request) throws Exception;

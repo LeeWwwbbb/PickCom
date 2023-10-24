@@ -7,13 +7,11 @@
     <select id="selectFindId" parameterType="hashmap" resultType="hashmap">
 		<![CDATA[
         SELECT
-            *
+            member_id
         FROM
             MEMBER
         WHERE
-            MEMBER_NAME = #{MEMBER_NAME}
-          AND
-            MEMBER_EMAIL = #{MEMBER_EMAIL}
+			MEMBER_EMAIL = #{MEMBER_EMAIL}
         ]]>
 	</select>
 
@@ -40,5 +38,6 @@
             MEMBER_PASSWD = #{MEMBER_PASSWD}
         ]]>
 	</select>
+
 
 </mapper>

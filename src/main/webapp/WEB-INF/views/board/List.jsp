@@ -63,7 +63,7 @@
                     <c:forEach items="${ boardList }" var="row" varStatus="loop">
                         <tr align="center">
                             <td>${ loop.index + 1 }<input type="hidden"
-                                                              value="${ map.totalCount - (((map.pageNum-1) * map.pageSize) + loop.index)}"/>
+                                                              value="${ row.totalCount - (((map.pageNum-1) * map.pageSize) + loop.index)}"/>
                             </td>
                             <td align="left"><a
                                     href="/board/${ row.board_cate }/${ row.board_num }">${ row.board_title }</a>
@@ -90,9 +90,11 @@
                 </c:if>
             </div>
             <div class="col-2">
+                <c:if test="${ not empty sessionScope.name }">
                 <button type="button" class="btn btn-primary w-100"
                         onclick="location.href='/board/write'">글쓰기
                 </button>
+                </c:if>
             </div>
         </div>
         <table border="1" width="90%">

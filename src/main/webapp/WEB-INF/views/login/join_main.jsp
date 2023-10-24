@@ -126,6 +126,11 @@
     var idChk = false;
     var emailChk = false;
     var numberChk = false;
+
+    if ('${message}' != "") {
+        alert('${message}');
+    }
+
     function validateForm(form) {
         if (!form.userId.value) {
             alert("아이디를 입력하세요.");
@@ -231,7 +236,7 @@
             },
             success: function(result) {
                 var responseJson = JSON.parse(result);
-                if (!responseJson) {
+                if (responseJson) {
                     alert("이메일 전송 완료");
                     emailChk=true;
                 } else {

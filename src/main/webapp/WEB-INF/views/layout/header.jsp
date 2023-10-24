@@ -53,12 +53,12 @@
         </div>
         <div class="col-2 text-end">
             <c:if test="${ sessionScope.num != null }">
-                <c:if test="${ sessionScope.rank }">
+                <c:if test="${ sessionScope.rank > 0 }">
                     <button type="button" class="btn btn-outline-light me-2"
-                            onclick="location.href='/../admin/userList.do'">관리페이지
+                            onclick="location.href='/userList.do'">관리페이지
                     </button>
                 </c:if>
-                <c:if test="${ !sessionScope.rank }">
+                <c:if test="${ sessionScope.rank == 0 }">
                     <button type="button" class="btn btn-outline-light me-2"
                             onclick="location.href='/my/memberModify.do'">My Page
                     </button>
