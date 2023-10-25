@@ -33,7 +33,7 @@
 						<input type="text" class="form-control" name="searchWord" />
 					</div>
 					<div class="col-2">
-						<button type="submit" class="btn btn-primary w-100">검색</button>
+						<button type="button" class="btn btn-primary w-100" onclick="location.href='/user/registUser';">검색</button>
 					</div>
 				</div>
 			</form>

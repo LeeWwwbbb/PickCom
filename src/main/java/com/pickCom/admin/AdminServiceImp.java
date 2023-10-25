@@ -1,5 +1,6 @@
 package com.pickCom.admin;
 
+import com.pickCom.member.MemberDTO;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -23,7 +24,7 @@ public class AdminServiceImp implements AdminService {
     }
 
     @Override
-    public List<Map<String, Object>> MemberList(Map<String, Object> map) throws Exception{
-        return adminDAO.MemberList(map);
+    public List<MemberDTO> MemberList(Map<String, Object> map) throws Exception{
+        return adminDAO.MemberList();
     }
 }

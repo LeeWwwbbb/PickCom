@@ -1,6 +1,7 @@
 package com.pickCom.admin;
 
 import com.pickCom.common.common.CommandMap;
+import com.pickCom.member.MemberDTO;
 import com.pickCom.paging.PageVo;
 import lombok.SneakyThrows;
 import org.springframework.stereotype.Controller;
@@ -28,18 +29,18 @@ public class AdminController{
 
     @RequestMapping(value = "/userList.do")
     public String userList(Model model,
-                           @RequestParam(value = "searchField", required = false) String searchField,
-                           @RequestParam(value = "searchWord", required = false) String searchWord,
+                           @RequestParam(defaultValue = "") String type,
+                           @RequestParam(defaultValue = "") String search,
                            @RequestParam(defaultValue = "1") int page,
                            @RequestParam(defaultValue = "5") int pageSize) {
+        System.out.println("리스트 가져오기");
         PageVo pageVo = new PageVo(page, pageSize);
 
         model.addAttribute("pagesize", pageSize);
         Map<String, Object> map = new HashMap<>();
 
-        if (searchWord != null) {
-            map.put("searchField", searchField);
-            map.put("searchWord", searchWord);
+        if(!type.equals("") && !search.equals("")){
+            pageVo.setVal(search);
         }
 
         pageSize = Integer.parseInt("YOUR_PAGE_SIZE"); // 페이지 크기 설정
@@ -50,7 +51,7 @@ public class AdminController{
         map.put("start", start);
         map.put("end", end);
 
-        List<Map<String, Object>> userLists = null;
+        List<MemberDTO> userLists = null;
 
         try {
             userLists = adminService.MemberList(map);
