@@ -37,22 +37,6 @@
             </tr>
             </thead>
             <tbody>
-            <%--<c:choose>
-                <c:when test="${ not empty noticeList }">
-                    <c:forEach items="${ noticeList }" var="item">
-                        <tr align="center" class="table-secondary">
-                            <td>${ item.board_category }</td>
-                            <td align="left"><a
-                                    href="../board/view.do?idx=${ item.board_no }">${ item.board_title }</a>
-                            </td>
-                            <td>${ item.member_name }</td>
-                            <td>${ item.board_createDate }</td>
-                            <td>${ item.board_visitCount }</td>
-                            <td>${ item.like_count }</td>
-                        </tr>
-                    </c:forEach>
-                </c:when>
-            </c:choose>--%>
             <c:choose>
                 <c:when test="${ empty boardList }">
                     <tr>
@@ -76,6 +60,22 @@
                     </c:forEach>
                 </c:otherwise>
             </c:choose>
+            <%--<c:choose>
+                <c:when test="${ not empty noticeList }">
+                    <c:forEach items="${ noticeList }" var="item">
+                        <tr align="center" class="table-secondary">
+                            <td>${ item.board_category }</td>
+                            <td align="left"><a
+                                    href="../board/view.do?idx=${ item.board_no }">${ item.board_title }</a>
+                            </td>
+                            <td>${ item.member_name }</td>
+                            <td>${ item.board_createDate }</td>
+                            <td>${ item.board_visitCount }</td>
+                            <td>${ item.like_count }</td>
+                        </tr>
+                    </c:forEach>
+                </c:when>
+            </c:choose>--%>
             </tbody>
         </table>
 

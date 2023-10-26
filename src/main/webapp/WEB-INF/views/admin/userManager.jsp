@@ -19,7 +19,7 @@
 			class="position-absolute top-50 start-50 translate-middle h-75 d-inline-block"
 			style="width: 1200px;">
 			<!-- 사용자 검색 -->
-			<form action="/admin/userList.do" method="get">
+			<%--<form action="/admin/userList" method="get">
 				<div class="row mb-4">
 					<div class="col-2">
 						<select name="searchField" class="form-select">
@@ -36,47 +36,48 @@
 						<button type="button" class="btn btn-primary w-100" onclick="location.href='/user/registUser';">검색</button>
 					</div>
 				</div>
-			</form>
+			</form>--%>
 
 			<!-- 사용자 테이블 -->
 			<div>
 				<table width="90%" class="table table-hover">
+					<thead class="table-light">
 					<tr align="center">
 						<th width="12%">아이디</th>
 						<th width="8%">닉네임</th>
 						<th width="12%">이메일</th>
-						<th width="8%">상태</th>
-						<th width="12%">상태해제일</th>
-						<th width="*">사유</th>
 						<th width="12%">가입일</th>
 						<th width="12%">관리</th>
 					</tr>
+					</thead>
+					<tbody>
 					<c:choose>
-						<c:when test="${ empty userLists }">
+						<c:when test="${ empty adminList }">
 							<tr>
 								<td colspan="8" align="center">유저가 한명도 없습니다</td>
 							</tr>
 						</c:when>
 						<c:otherwise>
-							<c:forEach items="${ userLists }" var="row" varStatus="loop">
+							<c:forEach items="${ adminList }" var="row" varStatus="loop">
 								<tr align="center">
 									<td>${ row.member_id }<input type="hidden"
-										value="${ row.member_no } }" />
+																 value="${ row.member_no } }" />
 									</td>
 									<td><input type="text" value="${ row.member_name }"
-										class="form-control" id="userName" /></td>
+											   class="form-control" id="userName" /></td>
 									<td>${ row.member_email }</td>
-									<td>${ row.member_stat }</td>
-									<td>${ row.member_statDate }</td>
-									<td>${ row.member_reason }</td>
 									<td>${ row.member_regDate }</td>
-									<td><button type="button" class="btn btn-primary w-100"
-											data-bs-toggle="modal" data-bs-target="#modal"
-											onclick="setSelectedMemberNo(${ row.member_no });">삭제</button></td>
+									<td>
+										<div style="display: flex; justify-content: space-between;">
+											<button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal" onclick="setSelectedMemberNo(${ row.member_no });">삭제</button>
+											<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal" onclick="setSelectedMemberNo(${ row.member_no });">업데이트</button>
+										</div>
+									</td>
 								</tr>
 							</c:forEach>
 						</c:otherwise>
 					</c:choose>
+					</tbody>
 				</table>
 				<div class="row mb-4">
 					<div class="col text-center">${ map.pagingImg }</div>
@@ -84,30 +85,6 @@
 			</div>
 
 			<input type="hidden" name="idx" id="idx"/>
-
-			<!-- 사용자 컨트롤 -->
-			<form action="/admin/userManage.do" method="get">
-				<div class="row">
-					<div class="col-2">
-						<select name="statDays" class="form-select">
-							<option value="3">3일</option>
-							<option value="7">7일</option>
-							<option value="30">1개월</option>
-							<option value="365">1년</option>
-						</select>
-					</div>
-					<div class="col-3">
-						<input class="form-control" type="text" id="reason" name="reason"
-							placeholder="정지 사유" />
-					</div>
-					<div class="col-2">
-						<button type="submit" class="btn btn-danger w-100">정지</button>
-					</div>
-					<div class="col-1"></div>
-					<div class="col-2"></div>
-					<div class="col-2"></div>
-				</div>
-			</form>
 
 		</div>
 
@@ -131,6 +108,10 @@
 					</div>
 				</div>
 			</div>
+		</div>
+
+		<div class="update" id="update">
+
 		</div>
 
 		<script

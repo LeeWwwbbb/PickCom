@@ -176,11 +176,9 @@
         WHERE member_num=#{num}
         ]]>
     </update>
-    <select id="user_list" resultType="hashmap">
-        <include refid="common.pagingPre"/>
+    <select id="UserList" parameterType="hashmap" resultType="hashmap">
         SELECT member_num, member_id, member_name, member_nickName, member_email, member_regDate
         FROM member
-        <include refid="common.pagingPre"/>
     </select>
     <!--<select id="selectListUser" resultType="MemberDTO" parameterType="map">
         SELECT * FROM (

@@ -12,8 +12,6 @@ import java.util.Map;
 @Repository("adminDAO")
 public class AdminDAO extends AbstractDAO {
 
-    @Resource(name="sqlSessionTemplate")
-    private SqlSessionTemplate template;
     // 유저 강제 탈퇴
     public int MemberDelete(String user) throws Exception{
         return (int) delete("admin.deleteUser", user);
@@ -23,8 +21,8 @@ public class AdminDAO extends AbstractDAO {
         update("admin.updateUser", map);
     }
     // 유저 리스트 갖고오기
-    public List<MemberDTO> MemberList() throws Exception{
-        return template.selectList("admin.user_list");
+    public List<Map<String, Object>> MemberList(Map<String, Object> map) throws Exception{
+        return selectMemberList("admin.UserList", map);
     }
     /*public List<Map<String,Object>> MemberList(Map<String, Object> map) throws Exception{
         return (List<Map<String, Object>>)selectPagingList("admin.user_list", map);
