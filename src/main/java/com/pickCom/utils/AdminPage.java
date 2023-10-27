@@ -5,6 +5,7 @@ public class AdminPage {
                                    int pageNum, String reqUrl){
         String pagingStr = "";
 
+        // 단계 3 : 전체 페이지 수 계산
         int totalPages = (int) (Math.ceil(((double) totalCount / pageSize)));
 
         // 단계 4 : '이전 페이지 블록 바로가기' 출력

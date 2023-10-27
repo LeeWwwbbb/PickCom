@@ -176,9 +176,16 @@
         WHERE member_num=#{num}
         ]]>
     </update>
+<!--    유저 리스트 -->
     <select id="UserList" parameterType="hashmap" resultType="hashmap">
-        SELECT member_num, member_id, member_name, member_nickName, member_email, member_regDate
-        FROM member
+        <include refid="common.pagingPre"/>
+        SELECT
+        ROW_NUMBER() over (ORDER BY b.member_num DESC) rnum,
+        b.member_num, b.member_id, b.member_name, b.member_nickName, b.member_email, b.member_regDate
+        FROM member b
+#         SELECT member_num, member_id, member_name, member_nickName, member_email, member_regDate
+#         FROM member
+        <include refid="common.pagingPost"/>
     </select>
     <!--<select id="selectListUser" resultType="MemberDTO" parameterType="map">
         SELECT * FROM (
