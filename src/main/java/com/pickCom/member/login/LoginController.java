@@ -48,6 +48,7 @@ public class LoginController {
                     session.setAttribute("id", chk.get("MEMBER_ID"));
                     session.setAttribute("name", chk.get("MEMBER_NICKNAME"));
                     session.setAttribute("rank", chk.get("MEMBER_RANK"));
+                    session.setAttribute("loginComplete", true);
 
                     mv = new ModelAndView("redirect:/");
                     mv.addObject("MEMBER", chk);
@@ -67,6 +68,7 @@ public class LoginController {
 
         if (session != null) {
             try {
+                session.setAttribute("logoutComplete", true);
                 session.invalidate();
                 mv.addObject("logout", "로그아웃 되었습니다.");
             } catch (IllegalStateException e) {

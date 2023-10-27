@@ -55,8 +55,9 @@
                         <c:otherwise>
                             <c:forEach items="${ boardList }" var="row" varStatus="loop">
                                 <tr align="center">
-                                    <td>${ loop.index + 1 }<input type="hidden"
-                                                                  value="${ row.totalCount - (((map.pageNum-1) * map.pageSize) + loop.index)}"/>
+                                    <td>${ loop.index + 1 }
+                                        <input type="hidden"
+                                        value="${ row.totalCount - (((map.pageNum-1) * map.pageSize) + loop.index)}"/>
                                     </td>
                                     <td align="left"><a
                                             href="/board/${ row.board_cate }/${ row.board_num }">${ row.board_title }</a>

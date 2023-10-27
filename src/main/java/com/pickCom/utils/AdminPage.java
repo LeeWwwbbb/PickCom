@@ -7,9 +7,11 @@ public class AdminPage {
 
         // 단계 3 : 전체 페이지 수 계산
         int totalPages = (int) (Math.ceil(((double) totalCount / pageSize)));
+        System.out.println(totalPages);
 
         // 단계 4 : '이전 페이지 블록 바로가기' 출력
         int pageTemp = (((pageNum - 1) / blockPage) * blockPage) + 1;
+        System.out.println(pageTemp);
         if (pageTemp != 1) {
             pagingStr += "<a href='" + reqUrl + "?pageNum=1'>[첫 페이지]</a>";
             pagingStr += "&nbsp;";

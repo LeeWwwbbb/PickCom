@@ -82,6 +82,16 @@
 				<div class="row mb-4">
 					<div class="col text-center">${ map.pagingImg }</div>
 				</div>
+				<div class="row mb-4">
+					<div class="col-2"></div>
+					<div class="col-8 text-center">
+						<c:if test="${not empty pagingStr}">
+							<div class="paging">
+									${pagingStr}
+							</div>
+						</c:if>
+					</div>
+				</div>
 			</div>
 
 			<input type="hidden" name="idx" id="idx"/>
@@ -113,6 +123,8 @@
 		<div class="update" id="update">
 
 		</div>
+
+
 
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
