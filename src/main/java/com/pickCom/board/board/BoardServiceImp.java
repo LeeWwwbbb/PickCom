@@ -35,7 +35,7 @@ public class BoardServiceImp implements BoardService{
 
     // 글 검색
     @Override
-    public Map<String, Object> selectBoardDetail(Map<String, Object> map) throws Exception{
+    public List<Map<String, Object>> selectBoardDetail(Map<String, Object> map) throws Exception{
         return boardDAO.selectBoardDetail(map);
     }
 

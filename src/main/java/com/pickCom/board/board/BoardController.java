@@ -72,6 +72,42 @@ public class BoardController {
         return mv;
     }
 
+    // 키워드 게시판 리스트
+    @RequestMapping("/board/search")
+    public ModelAndView selectKeywordList(CommandMap map, @RequestParam(required = false) String pageNum) throws Exception {
+        ModelAndView mv = new ModelAndView("/board/List");
+        System.out.println(map.getMap().toString());
+
+        // 페이징 관련 설정
+        int pageSize = 10; // 한 페이지에 표시할 게시물 수
+        int page = (pageNum != null) ? Integer.parseInt(pageNum) : 1;
+        int start = (page - 1) * pageSize;
+        int end = page * pageSize;
+
+        // 게시물 리스트를 가져오는 서비스 호출
+        map.put("start", start);
+        map.put("end", end);
+        map.put("pageSize", pageSize);
+        List<Map<String, Object>> list = boardService.selectBoardDetail(map.getMap());
+        System.out.println(boardService.selectBoardDetail(map.getMap()));
+
+        if (!list.isEmpty()) {
+            int totalCount = Integer.parseInt(list.get(0).get("TOTAL_COUNT").toString());
+            int pageCount = (int) Math.ceil((double) totalCount / pageSize);
+
+            // 페이징 문자열 생성
+            String pagingStr = BoardPage.pagingStr(totalCount, pageSize, pageCount, page, "/board/search");
+
+            // 모델에 페이징 문자열과 게시물 리스트를 추가
+            mv.addObject("pagingStr", pagingStr);
+            mv.addObject("boardList", list);
+        } else {
+            mv.addObject("pagingStr", "");
+            mv.addObject("boardList", list);
+        }
+        return mv;
+    }
+
     // 게시글 열기
     @RequestMapping(value = "/board/{category}/{idx}")
     public ModelAndView openBoardDetail(CommandMap commandMap, HttpSession session, @PathVariable String category, @PathVariable int idx) throws Exception{

@@ -29,7 +29,7 @@
         </div>
         <!-- 검색 폼 -->
         <div class="col sticky-md-top">
-            <form action="search" method="get">
+            <form action="/board/search" method="post">
                 <div class="row">
                     <div class="col-10">
                         <input type="text" class="form-control" name="keyword"/>

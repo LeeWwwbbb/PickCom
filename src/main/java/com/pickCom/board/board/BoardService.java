@@ -15,7 +15,7 @@ public interface BoardService {
     Map<String, Object> openBoardDetail(Map<String, Object> map) throws Exception;
 
     // 글 검색
-    Map<String, Object> selectBoardDetail(Map<String, Object> map) throws Exception;
+    List<Map<String, Object>> selectBoardDetail(Map<String, Object> map) throws Exception;
 
     // 글 추가
     void insertBoard(Map<String, Object> map, HttpServletRequest request) throws Exception;

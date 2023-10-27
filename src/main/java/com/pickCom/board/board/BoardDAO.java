@@ -25,8 +25,8 @@ public class BoardDAO extends AbstractDAO {
     }
 
     // 글 검색
-    public Map<String, Object> selectBoardDetail(Map<String, Object> map) throws Exception{
-        return (Map<String, Object>) selectOne("board.selectBoardDetail", map);
+    public List<Map<String, Object>> selectBoardDetail(Map<String, Object> map) throws Exception{
+        return (List<Map<String, Object>>)selectPagingList("board.selectBoardDetail", map);
     }
 
     // 글 추가

@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ include file="../layout/myLayout.jsp" %>
+<%@ include file="../layout/header.jsp" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,49 +17,55 @@
 </head>
 <body>
 <main>
-    <div
-            class="position-absolute top-50 start-50 translate-middle h-75 d-inline-block" style="width: 1000px;">
-        <h2>작성댓글</h2>
-        <!-- 목록 테이블 -->
-        <table border="1" width="90%" class="table">
-            <thead class="table-light">
-            <tr align="center">
-                <th width="8%">분류</th>
-                <th width="20%">제목</th>
-                <th width="*">내용</th>
-                <th width="15%">작성자</th>
-                <th width="10%">작성일</th>
-            </tr>
-            </thead>
-            <c:choose>
-                <c:when test="${ empty boardList }">
-                    <tr>
-                        <td colspan="5" align="center">작성한 댓글이 없습니다</td>
+    <div class="row">
+        <div class="col-2">
+            <%@ include file="../layout/mySide.jsp" %>
+        </div>
+        <div class="col-9">
+            <div class="container">
+                <h2>작성댓글</h2>
+                <!-- 목록 테이블 -->
+                <table border="1" width="90%" class="table">
+                    <thead class="table-light">
+                    <tr align="center">
+                        <th width="8%">분류</th>
+                        <th width="20%">제목</th>
+                        <th width="*">내용</th>
+                        <th width="15%">작성자</th>
+                        <th width="10%">작성일</th>
                     </tr>
-                </c:when>
-                <c:otherwise>
-                    <c:forEach items="${ boardList }" var="row" varStatus="loop">
-                        <tr align="center">
-                            <td>${ row.cate }<input type="hidden"
-                                                    value="${ map.totalCount - (((map.pageNum-1) * map.pageSize) + loop.index)}" />
-                            </td>
-                            <td align="left"><a
-                                    href="/board/${ row.board_cate }/${ row.board_num }">${ row.board_title }</a>
-                            </td>
-                            <td>${ row.comment_content }</td>
-                            <td>${ row.member_nickName }</td>
-                            <td>${ row.comment_date }</td>
-                        </tr>
-                    </c:forEach>
-                </c:otherwise>
-            </c:choose>
-        </table>
-        <div class="row">
-            <div class="col text-center"><c:if test="${not empty pagingStr}">
-                <div class="paging">
-                        ${pagingStr}
+                    </thead>
+                    <c:choose>
+                        <c:when test="${ empty boardList }">
+                            <tr>
+                                <td colspan="5" align="center">작성한 댓글이 없습니다</td>
+                            </tr>
+                        </c:when>
+                        <c:otherwise>
+                            <c:forEach items="${ boardList }" var="row" varStatus="loop">
+                                <tr align="center">
+                                    <td>${ row.cate }<input type="hidden"
+                                                            value="${ map.totalCount - (((map.pageNum-1) * map.pageSize) + loop.index)}"/>
+                                    </td>
+                                    <td align="left"><a
+                                            href="/board/${ row.board_cate }/${ row.board_num }">${ row.board_title }</a>
+                                    </td>
+                                    <td>${ row.comment_content }</td>
+                                    <td>${ row.member_nickName }</td>
+                                    <td>${ row.comment_date }</td>
+                                </tr>
+                            </c:forEach>
+                        </c:otherwise>
+                    </c:choose>
+                </table>
+                <div class="row">
+                    <div class="col text-center"><c:if test="${not empty pagingStr}">
+                        <div class="paging">
+                                ${pagingStr}
+                        </div>
+                    </c:if></div>
                 </div>
-            </c:if></div>
+            </div>
         </div>
     </div>
 </main>
