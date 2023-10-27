@@ -15,9 +15,9 @@
 	crossorigin="anonymous">
 </head>
 <body>
-<div class="d-flex flex-column flex-shrink-0 p-3 bg-light" style="width: 280px;">
+<div class="d-flex flex-column flex-shrink-0 p-3 bg-light">
   <hr>
-  <ul class="nav nav-pills flex-column mb-auto">
+  <ul class="nav nav-pills flex-column>
     <li class="nav-item">
       <a href="/my/memberModify.do" class="nav-link link-dark" aria-current="page" >
         <svg class="bi pe-none me-2" width="16" height="16"></svg>

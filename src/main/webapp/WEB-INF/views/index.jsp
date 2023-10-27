@@ -1,5 +1,6 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ include file="layout/header.jsp"%>
+<%@ include file="layout/category.jsp"%>
 <!doctype html>
 <html lang="en" data-bs-theme="auto">
 <head>
@@ -130,18 +131,6 @@
               d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
     </symbol>
 </svg>
-
-<div class="container">
-
-    <div class="nav-scroller py-1 mb-3 border-bottom">
-        <nav class="nav nav-underline justify-content-between">
-            <a class="nav-item nav-link link-body-emphasis" href="#">뉴스</a>
-            <a class="nav-item nav-link link-body-emphasis" href="/board/free">게시판</a>
-            <a class="nav-item nav-link link-body-emphasis" href="#">견적추천</a>
-            <a class="nav-item nav-link link-body-emphasis" href="/userList">관리자페이지(테스트)</a>
-        </nav>
-    </div>
-</div>
 
 <main class="container">
     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
