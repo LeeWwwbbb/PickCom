@@ -27,10 +27,8 @@ public class AbstractDAO {
     @SuppressWarnings("unchecked")
     public Object selectPagingList(String queryId, Object params) {
         printQueryId(queryId);
-        Map<String, Object> map = (Map<String, Object>)params;
-        map.put("KEYWORD", (String)map.get("KEYWORD"));
 
-        return sqlSession.selectList(queryId, map);
+        return sqlSession.selectList(queryId, params);
     }
 
 

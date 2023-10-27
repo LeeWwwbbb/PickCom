@@ -14,12 +14,6 @@
             rel="stylesheet"
             integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
             crossorigin="anonymous">
-    <style>
-        a {
-            text-decoration: none;
-            color: black;
-        }
-    </style>
 </head>
 <body>
 <main>
@@ -31,7 +25,9 @@
         <div class="col-9">
             <div class="container">
                 <h2 class="mb-4">
+                    <c:if test="${not empty cate}">
                     <span>${ cate } 게시판</span>
+                    </c:if>
                 </h2>
 
                 <table border="1" width="90%" class="table">
@@ -55,7 +51,7 @@
                         <c:otherwise>
                             <c:forEach items="${ boardList }" var="row" varStatus="loop">
                                 <tr align="center">
-                                    <td>${ loop.index + 1 }<input type="hidden"
+                                    <td>${ row.board_num }<input type="hidden"
                                                                   value="${ row.totalCount - (((map.pageNum-1) * map.pageSize) + loop.index)}"/>
                                     </td>
                                     <td align="left"><a
