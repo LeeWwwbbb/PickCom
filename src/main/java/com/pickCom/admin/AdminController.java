@@ -52,10 +52,10 @@ public class AdminController{
         }catch (Exception e) {
             e.printStackTrace();
         }
-        System.out.println(list);
-        mv.addObject("adminList", list);
+//        System.out.println(list);
+//        mv.addObject("adminList", list);
 
-        /*if (!list.isEmpty()) {
+        if (!list.isEmpty()) {
             int totalCount = Integer.parseInt(list.get(0).get("TOTAL_COUNT").toString());
             int pageCount = (int) Math.ceil((double) totalCount / pageSize);
 
@@ -68,7 +68,7 @@ public class AdminController{
         } else {
             mv.addObject("pagingStr", "");
             mv.addObject("adminList", list);
-        }*/
+        }
 
         return mv;
     }

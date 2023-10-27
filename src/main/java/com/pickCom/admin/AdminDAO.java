@@ -22,7 +22,7 @@ public class AdminDAO extends AbstractDAO {
     }
     // 유저 리스트 갖고오기
     public List<Map<String, Object>> MemberList(Map<String, Object> map) throws Exception{
-        return selectMemberList("admin.UserList", map);
+        return (List<Map<String, Object>>)selectPagingList("admin.UserList", map);
     }
     /*public List<Map<String,Object>> MemberList(Map<String, Object> map) throws Exception{
         return (List<Map<String, Object>>)selectPagingList("admin.user_list", map);
