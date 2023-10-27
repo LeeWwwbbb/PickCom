@@ -16,7 +16,6 @@
 </head>
 <body>
 <%@ include file="header.jsp"%>
-<%@ include file="boardSide.jsp"%>
 <%@ include file="footer.jsp"%>
 </body>
 </html>
