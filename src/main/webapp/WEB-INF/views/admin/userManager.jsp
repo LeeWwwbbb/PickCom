@@ -69,8 +69,8 @@
 									<td>${ row.member_regDate }</td>
 									<td>
 										<div style="display: flex; justify-content: space-between;">
-											<button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal" onclick="setSelectedMemberNo(${ row.member_no });">삭제</button>
-											<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal" onclick="setSelectedMemberNo(${ row.member_no });">업데이트</button>
+											<button type="button" class="btn btn-danger" data-bs-toggle="modal_del" data-bs-target="#modal_del" onclick="setSelectedMemberNo(${ row.member_no });">삭제</button>
+											<button type="button" class="btn btn-primary" data-bs-toggle="modal_upd" data-bs-target="#modal_upd" onclick="setSelectedMemberNo(${ row.member_no });">업데이트</button>
 										</div>
 									</td>
 								</tr>
@@ -98,7 +98,7 @@
 
 		</div>
 
-		<div class="modal" id="modal" tabindex="-1"
+		<div class="modal_del" id="modal_del" tabindex="-1"
 			aria-labelledby="exampleModalLabel" aria-hidden="true">
 			<div class="modal-dialog modal-dialog-centered">
 				<div class="modal-content">
@@ -120,8 +120,26 @@
 			</div>
 		</div>
 
-		<div class="update" id="update">
-
+		<div class="modal_upd" id="modal_upd"
+			 aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">사용자 업데이트</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal"
+								aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<p>사용자 정보를 업데이트하시겠습니까?</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary"
+								data-bs-dismiss="modal">취소</button>
+						<button type="button" data-bs-dismiss="modal" class="btn btn-primary"  id="userUpdateBtn"
+								onclick="location.href='/admin/memberUpdate.do?idx=' + document.getElementById('idx').value;">확인</button>
+					</div>
+				</div>
+			</div>
 		</div>
 
 
