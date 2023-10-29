@@ -19,7 +19,7 @@ import java.util.List;
 @Configuration
 // MyBatis의 매퍼 인터페이스를 찾아서 빈으로 등록합니다.
 @MapperScan("com.pickCom")
-public class MyBatisConfig implements WebMvcConfigurer {
+public class  MyBatisConfig implements WebMvcConfigurer {
 
     @Bean
     public SqlSessionFactory sqlSessionFactory(DataSource dataSource) throws Exception {

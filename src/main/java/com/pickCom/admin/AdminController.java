@@ -122,13 +122,14 @@ public class AdminController{
      */
 
     @SneakyThrows
-    @RequestMapping(path="deleteUser")
-    public String deleteUser(String userid) {
-        int cnt = adminService.MemberDelete(userid);
-        if(cnt == 1 ) {
-            return "redirect:pagingUser";
-        }
-        return "redirect:userModify?userid=" + userid;
+    @RequestMapping(path="memberDelete.do?idx={idx}")
+    public ModelAndView deleteUser(CommandMap commandMap, @PathVariable int idx) throws Exception{
+        ModelAndView mv = new ModelAndView("redirect:/userList/");
+        commandMap.put("member_num", idx);
+
+        adminService.MemberDelete(commandMap.getMap());
+
+        return mv;
     }
 
 }

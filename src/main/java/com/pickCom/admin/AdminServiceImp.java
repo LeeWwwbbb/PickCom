@@ -13,7 +13,7 @@ public class AdminServiceImp implements AdminService {
     private AdminDAO adminDAO;
 
     @Override
-    public int MemberDelete(String user) throws Exception {
+    public int MemberDelete(Map<String, Object> user) throws Exception {
         adminDAO.MemberDelete(user);
         return 0;
     }

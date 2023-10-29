@@ -12,6 +12,90 @@
 	rel="stylesheet"
 	integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
 	crossorigin="anonymous">
+	<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+			crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+		var selectedMemberNo = null;
+		$(document).ready(function() {
+
+			$("table").on("click", "td", function() {
+				var memberNo = $(this).closest("tr").find("input[type='hidden']").val();
+				selectedMemberNo = memberNo;
+			});
+
+			$("#userManageForm").submit(function(event) {
+				event.preventDefault();
+
+				if (selectedMemberNo !== null) {
+					$(this).append("<input type='hidden' name='num' value='" + selectedMemberNo + "'>");
+					this.submit();
+				}
+			});
+		});
+
+		function setSelectedMemberNo(memberNo) {
+			document.getElementById("idx").value = memberNo;
+		}
+
+		/*
+            function updateMemberName(userNo, userName) {
+                $.ajax({
+                    url: "/admin/memberUpdate.do",
+                    method: "post",
+                    data: {
+                        number: userNo
+                        nickName: userName
+                    },
+                    success: function(result) {
+                        var responseJson = JSON.parse(result);
+                        if (responseJson.isDuplicate) {
+                            alert("사용자 정보 삭제 실패");
+                        } else {
+                            alert("사용자 정보 삭제 성공");
+                        }
+                    },
+                    error: function(xhr) {
+                        alert("에러코드 = " + xhr.status);
+                    }
+                });
+            }
+
+            $(document).ready(function() {
+                var selectedMemberNo = null;
+
+                function setSelectedMemberNo(memberNo) {
+                    selectedMemberNo = memberNo;
+                }
+
+                $("button[data-bs-target='#modal']").click(function() {
+                    var memberNo = $(this).attr("data-member-no");
+                    setSelectedMemberNo(memberNo);
+                });
+                $("#userDeleteBtn").click(function() {
+                $.ajax({
+                    url: "/admin/memberDelete.do",
+                    method: "post",
+                    data: {
+                        number: selectedMemberNo
+                    },
+                    success: function(result) {
+                        var responseJson = JSON.parse(result);
+                        if (responseJson.isDuplicate) {
+                            alert("사용자 정보 삭제 실패");
+                        } else {
+                            alert("사용자 정보 삭제 성공");
+                        }
+                    },
+                    error: function(xhr) {
+                        alert("에러코드 = " + xhr.status);
+                    }
+                });
+                });
+            }); */
+	</script>
 </head>
 <body>
 	<main>
@@ -69,8 +153,8 @@
 									<td>${ row.member_regDate }</td>
 									<td>
 										<div style="display: flex; justify-content: space-between;">
-											<button type="button" class="btn btn-danger" data-bs-toggle="modal_del" data-bs-target="#modal_del" onclick="setSelectedMemberNo(${ row.member_no });">삭제</button>
-											<button type="button" class="btn btn-primary" data-bs-toggle="modal_upd" data-bs-target="#modal_upd" onclick="setSelectedMemberNo(${ row.member_no });">업데이트</button>
+											<button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal" onclick="setSelectedMemberNo(${ row.member_no });">삭제</button>
+											<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal_upd" onclick="setSelectedMemberNo(${ row.member_no });">업데이트</button>
 										</div>
 									</td>
 								</tr>
@@ -98,7 +182,7 @@
 
 		</div>
 
-		<div class="modal_del" id="modal_del" tabindex="-1"
+		<div class="modal" id="modal" tabindex="-1"
 			aria-labelledby="exampleModalLabel" aria-hidden="true">
 			<div class="modal-dialog modal-dialog-centered">
 				<div class="modal-content">
@@ -120,13 +204,13 @@
 			</div>
 		</div>
 
-		<div class="modal_upd" id="modal_upd"
+		<div class="modal" id="modal_upd"
 			 aria-labelledby="exampleModalLabel" aria-hidden="true">
 			<div class="modal-dialog modal-dialog-centered">
 				<div class="modal-content">
 					<div class="modal-header">
 						<h5 class="modal-title">사용자 업데이트</h5>
-						<button type="button" class="btn-close" data-bs-dismiss="modal"
+						<button type="button" class="btn-close" data-bs-dismiss="modal_upd"
 								aria-label="Close"></button>
 					</div>
 					<div class="modal-body">
@@ -144,90 +228,7 @@
 
 
 
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-			crossorigin="anonymous"></script>
-		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-		<script>
-		var selectedMemberNo = null;
-    $(document).ready(function() {
 
-        $("table").on("click", "td", function() {
-            var memberNo = $(this).closest("tr").find("input[type='hidden']").val();
-            selectedMemberNo = memberNo;
-        });
-
-        $("#userManageForm").submit(function(event) {
-            event.preventDefault();
-
-            if (selectedMemberNo !== null) {
-                $(this).append("<input type='hidden' name='num' value='" + selectedMemberNo + "'>");
-                this.submit();
-            }
-        });
-    });
-
-    function setSelectedMemberNo(memberNo) {
-		document.getElementById("idx").value = memberNo;
-	}
-
-/*
-    function updateMemberName(userNo, userName) {
-        $.ajax({
-            url: "/admin/memberUpdate.do",
-            method: "post",
-            data: {
-                number: userNo
-                nickName: userName
-            },
-            success: function(result) {
-                var responseJson = JSON.parse(result);
-                if (responseJson.isDuplicate) {
-                	alert("사용자 정보 삭제 실패");
-                } else {
-                	alert("사용자 정보 삭제 성공");
-                }
-            },
-            error: function(xhr) {
-                alert("에러코드 = " + xhr.status);
-            }
-        });
-    }
-
-    $(document).ready(function() {
-    	var selectedMemberNo = null;
-
-        function setSelectedMemberNo(memberNo) {
-            selectedMemberNo = memberNo;
-        }
-
-        $("button[data-bs-target='#modal']").click(function() {
-            var memberNo = $(this).attr("data-member-no");
-            setSelectedMemberNo(memberNo);
-        });
-        $("#userDeleteBtn").click(function() {
-        $.ajax({
-            url: "/admin/memberDelete.do",
-            method: "post",
-            data: {
-                number: selectedMemberNo
-            },
-            success: function(result) {
-                var responseJson = JSON.parse(result);
-                if (responseJson.isDuplicate) {
-                	alert("사용자 정보 삭제 실패");
-                } else {
-                	alert("사용자 정보 삭제 성공");
-                }
-            },
-            error: function(xhr) {
-                alert("에러코드 = " + xhr.status);
-            }
-        });
-		});
-	}); */
-</script>
 	</main>
 </body>
 </html>
