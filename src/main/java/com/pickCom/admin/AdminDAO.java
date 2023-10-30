@@ -13,8 +13,9 @@ import java.util.Map;
 public class AdminDAO extends AbstractDAO {
 
     // 유저 강제 탈퇴
-    public int MemberDelete(Map<String, Object> user) throws Exception{
-        return (int) delete("admin.deleteUser", user);
+    public void MemberDelete(int user) throws Exception{
+        System.out.println("user : " + user);
+        delete("admin.deleteUser", user);
     }
     // 유저 정보 업데이트
     public void MemberUpdate(Map<String, Object> map) throws Exception {

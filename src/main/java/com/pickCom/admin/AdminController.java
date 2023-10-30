@@ -18,15 +18,14 @@ import java.util.List;
 import java.util.Map;
 
 @Controller
-public class AdminController{
+public class AdminController {
     @Resource(name = "adminServiceImp")
     private AdminService adminService;
 
     //유저 관리창
     @RequestMapping(value = "/usermanage")
-    public ModelAndView admin(CommandMap commandMap) throws Exception{
+    public ModelAndView admin(CommandMap commandMap) throws Exception {
         ModelAndView mv = new ModelAndView("admin/userManager");
-
         return mv;
     }
 
@@ -46,9 +45,9 @@ public class AdminController{
         map.put("end", end);
         map.put("pageSize", pageSize);
         List<Map<String, Object>> list = null;
-        try{
+        try {
             list = adminService.MemberList(map.getMap());
-        }catch (Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
 //        System.out.println(list);
@@ -59,7 +58,7 @@ public class AdminController{
             int pageCount = (int) Math.ceil((double) totalCount / pageSize);
 
             // 페이징 문자열 생성
-            String pagingStr = AdminPage.pagingStr(totalCount, pageSize, pageCount, page,"/userList/");
+            String pagingStr = AdminPage.pagingStr(totalCount, pageSize, pageCount, page, "/userList/");
 
             // 모델에 페이징 문자열과 게시물 리스트를 추가
             mv.addObject("pagingStr", pagingStr);
@@ -71,6 +70,7 @@ public class AdminController{
 
         return mv;
     }
+
     /*
     public String userList(Model model,
                            @RequestParam(defaultValue = "") String type,
@@ -120,14 +120,35 @@ public class AdminController{
         return "admin/userManager";
     }
      */
-
+// 유저 삭제
     @SneakyThrows
-    @RequestMapping(path="memberDelete.do?idx={idx}")
-    public ModelAndView deleteUser(CommandMap commandMap, @PathVariable int idx) throws Exception{
-        ModelAndView mv = new ModelAndView("redirect:/userList/");
-        commandMap.put("member_num", idx);
+    @RequestMapping(value = "memberDelete/{idx}")
+    public ModelAndView deleteUser(CommandMap map, @PathVariable int idx) throws Exception {
+        ModelAndView mv = new ModelAndView("redirect:/userList");
+        System.out.println("idx : " + idx);
+        map.put("member_num", idx);
+        adminService.MemberDelete(idx);
+        System.out.println("idx값 = " + idx);
 
-        adminService.MemberDelete(commandMap.getMap());
+        return mv;
+    }
+
+    //유저 닉네임 업데이트
+    @RequestMapping(value = "memberUpdate/{idx}")
+    public ModelAndView updateUser(CommandMap map, @PathVariable int idx, @RequestParam("userName") String userName) throws Exception{
+
+        ModelAndView mv = new ModelAndView("redirect:/userList");
+        System.out.println("username : " + userName);
+  /*      System.out.println("이전 닉 : " + map.get("name").toString());
+        String newName = map.get("name").toString(); // 새로운 이름*/
+
+        //map.put("num", idx);
+//        map.put("name", newName);
+        //adminService.MemberUpdate(map.getMap());
+
+        //System.out.println("num : " + idx);
+//        System.out.println("name : " + newName);
+
 
         return mv;
     }

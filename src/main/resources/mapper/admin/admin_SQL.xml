@@ -163,9 +163,9 @@
     </select>-->
     <!-- 유저 삭제 -->
     <delete id="deleteUser" parameterType="hashmap">
-    <![CDATA[
+        <![CDATA[
         DELETE FROM member
-        WHERE member_num = #{user_id}
+        WHERE member_num = #{idx}
         ]]>
     </delete>
     <!-- 유저정보 업데이트 -->

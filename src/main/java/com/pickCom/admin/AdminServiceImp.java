@@ -13,9 +13,9 @@ public class AdminServiceImp implements AdminService {
     private AdminDAO adminDAO;
 
     @Override
-    public int MemberDelete(Map<String, Object> user) throws Exception {
+    public void MemberDelete(int user) throws Exception {
+        System.out.println("MemberDelete method called with user: " + user);
         adminDAO.MemberDelete(user);
-        return 0;
     }
 
     @Override
