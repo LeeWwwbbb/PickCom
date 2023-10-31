@@ -53,8 +53,24 @@
 <main>
 	<div class="position-absolute top-50 start-50 translate-middle h-75 d-inline-block" style="width: 1200px;">
 		<!-- 사용자 검색 -->
-		<!-- (검색 폼 코드) -->
-
+		<form action="/admin/search" method="get">
+			<div class="row mb-4">
+				<div class="col-2">
+					<select name="searchField" class="form-select">
+						<option value="">검색 유형 선택</option>
+						<option value="i">아이디</option>
+						<option value="n">닉네임</option>
+						<option value="e">이메일</option>
+					</select>
+				</div>
+				<div class="col-8">
+					<input type="text" class="form-control" name="searchWord" />
+				</div>
+				<div class="col-2">
+					<button type="submit" class="btn btn-primary w-100">검색</button>
+				</div>
+			</div>
+		</form>
 		<!-- 사용자 테이블 -->
 		<div>
 			<table width="90%" class="table table-hover">

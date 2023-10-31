@@ -21,7 +21,7 @@
     <div class="row">
         <div class="col-2">
             <%@ include file="../layout/boardSide.jsp" %>
-        </div>
+        </div>ㄴㄷ
         <div class="col-9">
             <div class="container">
                 <h2 class="mb-4">
