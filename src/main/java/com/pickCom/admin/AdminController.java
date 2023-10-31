@@ -125,7 +125,6 @@ public class AdminController {
     @RequestMapping(value = "memberDelete/{idx}")
     public ModelAndView deleteUser(CommandMap map, @PathVariable int idx) throws Exception {
         ModelAndView mv = new ModelAndView("redirect:/userList");
-        System.out.println("idx : " + idx);
         map.put("member_num", idx);
         adminService.MemberDelete(idx);
         System.out.println("idx값 = " + idx);
@@ -134,20 +133,16 @@ public class AdminController {
     }
 
     //유저 닉네임 업데이트
-    @RequestMapping(value = "memberUpdate/{idx}")
-    public ModelAndView updateUser(CommandMap map, @PathVariable int idx, @RequestParam("userName") String userName) throws Exception{
+    @RequestMapping(value = "memberUpdate/{idx}/{userNm}")
+    public ModelAndView updateUser(CommandMap map, @PathVariable int idx, @PathVariable String userNm) throws Exception {
 
         ModelAndView mv = new ModelAndView("redirect:/userList");
-        System.out.println("username : " + userName);
-  /*      System.out.println("이전 닉 : " + map.get("name").toString());
-        String newName = map.get("name").toString(); // 새로운 이름*/
+        System.out.println("username : " + userNm);
+        System.out.println("num : " + idx);
 
-        //map.put("num", idx);
-//        map.put("name", newName);
-        //adminService.MemberUpdate(map.getMap());
-
-        //System.out.println("num : " + idx);
-//        System.out.println("name : " + newName);
+        map.put("num", idx);
+        map.put("name", userNm);
+        adminService.MemberUpdate(map.getMap());
 
 
         return mv;

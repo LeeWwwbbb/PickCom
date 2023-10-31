@@ -32,15 +32,20 @@
 
 			$(".update-btn").click(function() {
 				var memberNo = $(this).data("member-no");
-				setSelectedMemberNo(memberNo);
+				var memberNm = $("#userName_" + memberNo).val();
 
-				// form을 서버로 제출
-				$("#updateUserForm").submit();
+				setSelectedMemberNo(memberNo);
+				setSelectedMemberName(memberNm);
+				alert(memberNm);
 			});
 		});
 
 		function setSelectedMemberNo(memberNo) {
 			document.getElementById("idx").value = memberNo;
+		}
+
+		function setSelectedMemberName(memberNm){
+			document.getElementById("userNm").value = memberNm;
 		}
 	</script>
 </head>
@@ -73,13 +78,13 @@
 						<c:forEach items="${ adminList }" var="row" varStatus="loop">
 							<tr align="center">
 								<td>${ row.member_id }<input type="hidden" value="${ row.member_num }" /></td>
-								<td><input type="text" value="${ row.member_name }" class="form-control" name="userName" /></td>
+								<td><input type="text" value="${row.member_name}" class="form-control" id="userName_${row.member_num}" name="userName"/></td>
 								<td>${ row.member_email }</td>
 								<td>${ row.member_regDate }</td>
 								<td>
 									<div style="display: flex; justify-content: space-between;">
 										<button type="button" class="btn btn-danger delete-btn" data-bs-toggle="modal" data-bs-target="#modal" data-member-no="${ row.member_num }">삭제</button>
-										<button type="button" class="btn btn-primary update-btn" data-bs-toggle="modal" data-bs-target="#modal_upd" data-member-no="${ row.member_num }">업데이트</button>
+										<button type="button" class="btn btn-primary update-btn" data-bs-toggle="modal" data-bs-target="#modal_upd" data-member-no="${row.member_num}" data-member-nm="${userName}">업데이트</button>
 									</div>
 								</td>
 							</tr>
@@ -104,6 +109,8 @@
 		</div>
 
 		<input type="hidden" name="idx" id="idx" />
+		<input type="hidden" name="userNm" id="userNm" />
+
 
 	</div>
 
@@ -139,7 +146,7 @@
 				<div class="modal-footer">
 					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
 					<button type="button" data-bs-dismiss="modal" class="btn btn-primary" id="userUpdateBtn"
-							onclick="location.href='memberUpdate/' + document.getElementById('idx').value;">확인</button>
+							onclick="location.href='memberUpdate/' + document.getElementById('idx').value + '/' + document.getElementById('userNm').value">확인</button>
 				</div>
 			</div>
 		</div>

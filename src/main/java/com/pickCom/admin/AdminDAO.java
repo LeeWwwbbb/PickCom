@@ -19,6 +19,7 @@ public class AdminDAO extends AbstractDAO {
     }
     // 유저 정보 업데이트
     public void MemberUpdate(Map<String, Object> map) throws Exception {
+        System.out.println("map: " + map);
         update("admin.updateUser", map);
     }
     // 유저 리스트 갖고오기
