@@ -72,11 +72,13 @@ public class BoardController {
         return mv;
     }
 
-    // 키워드 게시판 리스트
+    // 키워드 리스트
     @RequestMapping("/board/search")
     public ModelAndView selectKeywordList(CommandMap map, @RequestParam(required = false) String pageNum) throws Exception {
         ModelAndView mv = new ModelAndView("/board/List");
         System.out.println(map.getMap().toString());
+        String keyword = "%" + map.get("keyword").toString() + "%";
+        map.put("keyword", keyword);
 
         // 페이징 관련 설정
         int pageSize = 10; // 한 페이지에 표시할 게시물 수
