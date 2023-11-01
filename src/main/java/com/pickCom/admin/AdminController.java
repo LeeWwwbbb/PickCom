@@ -101,14 +101,6 @@ public class AdminController {
             userLists = adminService.MemberList(map);
         } catch (Exception e) {
             e.printStackTrace();
-
-     */
-/*<<<<<<< HEAD
-            // 예외 처리 후 리턴값을 설정할 수 있습니다.
-            *//*return "errorPage"; // 혹은 다른 오류 페이지로 리다이렉트*//*
-=======
->>>>>>> b132815cdd390c71ea5605a4f4e6819ce779e18a*/
-    /*
         }
 
         map.put("pageSize", pageSize);
@@ -148,4 +140,12 @@ public class AdminController {
         return mv;
     }
 
+    //id로 검색
+    @RequestMapping(value = "memberUpdate/i")
+    public ModelAndView SearchID(CommandMap map){
+        ModelAndView mv = new ModelAndView("admin/userManager");
+
+
+        return mv;
+    }
 }
