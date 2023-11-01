@@ -14,6 +14,9 @@ public interface BoardService {
     // 글 상세
     Map<String, Object> openBoardDetail(Map<String, Object> map) throws Exception;
 
+    // 조회수 증가
+    void incrementViewCount(Map<String, Object> map);
+
     // 글 검색
     List<Map<String, Object>> selectBoardDetail(Map<String, Object> map) throws Exception;
 
