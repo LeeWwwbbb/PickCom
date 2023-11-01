@@ -1,4 +1,4 @@
-package com.pickCom;
+package com.pickCom.common.home;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

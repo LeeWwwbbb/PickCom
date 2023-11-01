@@ -33,6 +33,11 @@ public class BoardServiceImp implements BoardService{
         return resultMap;
     }
 
+    // 게시글 조회수 증가
+    public void incrementViewCount(Map<String, Object> map) {
+        boardDAO.incrementViewCount(map);
+    }
+
     // 글 검색
     @Override
     public List<Map<String, Object>> selectBoardDetail(Map<String, Object> map) throws Exception{

@@ -7,6 +7,7 @@
 <head>
 <meta charset="UTF-8">
 <title>PickCom:견적추천 커뮤니티</title>
+
 <script type="text/javascript">
     function validateForm(form) {
         if (form.pass.value == "") {

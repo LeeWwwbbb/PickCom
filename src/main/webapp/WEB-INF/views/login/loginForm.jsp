@@ -12,46 +12,54 @@
             rel="stylesheet"
             integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
             crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+            integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+            crossorigin="anonymous"></script>
+    <style>
+        a {
+            text-decoration-line: none;
+            /*   text-decoration-line: underline; */
+            /*   text-decoration-line: overline; */
+            /*   text-decoration-line: line-through; */
+            /*   text-decoration-line: underline line-through overline; */
+        }
+    </style>
 </head>
 <body>
-<div id="wrapper">
-    <main id="member">
-
-        <div class="position-absolute top-50 start-50 translate-middle h-75 d-inline-block">
-            <nav>
-                <h1>로그인</h1>
-            </nav>
-            <form action="/loginAction.do" method="post" id="frm" onsubmit="return validateForm(this);">
-                <table border="0">
-                    <tr>
-                        <td>아이디</td>
-                        <td>
-                            <input type="text" class="form-label" name="MEMBER_ID" id="MEMBER_ID" placeholder="아이디 입력">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>비밀번호</td>
-                        <td>
-                            <input type="password" class="form-label" name="MEMBER_PASSWD" id="MEMBER_PASSWD" placeholder="비밀번호 입력">
-                        </td>
-                    </tr>
-                </table>
-                <button type="submit" class="btn btn-secondary" name="memberLogin" id="login">로그인</button>
-                <span>
-            <%--<label>
-              <input type="checkbox" name="auto">자동 로그인
-            </label>--%>
+<main>
+    <div class="position-absolute top-50 start-50 translate-middle border border-black border-2 p-3">
+        <p class="h1">로그인</p>
+        <form action="/loginAction.do" method="post" id="frm" onsubmit="return validateForm(this);">
+            <table border="0">
+                <tr>
+                    <td>
+                        <input type="text" class="form-label m-1" name="MEMBER_ID" id="MEMBER_ID" placeholder="아이디 입력">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="password" class="form-label m-1" name="MEMBER_PASSWD" id="MEMBER_PASSWD"
+                               placeholder="비밀번호 입력">
+                    </td>
+                </tr>
+            </table>
+            <span>
+                <%--<label>
+                  <input type="checkbox" name="auto">자동 로그인
+                </label>--%>
+            </span>
+            <button type="submit" class="btn btn-secondary" name="memberLogin" id="login">로그인</button>
+        </form>
+        <div>
             <a href="/findId" class="link-dark">아이디찾기</a>
             <a href="/findPw" class="link-dark">비밀번호찾기</a>
             <a href="/joinTerms" class="link-success">회원가입</a>
-          </span>
-            </form>
         </div>
-
-    </main>
-    <div class="container fixed-bottom">
     </div>
-</div>
+</main>
 <script type="text/javascript">
     if ('${message}' != "") {
         alert('${message}');

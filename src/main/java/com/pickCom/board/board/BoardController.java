@@ -12,7 +12,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.annotation.Resource;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.util.List;
 import java.util.Map;
@@ -72,11 +74,13 @@ public class BoardController {
         return mv;
     }
 
-    // 키워드 게시판 리스트
+    // 키워드 리스트
     @RequestMapping("/board/search")
     public ModelAndView selectKeywordList(CommandMap map, @RequestParam(required = false) String pageNum) throws Exception {
         ModelAndView mv = new ModelAndView("/board/List");
         System.out.println(map.getMap().toString());
+        String keyword = "%" + map.get("keyword").toString() + "%";
+        map.put("keyword", keyword);
 
         // 페이징 관련 설정
         int pageSize = 10; // 한 페이지에 표시할 게시물 수
@@ -110,9 +114,37 @@ public class BoardController {
 
     // 게시글 열기
     @RequestMapping(value = "/board/{category}/{idx}")
-    public ModelAndView openBoardDetail(CommandMap commandMap, HttpSession session, @PathVariable String category, @PathVariable int idx) throws Exception{
+    public ModelAndView openBoardDetail(CommandMap commandMap, HttpSession session, @PathVariable String category, @PathVariable int idx, HttpServletRequest req, HttpServletResponse res) throws Exception{
         ModelAndView mv = new ModelAndView("/board/View");
         commandMap.put("board_num", idx);
+
+        Cookie oldCookie = null;
+
+        Cookie[] cookies = req.getCookies();
+        if (cookies != null) {
+            for (Cookie cookie : cookies) {
+                if (cookie.getName().equals("boardView")) {
+                    oldCookie = cookie;
+                }
+            }
+        }
+
+        if (oldCookie != null) {
+            if (!oldCookie.getValue().contains("[" + idx + "]")) {
+                boardService.incrementViewCount(commandMap.getMap());
+                oldCookie.setValue(oldCookie.getValue() + "_[" + idx + "]");
+                oldCookie.setPath("/");
+                oldCookie.setMaxAge(60 * 60 * 24);
+                res.addCookie(oldCookie);
+            }
+        } else {
+            boardService.incrementViewCount(commandMap.getMap());
+            Cookie newCookie = new Cookie("boardView","[" + idx + "]");
+            newCookie.setPath("/");
+            newCookie.setMaxAge(60 * 60 * 24);
+            res.addCookie(newCookie);
+        }
+
         commandMap.put("member_num", session.getAttribute("num"));
         Map<String, Object> map = boardService.openBoardDetail(commandMap.getMap());
         List<Map<String, Object>> list = boardService.selectCommentList(commandMap.getMap());

@@ -14,7 +14,7 @@
     <meta name="generator" content="Hugo 0.115.4">
     <title>PickCom:견적추천 커뮤니티</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/blog/">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3.1/examples/blog/">
 
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
