@@ -24,6 +24,21 @@ public class AdminServiceImp implements AdminService {
     }
 
     @Override
+    public List<Map<String, Object>> idFindUser(Map<String, Object> map) throws Exception{
+        return adminDAO.idFindUser(map);
+    }
+
+    @Override
+    public List<Map<String, Object>> nameFindUser(Map<String, Object> map) throws Exception{
+        return adminDAO.nameFindUser(map);
+    }
+
+    @Override
+    public List<Map<String, Object>> aliasFindUser(Map<String, Object> map) throws Exception{
+        return adminDAO.aliasFindUser(map);
+    }
+
+    @Override
     public List<Map<String, Object>> MemberList(Map<String, Object> map) throws Exception{
         return adminDAO.MemberList(map);
     }

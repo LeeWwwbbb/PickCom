@@ -13,5 +13,15 @@ public interface AdminService {
     // 유저 정보 업데이트
     public void MemberUpdate(Map<String, Object> map) throws Exception;
 
+    // id로 검색
+    //아이디로 검색
+    List<Map<String, Object>> idFindUser(Map<String, Object> map)throws Exception;
+
+    //이름으로 검색
+    List<Map<String, Object>> nameFindUser(Map<String, Object> map)throws Exception;
+
+    //별명으로 검색
+    List<Map<String, Object>> aliasFindUser(Map<String, Object> map)throws Exception;
+
 }
 

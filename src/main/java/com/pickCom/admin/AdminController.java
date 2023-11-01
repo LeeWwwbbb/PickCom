@@ -140,11 +140,50 @@ public class AdminController {
         return mv;
     }
 
-    //id로 검색
-    @RequestMapping(value = "memberUpdate/i")
-    public ModelAndView SearchID(CommandMap map){
+    @RequestMapping(value = "/admin/search")
+    public ModelAndView Search(CommandMap map, @RequestParam(required = false) String pageNum, @RequestParam String keyword, @RequestParam String searchField) throws Exception{
         ModelAndView mv = new ModelAndView("admin/userManager");
 
+        int pageSize = 10; // 한 페이지에 표시할 게시물 수
+        int page = (pageNum != null) ? Integer.parseInt(pageNum) : 1;
+        int start = (page - 1) * pageSize;
+        int end = page * pageSize;
+
+        System.out.println("궁금한놈 : "+keyword);
+        System.out.println("뭐로 검색한겨 : "+searchField);
+
+        map.put("start", start);
+        map.put("end", end);
+        map.put("pageSize", pageSize);
+        map.put("keyword", keyword);
+        List<Map<String, Object>> list = null;
+        try {
+            if ("i".equals(searchField)) {
+                list = adminService.idFindUser(map.getMap());
+            } else if ("n".equals(searchField)) {
+                list = adminService.nameFindUser(map.getMap());
+            } else if ("a".equals(searchField)) {
+                list = adminService.aliasFindUser(map.getMap());
+            }else{
+
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        if (!list.isEmpty()) {
+            int totalCount = Integer.parseInt(list.get(0).get("TOTAL_COUNT").toString());
+            int pageCount = (int) Math.ceil((double) totalCount / pageSize);
+
+            // 페이징 문자열 생성
+            String pagingStr = AdminPage.pagingStr(totalCount, pageSize, pageCount, page, "/memberSearch/"+keyword);
+
+            // 모델에 페이징 문자열과 게시물 리스트를 추가
+            mv.addObject("pagingStr", pagingStr);
+            mv.addObject("adminList", list);
+        } else {
+            mv.addObject("pagingStr", "");
+            mv.addObject("adminList", list);
+        }
 
         return mv;
     }
