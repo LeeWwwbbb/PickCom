@@ -23,6 +23,7 @@
         </div>
         <div class="col-9">
             <div class="container">
+                <br>
                 <h2>작성댓글</h2>
                 <!-- 목록 테이블 -->
                 <table border="1" width="90%" class="table">
@@ -47,7 +48,7 @@
                                     <td>${ row.cate }<input type="hidden"
                                                             value="${ map.totalCount - (((map.pageNum-1) * map.pageSize) + loop.index)}"/>
                                     </td>
-                                    <td align="left"><a
+                                    <td align="left"><a class="text-dark" style="text-decoration-line: none"
                                             href="/board/${ row.board_cate }/${ row.board_num }">${ row.board_title }</a>
                                     </td>
                                     <td>${ row.comment_content }</td>

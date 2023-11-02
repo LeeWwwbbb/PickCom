@@ -28,11 +28,11 @@
             </ul>
         </div>
         <!-- 검색 폼 -->
-        <div class="col sticky-md-top">
+        <div class="col">
             <form action="/board/search" method="post">
-                <div class="row">
+                <div class="row mx-auto p-2">
                     <div class="col-10">
-                        <input type="text" class="form-control" name="keyword"/>
+                        <input type="text" class="form-control w-100" name="keyword"/>
                     </div>
                     <div class="col-2">
                         <button type="submit" class="btn btn-primary w-100">검색</button>
@@ -41,21 +41,14 @@
             </form>
         </div>
 
-        <div class="col-1">
-            <div class="row">
-                <div class="col text-center">
-                    <c:if test="${ sessionScope.num != null }">
-                        <p class="text-white " style="font-size: 16px;">${ sessionScope.name } 님</p>
-                    </c:if>
-                </div>
-                <div class="col-2"></div>
-            </div>
-        </div>
-        <div class="col-2 text-end">
-
+        <div class="col-1 text-end mx-auto p-2">
             <c:if test="${ sessionScope.num != null }">
-
-                <c:if test="${ sessionScope.rank > 0 }">
+                <span class="text-white " style="font-size: 16px;">${ sessionScope.name } 님</span>
+            </c:if>
+        </div>
+        <div class="col-2 text-end mx-auto p-2">
+            <c:if test="${ sessionScope.num != null }">
+                <%--<c:if test="${ sessionScope.rank > 0 }">
                     <button type="button" class="btn btn-outline-light me-2"
                             onclick="location.href='/userList'">관리페이지
                     </button>
@@ -64,7 +57,7 @@
                     <button type="button" class="btn btn-outline-light me-2"
                             onclick="location.href='/my/memberModify.do'">My Page
                     </button>
-                </c:if>
+                </c:if>--%>
                 <button type="button" class="btn btn-outline-light me-2"
                         onclick="location.href='/logout.do' ">Logout
                 </button>

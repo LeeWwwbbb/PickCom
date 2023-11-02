@@ -59,6 +59,15 @@
             <a class="nav-item nav-link link-body-emphasis" href="#">뉴스</a>
             <a class="nav-item nav-link link-body-emphasis" href="/board/free">게시판</a>
             <a class="nav-item nav-link link-body-emphasis" href="#">견적추천</a>
+            <c:if test="${ sessionScope.num != null }">
+
+                <c:if test="${ sessionScope.rank > 0 }">
+                    <a class="nav-item nav-link link-body-emphasis" href="/userList">관리페이지</a>
+                </c:if>
+                <c:if test="${ sessionScope.rank == 0 }">
+                    <a class="nav-item nav-link link-body-emphasis" href="/my/memberModify.do">마이페이지</a>
+                </c:if>
+            </c:if>
         </nav>
     </div>
 </div>

@@ -1,5 +1,5 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<%@ include file="../layout/header.jsp"%>
+<%@ include file="../layout/header.jsp" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,102 +20,101 @@
 <body>
 <div id="wrapper">
     <main id="member">
-        <div class="position-absolute top-50 start-50 translate-middle h-75 d-inline-block">
+        <div class="position-absolute top-50 start-50 translate-middle d-inline-block">
             <nav>
                 <h1>일반 회원가입</h1>
             </nav>
+            <br>
             <form action="/joinAction.do" method="post" name="joinForm"
                   onsubmit="return validateForm(this);">
-
-                <section>
-                    <table>
-                        <caption>필수 정보입력</caption>
-                        <tr>
-                            <th>
-                                <span class="text-danger">*</span>
-                                아이디
-                            </th>
-                            <td>
-                                <input type="text"
-                                       pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,14}$" id="userId" name="MEMBER_ID" placeholder="아이디를 입력" required>
-                                <span class="msgId">&nbsp;&nbsp;영문, 숫자로 4~12자까지 설정해 주세요.</span>
-                            </td>
-                            <td>
-                                <button type="button" class="btn btn-secondary" id="idCheckBtn">아이디중복확인</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>
-                                <span class="text-danger">*</span>
-                                이름
-                            </th>
-                            <td>
-                                <input type="text" pattern="^[가-힣A-Za-z0-9]{2,8}$" id="userName" name="MEMBER_NAME" placeholder="이름을 입력" required>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>
-                                <span class="text-danger">*</span>
-                                비밀번호
-                            </th>
-                            <td>
-                                <input type="password" pattern="^(?=.*[a-zA-Z])(?=.*[0-9])[a-zA-Z0-9!@#$%^&*]{8,16}$"
-                                       id="pwd1" name="MEMBER_PASSWD" placeholder="비밀번호를 입력" required>
-                                <span class="msgPass">&nbsp;&nbsp;영문, 숫자, 특수문자를 조합하여 8~12자까지 설정해 주세요.</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>
-                                <span class="text-danger">*</span>
-                                비밀번호확인
-                            </th>
-                            <td>
-                                <input type="password" id="pwd2" name="km_pass" placeholder="비밀번호를 확인" required>
-                                <span class="msgPass">&nbsp;&nbsp;비밀번호 재입력</span>
-                            </td>
-                        </tr>
-                    </table>
-                </section>
-                <section>
-                        <table>
-                            <caption>기본 정보입력</caption>
-                            <tr>
-                                <th>
-                                    <span class="text-danger">*</span>
-                                    닉네임
-                                </th>
-                                <td>
-                                    <input type="text" id="nickName" name="MEMBER_NICKNAME" placeholder="닉네임을 입력" required>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>
-                                    <span class="text-danger">*</span>
-                                    이메일
-                                </th>
-                                <td>
-                                    <input type="email" id="email" name="MEMBER_EMAIL" placeholder="이메일 입력" required>
-                                </td>
-                                <td>
-                                    <button type="button" class="btn btn-secondary" id="sendBtn" onclick="sendEmailVerificationCode()">인증번호 전송</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>
-                                    <span class="text-danger">*</span>
-                                    인증번호
-                                </th>
-                                <td>
-                                    <input type="text" id="authCode" placeholder="인증번호 입력" required>
-                                </td>
-                                <td>
-                                    <button type="button" class="btn btn-secondary" id="codeBtn" onclick="verifyEmailCode()">인증번호 확인</button>
-                                </td>
-                            </tr>
-                        </table>
-                </section>
+                <table class="table">
+                    <tr>
+                        <th>
+                            <span class="text-danger">*</span>
+                            아이디
+                        </th>
+                        <td width="60%">
+                            <input type="text" class="form-control" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,14}$" id="userId" name="MEMBER_ID" title="영문과 숫자를 조합하여 6~14자까지 작성해주세요."
+                                   placeholder="아이디를 입력" required>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-secondary btn-sm" id="idCheckBtn">아이디중복확인</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <span class="text-danger">*</span>
+                            이름
+                        </th>
+                        <td>
+                            <input type="text" class="form-control" id="userName" name="MEMBER_NAME"
+                                   placeholder="이름을 입력" required>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <span class="text-danger">*</span>
+                            닉네임
+                        </th>
+                        <td>
+                            <input type="text" class="form-control" id="nickName" name="MEMBER_NICKNAME" placeholder="닉네임을 입력" pattern="^[가-힣A-Za-z0-9]{2,8}$" title="문자 2~8자까지 작성해주세요." required>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <span class="text-danger">*</span>
+                            비밀번호
+                        </th>
+                        <td>
+                            <input type="password" class="form-control" pattern="^(?=.*[a-zA-Z])(?=.*[0-9])[a-zA-Z0-9!@#$%^&*]{8,16}$"
+                                   id="pwd1" name="MEMBER_PASSWD" placeholder="비밀번호를 입력" title="영문과 숫자를 조합하여 8~16자까지 작성해주세요." required>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <span class="text-danger">*</span>
+                            비밀번호확인
+                        </th>
+                        <td>
+                            <input type="password" class="form-control" id="pwd2" name="km_pass" placeholder="비밀번호를 확인" required>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <span class="text-danger">*</span>
+                            이메일
+                        </th>
+                        <td>
+                            <input type="email" class="form-control" id="email" name="MEMBER_EMAIL" placeholder="이메일 입력" required>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-secondary btn-sm" id="sendBtn"
+                                    onclick="sendEmailVerificationCode()">인증번호 전송
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <span class="text-danger">*</span>
+                            인증번호
+                        </th>
+                        <td>
+                            <input type="text" class="form-control" id="authCode" placeholder="인증번호 입력" required>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-secondary btn-sm" id="codeBtn" onclick="verifyEmailCode()">
+                                인증번호 확인
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+                <br>
                 <div>
-                    <input type="submit" class="join" value="회원가입"/>
+                    <input type="submit" class="btn btn-success w-100" value="회원가입"/>
                 </div>
             </form>
         </div>
@@ -171,9 +170,9 @@
         return true;
     }
 
-    $(document).ready(function() {
+    $(document).ready(function () {
         // 비밀번호 확인 필드의 값이 변경될 때마다 비밀번호와 일치하는지 확인하고 오류 메시지를 업데이트
-        $("#pwd2").on("input", function() {
+        $("#pwd2").on("input", function () {
             var password = $("#pwd1").val();
             var confirmPassword = $(this).val();
             var errorMessage = "비밀번호가 일치하지 않습니다.";
@@ -186,8 +185,8 @@
         });
     });
 
-    $(document).ready(function() {
-        $("#idCheckBtn").click(function() {
+    $(document).ready(function () {
+        $("#idCheckBtn").click(function () {
             var id = $("#userId").val(); // 아이디 입력 필드의 값을 가져옴
 
             // 입력된 아이디가 비어있는지 확인
@@ -203,16 +202,16 @@
                 data: {
                     userId: id
                 },
-                success: function(result) {
+                success: function (result) {
                     var responseJson = JSON.parse(result);
                     if (responseJson) {
                         alert("중복된 아이디입니다.");
                     } else {
                         alert("사용 가능한 아이디입니다.");
-                        idChk=true;
+                        idChk = true;
                     }
                 },
-                error: function(xhr) {
+                error: function (xhr) {
                     alert("에러코드 = " + xhr.status);
                 }
             });
@@ -234,16 +233,16 @@
             data: {
                 email: userEmail
             },
-            success: function(result) {
+            success: function (result) {
                 var responseJson = JSON.parse(result);
                 if (responseJson) {
                     alert("이메일 전송 완료");
-                    emailChk=true;
+                    emailChk = true;
                 } else {
                     alert("이메일 전송 실패");
                 }
             },
-            error: function(xhr) {
+            error: function (xhr) {
                 alert("에러코드 = " + xhr.status);
             }
         });
@@ -264,16 +263,16 @@
             data: {
                 code: enteredCode
             },
-            success: function(result) {
+            success: function (result) {
                 var responseJson = JSON.parse(result);
                 if (!responseJson) {
                     alert("인증번호가 일치하지 않습니다");
                 } else {
                     alert("인증번호가 일치합니다");
-                    numberChk=true;
+                    numberChk = true;
                 }
             },
-            error: function(xhr) {
+            error: function (xhr) {
                 alert("에러코드 = " + xhr.status);
             }
         });

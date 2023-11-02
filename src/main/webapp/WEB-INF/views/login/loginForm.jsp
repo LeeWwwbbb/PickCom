@@ -21,10 +21,6 @@
     <style>
         a {
             text-decoration-line: none;
-            /*   text-decoration-line: underline; */
-            /*   text-decoration-line: overline; */
-            /*   text-decoration-line: line-through; */
-            /*   text-decoration-line: underline line-through overline; */
         }
     </style>
 </head>
@@ -33,16 +29,22 @@
     <div class="position-absolute top-50 start-50 translate-middle border border-black border-2 p-3">
         <p class="h1">로그인</p>
         <form action="/loginAction.do" method="post" id="frm" onsubmit="return validateForm(this);">
-            <table border="0">
+            <table class="table table-borderless">
                 <tr>
                     <td>
-                        <input type="text" class="form-label m-1" name="MEMBER_ID" id="MEMBER_ID" placeholder="아이디 입력">
+                        <input type="text" class="form-label p-1 w-100" name="MEMBER_ID" id="MEMBER_ID"
+                               placeholder="아이디 입력">
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <input type="password" class="form-label m-1" name="MEMBER_PASSWD" id="MEMBER_PASSWD"
+                        <input type="password" class="form-label p-1 w-100" name="MEMBER_PASSWD" id="MEMBER_PASSWD"
                                placeholder="비밀번호 입력">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="submit" class="btn btn-success w-100" name="memberLogin" id="login">로그인</button>
                     </td>
                 </tr>
             </table>
@@ -51,12 +53,11 @@
                   <input type="checkbox" name="auto">자동 로그인
                 </label>--%>
             </span>
-            <button type="submit" class="btn btn-secondary" name="memberLogin" id="login">로그인</button>
         </form>
         <div>
-            <a href="/findId" class="link-dark">아이디찾기</a>
-            <a href="/findPw" class="link-dark">비밀번호찾기</a>
-            <a href="/joinTerms" class="link-success">회원가입</a>
+            <a href="/findId" class="link-dark m-1">아이디찾기</a>
+            <a href="/findPw" class="link-dark m-1">비밀번호찾기</a>
+            <a href="/joinTerms" class="link-success m-1">회원가입</a>
         </div>
     </div>
 </main>

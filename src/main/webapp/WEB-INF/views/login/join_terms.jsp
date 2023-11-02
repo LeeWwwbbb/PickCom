@@ -1,5 +1,5 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<%@ include file="../layout/header.jsp"%>
+<%@ include file="../layout/header.jsp" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -25,12 +25,13 @@
             <nav>
                 <h1>약관동의</h1>
             </nav>
+            <br>
             <section>
-                <h3>
+                <h5>
                     <span class="essential">(필수)</span>
                     PickCom(픽컴) 이용약관
-                </h3>
-                <textarea rows="6" cols="80" wrap="off" class="terms" readonly>
+                </h5>
+                <textarea rows="5" cols="80" class="form-control" readonly>
 제 1장 총칙
 
 제 1 조 (목 적)
@@ -268,15 +269,16 @@
 ② '회사' 와 이용자간에 제기된 소송에는 한국법을 적용합니다.
 
                         <부칙> 본 개정약관은 2023년 03월 24일부터 시행합니다.</textarea>
-                <br>
                 <label>
                     <input type="checkbox" name="agree1" id="agree1" required>동의합니다.
                 </label>
-                <h3>
+                <br>
+                <br>
+                <h5>
                     <span class="essential">(필수)</span>
                     전자금융거래이용약관
-                </h3>
-                <textarea rows="6" cols="80" wrap="off" class="financial" readonly>
+                </h5>
+                <textarea rows="5" cols="80" class="form-control" readonly>
 전자금융거래 이용에 관한 기본약관
 시행 2023. 1. 1.
 
@@ -449,15 +451,16 @@
     제23조(준거법 등)
 ① 약관의 해석 및 적용에 관하여는 대한민국법을 적용한다.
 ② 이 약관에 의한 거래와 관련하여 발생된 분쟁에 대하여 회사와 고객 사이에 소송의 필요가 생긴 경우에는 그 관할법원은「민사소송법」이 정한 바에 따른다.</textarea>
-                <br>
                 <label>
                     <input type="checkbox" name="agree2" id="agree2" required>동의합니다.
                 </label>
-                <h3>
+                <br>
+                <br>
+                <h5>
                     <span class="essential">(필수)</span>
                     개인정보 수집동의
-                </h3>
-                <textarea rows="6" cols="80" class="privacy" readonly>
+                </h5>
+                <textarea rows="5" cols="80" class="form-control" readonly>
 개인정보 수집 및 이용
 
 목적 : 개인 식별, 고지사항 전달, 서비스 관련 상담, 맞춤형 서비스 제공, 민원사항 처리 등
@@ -469,13 +472,11 @@
 보유기간 : 회원 탈퇴 시까지
 
 ※ 위의 개인정보 제공에 대한 동의를 거부할 권리가 있으나, 거부할 경우 가입에 제한을 받을 수 있습니다</textarea>
-                <br>
                 <label>
                     <input type="checkbox" name="agree3" id="agree3" required>동의합니다.
                 </label>
-            </section>
-            <section>
-                <div class="banner"> 여기에 내용 삽입(혹은 광고 삽입)</div>
+                <br>
+                <br>
             </section>
             <div>
                 <Button type="button" class="btn btn-success btn-lg" onclick="checkAndSubmit()">동의하기</Button>
