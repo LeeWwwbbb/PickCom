@@ -66,24 +66,32 @@
         function setSelectedMemberName(memberNm) {
             document.getElementById("userNm").value = memberNm;
         }
+
+        function validateForm() {
+            var keywordInput = document.getElementById("word");
+            if (keywordInput.value.trim() === "") {
+                // keyword가 비어 있으면 알림 메시지 출력 또는 원하는 동작 수행
+                alert("검색어를 입력하세요.");
+                return false; // 폼 제출을 막음
+            }
+            return true; // 폼 제출을 허용
+        }
     </script>
 </head>
 <body>
 <main>
     <div class="position-absolute top-50 start-50 translate-middle h-75 d-inline-block" style="width: 1200px;">
         <!-- 사용자 검색 -->
-        <form action="/admin/search" method="get">
+        <form action="/admin/search" method="get" onsubmit="return validateForm()">
             <div class="row mb-4" id="keyword">
                 <div class="col-2">
                     <select name="searchField" class="form-select">
-                        <option value="">검색 유형 선택</option>
                         <option value="i">아이디</option>
-                        <option value="e">이메일</option>
                         <option value="a">닉네임</option>
                     </select>
                 </div>
                 <div class="col-8">
-                    <input type="text" class="form-control" name="keyword"/>
+                    <input type="text" class="form-control" id="word" name="keyword"/>
                 </div>
                 <div class="col-2">
                     <button type="submit" class="btn btn-primary w-100" id="searchButton">검색</button>
