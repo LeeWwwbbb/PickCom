@@ -29,11 +29,6 @@ public class AdminServiceImp implements AdminService {
     }
 
     @Override
-    public List<Map<String, Object>> nameFindUser(Map<String, Object> map) throws Exception{
-        return adminDAO.nameFindUser(map);
-    }
-
-    @Override
     public List<Map<String, Object>> aliasFindUser(Map<String, Object> map) throws Exception{
         return adminDAO.aliasFindUser(map);
     }

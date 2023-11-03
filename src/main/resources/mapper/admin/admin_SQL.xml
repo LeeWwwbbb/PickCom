@@ -188,33 +188,23 @@
         <include refid="common.pagingPost"/>
     </select>
     <!-- 아이디로 찾기 -->
-    <select id="idFindUser" parameterType="String" resultType="hashmap">
+    <select id="idFindUser" parameterType="hashmap" resultType="hashmap">
         <include refid="common.pagingPre"/>
         SELECT
         ROW_NUMBER() over (ORDER BY b.member_num DESC) rnum,
         b.member_num, b.member_id, b.member_name, b.member_nickName, b.member_email, b.member_regDate
         FROM member b
-        WHERE member_id LIKE '%'||#{keyword}||'%'
-        <include refid="common.pagingPost"/>
-    </select>
-    <!-- 이름으로 찾기 -->
-    <select id="nameFindUser" parameterType="String" resultType="hashmap">
-        <include refid="common.pagingPre"/>
-        SELECT
-        ROW_NUMBER() over (ORDER BY b.member_num DESC) rnum,
-        b.member_num, b.member_id, b.member_name, b.member_nickName, b.member_email, b.member_regDate
-        FROM member b
-        WHERE member_name LIKE '%'||#{keyword}||'%'
+        WHERE member_id LIKE #{keyword}
         <include refid="common.pagingPost"/>
     </select>
     <!-- 닉네임으로 찾기 -->
-    <select id="aliasFindUser" parameterType="String" resultType="hashmap">
+    <select id="aliasFindUser" parameterType="hashmap" resultType="hashmap">
         <include refid="common.pagingPre"/>
         SELECT
         ROW_NUMBER() over (ORDER BY b.member_num DESC) rnum,
         b.member_num, b.member_id, b.member_name, b.member_nickName, b.member_email, b.member_regDate
         FROM member b
-        WHERE member_nickName LIKE '%'||#{keyword}||'%'
+        WHERE member_nickName LIKE #{keyword}
         <include refid="common.pagingPost"/>
     </select>
     <!--<select id="selectListUser" resultType="MemberDTO" parameterType="map">

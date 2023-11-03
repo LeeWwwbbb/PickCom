@@ -30,9 +30,6 @@ public class AdminDAO extends AbstractDAO {
     public List<Map<String, Object>> idFindUser(Map<String, Object> id) throws Exception{
         return (List<Map<String, Object>>)selectPagingList("admin.idFindUser", id);
     }
-    public List<Map<String, Object>> nameFindUser(Map<String, Object> name) throws Exception{
-        return (List<Map<String, Object>>)selectPagingList("admin.nameFindUser", name);
-    }
     public List<Map<String, Object>> aliasFindUser(Map<String, Object> alias) throws Exception{
         return (List<Map<String, Object>>)selectPagingList("admin.aliasFindUser", alias);
     }
