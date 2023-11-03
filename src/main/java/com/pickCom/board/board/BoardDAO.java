@@ -83,4 +83,19 @@ public class BoardDAO extends AbstractDAO {
     public void deleteComment(Map<String, Object> map) throws Exception{
         delete("board.deleteComment", map);
     }
+
+    // 이미지 업로드
+    public void insertImage(Map<String, Object> map) throws Exception{
+        insert("board.insertImage", map);
+    }
+
+    // 이미지 수정
+    public void updateImage(Map<String, Object> map) throws Exception{
+        update("board.updateImage", map);
+    }
+
+    // 이미지 삭제
+    public void deleteImage(Map<String, Object> map) throws Exception{
+        delete("board.deleteImage", map);
+    }
 }

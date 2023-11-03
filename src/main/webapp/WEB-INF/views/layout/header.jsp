@@ -29,10 +29,10 @@
         </div>
         <!-- 검색 폼 -->
         <div class="col">
-            <form action="/board/search" method="post">
+            <form action="/board/search" method="post" onsubmit="return validateForm()">
                 <div class="row mx-auto p-2">
                     <div class="col-10">
-                        <input type="text" class="form-control w-100" name="keyword"/>
+                        <input type="text" class="form-control w-100" name="keyword" id="keyword" value="<c:if test='${not empty keyword}'>${keyword}</c:if>"/>
                     </div>
                     <div class="col-2">
                         <button type="submit" class="btn btn-primary w-100">검색</button>
@@ -48,7 +48,7 @@
         </div>
         <div class="col-2 text-end mx-auto p-2">
             <c:if test="${ sessionScope.num != null }">
-                <%--<c:if test="${ sessionScope.rank > 0 }">
+                <c:if test="${ sessionScope.rank > 0 }">
                     <button type="button" class="btn btn-outline-light me-2"
                             onclick="location.href='/userList'">관리페이지
                     </button>
@@ -57,7 +57,7 @@
                     <button type="button" class="btn btn-outline-light me-2"
                             onclick="location.href='/my/memberModify.do'">My Page
                     </button>
-                </c:if>--%>
+                </c:if>
                 <button type="button" class="btn btn-outline-light me-2"
                         onclick="location.href='/logout.do' ">Logout
                 </button>
@@ -74,4 +74,15 @@
     </div>
 </header>
 </body>
+<script>
+    function validateForm() {
+        var keywordInput = document.getElementById("keyword");
+        if (keywordInput.value.trim() === "") {
+            // keyword가 비어 있으면 알림 메시지 출력 또는 원하는 동작 수행
+            alert("검색어를 입력하세요.");
+            return false; // 폼 제출을 막음
+        }
+        return true; // 폼 제출을 허용
+    }
+</script>
 </html>

@@ -58,16 +58,15 @@
                             <tr>
                                 <td colspan="4" height="300">${ map.board_content }</td>
                             </tr>
-                                <%--<!-- 첨부파일 -->
+                                <!-- 첨부파일 -->
                                 <tr>
                                     <td>첨부파일</td>
                                     <td colspan="3"><c:if test="${ not empty map.board_ofile }">
-                                        ${ map.board_ofile }
-                                        <a
-                                                href="../board/download.do?ofile=${ map.board_ofile }&sfile=${ map.board_sfile }&idx=${ map.board_no }">
-                                            [다운로드] </a>
+                                        ${ map.image_saveName }
+                                        <a class="text-dark" style="text-decoration-line: none"
+                                                href="/board/download/${ map.image_num } }"></a>
                                     </c:if></td>
-                                </tr>--%>
+                                </tr>
                         </table>
 
                         <!-- 하단 메뉴(버튼) -->

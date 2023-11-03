@@ -105,4 +105,22 @@ public class BoardServiceImp implements BoardService{
     public void deleteComment(Map<String, Object> map) throws Exception{
         boardDAO.deleteComment(map);
     }
+
+    // 이미지 업로드
+    @Override
+    public void insertImage(Map<String, Object> map) throws Exception{
+        boardDAO.insertImage(map);
+    }
+
+    // 이미지 수정
+    @Override
+    public void updateImage(Map<String, Object> map) throws Exception{
+        boardDAO.updateImage(map);
+    }
+
+    // 이미지 삭제
+    @Override
+    public void deleteImage(Map<String, Object> map) throws Exception{
+        boardDAO.deleteImage(map);
+    }
 }

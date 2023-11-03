@@ -79,8 +79,10 @@ public class BoardController {
     public ModelAndView selectKeywordList(CommandMap map, @RequestParam(required = false) String pageNum) throws Exception {
         ModelAndView mv = new ModelAndView("/board/List");
         System.out.println(map.getMap().toString());
-        String keyword = "%" + map.get("keyword").toString() + "%";
+        String kw = map.get("keyword").toString();
+        String keyword = "%" + kw + "%";
         map.put("keyword", keyword);
+        mv.addObject("keyword", kw);
 
         // 페이징 관련 설정
         int pageSize = 10; // 한 페이지에 표시할 게시물 수

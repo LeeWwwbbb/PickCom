@@ -49,4 +49,13 @@ public interface BoardService {
 
     // 댓글 삭제
     void deleteComment(Map<String, Object> map) throws Exception;
+
+    // 이미지 업로드
+    void insertImage(Map<String, Object> map) throws Exception;
+
+    // 이미지 수정
+    void updateImage(Map<String, Object> map) throws Exception;
+
+    // 이미지 삭제
+    void deleteImage(Map<String, Object> map) throws Exception;
 }

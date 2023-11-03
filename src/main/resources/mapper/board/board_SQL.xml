@@ -67,17 +67,24 @@
 
     <!-- 글 추가 -->
     <insert id="insertBoard" parameterType="hashmap">
-        <![CDATA[
         INSERT INTO BOARD
         (member_num,
-         board_title,
-         board_content,
-         board_cate)
-        VALUES (#{member_num},
-                #{board_title},
-                #{board_content},
-                #{board_cate})
-        ]]>
+        board_title,
+        board_content,
+        board_cate,
+        image_originalName,
+        image_saveName,
+        image_size)
+        VALUES
+        <choose>
+            <when test="#{image_originalName} != null and #{image_saveName} != null and #{image_size} != null">
+                (#{member_num}, #{board_title}, #{board_content}, #{board_cate}, #{image_originalName},
+                #{image_saveName}, #{image_size})
+            </when>
+            <otherwise>
+                (#{member_num}, #{board_title}, #{board_content}, #{board_cate}, NULL, NULL, NULL)
+            </otherwise>
+        </choose>
     </insert>
 
     <!-- 글 수정 -->
@@ -86,7 +93,10 @@
         UPDATE board
         SET board_title   = #{board_title},
             board_content = #{board_content},
-            board_cate    = #{board_cate}
+            board_cate    = #{board_cate},
+            image_originalName = #{image_originalName},
+            image_saveName = #{image_saveName},
+            image_size = #{image_size}
         WHERE board_num = #{board_num}
         ]]>
     </update>

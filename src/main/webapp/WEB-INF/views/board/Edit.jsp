@@ -16,7 +16,7 @@
           action="/board/updateBoard.do" onsubmit="return validateForm(this);">
         <c:if test="${not empty map}">
             <input type="hidden" name="board_num" value="${ map.board_num }"> <input
-                type="hidden" name="prevOfile" value="${ map.board_ofile }"> <input
+                type="hidden" name="prevOfile" value="${ map.image_ }"> <input
                 type="hidden" name="prevSfile" value="${ map.board_sfile }"> <input
                 type="hidden" name="member_num" value="${ sessionScope.num }">
 

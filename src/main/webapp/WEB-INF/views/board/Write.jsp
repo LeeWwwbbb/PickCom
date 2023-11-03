@@ -46,10 +46,10 @@
                 <td colspan="2"><textarea name="board_content" class="form-control"
                                           style="height: 300px;"></textarea></td>
             </tr>
-            <%--<tr>
+            <tr>
                 <td>첨부 파일</td>
-                <td><input type="file" name="ofile"/></td>
-            </tr>--%>
+                <td><input class="form-control" type="file" name="ofile"/></td>
+            </tr>
         </table>
         <div class="row mb-4">
             <div class="col-8"></div>
