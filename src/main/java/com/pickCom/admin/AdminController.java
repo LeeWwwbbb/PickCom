@@ -140,42 +140,52 @@ public class AdminController {
         return mv;
     }
 
+    // 키워드 리스트
     @RequestMapping(value = "/admin/search")
-    public ModelAndView Search(CommandMap map, @RequestParam(required = false) String pageNum, @RequestParam String keyword, @RequestParam String searchField) throws Exception{
+    public ModelAndView Search(CommandMap map, @RequestParam(required = false) String pageNum) throws Exception {
         ModelAndView mv = new ModelAndView("admin/userManager");
+
+        System.out.println(map.getMap().toString());
+        String testKeyword = map.get("keyword").toString();
+        String keyword = "%" + map.get("keyword").toString() + "%";
+        String searchField = map.get("searchField").toString();
 
         int pageSize = 10; // 한 페이지에 표시할 게시물 수
         int page = (pageNum != null) ? Integer.parseInt(pageNum) : 1;
         int start = (page - 1) * pageSize;
         int end = page * pageSize;
 
-        System.out.println("궁금한놈 : "+keyword);
-        System.out.println("뭐로 검색한겨 : "+searchField);
-
         map.put("start", start);
         map.put("end", end);
         map.put("pageSize", pageSize);
-        map.put("keyword", keyword);
+        System.out.println("키워드 길이 : " + testKeyword.length());
         List<Map<String, Object>> list = null;
-        try {
-            if ("i".equals(searchField)) {
+        if(testKeyword.length() > 0) {
+            System.out.println("조건문 이상 없음");
+            map.put("keyword", keyword);
+            if (searchField.equals("i")) {
                 list = adminService.idFindUser(map.getMap());
-            } else if ("n".equals(searchField)) {
-                list = adminService.nameFindUser(map.getMap());
-            } else if ("a".equals(searchField)) {
+            } else if (searchField.equals("a")) {
                 list = adminService.aliasFindUser(map.getMap());
-            }else{
+            } else if (searchField.equals("")) {
+                String popupScript = "alert('올바르지 않은 검색 유형을 선택했습니다. 올바른 유형을 선택해주세요.');";
+                popupScript += "return false;"; // 폼 제출 방지
 
+                mv.addObject("popupScript", popupScript);
             }
-        } catch (Exception e) {
-            e.printStackTrace();
+        }else{
+            String popupScript = "alert('검색어를 입력하세요');";
+            popupScript += "return false;"; // 폼 제출 방지
+
+            mv.addObject("popupScript", popupScript);
         }
+
         if (!list.isEmpty()) {
             int totalCount = Integer.parseInt(list.get(0).get("TOTAL_COUNT").toString());
             int pageCount = (int) Math.ceil((double) totalCount / pageSize);
 
             // 페이징 문자열 생성
-            String pagingStr = AdminPage.pagingStr(totalCount, pageSize, pageCount, page, "/memberSearch/"+keyword);
+            String pagingStr = AdminPage.pagingStr(totalCount, pageSize, pageCount, page, "/admin/search");
 
             // 모델에 페이징 문자열과 게시물 리스트를 추가
             mv.addObject("pagingStr", pagingStr);

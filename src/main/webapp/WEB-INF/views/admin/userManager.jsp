@@ -76,9 +76,9 @@
             <div class="row mb-4" id="keyword">
                 <div class="col-2">
                     <select name="searchField" class="form-select">
-                        <option>검색 유형 선택</option>
+                        <option value="">검색 유형 선택</option>
                         <option value="i">아이디</option>
-                        <option value="n">이름</option>
+                        <option value="e">이메일</option>
                         <option value="a">닉네임</option>
                     </select>
                 </div>
@@ -86,7 +86,7 @@
                     <input type="text" class="form-control" name="keyword"/>
                 </div>
                 <div class="col-2">
-                    <button type="button" class="btn btn-primary w-100" id="searchButton">검색</button>
+                    <button type="submit" class="btn btn-primary w-100" id="searchButton">검색</button>
                 </div>
             </div>
         </form>

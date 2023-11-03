@@ -17,8 +17,6 @@ public interface AdminService {
     //아이디로 검색
     List<Map<String, Object>> idFindUser(Map<String, Object> map)throws Exception;
 
-    //이름으로 검색
-    List<Map<String, Object>> nameFindUser(Map<String, Object> map)throws Exception;
 
     //별명으로 검색
     List<Map<String, Object>> aliasFindUser(Map<String, Object> map)throws Exception;
