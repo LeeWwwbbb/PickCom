@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="board">
+    <!-- 베스트 게시물 -->
+    <select id="bestBoardList" resultType="hashmap">
+        SELECT *
+        FROM board
+        WHERE image_size IS NOT NULL
+          AND board_createdDate >= NOW() - INTERVAL 1 WEEK
+        ORDER BY board_visitCount DESC
+        LIMIT 4;
+    </select>
+
     <!-- 게시글 리스트 검색 -->
     <select id="selectBoardList" parameterType="hashmap" resultType="hashmap">
         <include refid="common.pagingPre"/>

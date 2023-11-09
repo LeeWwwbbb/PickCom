@@ -48,7 +48,7 @@
             </tr>
             <tr>
                 <td>첨부 파일</td>
-                <td><input class="form-control" type="file" name="ofile"/></td>
+                <td><input class="form-control" type="file" multiple="multiple" accept="image/*" name="file"/></td>
             </tr>
         </table>
         <div class="row mb-4">

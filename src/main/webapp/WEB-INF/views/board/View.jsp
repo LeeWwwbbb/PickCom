@@ -17,12 +17,11 @@
 </head>
 <body>
 <%@ include file="../layout/category.jsp" %>
-<div class="container">
-    <div class="row">
-        <div class="col-2">
-            <%@ include file="../layout/boardSide.jsp" %>
-        </div>
-        <div class="col-10">
+<div class="row">
+    <div class="col-2">
+        <%@ include file="../layout/boardSide.jsp" %>
+    </div>
+    <div class="col-9">
             <div class="container">
                 <main>
                     <c:if test="${not empty map}">
@@ -56,17 +55,17 @@
                                 <td colspan="3">${ map.board_title }</td>
                             </tr>
                             <tr>
-                                <td colspan="4" height="300">${ map.board_content }</td>
+                                <td colspan="4" height="300"><c:if test="${ not empty map.image_saveName }"><img src="/uploaded-files/${map.image_saveName}" alt="첨부 이미지" style="max-width: 600px"/><br></c:if>${ map.board_content }</td>
                             </tr>
                                 <!-- 첨부파일 -->
-                                <tr>
+                                <%--<tr>
                                     <td>첨부파일</td>
                                     <td colspan="3"><c:if test="${ not empty map.board_ofile }">
                                         ${ map.image_saveName }
                                         <a class="text-dark" style="text-decoration-line: none"
                                                 href="/board/download/${ map.image_num } }"></a>
                                     </c:if></td>
-                                </tr>
+                                </tr>--%>
                         </table>
 
                         <!-- 하단 메뉴(버튼) -->

@@ -8,6 +8,11 @@ import java.util.Map;
 
 @Repository("boardDAO")
 public class BoardDAO extends AbstractDAO {
+    // 베스트 게시물
+    public List<Map<String, Object>> bestBoardList() throws Exception{
+        return selectList("board.boardList");
+    }
+
     // 리스트 출력
     public List<Map<String, Object>> selectBoardList(Map<String, Object> map) throws Exception{
         return (List<Map<String, Object>>)selectPagingList("board.selectBoardList", map);

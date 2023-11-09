@@ -13,6 +13,11 @@ public class BoardServiceImp implements BoardService{
     @Resource(name = "boardDAO")
     private BoardDAO boardDAO;
 
+    // 베스트 게시물
+    public List<Map<String, Object>> bestBoardList() throws Exception{
+        return boardDAO.bestBoardList();
+    }
+
     // 리스트 출력
     @Override
     public List<Map<String, Object>> selectBoardList(Map<String, Object> map) throws Exception{
