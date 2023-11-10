@@ -54,7 +54,7 @@
 <body>
 <div class="container">
 
-    <div class="nav-scroller py-1 mb-3 border-bottom">
+    <div class="nav-scroller py-1 mb-3 border-bottom" style="max-width: 80%; margin: 0 auto;">
         <nav class="nav nav-underline justify-content-between">
             <a class="nav-item nav-link link-body-emphasis" href="#">뉴스</a>
             <a class="nav-item nav-link link-body-emphasis" href="/board/free">게시판</a>

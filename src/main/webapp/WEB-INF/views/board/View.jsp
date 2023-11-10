@@ -14,6 +14,11 @@
             rel="stylesheet"
             integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
             crossorigin="anonymous">
+    <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
 <%@ include file="../layout/category.jsp" %>
@@ -55,7 +60,7 @@
                                 <td colspan="3">${ map.board_title }</td>
                             </tr>
                             <tr>
-                                <td colspan="4" height="300"><c:if test="${ not empty map.image_saveName }"><img src="/uploaded-files/${map.image_saveName}" alt="첨부 이미지" style="max-width: 600px"/><br></c:if>${ map.board_content }</td>
+                                <td colspan="4" height="300"><c:if test="${ not empty map.image_saveName }"><img src="/uploaded-files/${map.image_saveName}" alt="첨부 이미지" style="max-width: 400px; max-height: 500px"/><br></c:if>${ map.board_content }</td>
                             </tr>
                                 <!-- 첨부파일 -->
                                 <%--<tr>
@@ -126,8 +131,7 @@
                                                 </c:if></td>--%>
                                             <td><c:if
                                                     test="${ sessionScope.rank > 0 || row.member_nickName == sessionScope.name }">
-                                                <button type="button" class="btn btn-danger"
-                                                        onclick="location.href='/board/deleteComment/${ map.board_cate }/${ map.board_num }/${ row.comment_num }';">
+                                                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal">
                                                     삭제
                                                 </button>
                                             </c:if></td>
@@ -136,6 +140,30 @@
                                 </c:when>
                             </c:choose>
                         </table>
+
+                        <div class="modal" id="modal" tabindex="-1"
+                             aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">게시글 삭제</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>작성한 글을 삭제하시겠습니까?</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">취소
+                                        </button>
+                                        <button type="button" data-bs-dismiss="modal" class="btn btn-primary" id="userDeleteBtn"
+                                                onclick="location.href='/board/deleteComment/${ map.board_cate }/${ map.board_num }/${ row.comment_num }';">확인
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                         <c:if test="${ sessionScope.name != null }">
                             <p>${ sessionScope.name }</p>
@@ -155,6 +183,7 @@
                             </div>
                         </c:if>
                     </c:if>
+
                 </main>
             </div>
         </div>

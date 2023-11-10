@@ -13,6 +13,14 @@
             rel="stylesheet"
             integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
             crossorigin="anonymous">
+    <style>
+        .fixed-text {
+            max-width: 200px; /* 원하는 최대 너비로 설정 */
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis; /* 텍스트가 너무 길 경우 생략 부호 (...) 사용 */
+        }
+    </style>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
             integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
             crossorigin="anonymous"></script>
@@ -31,7 +39,7 @@
             <div class="container">
                 <h2 class="mb-4">
                     <c:if test="${not empty cate}">
-                        <span>${ cate } 게시판</span>
+                        <span class="fixed-text">${ cate } 게시판</span>
                     </c:if>
                 </h2>
                 <table border="1" width="90%" class="table">
@@ -58,7 +66,7 @@
                                     <td>${ row.board_num }<input type="hidden"
                                                                  value="${ row.totalCount - (((map.pageNum-1) * map.pageSize) + loop.index)}"/>
                                     </td>
-                                    <td align="left"><a class="text-dark" style="text-decoration-line: none"
+                                    <td align="left"><a class="text-dark fixed-text" style="text-decoration-line: none"
                                                         href="/board/${ row.board_cate }/${ row.board_num }">${ row.board_title }</a>
                                     </td>
                                     <td>${ row.member_nickName }</td>
@@ -69,22 +77,6 @@
                             </c:forEach>
                         </c:otherwise>
                     </c:choose>
-                    <%--<c:choose>
-                        <c:when test="${ not empty noticeList }">
-                            <c:forEach items="${ noticeList }" var="item">
-                                <tr align="center" class="table-secondary">
-                                    <td>${ item.board_category }</td>
-                                    <td align="left"><a
-                                            href="../board/view.do?idx=${ item.board_no }">${ item.board_title }</a>
-                                    </td>
-                                    <td>${ item.member_name }</td>
-                                    <td>${ item.board_createDate }</td>
-                                    <td>${ item.board_visitCount }</td>
-                                    <td>${ item.like_count }</td>
-                                </tr>
-                            </c:forEach>
-                        </c:when>
-                    </c:choose>--%>
                     </tbody>
                 </table>
 

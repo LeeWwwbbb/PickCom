@@ -10,7 +10,7 @@ import java.util.Map;
 public class BoardDAO extends AbstractDAO {
     // 베스트 게시물
     public List<Map<String, Object>> bestBoardList() throws Exception{
-        return selectList("board.boardList");
+        return selectList("board.bestBoardList");
     }
 
     // 리스트 출력

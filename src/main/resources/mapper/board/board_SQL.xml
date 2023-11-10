@@ -3,12 +3,15 @@
 <mapper namespace="board">
     <!-- 베스트 게시물 -->
     <select id="bestBoardList" resultType="hashmap">
-        SELECT *
+        <![CDATA[
+        SELECT *,
+            TO_CHAR(board_createdDate, 'YYYY.MM.DD') AS board_createDate
         FROM board
         WHERE image_size IS NOT NULL
           AND board_createdDate >= NOW() - INTERVAL 1 WEEK
         ORDER BY board_visitCount DESC
         LIMIT 4;
+        ]]>
     </select>
 
     <!-- 게시글 리스트 검색 -->
@@ -101,12 +104,12 @@
     <update id="updateBoard" parameterType="hashmap">
         <![CDATA[
         UPDATE board
-        SET board_title   = #{board_title},
-            board_content = #{board_content},
-            board_cate    = #{board_cate},
+        SET board_title        = #{board_title},
+            board_content      = #{board_content},
+            board_cate         = #{board_cate},
             image_originalName = #{image_originalName},
-            image_saveName = #{image_saveName},
-            image_size = #{image_size}
+            image_saveName     = #{image_saveName},
+            image_size         = #{image_size}
         WHERE board_num = #{board_num}
         ]]>
     </update>

@@ -1,6 +1,6 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<%@ include file="layout/header.jsp"%>
-<%@ include file="layout/category.jsp"%>
+<%@ include file="layout/header.jsp" %>
+<%@ include file="layout/category.jsp" %>
 <!doctype html>
 <html lang="en" data-bs-theme="auto">
 <head>
@@ -133,7 +133,7 @@
 </svg>
 
 <main class="container">
-    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" style="max-width: 80%; margin: 0 auto;">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
@@ -176,107 +176,31 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
+    <br>
 
-    <div class="row mb-2">
-        <div class="col-md-3">
-            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                <div class="col p-4 d-flex flex-column position-static">
-                    <strong class="d-inline-block mb-2 text-primary-emphasis">World</strong>
-                    <h3 class="mb-0">Featured post</h3>
-                    <div class="mb-1 text-body-secondary">Nov 12</div>
-                    <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to
-                        additional content.</p>
-                    <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
-                        Continue reading
-                        <svg class="bi">
-                            <use xlink:href="#chevron-right"/>
-                        </svg>
-                    </a>
-                </div>
-                <div class="col-auto d-none d-lg-block">
-                    <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg"
-                         role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
-                         focusable="false"><title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#55595c"/>
-                        <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
-                    </svg>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                <div class="col p-4 d-flex flex-column position-static">
-                    <strong class="d-inline-block mb-2 text-primary-emphasis">World</strong>
-                    <h3 class="mb-0">Featured post</h3>
-                    <div class="mb-1 text-body-secondary">Nov 12</div>
-                    <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to
-                        additional content.</p>
-                    <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
-                        Continue reading
-                        <svg class="bi">
-                            <use xlink:href="#chevron-right"/>
-                        </svg>
-                    </a>
-                </div>
-                <div class="col-auto d-none d-lg-block">
-                    <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg"
-                         role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
-                         focusable="false"><title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#55595c"/>
-                        <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
-                    </svg>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                <div class="col p-4 d-flex flex-column position-static">
-                    <strong class="d-inline-block mb-2 text-primary-emphasis">World</strong>
-                    <h3 class="mb-0">Featured post</h3>
-                    <div class="mb-1 text-body-secondary">Nov 12</div>
-                    <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to
-                        additional content.</p>
-                    <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
-                        Continue reading
-                        <svg class="bi">
-                            <use xlink:href="#chevron-right"/>
-                        </svg>
-                    </a>
-                </div>
-                <div class="col-auto d-none d-lg-block">
-                    <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg"
-                         role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
-                         focusable="false"><title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#55595c"/>
-                        <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
-                    </svg>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                <div class="col p-4 d-flex flex-column position-static">
-                    <h3 class="mb-0"></h3>
-                    <div class="mb-1 text-body-secondary">10.24</div>
-                    <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to
-                        additional content.</p>
-                    <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
-                        Continue reading
-                        <svg class="bi">
-                            <use xlink:href="#chevron-right"/>
-                        </svg>
-                    </a>
-                </div>
-                <div class="col-auto d-none d-lg-block">
-                    <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg"
-                         role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
-                         focusable="false"><title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#55595c"/>
-                        <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
-                    </svg>
-                </div>
-            </div>
-        </div>
+    <div class="row mb-2" style="max-width: 80%; margin: 0 auto;">
+        <c:choose>
+            <c:when test="${ empty best }">
+            </c:when>
+            <c:otherwise>
+                <c:forEach items="${ best }" var="row" varStatus="loop">
+                    <div class="col-md-3">
+                        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                            <div class="col p-4 d-flex flex-column position-static">
+                                <strong class="d-inline-block mb-2 text-primary-emphasis">${ row.board_cate }</strong>
+                                <h5 class="mb-0" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 250px;">${ row.board_title }</h5>
+                                <div class="mb-1 text-body-secondary">${ row.board_createDate }</div>
+                                <a href="/board/${ row.board_cate }/${ row.board_num }" class="icon-link gap-1 icon-link-hover stretched-link">
+                                </a>
+                            </div>
+                            <div class="col-auto d-none d-lg-block">
+                                <img src="/uploaded-files/${ row.image_saveName }" alt="첨부 이미지" style="max-width: 100%; max-height: 250px"/>
+                            </div>
+                        </div>
+                    </div>
+                </c:forEach>
+            </c:otherwise>
+        </c:choose>
     </div>
 
     <div class="row g-5">
@@ -297,7 +221,8 @@
         </div>
     </div>
     <footer class="py-5 text-center text-body-secondary bg-body-tertiary">
-        <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.
+        <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a
+                href="https://twitter.com/mdo">@mdo</a>.
         </p>
         <p class="mb-0">
             <a href="#">Back to top</a>
