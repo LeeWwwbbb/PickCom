@@ -37,11 +37,11 @@
         </div>
         <div class="col-9">
             <div class="container">
-                <h2 class="mb-4">
+                <h4 class="mb-4">
                     <c:if test="${not empty cate}">
                         <span class="fixed-text">${ cate } 게시판</span>
                     </c:if>
-                </h2>
+                </h4>
                 <table border="1" width="90%" class="table">
                     <thead class="table-light">
                     <tr align="center">

@@ -10,7 +10,7 @@
     <link rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
     <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
             rel="stylesheet"
             integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
             crossorigin="anonymous">
@@ -21,7 +21,7 @@
 </head>
 <body>
 <main>
-    <div class="position-absolute top-50 start-50 translate-middle w-75 p-3 h-75 d-inline-block">
+    <div class="position-absolute top-50 start-50 translate-middle border border-black border-2 p-3">
         <h2>아이디 찾기</h2>
         <form action="/findIdAction" method="post" name="idFindForm"
               onsubmit="return validateForm(this);">
@@ -40,7 +40,7 @@
                         <option value="">직접 입력하기</option>
                     </select>
                 </div>--%>
-                <div class="col-2">
+                <div class="col-4">
                     <button type="button" class="btn btn-secondary" id="sendBtn" onclick="sendEmailVerificationCode()">
                         인증번호
                         전송
@@ -51,10 +51,10 @@
                 <div class="col-2">
                     <label for="email" class="form-label">인증번호</label>
                 </div>
-                <div class="col-8">
+                <div class="col-6">
                     <input type="text" class="form-control" id="authCode"/>
                 </div>
-                <div class="col-2">
+                <div class="col-4">
                     <button type="button" class="btn btn-secondary" id="codeBtn" onclick="verifyEmailCode()">인증번호
                         확인
                     </button>

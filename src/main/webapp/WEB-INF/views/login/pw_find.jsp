@@ -10,10 +10,18 @@
     <link rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
     <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
             rel="stylesheet"
             integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
             crossorigin="anonymous">
+    <style>
+        .sendBtn {
+            white-space: nowrap;
+        }
+        .vfBtn {
+            white-space: nowrap;
+        }
+    </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="https://kit.fontawesome.com/20962f3e4b.js" crossorigin="anonymous"></script>
@@ -21,8 +29,8 @@
 </head>
 <body>
 <main>
-    <div class="position-absolute top-50 start-50 translate-middle w-75 p-3 h-75 d-inline-block">
-        <h2>비밀번호 찾기</h2>
+    <div class="position-absolute top-50 start-50 d-inline-block">
+        <h4>비밀번호 찾기</h4>
         <form action="/findPwAction" method="post" name="pwFindForm"
               onsubmit="return validateForm(this);">
             <div class="row">
@@ -50,7 +58,7 @@
                     </select>
                 </div>--%>
                 <div class="col-2">
-                    <button type="button" class="btn btn-secondary" id="sendBtn" onclick="sendEmailVerificationCode()">
+                    <button type="button" class="btn btn-secondary sendBtn" id="sendBtn" onclick="sendEmailVerificationCode()">
                         인증번호
                         전송
                     </button>
@@ -64,7 +72,7 @@
                     <input type="text" class="form-control" id="authCode"/>
                 </div>
                 <div class="col-2">
-                    <button type="button" class="btn btn-secondary" id="codeBtn" onclick="verifyEmailCode()">인증번호
+                    <button type="button" class="btn btn-secondary vfBtn" id="codeBtn" onclick="verifyEmailCode()">인증번호
                         확인
                     </button>
                 </div>
