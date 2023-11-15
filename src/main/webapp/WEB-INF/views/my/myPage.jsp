@@ -15,10 +15,17 @@
             integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
             crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="default.css">
+    <style>
+        @media (max-width: 1160px) {
+            .sidebar {
+                display: none;
+            }
+        }
+    </style>
 </head>
 <body>
 <div class="row">
-    <div class="col-2">
+    <div class="sidebar col-2">
         <%@ include file="../layout/mySide.jsp" %>
     </div>
     <div class="col-9">

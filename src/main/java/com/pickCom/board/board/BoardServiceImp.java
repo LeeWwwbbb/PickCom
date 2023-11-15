@@ -18,6 +18,11 @@ public class BoardServiceImp implements BoardService{
         return boardDAO.bestBoardList();
     }
 
+    // 메인 게시물
+    public List<Map<String, Object>> mainBoardList() throws Exception{
+        return boardDAO.mainBoardList();
+    }
+
     // 리스트 출력
     @Override
     public List<Map<String, Object>> selectBoardList(Map<String, Object> map) throws Exception{

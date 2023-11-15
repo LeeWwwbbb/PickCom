@@ -11,6 +11,16 @@
             integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
             crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .btn-no-wrap {
+            white-space: nowrap;
+        }
+        @media (max-width: 1160px) {
+            .sidebar {
+                display: none;
+            }
+        }
+    </style>
     <script>
         var selectedMemberNo = null;
 
@@ -80,125 +90,136 @@
 </head>
 <body>
 <main>
-    <div class="position-absolute top-50 start-50 translate-middle h-75 d-inline-block" style="width: 1200px;">
-        <!-- 사용자 검색 -->
-        <form action="/admin/search" method="get" onsubmit="return validateForm()">
-            <div class="row mb-4" id="keyword">
-                <div class="col-2">
-                    <select name="searchField" class="form-select">
-                        <option value="i">아이디</option>
-                        <option value="a">닉네임</option>
-                    </select>
-                </div>
-                <div class="col-8">
-                    <input type="text" class="form-control" id="word" name="keyword"/>
-                </div>
-                <div class="col-2">
-                    <button type="submit" class="btn btn-primary w-100" id="searchButton">검색</button>
-                </div>
-            </div>
-        </form>
-        <!-- 사용자 테이블 -->
-        <div>
-            <table width="90%" class="table table-hover">
-                <thead class="table-light">
-                <tr align="center">
-                    <th width="12%">아이디</th>
-                    <th width="8%">닉네임</th>
-                    <th width="12%">이메일</th>
-                    <th width="12%">가입일</th>
-                    <th width="12%">관리</th>
-                </tr>
-                </thead>
-                <tbody>
-                <c:choose>
-                    <c:when test="${ empty adminList }">
-                        <tr>
-                            <td colspan="8" align="center">유저가 한명도 없습니다</td>
-                        </tr>
-                    </c:when>
-                    <c:otherwise>
-                        <c:forEach items="${ adminList }" var="row" varStatus="loop">
-                            <tr align="center">
-                                <td>${ row.member_id }<input type="hidden" value="${ row.member_num }"/></td>
-                                <td><input type="text" value="${row.member_name}" class="form-control"
-                                           id="userName_${row.member_num}" name="userName"/></td>
-                                <td>${ row.member_email }</td>
-                                <td>${ row.member_regDate }</td>
-                                <td>
-                                    <div style="display: flex; justify-content: space-between;">
-                                        <button type="button" class="btn btn-danger delete-btn" data-bs-toggle="modal"
-                                                data-bs-target="#modal" data-member-no="${ row.member_num }">삭제
-                                        </button>
-                                        <button type="button" class="btn btn-primary update-btn" data-bs-toggle="modal"
-                                                data-bs-target="#modal_upd" data-member-no="${row.member_num}"
-                                                data-member-nm="${userName}">업데이트
-                                        </button>
-                                    </div>
-                                </td>
-                            </tr>
-                        </c:forEach>
-                    </c:otherwise>
-                </c:choose>
-                </tbody>
-            </table>
-            <div class="row mb-4">
-                <div class="col text-center">${ map.pagingImg }</div>
-            </div>
-            <div class="row mb-4">
-                <div class="col-2"></div>
-                <div class="col-8 text-center">
-                    <c:if test="${not empty pagingStr}">
-                        <div class="paging">
-                                ${pagingStr}
+    <div class="row">
+        <div class="col-2 sidebar">
+            <%@ include file="../layout/adminSide.jsp" %>
+        </div>
+        <div class="col-9">
+            <br><br>
+            <div class="container" style="width: 800px">
+                <!-- 사용자 검색 -->
+                <form action="/admin/search" method="get" onsubmit="return validateForm()">
+                    <div class="row mb-4" id="keyword">
+                        <div class="col-2">
+                            <select name="searchField" class="form-select">
+                                <option value="i">아이디</option>
+                                <option value="a">닉네임</option>
+                            </select>
                         </div>
-                    </c:if>
+                        <div class="col-8">
+                            <input type="text" class="form-control" id="word" name="keyword"/>
+                        </div>
+                        <div class="col-2">
+                            <button type="submit" class="btn btn-primary w-100" id="searchButton">검색</button>
+                        </div>
+                    </div>
+                </form>
+                <!-- 사용자 테이블 -->
+                <div>
+                    <table width="90%" class="table table-hover">
+                        <thead class="table-light">
+                        <tr align="center">
+                            <th width="12%">아이디</th>
+                            <th width="8%">닉네임</th>
+                            <th width="12%">이메일</th>
+                            <th width="12%">가입일</th>
+                            <th width="12%">관리</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <c:choose>
+                            <c:when test="${ empty adminList }">
+                                <tr>
+                                    <td colspan="8" align="center">유저가 한명도 없습니다</td>
+                                </tr>
+                            </c:when>
+                            <c:otherwise>
+                                <c:forEach items="${ adminList }" var="row" varStatus="loop">
+                                    <tr align="center">
+                                        <td>${ row.member_id }<input type="hidden" value="${ row.member_num }"/></td>
+                                        <td><input type="text" value="${row.member_name}" class="form-control"
+                                                   id="userName_${row.member_num}" name="userName"/></td>
+                                        <td>${ row.member_email }</td>
+                                        <td>${ row.member_regDate }</td>
+                                        <td>
+                                            <div style="display: flex; justify-content: space-between;">
+                                                <button type="button" class="btn btn-danger delete-btn btn-no-wrap"
+                                                        data-bs-toggle="modal" data-bs-target="#modal" data-member-no="${ row.member_num }">
+                                                    삭제
+                                                </button>
+                                                <button type="button" class="btn btn-primary update-btn btn-no-wrap"
+                                                        data-bs-toggle="modal" data-bs-target="#modal_upd"
+                                                        data-member-no="${row.member_num}" data-member-nm="${userName}">
+                                                    업데이트
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </c:forEach>
+                            </c:otherwise>
+                        </c:choose>
+                        </tbody>
+                    </table>
+                    <div class="row mb-4">
+                        <div class="col text-center">${ map.pagingImg }</div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-2"></div>
+                        <div class="col-8 text-center">
+                            <c:if test="${not empty pagingStr}">
+                                <div class="paging">
+                                        ${pagingStr}
+                                </div>
+                            </c:if>
+                        </div>
+                    </div>
+                </div>
+
+                <input type="hidden" name="idx" id="idx"/>
+                <input type="hidden" name="userNm" id="userNm"/>
+
+
+            </div>
+
+            <div class="modal" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">사용자 삭제</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>사용자 정보를 삭제하시겠습니까?</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
+                            <button type="button" data-bs-dismiss="modal" class="btn btn-primary" id="userDeleteBtn"
+                                    onclick="location.href='memberDelete/' + document.getElementById('idx').value;">확인
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <input type="hidden" name="idx" id="idx"/>
-        <input type="hidden" name="userNm" id="userNm"/>
-
-
-    </div>
-
-    <div class="modal" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">사용자 삭제</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p>사용자 정보를 삭제하시겠습니까?</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
-                    <button type="button" data-bs-dismiss="modal" class="btn btn-primary" id="userDeleteBtn"
-                            onclick="location.href='memberDelete/' + document.getElementById('idx').value;">확인
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal" id="modal_upd" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">사용자 업데이트</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal_upd" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p>사용자 정보를 업데이트하시겠습니까?</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
-                    <button type="button" data-bs-dismiss="modal" class="btn btn-primary" id="userUpdateBtn"
-                            onclick="location.href='memberUpdate/' + document.getElementById('idx').value + '/' + document.getElementById('userNm').value">
-                        확인
-                    </button>
+            <div class="modal" id="modal_upd" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">사용자 업데이트</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal_upd"
+                                    aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>사용자 정보를 업데이트하시겠습니까?</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
+                            <button type="button" data-bs-dismiss="modal" class="btn btn-primary" id="userUpdateBtn"
+                                    onclick="location.href='memberUpdate/' + document.getElementById('idx').value + '/' + document.getElementById('userNm').value">
+                                확인
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

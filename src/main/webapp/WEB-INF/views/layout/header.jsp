@@ -13,26 +13,37 @@
             rel="stylesheet"
             integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
             crossorigin="anonymous">
+    <style>
+        @media (max-width: 1160px) {
+            .logo {
+                display: none;
+            }
+
+            .search {
+                display: none;
+            }
+
+            .userName {
+                display: none;
+            }
+        }
+    </style>
 </head>
 <body>
 <header class="p-1 text-bg-dark vertical-center">
     <div class="row">
-        <div class="col-3 text-center">
-            <ul
-                    class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 d-flex align-items-center">
-                <a href="/">
-                    <img src="../../../img/header_logo.png" alt="로고" style="max-height: 80%">
-                </a>
-                <c:if test="${ sessionScope.num != null }">
-                </c:if>
-            </ul>
+        <div class="col-3 text-center d-flex align-items-center justify-content-center logo" style="height: 100%">
+            <a href="/">
+                <img src="../../../img/header_logo.png" style="max-width: 80%; max-height: 80%" alt="로고">
+            </a>
         </div>
         <!-- 검색 폼 -->
-        <div class="col">
+        <div class="search col-6">
             <form action="/board/search" method="post" onsubmit="return validateForm()">
                 <div class="row p-2">
                     <div class="col-10 d-flex align-items-center">
-                        <input type="text" class="form-control w-100" name="keyword" id="keyword" value="<c:if test='${not empty keyword}'>${keyword}</c:if>"/>
+                        <input type="text" class="form-control w-100" name="keyword" id="keyword"
+                               value="<c:if test='${not empty keyword}'>${keyword}</c:if>"/>
                     </div>
                     <div class="col-2 d-flex align-items-center">
                         <button type="submit" class="btn btn-primary w-100">검색</button>
@@ -41,17 +52,17 @@
             </form>
         </div>
 
-        <div class="col-1 text-end p-2 d-flex align-items-center">
+        <div class="userName col-1 text-end p-2 d-flex align-items-center">
             <c:if test="${ sessionScope.num != null }">
                 <span class="text-white" style="font-size: 16px;">${ sessionScope.name } 님</span>
             </c:if>
         </div>
 
-        <div class="col-2 p-2 d-flex align-items-center">
+        <div class="col p-2 d-flex align-items-center">
             <c:if test="${ sessionScope.num != null }">
                 <c:if test="${ sessionScope.rank > 0 }">
                     <button type="button" class="btn btn-outline-light me-2"
-                            onclick="location.href='/userList'">관리페이지
+                            onclick="location.href='/userList'">Admin
                     </button>
                 </c:if>
                 <c:if test="${ sessionScope.rank == 0 }">

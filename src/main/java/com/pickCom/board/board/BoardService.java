@@ -8,6 +8,9 @@ public interface BoardService {
     // 베스트 게시물
     public List<Map<String, Object>> bestBoardList() throws Exception;
 
+    // 메인 게시물
+    public List<Map<String, Object>> mainBoardList() throws Exception;
+
     // 리스트 출력
     List<Map<String, Object>> selectBoardList(Map<String, Object> map) throws Exception;
 

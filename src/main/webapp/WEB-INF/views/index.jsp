@@ -133,7 +133,8 @@
 </svg>
 
 <main class="container">
-    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" style="max-width: 80%; margin: 0 auto;">
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel"
+         style="max-width: 77%; margin: 0 auto;">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
@@ -186,15 +187,17 @@
                 <c:forEach items="${ best }" var="row" varStatus="loop">
                     <div class="col-md-3">
                         <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                            <div class="col p-4 d-flex flex-column position-static">
+                            <div class="col p-3 d-flex flex-column position-static">
                                 <strong class="d-inline-block mb-2 text-primary-emphasis">${ row.board_cate }</strong>
-                                <h5 class="mb-0" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 250px;">${ row.board_title }</h5>
-                                <div class="mb-1 text-body-secondary">${ row.board_createDate }</div>
-                                <a href="/board/${ row.board_cate }/${ row.board_num }" class="icon-link gap-1 icon-link-hover stretched-link">
+                                <h5 class="mb-0"
+                                    style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 250px;">${ row.board_title }</h5>
+                                <a href="/board/${ row.board_cate }/${ row.board_num }"
+                                   class="icon-link gap-1 icon-link-hover stretched-link">
                                 </a>
                             </div>
                             <div class="col-auto d-none d-lg-block">
-                                <img src="/uploaded-files/${ row.image_saveName }" alt="첨부 이미지" style="max-width: 100%; max-height: 250px"/>
+                                <img src="/uploaded-files/${ row.image_saveName }" alt="첨부 이미지"
+                                     style="min-width: 235px; max-width: 235px; min-height: 250px; max-height: 250px"/>
                             </div>
                         </div>
                     </div>
@@ -203,11 +206,34 @@
         </c:choose>
     </div>
 
-    <div class="row g-5">
+    <div class="row mb-2" style="max-width: 80%; margin: 0 auto;">
         <div class="col-md-8">
-            <h3 class="pb-4 mb-4 fst-italic border-bottom">
-                From the Firehose
-            </h3>
+            <hr>
+            <table border="1" class="table">
+                <thead class="table-light">
+                <tr align="center">
+                    <th width="*" scope="col" align="left" style="text-align: left;">전체 게시물<a class="text-dark text-decoration-none" href="/board/free">+</a></th>
+                </tr>
+                </thead>
+                <tbody>
+                <c:choose>
+                    <c:when test="${ empty main }">
+                        <tr>
+                            <td colspan="6" align="center">작성한 게시글이 없습니다</td>
+                        </tr>
+                    </c:when>
+                    <c:otherwise>
+                        <c:forEach items="${ main }" var="row" varStatus="loop">
+                            <tr align="center" style="font-size: small">
+                                <td align="left"><a class="text-dark fixed-text text-decoration-none"
+                                                    href="/board/${ row.board_cate }/${ row.board_num }">${ row.board_title }</a>
+                                </td>
+                            </tr>
+                        </c:forEach>
+                    </c:otherwise>
+                </c:choose>
+                </tbody>
+            </table>
         </div>
 
         <div class="col-md-4">
@@ -220,13 +246,13 @@
             </div>
         </div>
     </div>
-    <footer class="py-5 text-center text-body-secondary bg-body-tertiary">
-        <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a
-                href="https://twitter.com/mdo">@mdo</a>.
-        </p>
-        <p class="mb-0">
-            <a href="#">Back to top</a>
-        </p>
+    <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><p class="nav-link px-2 text-muted">대한민국</p></li>
+            <li class="nav-item"><p class="nav-link px-2 text-muted">경기도 의정부시 서부로 545</p></li>
+            <li class="nav-item"><p class="nav-link px-2 text-muted">경민대학교</p></li>
+        </ul>
+        <p class="text-center text-muted">&copy; 2023 Company, Inc. All rights reserved.</p>
     </footer>
 </main>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"

@@ -18,10 +18,15 @@ public class HomeClass {
     @RequestMapping("/")
     public ModelAndView homeClass() throws Exception {
         ModelAndView mv = new ModelAndView("/index");
-        List<Map<String, Object>> list = boardService.bestBoardList();
-        if (!list.isEmpty()){
-            System.out.println(list.size());
-            mv.addObject("best", list);
+        List<Map<String, Object>> bestList = boardService.bestBoardList();
+        List<Map<String, Object>> mainList = boardService.mainBoardList();
+        if (!bestList.isEmpty()){
+            System.out.println(bestList.size());
+            mv.addObject("best", bestList);
+        }
+        if(!mainList.isEmpty()){
+            System.out.println(mainList.size());
+            mv.addObject("main", mainList);
         }
         return mv;
     }
