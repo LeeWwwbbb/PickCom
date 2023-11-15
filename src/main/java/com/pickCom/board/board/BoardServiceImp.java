@@ -14,11 +14,13 @@ public class BoardServiceImp implements BoardService{
     private BoardDAO boardDAO;
 
     // 베스트 게시물
+    @Override
     public List<Map<String, Object>> bestBoardList() throws Exception{
         return boardDAO.bestBoardList();
     }
 
     // 메인 게시물
+    @Override
     public List<Map<String, Object>> mainBoardList() throws Exception{
         return boardDAO.mainBoardList();
     }

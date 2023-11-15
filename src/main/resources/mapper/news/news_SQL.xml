@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="news">
+    <!-- 배너 뉴스 -->
+    <select id="bannerNewsList" resultType="hashmap">
+        <![CDATA[
+        SELECT *,
+               TO_CHAR(news_regDate, 'YYYY.MM.DD') AS news_date
+        FROM news
+        WHERE news_banner = true
+        ORDER BY news_num DESC
+            LIMIT 3;
+        ]]>
+    </select>
+
+    <!-- 메인 뉴스 -->
+    <select id="mainNewsList" resultType="hashmap">
+        <![CDATA[
+        SELECT *,
+               TO_CHAR(news_regDate, 'YYYY.MM.DD') AS news_date
+        FROM news
+        ORDER BY news_regDate DESC
+            LIMIT 10;
+        ]]>
+    </select>
+
+    <!-- 뉴스 리스트 -->
+    <select id="newsList" parameterType="hashmap" resultType="hashmap">
+        <include refid="common.pagingPre"/>
+        SELECT
+        ROW_NUMBER() over (ORDER BY news_num DESC) rnum,
+        TO_CHAR(news_regDate, 'YYYY.MM.DD') AS news_date,
+        * FROM news
+        ORDER BY news_num DESC
+        <include refid="common.pagingPost"/>
+    </select>
+</mapper>

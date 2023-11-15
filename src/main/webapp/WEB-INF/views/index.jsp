@@ -144,27 +144,14 @@
                     aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="../../img/i8209863839.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>신듀얼리티: 에코 오브 에이다 체험기</h5>
-                    <p>묵직한 메카닉 액션 담아낸 PvPvE 슈터</p>
+            <c:forEach items="${ bannerNews }" var="row" varStatus="loop">
+                <div class="carousel-item ${loop.first ? 'active' : ''}">
+                    <img src="/banner-files/${row.news_image}" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>${ row.news_title }</h5>
+                    </div>
                 </div>
-            </div>
-            <div class="carousel-item">
-                <img src="../../img/i8231234455.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>브레이커스</h5>
-                    <p>"오리지널 IP를 더욱 가깝게, 대중적으로"</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="../../img/i8252919678.png" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>파판7 리버스 체험기</h5>
-                    <p>넓어진 무대, 연계로 더욱 깊어진 전투의 맛</p>
-                </div>
-            </div>
+            </c:forEach>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
                 data-bs-slide="prev">
@@ -180,30 +167,24 @@
     <br>
 
     <div class="row mb-2" style="max-width: 80%; margin: 0 auto;">
-        <c:choose>
-            <c:when test="${ empty best }">
-            </c:when>
-            <c:otherwise>
-                <c:forEach items="${ best }" var="row" varStatus="loop">
-                    <div class="col-md-3">
-                        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                            <div class="col p-3 d-flex flex-column position-static">
-                                <strong class="d-inline-block mb-2 text-primary-emphasis">${ row.board_cate }</strong>
-                                <h5 class="mb-0"
-                                    style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 250px;">${ row.board_title }</h5>
-                                <a href="/board/${ row.board_cate }/${ row.board_num }"
-                                   class="icon-link gap-1 icon-link-hover stretched-link">
-                                </a>
-                            </div>
-                            <div class="col-auto d-none d-lg-block">
-                                <img src="/uploaded-files/${ row.image_saveName }" alt="첨부 이미지"
-                                     style="min-width: 235px; max-width: 235px; min-height: 250px; max-height: 250px"/>
-                            </div>
-                        </div>
+        <c:forEach items="${ bestBoard }" var="row" varStatus="loop">
+            <div class="col-md-3">
+                <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-3 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary-emphasis">${ row.board_cate }</strong>
+                        <h5 class="mb-0"
+                            style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 250px;">${ row.board_title }</h5>
+                        <a href="/board/${ row.board_cate }/${ row.board_num }"
+                           class="icon-link gap-1 icon-link-hover stretched-link">
+                        </a>
                     </div>
-                </c:forEach>
-            </c:otherwise>
-        </c:choose>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="/uploaded-files/${ row.image_saveName }" alt="첨부 이미지"
+                             style="min-width: 235px; max-width: 235px; min-height: 250px; max-height: 250px"/>
+                    </div>
+                </div>
+            </div>
+        </c:forEach>
     </div>
 
     <div class="row mb-2" style="max-width: 80%; margin: 0 auto;">
@@ -212,18 +193,19 @@
             <table border="1" class="table">
                 <thead class="table-light">
                 <tr align="center">
-                    <th width="*" scope="col" align="left" style="text-align: left;">전체 게시물<a class="text-dark text-decoration-none" href="/board/free">+</a></th>
+                    <th width="*" scope="col" align="left" style="text-align: left;">전체 게시물<a
+                            class="text-dark text-decoration-none" href="/board/free">+</a></th>
                 </tr>
                 </thead>
                 <tbody>
                 <c:choose>
-                    <c:when test="${ empty main }">
+                    <c:when test="${ empty mainBoard }">
                         <tr>
                             <td colspan="6" align="center">작성한 게시글이 없습니다</td>
                         </tr>
                     </c:when>
                     <c:otherwise>
-                        <c:forEach items="${ main }" var="row" varStatus="loop">
+                        <c:forEach items="${ mainBoard }" var="row" varStatus="loop">
                             <tr align="center" style="font-size: small">
                                 <td align="left"><a class="text-dark fixed-text text-decoration-none"
                                                     href="/board/${ row.board_cate }/${ row.board_num }">${ row.board_title }</a>
@@ -239,9 +221,32 @@
         <div class="col-md-4">
             <div class="position-sticky" style="top: 2rem;">
                 <div class="p-4 mb-3 bg-body-tertiary rounded">
-                    <h4 class="fst-italic">About</h4>
-                    <p class="mb-0">Customize this section to tell your visitors a little bit about your publication,
-                        writers, content, or something else entirely. Totally up to you.</p>
+                    <table border="1" class="table">
+                        <thead class="table-light">
+                        <tr align="center">
+                            <th width="*" scope="col" align="left" style="text-align: left;">뉴스<a
+                                    class="text-dark text-decoration-none" href="/news">+</a></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <c:choose>
+                            <c:when test="${ empty mainNews }">
+                                <tr>
+                                    <td colspan="6" align="center">작성한 게시글이 없습니다</td>
+                                </tr>
+                            </c:when>
+                            <c:otherwise>
+                                <c:forEach items="${ mainNews }" var="row" varStatus="loop">
+                                    <tr align="center" style="font-size: small">
+                                        <td align="left"><a class="text-dark fixed-text text-decoration-none"
+                                                            href="/board/${ row.news_num }">${ row.news_title }</a>
+                                        </td>
+                                    </tr>
+                                </c:forEach>
+                            </c:otherwise>
+                        </c:choose>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
