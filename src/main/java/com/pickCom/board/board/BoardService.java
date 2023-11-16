@@ -29,8 +29,14 @@ public interface BoardService {
     // 글 추가
     void insertBoard(Map<String, Object> map, HttpServletRequest request) throws Exception;
 
+    // 글 수정 폼 열기
+    Map<String, Object> openBoardUpdate(Map<String, Object> map) throws Exception;
+
     // 글 수정
     void updateBoard(Map<String, Object> map, HttpServletRequest request) throws Exception;
+
+    // 글 이미지 수정
+    void updateImageBoard(Map<String, Object> map, HttpServletRequest request) throws Exception;
 
     // 글 삭제
     void deleteBoard(Map<String, Object> map) throws Exception;

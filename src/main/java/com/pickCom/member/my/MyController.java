@@ -1,6 +1,7 @@
 package com.pickCom.member.my;
 
 import com.pickCom.common.common.CommandMap;
+import com.pickCom.member.login.LoginService;
 import com.pickCom.utils.BoardPage;
 import com.pickCom.utils.TranslateCategory;
 import org.springframework.stereotype.Controller;
@@ -20,50 +21,38 @@ public class MyController {
     @Resource(name = "myServiceImp")
     private MyService myService;
 
-    /*// 마이페이지 메인
-    @RequestMapping(value = "/myPage.do", method = RequestMethod.GET)
-    public ModelAndView orderList(Map<String, Object> commandMap) throws Exception {
+    @Resource(name = "loginServiceImp")
+    private LoginService loginService;
 
-        ModelAndView mv = new ModelAndView("/my/myPage");
-
+    // 비밀번호 확인
+    @RequestMapping(value = "/my/pwCheck.do", method = RequestMethod.GET)
+    public ModelAndView pwdCheck(CommandMap commandMap, HttpServletRequest request) throws Exception {
+        ModelAndView mv = new ModelAndView();
+        System.out.println(commandMap.getMap());
+        Map<String, Object> chk = loginService.memberLogin(commandMap.getMap());
+        if(chk == null){
+            mv.addObject("message", "비밀번호가 일치하지 않습니다.");
+        }else{
+            HttpSession session = request.getSession();
+            session.setAttribute("pwCheck", true);
+            mv = new ModelAndView("redirect:/my/memberModify.do");
+        }
         return mv;
     }
-
-    // 수정 전 비밀번호 확인
-    @RequestMapping(value = "/my/memberModify.do", method = RequestMethod.GET)
-    public ModelAndView pwdCheck() throws Exception {
-        ModelAndView mv = new ModelAndView("my/pwdCheck");
-
-        return mv;
-    }*/
 
     //회원 정보 수정 폼 이동
     @RequestMapping(value = "/my/memberModify.do")
     public ModelAndView selectMember(CommandMap commandMap, HttpSession session) throws Exception {
         ModelAndView mv = new ModelAndView();
-        int id = (int) session.getAttribute("num");
-        commandMap.put("member_num", id);
-        // System.out.println("비빌번호 입력시"+ commandMap.getMap());
-        //세션값 가져오기
-        /*commandMap.put("MEMBER_ID", id);
-
-        String pw = (String) myService.passwdCheck(commandMap.getMap(), "MEMBER_ID");
-        Map<String, Object> MemberInfo;
-
-        if (id.equals(pw)) {
-
-            mv.setViewName("my/memberModify");
-            MemberInfo = myService.memberModify(id);
-            mv.addObject("MEMBER", MemberInfo);
-
-        } else {
-            mv.addObject("alert", "비밀번호가 올바르지 않습니다.");
-            mv.setViewName("my/pwdCheck");
-        }*/
-        Map<String, Object> MemberInfo = myService.memberModify(commandMap.getMap());
-        System.out.println(MemberInfo);
-        mv.setViewName("my/myPage");
-        mv.addObject("MEMBER", MemberInfo.get("map"));
+        if ((boolean) session.getAttribute("pwCheck")) {
+            int id = (int) session.getAttribute("num");
+            commandMap.put("member_num", id);
+            Map<String, Object> MemberInfo = myService.memberModify(commandMap.getMap());
+            System.out.println(MemberInfo);
+            mv.setViewName("my/myPage");
+            mv.addObject("MEMBER", MemberInfo.get("map"));
+        } else
+            mv.setViewName("/my/pw_check");
         return mv;
     }
 

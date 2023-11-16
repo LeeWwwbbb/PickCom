@@ -78,8 +78,8 @@
                             <div class="col-2">
                                 <c:if
                                         test="${ sessionScope.rank > 0 || map.member_nickName == sessionScope.name }">
-                                    <button type="button" class="btn btn-danger w-100"
-                                            onclick="location.href='/board/deleteBoard/${ map.board_cate }/${ map.board_num }';">
+                                    <button type="button" class="btn btn-danger w-100" data-bs-toggle="modal" data-bs-target="#modal"
+                                            >
                                         삭제하기
                                     </button>
                                 </c:if>
@@ -131,7 +131,7 @@
                                                 </c:if></td>--%>
                                             <td><c:if
                                                     test="${ sessionScope.rank > 0 || row.member_nickName == sessionScope.name }">
-                                                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal">
+                                                <button type="button" class="btn btn-danger" onclick="location.href='/board/deleteComment/${ map.board_cate }/${ map.board_num }/${ row.comment_num }';">
                                                     삭제
                                                 </button>
                                             </c:if></td>
@@ -158,7 +158,7 @@
                                                 data-bs-dismiss="modal">취소
                                         </button>
                                         <button type="button" data-bs-dismiss="modal" class="btn btn-primary" id="userDeleteBtn"
-                                                onclick="location.href='/board/deleteComment/${ map.board_cate }/${ map.board_num }/${ row.comment_num }';">확인
+                                                onclick="location.href='/board/deleteBoard/${ map.board_cate }/${ map.board_num }';">확인
                                         </button>
                                     </div>
                                 </div>

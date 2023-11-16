@@ -46,7 +46,8 @@ public class BoardController {
         map.put("cate", category);
 
         // 페이징 관련 설정
-        int pageSize = 10; // 한 페이지에 표시할 게시물 수
+        int pageSize = 10;
+        int blockPage = 10;
         int page = (pageNum != null) ? Integer.parseInt(pageNum) : 1;
         int start = (page - 1) * pageSize;
         int end = page * pageSize;
@@ -60,10 +61,9 @@ public class BoardController {
 
         if (!list.isEmpty()) {
             int totalCount = Integer.parseInt(list.get(0).get("TOTAL_COUNT").toString());
-            int pageCount = (int) Math.ceil((double) totalCount / pageSize);
 
             // 페이징 문자열 생성
-            String pagingStr = BoardPage.pagingStr(totalCount, pageSize, pageCount, page, "/board/" + category);
+            String pagingStr = BoardPage.pagingStr(totalCount, pageSize, blockPage, page, "/board/" + category);
 
             // 모델에 페이징 문자열과 게시물 리스트를 추가
             mv.addObject("pagingStr", pagingStr);
@@ -90,7 +90,8 @@ public class BoardController {
         mv.addObject("keyword", kw);
 
         // 페이징 관련 설정
-        int pageSize = 10; // 한 페이지에 표시할 게시물 수
+        int pageSize = 10;
+        int blockPage = 10;
         int page = (pageNum != null) ? Integer.parseInt(pageNum) : 1;
         int start = (page - 1) * pageSize;
         int end = page * pageSize;
@@ -104,10 +105,9 @@ public class BoardController {
 
         if (!list.isEmpty()) {
             int totalCount = Integer.parseInt(list.get(0).get("TOTAL_COUNT").toString());
-            int pageCount = (int) Math.ceil((double) totalCount / pageSize);
 
             // 페이징 문자열 생성
-            String pagingStr = BoardPage.pagingStr(totalCount, pageSize, pageCount, page, "/board/search");
+            String pagingStr = BoardPage.pagingStr(totalCount, pageSize, blockPage, page, "/board/search");
 
             // 모델에 페이징 문자열과 게시물 리스트를 추가
             mv.addObject("pagingStr", pagingStr);
@@ -194,8 +194,15 @@ public class BoardController {
             commandMap.put("image_size", file.getSize());
         }
 
+        // 줄바꿈 처리
+        String boardContent = (String) commandMap.get("board_content");
+        if (boardContent != null) {
+            boardContent = boardContent.replaceAll("\\n", "<br>");
+            commandMap.put("board_content", boardContent);
+        }
+
         boardService.insertBoard(commandMap.getMap(), request);
-        String cate = (String)commandMap.get("board_cate");
+        String cate = (String) commandMap.get("board_cate");
         ModelAndView mv = new ModelAndView("redirect:/board/"+cate);
 
         return mv;
@@ -207,7 +214,7 @@ public class BoardController {
         ModelAndView mv = new ModelAndView("/board/Edit");
         commandMap.put("board_num", idx);
 
-        Map<String,Object> map = boardService.openBoardDetail(commandMap.getMap());
+        Map<String,Object> map = boardService.openBoardUpdate(commandMap.getMap());
         mv.addObject("map", map.get("map"));
 
         return mv;
@@ -218,6 +225,16 @@ public class BoardController {
     public ModelAndView updateBoard(CommandMap commandMap, @RequestParam("file") MultipartFile file, HttpServletRequest request) throws Exception{
         // 게시물 정보 가져오기
         Map<String, Object> boardInfo = boardService.openBoardDetail(commandMap.getMap());
+
+        // 줄바꿈 처리
+        String boardContent = (String) commandMap.get("board_content");
+        if (boardContent != null) {
+            boardContent = boardContent.replaceAll("\\n", "<br>");
+            commandMap.put("board_content", boardContent);
+        }
+
+        String cate = (String)commandMap.get("board_cate");
+        ModelAndView mv = new ModelAndView("redirect:/board/"+ cate + "/" + commandMap.get("board_num"));
 
         // 이미지 파일이 업로드된 경우에만 이미지를 저장
         if (!file.isEmpty()) {
@@ -244,12 +261,11 @@ public class BoardController {
             commandMap.put("image_originalName", originalFileName);
             commandMap.put("image_saveName", savedFileName);
             commandMap.put("image_size", file.getSize());
-        }
 
-        String cate = (String)commandMap.get("board_cate");
-        ModelAndView mv = new ModelAndView("redirect:/board/"+ cate + "/" + commandMap.get("board_num"));
+            boardService.updateImageBoard(commandMap.getMap(), request);
+        } else
+            boardService.updateBoard(commandMap.getMap(), request);
 
-        boardService.updateBoard(commandMap.getMap(), request);
         return mv;
     }
 

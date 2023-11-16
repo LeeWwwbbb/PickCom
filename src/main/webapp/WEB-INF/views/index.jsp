@@ -150,6 +150,9 @@
                     <div class="carousel-caption d-none d-md-block">
                         <h5>${ row.news_title }</h5>
                     </div>
+                    <a href="/news/${ row.news_num }"
+                       class="icon-link gap-1 icon-link-hover stretched-link">
+                    </a>
                 </div>
             </c:forEach>
         </div>
@@ -239,7 +242,7 @@
                                 <c:forEach items="${ mainNews }" var="row" varStatus="loop">
                                     <tr align="center" style="font-size: small">
                                         <td align="left"><a class="text-dark fixed-text text-decoration-none"
-                                                            href="/board/${ row.news_num }">${ row.news_title }</a>
+                                                            href="/news/${ row.news_num }">${ row.news_title }</a>
                                         </td>
                                     </tr>
                                 </c:forEach>

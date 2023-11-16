@@ -18,8 +18,13 @@ public class NewsDAO extends AbstractDAO {
         return selectList("news.mainNewsList");
     }
 
-    // 배너 뉴스 리스트
+    // 뉴스 리스트
     public List<Map<String, Object>> newsList(Map<String, Object> map) throws Exception{
         return (List<Map<String, Object>>)selectPagingList("news.newsList", map);
+    }
+
+    // 뉴스 보기
+    public Map<String, Object> openNews(Map<String, Object> map) throws Exception{
+        return (Map<String, Object>) selectOne("news.openNews", map);
     }
 }

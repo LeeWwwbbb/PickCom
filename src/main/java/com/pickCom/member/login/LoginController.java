@@ -49,6 +49,7 @@ public class LoginController {
                     session.setAttribute("name", chk.get("MEMBER_NICKNAME"));
                     session.setAttribute("rank", chk.get("MEMBER_RANK"));
                     session.setAttribute("loginComplete", true);
+                    session.setAttribute("pwCheck", false);
 
                     mv = new ModelAndView("redirect:/");
                     mv.addObject("MEMBER", chk);

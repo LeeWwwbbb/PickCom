@@ -62,10 +62,29 @@ public class BoardServiceImp implements BoardService{
         boardDAO.insertBoard(map);
     }
 
+    // 글 수정 폼 열기
+    public Map<String, Object> openBoardUpdate(Map<String, Object> map) throws Exception{
+        Map<String, Object> resultMap = new HashMap<String,Object>();
+        Map<String, Object> tempMap = boardDAO.openBoardDetail(map);
+
+        String boardContent = (String) tempMap.get("board_content");
+        boardContent = boardContent.replace("<br>", "\n");
+        tempMap.put("board_content", boardContent);
+
+        resultMap.put("map", tempMap);
+        return resultMap;
+    }
+
     // 글 수정
     @Override
     public void updateBoard(Map<String, Object> map, HttpServletRequest request) throws Exception{
         boardDAO.updateBoard(map);
+    }
+
+    // 글 이미지 수정
+    @Override
+    public void updateImageBoard(Map<String, Object> map, HttpServletRequest request) throws Exception{
+        boardDAO.updateImageBoard(map);
     }
 
     // 글 삭제

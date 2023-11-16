@@ -8,7 +8,7 @@
                TO_CHAR(news_regDate, 'YYYY.MM.DD') AS news_date
         FROM news
         WHERE news_banner = true
-        ORDER BY news_num DESC
+        ORDER BY news_num
             LIMIT 3;
         ]]>
     </select>
@@ -27,11 +27,21 @@
     <!-- 뉴스 리스트 -->
     <select id="newsList" parameterType="hashmap" resultType="hashmap">
         <include refid="common.pagingPre"/>
-        SELECT
+        SELECT *,
         ROW_NUMBER() over (ORDER BY news_num DESC) rnum,
-        TO_CHAR(news_regDate, 'YYYY.MM.DD') AS news_date,
-        * FROM news
+        TO_CHAR(news_regDate, 'YYYY.MM.DD') AS news_date
+        FROM news
         ORDER BY news_num DESC
         <include refid="common.pagingPost"/>
+    </select>
+
+    <!-- 뉴스 보기 -->
+    <select id="openNews" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+        SELECT *,
+               TO_CHAR(news_regDate, 'YYYY.MM.DD') AS news_date
+        FROM news
+        WHERE news_num = #{news_num}
+        ]]>
     </select>
 </mapper>

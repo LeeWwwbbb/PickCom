@@ -117,6 +117,17 @@
         UPDATE board
         SET board_title        = #{board_title},
             board_content      = #{board_content},
+            board_cate         = #{board_cate}
+        WHERE board_num = #{board_num}
+        ]]>
+    </update>
+
+    <!-- 글 수정 -->
+    <update id="updateImageBoard" parameterType="hashmap">
+        <![CDATA[
+        UPDATE board
+        SET board_title        = #{board_title},
+            board_content      = #{board_content},
             board_cate         = #{board_cate},
             image_originalName = #{image_originalName},
             image_saveName     = #{image_saveName},
