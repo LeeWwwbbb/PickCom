@@ -20,6 +20,10 @@
             overflow: hidden;
             text-overflow: ellipsis; /* 텍스트가 너무 길 경우 생략 부호 (...) 사용 */
         }
+        .paging a {
+            color: black;
+            text-decoration-line: none;
+        }
     </style>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
             integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"

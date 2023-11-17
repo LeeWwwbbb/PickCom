@@ -1,6 +1,5 @@
 package com.pickCom.board.board;
 
-import com.pickCom.board.BoardDTO;
 import com.pickCom.common.common.CommandMap;
 import com.pickCom.utils.BoardPage;
 import com.pickCom.utils.TranslateCategory;

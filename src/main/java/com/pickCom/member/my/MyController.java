@@ -25,15 +25,17 @@ public class MyController {
     private LoginService loginService;
 
     // 비밀번호 확인
-    @RequestMapping(value = "/my/pwCheck.do", method = RequestMethod.GET)
-    public ModelAndView pwdCheck(CommandMap commandMap, HttpServletRequest request) throws Exception {
+    @RequestMapping(value = "/my/pwCheck.do", method = RequestMethod.POST)
+    public ModelAndView pwdCheck(CommandMap commandMap, HttpServletRequest request, HttpSession session) throws Exception {
         ModelAndView mv = new ModelAndView();
-        System.out.println(commandMap.getMap());
         Map<String, Object> chk = loginService.memberLogin(commandMap.getMap());
+        System.out.println(commandMap.getMap());
         if(chk == null){
+            mv.setViewName("/my/pw_check");
+            String id = (String)session.getAttribute("id");
+            mv.addObject("member_id", id);
             mv.addObject("message", "비밀번호가 일치하지 않습니다.");
         }else{
-            HttpSession session = request.getSession();
             session.setAttribute("pwCheck", true);
             mv = new ModelAndView("redirect:/my/memberModify.do");
         }
@@ -44,67 +46,19 @@ public class MyController {
     @RequestMapping(value = "/my/memberModify.do")
     public ModelAndView selectMember(CommandMap commandMap, HttpSession session) throws Exception {
         ModelAndView mv = new ModelAndView();
+        int num = (int) session.getAttribute("num");
+        commandMap.put("member_num", num);
+        Map<String, Object> MemberInfo = myService.memberModify(commandMap.getMap());
         if ((boolean) session.getAttribute("pwCheck")) {
-            int id = (int) session.getAttribute("num");
-            commandMap.put("member_num", id);
-            Map<String, Object> MemberInfo = myService.memberModify(commandMap.getMap());
-            System.out.println(MemberInfo);
             mv.setViewName("my/myPage");
             mv.addObject("MEMBER", MemberInfo.get("map"));
-        } else
+        } else {
+            String id = (String)session.getAttribute("id");
             mv.setViewName("/my/pw_check");
+            mv.addObject("member_id", id);
+        }
         return mv;
     }
-
-    /*// 회원 정보 수정 처리
-    @RequestMapping(value = "/my/memberModifyAction.do", method = RequestMethod.POST)
-    public ModelAndView memberModifyAction(CommandMap commandMap, HttpServletRequest request) throws Exception {
-        ModelAndView mv = new ModelAndView("my/myOrderList");
-        System.out.println("수정클릭" + commandMap.getMap());
-        Object MEMBER_NO = "";
-
-        //세션값 가져오기
-        HttpSession session = request.getSession();
-        MEMBER_NO = (Object) session.getAttribute("SESSION_NO");
-
-        commandMap.remove("MEMBER_NO"); // 기존 회원번호 데이터 삭제
-        commandMap.put("MEMBER_NO", MEMBER_NO); // 세션 값으로 적용
-
-        // 이메일, SMS 수신 여부
-        String email_agree = (String) commandMap.get("EMAIL_AGREE");
-        String sms_agree = (String) commandMap.get("SMS_AGREE");
-
-        // 체크를 하지 않으면 '0' 으로 set 후 넘김
-        if (email_agree == null) {
-            email_agree = "0";
-            commandMap.put("EMAIL_AGREE", email_agree);
-        }
-        if (sms_agree == null) {
-            sms_agree = "0";
-            commandMap.put("SMS_AGREE", sms_agree);
-        }
-
-        // 이메일
-        String email = request.getParameter("MEMBER_EMAIL");
-
-        //System.out.println("MEMBER_EMAIL : " + email);
-        commandMap.remove("MEMBER_EMAIL"); // 기존 MEMBER_EMAIL 데이터 삭제
-        commandMap.put("MEMBER_EMAIL", email); // 위에 정의한 email로 put
-        // 생일
-        // birth = 년  + 월  + 일;
-        String birth = request.getParameter("MEMBER_BIRTH")
-                + request.getParameter("MEMBER_BIRTH2")
-                + request.getParameter("MEMBER_BIRTH3");
-
-        //System.out.println("MEMBER_BIRTH : " + birth);
-
-        commandMap.remove("MEMBER_BIRTH"); // 기존 MEMBER_BIRTH 데이터 삭제
-        commandMap.put("MEMBER_BIRTH", birth); // 위에 정의한 birth로 put
-
-        //myService.memberModify(commandMap.getMap());
-
-        return mv;
-    }*/
 
     // 비밀번호 변경 폼
     @RequestMapping(value = "/my/pwChange.do")

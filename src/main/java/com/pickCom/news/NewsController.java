@@ -37,7 +37,6 @@ public class NewsController {
         map.put("end", end);
         map.put("pageSize", pageSize);
         List<Map<String, Object>> list = newsService.newsList(map.getMap());
-        System.out.println(newsService.newsList(map.getMap()));
 
         if (!list.isEmpty()) {
             int totalCount = Integer.parseInt(list.get(0).get("TOTAL_COUNT").toString());
@@ -63,7 +62,6 @@ public class NewsController {
         commandMap.put("news_num", idx);
         Map<String, Object> map = newsService.openNews(commandMap.getMap());
         mv.addObject("map", map.get("map"));
-        System.out.println(mv.getModel());
         return mv;
     }
 }

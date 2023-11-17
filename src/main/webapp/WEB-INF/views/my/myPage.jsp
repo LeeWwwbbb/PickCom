@@ -14,7 +14,6 @@
             rel="stylesheet"
             integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
             crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="default.css">
     <style>
         @media (max-width: 1160px) {
             .sidebar {
@@ -46,8 +45,7 @@
                         <label for="member_name" class="form-label">이름</label>
                     </div>
                     <div class="col-7">
-                        <input type="text" id="member_name" value="${ MEMBER.MEMBER_NAME }"
-                               class="form-control"/>
+                        <label class="form-label" id="member_name">${ MEMBER.MEMBER_NAME }</label>
                     </div>
                 </div>
                 <div class="row mb-4">
@@ -70,8 +68,7 @@
                         <label for="member_email" class="form-label">이메일</label>
                     </div>
                     <div class="col-7">
-                        <input type="email" class="form-control"
-                               value="${ MEMBER.MEMBER_EMAIL }" id="member_email" name="member_email" readonly>
+                        <label class="form-label" id="member_email" name="member_email">${ MEMBER.MEMBER_EMAIL }</label>
                     </div>
                     <div class="col"></div>
                 </div>

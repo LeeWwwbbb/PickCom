@@ -8,7 +8,7 @@
                TO_CHAR(news_regDate, 'YYYY.MM.DD') AS news_date
         FROM news
         WHERE news_banner = true
-        ORDER BY news_num
+        ORDER BY news_num DESC
             LIMIT 3;
         ]]>
     </select>

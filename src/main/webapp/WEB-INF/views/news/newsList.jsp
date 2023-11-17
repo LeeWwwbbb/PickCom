@@ -27,42 +27,45 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
             integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
             crossorigin="anonymous"></script>
+    <style>
+        .paging a {
+            color: black;
+            text-decoration-line: none;
+        }
+    </style>
 </head>
 <body>
 <main>
     <%@ include file="../layout/category.jsp" %>
     <div class="container" style="max-width: 75%; margin: 0 auto;">
-        <table border="1" width="90%" class="table">
-            <thead class="table-light">
-            <tr align="center">
-                <th width="*" scope="col" align="left" style="text-align: left;">제목</th>
-                <th width="15%" scope="col">작성자</th>
-                <th width="15%" scope="col">작성일</th>
-            </tr>
-            </thead>
-            <tbody>
-            <c:choose>
-                <c:when test="${ empty newsList }">
-                    <tr>
-                        <td colspan="6" align="center">작성한 게시글이 없습니다</td>
-                    </tr>
-                </c:when>
-                <c:otherwise>
-                    <c:forEach items="${ newsList }" var="row" varStatus="loop">
-                        <tr align="center">
-                            <td align="left"><a class="text-dark fixed-text" style="text-decoration-line: none"
-                                                href="/news/${ row.news_num }">${ row.news_title }</a>
+        <c:choose>
+            <c:when test="${ empty newsList }">
+            </c:when>
+            <c:otherwise>
+                <c:forEach items="${ newsList }" var="row" varStatus="loop">
+                    <div class="row" style="height: 250px">
+                        <div class="col-3">
+                            <a class="text-dark fixed-text" style="text-decoration-line: none"
+                               href="/news/${ row.news_num }">
+                                <img src="${ row.news_image }" alt="첨부 이미지"
+                                     style="width: 100%; "/>
+                            </a>
+                        </div>
+                        <div class="col-9">
+                            <a class="text-dark fixed-text" style="text-decoration-line: none"
+                               href="/news/${ row.news_num }">
+                                <h4>${ row.news_title }</h4>
+                                <p>${ row.news_writer }</p>
+                                <p>${ row.news_date }</p>
                                 <input type="hidden"
                                        value="${ row.totalCount - (((map.pageNum-1) * map.pageSize) + loop.index)}"/>
-                            </td>
-                            <td>${ row.news_writer }</td>
-                            <td>${ row.news_date }</td>
-                        </tr>
-                    </c:forEach>
-                </c:otherwise>
-            </c:choose>
-            </tbody>
-        </table>
+                            </a>
+                        </div>
+                        <hr>
+                    </div>
+                </c:forEach>
+            </c:otherwise>
+        </c:choose>
 
         <!-- 하단 메뉴(바로가기, 글쓰기) -->
         <div class="text-center">

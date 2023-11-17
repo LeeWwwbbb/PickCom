@@ -27,11 +27,9 @@ public class HomeClass {
         List<Map<String, Object>> bannerNews = newsService.bannerNewsList();
         List<Map<String, Object>> mainNews = newsService.mainNewsList();
         if (!bestBoard.isEmpty()){
-            System.out.println(bestBoard.size());
             mv.addObject("bestBoard", bestBoard);
         }
         if(!mainBoard.isEmpty()){
-            System.out.println(mainBoard.size());
             mv.addObject("mainBoard", mainBoard);
         }
         if (!bannerNews.isEmpty()){
@@ -39,7 +37,6 @@ public class HomeClass {
             mv.addObject("bannerNews", bannerNews);
         }
         if(!mainNews.isEmpty()){
-            System.out.println(mainNews.size());
             mv.addObject("mainNews", mainNews);
         }
         return mv;

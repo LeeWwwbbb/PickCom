@@ -17,15 +17,14 @@
 </head>
 <body>
 <main>
-    <div
-            class="position-absolute top-50 start-50 translate-middle h-50 d-inline-block" style="width: 1000px;">
+    <div class="position-absolute top-50 start-50 translate-middle h-50 d-inline-block" style="width: 1000px;">
         <form action="/my/pwCheck.do" method="post" name="pwCheckForm"
               onsubmit="return validateForm(this);">
             <h2>비밀번호 확인</h2>
             <input type="hidden" name="MEMBER_ID" value="${ member_id }">
             <div class="row mb-4">
                 <div class="col-2">
-                    <label for="pwd1" class="form-label">비밀번호 <span>*</span></label>
+                    <label for="pwd1" class="form-label">비밀번호</label>
                 </div>
                 <div class="col">
                     <input class="form-control"
@@ -33,7 +32,7 @@
                 </div>
             </div>
             <div>
-                <button type="submit" class="btn btn-primary" id="pwCheckBtn" style="width: 300px; float: right;">비밀번호 확인
+                <button type="submit" class="btn btn-primary" style="width: 300px; float: right;">비밀번호 확인
                 </button>
             </div>
         </form>

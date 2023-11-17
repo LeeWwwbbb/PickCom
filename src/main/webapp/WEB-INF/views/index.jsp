@@ -146,9 +146,10 @@
         <div class="carousel-inner">
             <c:forEach items="${ bannerNews }" var="row" varStatus="loop">
                 <div class="carousel-item ${loop.first ? 'active' : ''}">
-                    <img src="/banner-files/${row.news_image}" class="d-block w-100" alt="...">
+                    <img src="${row.news_image}" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>${ row.news_title }</h5>
+                        <h4>${ row.news_title }</h4>
+                        <br>
                     </div>
                     <a href="/news/${ row.news_num }"
                        class="icon-link gap-1 icon-link-hover stretched-link">

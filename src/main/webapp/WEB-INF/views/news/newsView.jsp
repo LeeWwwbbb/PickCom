@@ -31,7 +31,7 @@
             <hr>
             <div class="newsContent">
                 <c:if test="${ not empty map.news_image }">
-                    <img src="/banner-files/${ map.news_image }" alt="첨부 이미지"
+                    <img src="${ map.news_image }" alt="첨부 이미지"
                          style="width: 100%;"/><br></c:if>
                     ${ map.news_content }
             </div>

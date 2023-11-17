@@ -81,6 +81,7 @@
         <include refid="common.pagingPre"/>
         SELECT
         ROW_NUMBER() over (ORDER BY b.board_num DESC) rnum,
+        TO_CHAR(c.comment_regDate, 'YYYY.MM.DD') AS comment_date,
         c.comment_num, c.comment_content, b.board_title, b.board_num, b.board_cate, m.member_nickName
         FROM comment c
         INNER JOIN member m ON c.member_num = m.member_num

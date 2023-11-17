@@ -8,7 +8,7 @@
             TO_CHAR(board_createdDate, 'YYYY.MM.DD') AS board_createDate
         FROM board
         WHERE image_size IS NOT NULL
-          AND board_createdDate >= NOW() - INTERVAL 1 WEEK
+          AND board_createdDate >= NOW() - INTERVAL 4 WEEK
         ORDER BY board_visitCount DESC
         LIMIT 4;
         ]]>
@@ -65,7 +65,7 @@
     <!-- 댓글 리스트 출력 -->
     <select id="selectCommentList" parameterType="hashmap" resultType="hashmap">
         <![CDATA[
-        SELECT c.*, m.member_nickName
+        SELECT c.*, m.member_nickName, TO_CHAR(c.comment_regDate, 'YYYY.MM.DD') AS comment_date
         FROM comment c
                  LEFT JOIN board b ON b.board_num = c.board_num
                  LEFT JOIN member m ON m.member_num = c.member_num

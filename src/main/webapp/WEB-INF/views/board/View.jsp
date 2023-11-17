@@ -122,7 +122,7 @@
                                         <tr align="center">
                                             <td>${ row.member_nickName }</td>
                                             <td align="left">${ row.comment_content }</td>
-                                            <td>${ row.comment_updatedDate }</td>
+                                            <td>${ row.comment_date }</td>
                                                 <%--<td><c:if
                                                         test="${ sessionScope.rank != 0 || row.member_nickName == sessionScope.name }">
                                                     <button type="button" class="btn btn-success"
