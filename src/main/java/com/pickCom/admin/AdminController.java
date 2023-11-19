@@ -1,7 +1,6 @@
 package com.pickCom.admin;
 
 import com.pickCom.common.common.CommandMap;
-import com.pickCom.member.MemberDTO;
 import com.pickCom.utils.AdminPage;
 import com.pickCom.utils.BoardPage;
 import lombok.SneakyThrows;

@@ -1,7 +1,6 @@
 package com.pickCom.admin;
 
 import com.pickCom.common.dao.AbstractDAO;
-import com.pickCom.member.MemberDTO;
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.stereotype.Repository;
 

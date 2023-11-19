@@ -1,6 +1,5 @@
 package com.pickCom.admin;
 
-import com.pickCom.member.MemberDTO;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;

@@ -58,7 +58,7 @@
         <nav class="nav nav-underline justify-content-between">
             <a class="nav-item nav-link link-body-emphasis" href="/news">뉴스</a>
             <a class="nav-item nav-link link-body-emphasis" href="/board/free">게시판</a>
-            <a class="nav-item nav-link link-body-emphasis" href="#">견적추천</a>
+            <a class="nav-item nav-link link-body-emphasis" href="/recommend">견적추천</a>
         </nav>
     </div>
 </div>

@@ -1,7 +1,5 @@
 package com.pickCom.admin;
 
-import com.pickCom.member.MemberDTO;
-
 import java.util.List;
 import java.util.Map;
 
