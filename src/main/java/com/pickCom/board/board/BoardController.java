@@ -44,8 +44,7 @@ public class BoardController {
         ModelAndView mv = new ModelAndView("/board/List");
         map.put("cate", category);
 
-        // 페이징 관련 설정
-        int pageSize = 10;
+        int pageSize = 15;
         int blockPage = 10;
         int page = (pageNum != null) ? Integer.parseInt(pageNum) : 1;
         int start = (page - 1) * pageSize;
@@ -61,7 +60,6 @@ public class BoardController {
         if (!list.isEmpty()) {
             int totalCount = Integer.parseInt(list.get(0).get("TOTAL_COUNT").toString());
 
-            // 페이징 문자열 생성
             String pagingStr = BoardPage.pagingStr(totalCount, pageSize, blockPage, page, "/board/" + category);
 
             // 모델에 페이징 문자열과 게시물 리스트를 추가

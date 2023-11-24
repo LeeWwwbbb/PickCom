@@ -113,7 +113,8 @@ public class MyController {
         System.out.println(category);
 
         // 페이징 관련 설정
-        int pageSize = 10; // 한 페이지에 표시할 게시물 수
+        int pageSize = 15;
+        int blockPage = 10;
         int page = (pageNum != null) ? Integer.parseInt(pageNum) : 1;
         int start = (page - 1) * pageSize;
         int end = page * pageSize;
@@ -142,10 +143,8 @@ public class MyController {
 
         if (list != null && !list.isEmpty()) {
             int totalCount = Integer.parseInt(list.get(0).get("TOTAL_COUNT").toString());
-            int pageCount = (int) Math.ceil((double) totalCount / pageSize);
 
-            // 페이징 문자열 생성
-            String pagingStr = BoardPage.pagingStr(totalCount, pageSize, pageCount, page, "/my/" + category);
+            String pagingStr = BoardPage.pagingStr(totalCount, pageSize, blockPage, page, "/board/" + category);
 
             // 모델에 페이징 문자열과 게시물 리스트를 추가
             mv.addObject("pagingStr", pagingStr);

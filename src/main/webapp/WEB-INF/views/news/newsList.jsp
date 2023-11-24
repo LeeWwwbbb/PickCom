@@ -43,12 +43,12 @@
             </c:when>
             <c:otherwise>
                 <c:forEach items="${ newsList }" var="row" varStatus="loop">
-                    <div class="row" style="height: 250px">
+                    <div class="row" style="height: 200px">
                         <div class="col-3">
                             <a class="text-dark fixed-text" style="text-decoration-line: none"
                                href="/news/${ row.news_num }">
                                 <img src="${ row.news_image }" alt="첨부 이미지"
-                                     style="width: 100%; "/>
+                                     style="width: 275px; height: 150px"/>
                             </a>
                         </div>
                         <div class="col-9">
