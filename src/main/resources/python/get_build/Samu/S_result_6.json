@@ -1,0 +1,93 @@
+[
+  {
+    "CPU": "인텔 코어i5-13세대 13500 (랩터레이크)",
+    "MBoard": "ASUS PRIME B660M-K D4 인텍앤컴퍼니",
+    "RAM": "TeamGroup DDR5-5600 CL46 Elite 서린",
+    "RAMSize": 16,
+    "SSD": "삼성전자 870 EVO",
+    "Power": "AONE 500S KC (벌크)",
+    "Cooler": "기본쿨러",
+    "Case": "마이크로닉스 EM1-Woofer 강화유리",
+    "Case_Color": "화이트",
+    "TotalPrice": 627969,
+    "추천도": 27.333333333333332
+  },
+  {
+    "CPU": "인텔 코어i5-13세대 13500 (랩터레이크)",
+    "MBoard": "ASUS PRIME B660M-K D4 인텍앤컴퍼니",
+    "RAM": "TeamGroup DDR5-5600 CL46 Elite 서린",
+    "RAMSize": 16,
+    "SSD": "삼성전자 870 EVO",
+    "Power": "AONE 500S KC (벌크)",
+    "Cooler": "기본쿨러",
+    "Case": "마이크로닉스 EM1-Woofer 강화유리",
+    "Case_Color": "블랙",
+    "TotalPrice": 630629,
+    "추천도": 27.5
+  },
+  {
+    "CPU": "인텔 코어i5-13세대 13400 (랩터레이크)",
+    "MBoard": "ASUS PRIME B660M-K D4 인텍앤컴퍼니",
+    "RAM": "TeamGroup DDR5-5600 CL46 Elite 서린",
+    "RAMSize": 16,
+    "SSD": "삼성전자 870 EVO",
+    "Power": "AONE 500S KC (벌크)",
+    "Cooler": "기본쿨러",
+    "Case": "잘만 P30",
+    "Case_Color": "Black",
+    "TotalPrice": 656869,
+    "추천도": 28.833333333333332
+  },
+  {
+    "CPU": "인텔 코어i5-13세대 13500 (랩터레이크)",
+    "MBoard": "ASUS PRIME B660M-K D4 인텍앤컴퍼니",
+    "RAM": "TeamGroup DDR5-5600 CL46 Elite 서린",
+    "RAMSize": 16,
+    "SSD": "삼성전자 970 EVO Plus M.2 NVMe",
+    "Power": "AONE 500S KC (벌크)",
+    "Cooler": "기본쿨러",
+    "Case": "마이크로닉스 EM1-Woofer 강화유리",
+    "Case_Color": "화이트",
+    "TotalPrice": 627539,
+    "추천도": 29.166666666666668
+  },
+  {
+    "CPU": "인텔 코어i5-13세대 13500 (랩터레이크)",
+    "MBoard": "ASUS PRIME B660M-K D4 인텍앤컴퍼니",
+    "RAM": "TeamGroup DDR5-5600 CL46 Elite 서린",
+    "RAMSize": 16,
+    "SSD": "삼성전자 970 EVO Plus M.2 NVMe",
+    "Power": "AONE 500S KC (벌크)",
+    "Cooler": "기본쿨러",
+    "Case": "마이크로닉스 EM1-Woofer 강화유리",
+    "Case_Color": "블랙",
+    "TotalPrice": 630199,
+    "추천도": 29.333333333333332
+  },
+  {
+    "CPU": "인텔 코어i5-12세대 12400 (엘더레이크)",
+    "MBoard": "ASUS PRIME B660M-K D4 인텍앤컴퍼니",
+    "RAM": "TeamGroup DDR5-5600 CL46 Elite 서린",
+    "RAMSize": 16,
+    "SSD": "삼성전자 870 EVO",
+    "Power": "마이크로닉스 Compact SFX 300W 80Plus Bronze",
+    "Cooler": "기본쿨러",
+    "Case": "잘만 P30",
+    "Case_Color": "White",
+    "TotalPrice": 618199,
+    "추천도": 29.666666666666668
+  },
+  {
+    "CPU": "인텔 코어i5-12세대 12400 (엘더레이크)",
+    "MBoard": "ASUS PRIME B660M-K D4 인텍앤컴퍼니",
+    "RAM": "TeamGroup DDR5-5600 CL46 Elite 서린",
+    "RAMSize": 16,
+    "SSD": "삼성전자 870 EVO",
+    "Power": "마이크로닉스 Compact SFX 300W 80Plus Bronze",
+    "Cooler": "기본쿨러",
+    "Case": "잘만 P30",
+    "Case_Color": "Black",
+    "TotalPrice": 614909,
+    "추천도": 29.833333333333332
+  }
+]

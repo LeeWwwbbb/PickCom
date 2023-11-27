@@ -13,18 +13,44 @@
             crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
+    <script>
+        $(document).ready(function(){
+            $(".next-button").click(function(){
+                var selectedOption = $("input[name='option']:checked").val();
+                var selectedPriceRange = $("input[name='priceRange']:checked").val();
+
+                // 선택한 값을 서버로 전송
+                $.ajax({
+                    type: "POST",
+                    url: "/submit",
+                    data: {
+                        option: selectedOption,
+                        priceRange: selectedPriceRange
+                    },
+                    success: function(response){
+                        console.log(response);
+                        // 서버 응답에 따른 처리
+                    },
+                    error: function(error){
+                        console.log(error);
+                    }
+                });
+            });
+        });
+    </script>
+
     <style>
 
         /* 사용자 정의 스타일 */
-        .select {
+        .used {
             padding: 15px 10px;
         }
 
-        .select input[type=radio] {
+        .used input[type=radio] {
             display: none;
         }
 
-        .select input[type=radio] + label {
+        .used input[type=radio] + label {
             display: inline-block;
             cursor: pointer;
             height: 60px; /* 원하는 높이로 조절 */
@@ -38,16 +64,9 @@
             color: #333;
         }
 
-        .select input[type=radio]:checked + label {
+        .used input[type=radio]:checked + label {
             background-color: #333;
             color: #fff;
-        }
-        .list-group-item {
-            padding: 20px; /* 내용과 주변 여백 크기 조절 */
-            font-size: 20px; /* 폰트 크기 조절 */
-        }
-        .list-group {
-            padding: 20px;
         }
         .centered-content {
             display: flex;
@@ -57,10 +76,6 @@
         }
         .selection-title {
             text-align: center;
-        }
-        .price-input {
-            width: 100%; /* 가격 입력창을 100% 폭으로 설정 */
-            margin-top: 20px; /* 입력창과 버튼 사이 간격 조절 */
         }
         .next-button {
             display: inline-block;
@@ -86,6 +101,32 @@
             left: 10px;
             z-index: 999; /* 다른 요소 위에 위치하도록 설정 */
         }
+        .price-range {
+            display: flex;
+            flex-direction: column; /* Set the flex direction to column for vertical alignment */
+            align-items: flex-start; /* Align items to the start of the column */
+            margin-bottom: 20px;
+        }
+
+        .price-range label {
+            cursor: pointer;
+            background-color: #fff;
+            border: 1px solid #333;
+            padding: 10px;
+            width: 100%;
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 5px; /* Add margin between each radio button */
+        }
+
+        .price-range input[type=radio] {
+            display: none;
+        }
+
+        .price-range input[type=radio]:checked + label {
+            background-color: #333;
+            color: #fff;
+        }
     </style>
 </head>
 <body>
@@ -100,33 +141,44 @@
                     </div>
                     <!-- 선택지 1 -->
                     <div class="col-md-6 col-12">
-                        <div class="select">
+                        <div class="used">
                             <img src="../../../img/office.png" alt="사무용" class="img-fluid office-image">
-                            <input type="radio" name="option" value="사무용" id="officeOption" onclick="selectOption(this)">
+                            <input type="radio" name="option" value="S" id="officeOption" onclick="selectOption(this)">
                             <label for="officeOption">사무용</label>
                         </div>
                     </div>
                     <!-- 선택지 2 -->
                     <div class="col-md-6 col-12">
-                        <div class="select">
+                        <div class="used">
                             <img src="../../../img/gaming.png" alt="게이밍" class="img-fluid gaming-image">
-                            <input type="radio" name="option" value="게이밍" id="gamingOption" onclick="selectOption(this)">
+                            <input type="radio" name="option" value="G" id="gamingOption" onclick="selectOption(this)">
                             <label for="gamingOption">게이밍</label>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="price">
-                    <label for="price">가격:</label>
-                    <input type="text" id="price" name="price" class="form-control price-input" placeholder="가격을 입력하세요">
+                <div class="col-12">
+                    <div class="price-range">
+                        <input type="radio" name="priceRange" value="60" id="price60" onclick="selectPriceRange(this)">
+                        <label for="price60">60만원대</label>
+                        <input type="radio" name="priceRange" value="70" id="price70" onclick="selectPriceRange(this)">
+                        <label for="price70">70만원대</label>
+                        <input type="radio" name="priceRange" value="80" id="price80" onclick="selectPriceRange(this)">
+                        <label for="price80">80만원대</label>
+                        <input type="radio" name="priceRange" value="100" id="price100" onclick="selectPriceRange(this)">
+                        <label for="price100">100만원대</label>
+                        <input type="radio" name="priceRange" value="130" id="price130" onclick="selectPriceRange(this)">
+                        <label for="price130">130만원대</label>
+                        <input type="radio" name="priceRange" value="200" id="price200" onclick="selectPriceRange(this)">
+                        <label for="price200">200만원대</label>
+                    </div>
                 </div>
             </div>
             <div class="next-button-container">
                 <button class="btn btn-primary next-button">다음</button>
             </div>
         </div>
-
     </div>
 </main>
 

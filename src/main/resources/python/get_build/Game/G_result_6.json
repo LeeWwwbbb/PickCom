@@ -1,0 +1,44 @@
+[
+  {
+    "CPU": "인텔 코어i5-12세대 12400F (엘더레이크)",
+    "MBoard": "ASUS PRIME B660M-K D4 인텍앤컴퍼니",
+    "RAM": "TeamGroup DDR5-5600 CL46 Elite 서린",
+    "RAMSize": 16,
+    "VGA": "STCOM 라데온 RX 580 2048SP D5 8GB",
+    "SSD": "마이크론 Crucial P3 M.2 NVMe 대원씨티에스",
+    "Power": "마이크로닉스 Classic II 풀체인지 600W 80PLUS BRONZE 230V EU",
+    "Cooler": "기본쿨러",
+    "Case": "마이크로닉스 EM1-Woofer 강화유리",
+    "Case_Color": "화이트",
+    "TotalPrice": 655049,
+    "추천도": 10.142857142857142
+  },
+  {
+    "CPU": "인텔 코어i5-12세대 12400F (엘더레이크)",
+    "MBoard": "ASUS PRIME B660M-K D4 인텍앤컴퍼니",
+    "RAM": "TeamGroup DDR5-5600 CL46 Elite 서린",
+    "RAMSize": 16,
+    "VGA": "STCOM 라데온 RX 580 2048SP Gaming D5 8GB",
+    "SSD": "마이크론 Crucial P3 M.2 NVMe 대원씨티에스",
+    "Power": "마이크로닉스 Classic II 풀체인지 600W 80PLUS BRONZE 230V EU",
+    "Cooler": "기본쿨러",
+    "Case": "마이크로닉스 EM1-Woofer 강화유리",
+    "Case_Color": "화이트",
+    "TotalPrice": 656129,
+    "추천도": 23.428571428571427
+  },
+  {
+    "CPU": "인텔 펜티엄 골드 G6405 (코멧레이크S 리프레시)",
+    "MBoard": "ASUS PRIME H510M-K 인텍앤컴퍼니",
+    "RAM": "삼성전자 DDR4-3200",
+    "RAMSize": 16,
+    "VGA": "ASUS DUAL 라데온 RX 6600 D6 8GB 대원씨티에스",
+    "SSD": "마이크론 Crucial P3 M.2 NVMe 대원씨티에스",
+    "Power": "마이크로닉스 Classic II 풀체인지 600W 80PLUS BRONZE 230V EU",
+    "Cooler": "기본쿨러",
+    "Case": "마이크로닉스 EM1-Woofer 강화유리",
+    "Case_Color": "화이트",
+    "TotalPrice": 651210,
+    "추천도": 23.428571428571427
+  }
+]
