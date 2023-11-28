@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from selenium import webdriver
 from bs4 import BeautifulSoup
 import time
@@ -6,7 +7,6 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import json
-
 
 options = webdriver.ChromeOptions()
 options.add_argument('headless')
@@ -23,7 +23,7 @@ data = []
 # RAM 페이지 크롤링
 for page in range(2, RAM_range):
     # 현재 페이지 출력
-    print(f"Current Page: {page - 1}")
+    print("Current Page: {}".format(page - 1))
     # 스크롤 내리기
     time.sleep(2)
     driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
@@ -39,7 +39,7 @@ for page in range(2, RAM_range):
 
     for li in prod_list:
         img_link = li.select_one('div.thumb_image > a > img').get('data-original')
-        if img_link == None:
+        if img_link is None:
             img_link = li.select_one('div.thumb_image > a > img').get('src')
         img_link = img_link.replace("shrink=130:130", "shrink=330:*")
         Brand_tmp = li.select_one('p.prod_name > a').text.strip().split(' ')
@@ -63,10 +63,11 @@ for page in range(2, RAM_range):
                     size_text = re.sub(r'^\d+위', '', size_text)
                     spec_list.append(size_text)
                 price_text = price_sect.select_one('a > strong').get_text(strip=True).replace(',', "")
-                print(name, Brand, spec_list, size_text, price_text)
-                data.append({"name":name, "brand":Brand, "spec":spec_list, "size":size_text, "price": price_text, "img":img_link, "Cate":"RAM"})
+                print("{} {} {} {} {}".format(name, Brand, spec_list, size_text, price_text))
+                data.append({"name": name, "brand": Brand, "spec": spec_list, "size": size_text, "price": price_text, "img": img_link, "Cate": "RAM"})
 
-# 페이지 버튼 클릭
-    driver.execute_script("movePage(%d)" %page)
-with open('HARDWARE_DATA_old/RAM_List.json', 'w', encoding='utf-8') as f:
-    json.dump(data, f, ensure_ascii=False, indent=4)
+    # 페이지 버튼 클릭
+    driver.execute_script("movePage(%d)" % page)
+
+with open('HARDWARE_DATA_old/RAM_List.json', 'w') as f:
+    json.dump(data, f, encoding='utf-8', ensure_ascii=False, indent=4)

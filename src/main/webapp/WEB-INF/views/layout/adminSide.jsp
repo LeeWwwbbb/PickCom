@@ -28,9 +28,9 @@
                 </a>
             </li>
             <li>
-                <a href="/my/board" class="nav-link link-dark">
+                <a href="/Update_Data" class="nav-link link-dark">
                     <svg class="bi pe-none me-2" width="16" height="16"></svg>
-                    업데이트(?)
+                    셀프 업데이트
                 </a>
             </li>
         </ul>

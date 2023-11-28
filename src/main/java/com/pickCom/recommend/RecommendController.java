@@ -26,25 +26,28 @@ public class RecommendController {
     }
 
     @SneakyThrows
-    @RequestMapping(value = "/submit", method = RequestMethod.POST)
+    @RequestMapping(value = "/recommend_Result", method = RequestMethod.POST)
     public ModelAndView postrecommend(@RequestParam(name = "option") String option, @RequestParam(name = "priceRange") int priceRange) {
         JSONParser parser = new JSONParser();
-        String money = Integer.toString(priceRange/10);
+        String money = Integer.toString(priceRange / 10);
 
         Reader reader = null;
-        if (option.equals("S")){
-            reader = new FileReader("C:/Users/byung/Desktop/JSP Project/PickCom/src/main/resources/python/get_build/Samu/" +option+"_result_"+money+".json");
-        }else if (option.equals("G")){
-            reader = new FileReader("C:/Users/byung/Desktop/JSP Project/PickCom/src/main/resources/python/get_build/Game/" +option+"_result_"+money+".json");
+        ModelAndView mv = null;
+        if (option.equals("S")) {
+            reader = new FileReader("C:/Users/byung/Desktop/JSP Project/PickCom/src/main/resources/python/get_build/Samu/" + option + "_result_" + money + ".json");
+            Object jsonData = parser.parse(reader);
+            JSONArray jsonArray = (JSONArray) jsonData;
+
+            mv = new ModelAndView("/recommend/recommend_Result_S");
+            mv.addObject("jsonObject", jsonArray);
+        } else if (option.equals("G")) {
+            reader = new FileReader("C:/Users/byung/Desktop/JSP Project/PickCom/src/main/resources/python/get_build/Game/" + option + "_result_" + money + ".json");
+            Object jsonData = parser.parse(reader);
+            JSONArray jsonArray = (JSONArray) jsonData;
+
+            mv = new ModelAndView("/recommend/recommend_Result_G");
+            mv.addObject("jsonObject", jsonArray);
         }
-
-        Object jsonData = parser.parse(reader);
-        JSONArray jsonArray = (JSONArray) jsonData;
-
-        System.out.println(jsonArray);
-
-        ModelAndView mv = new ModelAndView("/recommend/recommend_Result");
-        mv.addObject("jsonObject", jsonArray);
         return mv;
     }
 }

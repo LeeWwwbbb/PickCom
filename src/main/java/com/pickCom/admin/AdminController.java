@@ -4,6 +4,7 @@ import com.pickCom.common.common.CommandMap;
 import com.pickCom.utils.AdminPage;
 import com.pickCom.utils.BoardPage;
 import lombok.SneakyThrows;
+import org.python.util.PythonInterpreter;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -70,48 +71,7 @@ public class AdminController {
         return mv;
     }
 
-    /*
-    public String userList(Model model,
-                           @RequestParam(defaultValue = "") String type,
-                           @RequestParam(defaultValue = "") String search,
-                           @RequestParam(defaultValue = "1") int page,
-                           @RequestParam(defaultValue = "5") int pageSize) {
-        System.out.println("리스트 가져오기");
-        PageVo pageVo = new PageVo(page, pageSize);
-
-        model.addAttribute("pagesize", pageSize);
-        Map<String, Object> map = new HashMap<>();
-
-        if(!type.equals("") && !search.equals("")){
-            pageVo.setVal(search);
-        }
-
-        pageSize = Integer.parseInt("YOUR_PAGE_SIZE"); // 페이지 크기 설정
-        page = Integer.parseInt("YOUR_BLOCK_SIZE"); // 페이지 블록 크기 설정
-
-        int start = (page - 1) * pageSize + 1;
-        int end = page * pageSize;
-        map.put("start", start);
-        map.put("end", end);
-
-        List<MemberDTO> userLists = null;
-
-        try {
-            userLists = adminService.MemberList(map);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-        map.put("pageSize", pageSize);
-        map.put("pageNum", page);
-
-        model.addAttribute("userLists", userLists);
-        model.addAttribute("map", map);
-
-        return "admin/userManager";
-    }
-     */
-// 유저 삭제
+    // 유저 삭제
     @SneakyThrows
     @RequestMapping(value = "memberDelete/{idx}")
     public ModelAndView deleteUser(CommandMap map, @PathVariable int idx) throws Exception {
@@ -159,7 +119,7 @@ public class AdminController {
         map.put("pageSize", pageSize);
         System.out.println("키워드 길이 : " + testKeyword.length());
         List<Map<String, Object>> list = null;
-        if(testKeyword.length() > 0) {
+        if (testKeyword.length() > 0) {
             System.out.println("조건문 이상 없음");
             map.put("keyword", keyword);
             if (searchField.equals("i")) {
@@ -172,7 +132,7 @@ public class AdminController {
 
                 mv.addObject("popupScript", popupScript);
             }
-        }else{
+        } else {
             String popupScript = "alert('검색어를 입력하세요');";
             popupScript += "return false;"; // 폼 제출 방지
 
@@ -196,4 +156,17 @@ public class AdminController {
 
         return mv;
     }
+    private static PythonInterpreter intPre;
+    // 데이터 업데이트
+    @RequestMapping(value = "/Update_Data")
+    public ModelAndView Update_Data() throws Exception {
+        ModelAndView mv = new ModelAndView("UpdateResult");
+        System.setProperty("python.import.site", "false");
+        intPre = new PythonInterpreter();
+        // 파이썬 스크립트 실행 명령어
+        intPre.execfile("C:/Users/byung/Desktop/JSP Project/PickCom/src/main/resources/python/get_hardware/Filtering_Data.py");
+
+        return mv;
+    }
+
 }
