@@ -12,7 +12,7 @@ import json
 options = webdriver.ChromeOptions()
 options.add_argument('headless')
 
-driver = webdriver.Chrome('chromedriver', chrome_options=options)
+driver = webdriver.Chrome(executable_path='C:/Users/pojun/Documents/GitHub/PickCom/src/main/resources/python/get_hardware/chromedriver.exe', chrome_options=options)
 
 Case_url = 'http://prod.danawa.com/list/?cate=112775'
 driver.get(Case_url)
@@ -28,7 +28,7 @@ data = []
 
 for page in range(2, Case_range):
     # 현재 페이지 출력
-    print("Current Page: {}".format(page - 1))
+    print "Current Page: {}".format(page - 1)
     time.sleep(3)
 
     # 스크롤 내리기
@@ -60,7 +60,7 @@ for page in range(2, Case_range):
                 color_text = color.get_text(strip=True).strip()
                 color_text = re.sub(r'^\d+위', '', color_text)
                 price_text = price_sect.select_one('a > strong').get_text(strip=True).replace(',', "")
-                print(name, Brand, spec_list, color_text, price_text)
+                print name, Brand, spec_list, color_text, price_text
                 data.append({"name": name, "brand": Brand, "spec": spec_list, "color_text": color_text, "price": price_text, "img": img_link, "Cate": "Case"})
 
     # 페이지 버튼 클릭

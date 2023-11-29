@@ -19,6 +19,7 @@ import java.util.Map;
 
 @Controller
 public class AdminController {
+
     @Resource(name = "adminServiceImp")
     private AdminService adminService;
 
@@ -161,12 +162,13 @@ public class AdminController {
     // 데이터 업데이트
     @RequestMapping(value = "/Update_Data")
     public ModelAndView Update_Data() throws Exception {
-        ModelAndView mv = new ModelAndView("UpdateResult");
+        ModelAndView mv = new ModelAndView("/admin/UpdateResult");
+        System.out.println("Current Working Directory: " + System.getProperty("user.dir"));
         System.setProperty("python.import.site", "false");
         intPre = new PythonInterpreter();
         // 파이썬 스크립트 실행 명령어
-        intPre.execfile("C:/Users/byung/Desktop/JSP Project/PickCom/src/main/resources/python/get_hardware/Filtering_Data.py");
-
+        //intPre.execfile("C:/Users/byung/Desktop/JSP Project/PickCom/src/main/resources/python/get_hardware/Filtering_Data.py");
+        intPre.execfile("C:/Users/pojun/Documents/GitHub/PickCom/src/main/resources/python/get_hardware/Case.py");
         return mv;
     }
 

@@ -34,13 +34,15 @@ public class RecommendController {
         Reader reader = null;
         ModelAndView mv = null;
         if (option.equals("S")) {
-            reader = new FileReader("C:/Users/byung/Desktop/JSP Project/PickCom/src/main/resources/python/get_build/Samu/" + option + "_result_" + money + ".json");
+            //reader = new FileReader("C:/Users/byung/Desktop/JSP Project/PickCom/src/main/resources/python/get_build/Samu/" + option + "_result_" + money + ".json");
+            reader = new FileReader("C:/Users/pojun/Documents/GitHub/PickCom/src/main/resources/python/get_build/Samu/" + option + "_result_" + money + ".json");
             Object jsonData = parser.parse(reader);
             JSONArray jsonArray = (JSONArray) jsonData;
 
             mv = new ModelAndView("/recommend/recommend_Result_S");
             mv.addObject("jsonObject", jsonArray);
         } else if (option.equals("G")) {
+            //프로그램 돌리기전 경로확인 필수
             reader = new FileReader("C:/Users/byung/Desktop/JSP Project/PickCom/src/main/resources/python/get_build/Game/" + option + "_result_" + money + ".json");
             Object jsonData = parser.parse(reader);
             JSONArray jsonArray = (JSONArray) jsonData;
