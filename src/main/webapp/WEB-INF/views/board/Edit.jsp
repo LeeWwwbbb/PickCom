@@ -65,6 +65,9 @@
         </c:if>
     </form>
 </div>
+<footer>
+    <br><br><br>
+</footer>
 
 <script type="text/javascript">
     function validateForm(form) {

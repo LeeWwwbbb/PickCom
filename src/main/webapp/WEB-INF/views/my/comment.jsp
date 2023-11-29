@@ -23,6 +23,7 @@
 </head>
 <body>
 <main>
+    <br><br>
     <div class="row">
         <div class="col-2">
             <%@ include file="../layout/mySide.jsp" %>

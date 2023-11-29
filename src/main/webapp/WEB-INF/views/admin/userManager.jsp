@@ -77,7 +77,7 @@
             document.getElementById("userNm").value = memberNm;
         }
 
-        function validateForm() {
+        function searchForm() {
             var keywordInput = document.getElementById("word");
             if (keywordInput.value.trim() === "") {
                 // keyword가 비어 있으면 알림 메시지 출력 또는 원하는 동작 수행
@@ -98,7 +98,7 @@
             <br><br>
             <div class="container" style="width: 800px">
                 <!-- 사용자 검색 -->
-                <form action="/admin/search" method="get" onsubmit="return validateForm()">
+                <form action="/admin/search" method="get" onsubmit="return searchForm()">
                     <div class="row mb-4" id="keyword">
                         <div class="col-2">
                             <select name="searchField" class="form-select">
@@ -107,7 +107,8 @@
                             </select>
                         </div>
                         <div class="col-8">
-                            <input type="text" class="form-control" id="word" name="keyword"/>
+                            <input type="text" class="form-control" id="word" name="keyword"
+                            value="<c:if test='${not empty adminSearch}'>${adminSearch}</c:if>"/>
                         </div>
                         <div class="col-2">
                             <button type="submit" class="btn btn-primary w-100" id="searchButton">검색</button>

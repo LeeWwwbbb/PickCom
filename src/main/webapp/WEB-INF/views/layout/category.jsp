@@ -57,7 +57,9 @@
     <div class="nav-scroller py-1 mb-3 border-bottom" style="max-width: 80%; margin: 0 auto;">
         <nav class="nav nav-underline justify-content-between">
             <a class="nav-item nav-link link-body-emphasis" href="/news">뉴스</a>
-            <a class="nav-item nav-link link-body-emphasis" href="/board/free">게시판</a>
+            <a class="nav-item nav-link link-body-emphasis" href="/board/review">리뷰</a>
+            <a class="nav-item nav-link link-body-emphasis" href="/board/image">사진</a>
+            <a class="nav-item nav-link link-body-emphasis" href="/board/question">질문</a>
             <a class="nav-item nav-link link-body-emphasis" href="/recommend">견적추천</a>
         </nav>
     </div>

@@ -76,6 +76,9 @@
             </c:if>
         </div>
     </div>
+    <footer>
+        <br><br><br>
+    </footer>
 </main>
 </body>
 </html>

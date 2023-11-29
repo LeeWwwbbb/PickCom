@@ -20,6 +20,7 @@
             overflow: hidden;
             text-overflow: ellipsis; /* 텍스트가 너무 길 경우 생략 부호 (...) 사용 */
         }
+
         .paging a {
             color: black;
             text-decoration-line: none;
@@ -96,9 +97,11 @@
                     </div>
                     <div class="col-2">
                         <c:if test="${ not empty sessionScope.name }">
-                            <button type="button" class="btn btn-primary w-100"
-                                    onclick="location.href='/board/write'">글쓰기
-                            </button>
+                            <form action="/board/write">
+                                <input type="hidden" name="wCate" value="${cate}">
+                                <button type="submit" class="btn btn-primary w-100">글쓰기
+                                </button>
+                            </form>
                         </c:if>
                     </div>
                 </div>

@@ -165,7 +165,9 @@ public class BoardController {
     @RequestMapping(value="/board/write")
     public ModelAndView openBoardWrite(CommandMap commandMap) throws Exception{
         ModelAndView mv = new ModelAndView("/board/Write");
-
+        String category = (String)commandMap.get("wCate");
+        System.out.println(category);
+        mv.addObject("category", category);
         return mv;
     }
 

@@ -23,12 +23,14 @@
     </style>
 </head>
 <body>
+<br><br>
 <div class="row">
     <div class="sidebar col-2">
         <%@ include file="../layout/mySide.jsp" %>
     </div>
     <div class="col-9">
-        <br><br>
+        <hr>
+        <br>
         <div class="container" style="width: 800px">
             <c:if test="${not empty MEMBER}">
                 <div class="row mb-4">
@@ -114,6 +116,8 @@
                 </div>
             </c:if>
         </div>
+        <hr>
+        <br>
     </div>
 </div>
 </body>

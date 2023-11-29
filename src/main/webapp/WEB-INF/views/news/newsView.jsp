@@ -22,7 +22,7 @@
 </head>
 <body>
 <%@ include file="../layout/category.jsp" %>
-<div class="container" style="max-width: 75%; margin: 0 auto;">
+<div class="container" style="max-width: 60%; margin: 0 auto;">
     <main>
         <c:if test="${not empty map}">
             <br>
@@ -30,12 +30,12 @@
             <p style="text-align: right">${ map.news_writer }</p>
             <hr>
             <div class="newsContent">
-                <c:if test="${ not empty map.news_image }">
-                    <img src="${ map.news_image }" alt="첨부 이미지"
-                         style="width: 100%;"/><br></c:if>
                     ${ map.news_content }
             </div>
         </c:if>
+        <footer>
+            <br><br><br>
+        </footer>
     </main>
 </div>
 </body>

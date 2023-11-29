@@ -106,7 +106,8 @@ public class AdminController {
 
         System.out.println(map.getMap().toString());
         String testKeyword = map.get("keyword").toString();
-        String keyword = "%" + map.get("keyword").toString() + "%";
+        mv.addObject("adminSearch", testKeyword);
+        String keyword = "%" + testKeyword + "%";
         String searchField = map.get("searchField").toString();
 
         int pageSize = 10; // 한 페이지에 표시할 게시물 수

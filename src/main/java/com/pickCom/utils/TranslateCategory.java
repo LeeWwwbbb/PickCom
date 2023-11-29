@@ -15,7 +15,7 @@ public class TranslateCategory {
                 koreanCategory = "리뷰";
                 break;
             case "image":
-                koreanCategory = "이미지";
+                koreanCategory = "사진";
                 break;
             case "question":
                 koreanCategory = "질문";
