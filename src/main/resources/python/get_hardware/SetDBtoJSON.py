@@ -3,6 +3,7 @@
 import json
 import mysql.connector
 import re
+from com.ziclix.python.sql import zxJDBC
 
 # MariaDB 연결 정보
 db_config = {
@@ -243,13 +244,13 @@ for power in power_data:
         product_originalPrice = int(product_price)
         product_salePrice = int(product_price) * 0.95
 
-    product_description = ';'.join(pc_power.get('spec'))
+    product_description = ';'.join(power.get('spec'))
     board_size = product_description.split(";")
     Watt = board_size[1]
     W = re.findall(r'\d+', Watt)
     W_str = ''.join(W)
 
-    product_img = pc_power.get('img')
+    product_img = power.get('img')
 
     insert_query = "INSERT INTO pc_power(manufacturer_name, product_name, product_salePrice, product_originalPrice, W, product_description, product_IMG) VALUES (%s, %s, %s, %s, %s, %s, %s)"
     insert_value = (manufacturer_name, product_name, product_salePrice, product_originalPrice, W_str, product_description, product_img)

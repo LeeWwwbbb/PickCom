@@ -13,6 +13,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.annotation.Resource;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -158,18 +161,83 @@ public class AdminController {
 
         return mv;
     }
-    private static PythonInterpreter intPre;
+
     // 데이터 업데이트
     @RequestMapping(value = "/Update_Data")
     public ModelAndView Update_Data() throws Exception {
-        ModelAndView mv = new ModelAndView("/admin/UpdateResult");
-        System.out.println("Current Working Directory: " + System.getProperty("user.dir"));
+        String[] exePaths = {
+                "C:\\Users\\byung\\Desktop\\JSP Project\\PickCom\\Case.exe",
+                "C:\\Users\\byung\\Desktop\\JSP Project\\PickCom\\Cooler.exe",
+                "C:\\Users\\byung\\Desktop\\JSP Project\\PickCom\\CPU.exe",
+                "C:\\Users\\byung\\Desktop\\JSP Project\\PickCom\\HDD.exe",
+                "C:\\Users\\byung\\Desktop\\JSP Project\\PickCom\\MBoard.exe",
+                "C:\\Users\\byung\\Desktop\\JSP Project\\PickCom\\Power.exe",
+                "C:\\Users\\byung\\Desktop\\JSP Project\\PickCom\\RAM.exe",
+                "C:\\Users\\byung\\Desktop\\JSP Project\\PickCom\\SSD.exe",
+                "C:\\Users\\byung\\Desktop\\JSP Project\\PickCom\\VGA.exe"
+        };
+
+        try {
+            // 각 exe 파일에 대해 별도의 프로세스를 생성하고 시작
+            for (String exePath : exePaths) {
+                ProcessBuilder processBuilder = new ProcessBuilder(exePath);
+                Process pro = processBuilder.start();
+
+                // 프로세스의 출력을 읽어오기
+                try (BufferedReader reader = new BufferedReader(new InputStreamReader(pro.getInputStream()))) {
+                    String line;
+                    while ((line = reader.readLine()) != null) {
+                        System.out.println(line);
+                    }
+                }
+
+                // 에러 출력 읽어오기
+                try (BufferedReader errorReader = new BufferedReader(new InputStreamReader(pro.getErrorStream()))) {
+                    String line;
+                    while ((line = errorReader.readLine()) != null) {
+                        System.out.println(line);
+                    }
+                }
+
+                int exitCode = pro.waitFor();
+                System.out.println("프로세스 종료 코드: " + exitCode);
+            }
+        } catch (IOException | InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        ModelAndView mv = new ModelAndView("redirect:/Filtering_Data");
+        return mv;
+    }
+    private static PythonInterpreter intPre;
+    // 필터링
+    @RequestMapping(value = "/Filtering_Data")
+    public ModelAndView Filtering_Data(){
+        System.out.println("시작");
+
         System.setProperty("python.import.site", "false");
         intPre = new PythonInterpreter();
         // 파이썬 스크립트 실행 명령어
-        //intPre.execfile("C:/Users/byung/Desktop/JSP Project/PickCom/src/main/resources/python/get_hardware/Filtering_Data.py");
-        intPre.execfile("C:/Users/pojun/Documents/GitHub/PickCom/src/main/resources/python/get_hardware/Case.py");
+        intPre.execfile("C:/Users/byung/Desktop/JSP Project/PickCom/src/main/resources/python/get_hardware/Filtering_Data.py");
+        //intPre.execfile("C:/Users/pojun/Documents/GitHub/PickCom/src/main/resources/python/get_hardware/Case.py");
+        ModelAndView mv = new ModelAndView("redirect:/SetDBtoJSON");
+        return mv;
+    }
+    // json파일 db에 입력
+    @RequestMapping(value = "/SetDBtoJSON")
+    public ModelAndView SetDB(){
+        intPre = new PythonInterpreter();
+        intPre.execfile("C:/Users/byung/Desktop/JSP Project/PickCom/src/main/resources/python/get_hardware/SetDBtoJSON.py");
+        ModelAndView mv = new ModelAndView("redirect:/PickCom");
         return mv;
     }
 
+    // 각 가격별 추천 제품 json화
+    @RequestMapping(value = "/PickCom")
+    public ModelAndView PickCom(){
+        intPre = new PythonInterpreter();
+        intPre.execfile("C:/Users/byung/Desktop/JSP Project/PickCom/src/main/resources/python/get_build/PickCom_py.py");
+        ModelAndView mv = new ModelAndView("/admin/UpdateResult");
+        return mv;
+    }
 }

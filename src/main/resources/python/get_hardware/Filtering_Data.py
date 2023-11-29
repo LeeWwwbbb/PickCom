@@ -13,16 +13,6 @@ def write_json(file_path, data):
         # Python 2에서는 유니코드 인코딩이 필요합니다.
         json.dump(data, f, ensure_ascii=False, indent=4)
 
-subprocess.call(["python", "Case.py"])
-subprocess.call(["python", "Cooler.py"])
-subprocess.call(["python", "CPU.py"])
-subprocess.call(["python", "HDD.py"])
-subprocess.call(["python", "MBoard.py"])
-subprocess.call(["python", "Power.py"])
-subprocess.call(["python", "RAM.py"])
-subprocess.call(["python", "SSD.py"])
-subprocess.call(["python", "VGA.py"])
-
 # 제외할 항목
 excluded_items = [u"HDD (NAS용)", u"쿼드로", u"고정핀/나사", u"VGA 지지대", u"써멀패드", u"SSD/HDD 주변기기", u"임베디드 보드", u"방열판", u"제온", u"중고",
                   u"VR 지원 장비", u"PowerLink", u"SLI Bridge", u"노트북", u"노트북용", u"전용 액세서리", u"외장그래픽 독",u"HDD (기업용)", u"HDD (CCTV용)", u"DC to DC", u"HDD (노트북용)",

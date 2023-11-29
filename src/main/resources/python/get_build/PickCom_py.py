@@ -151,7 +151,7 @@ def get_data(cursor, Choice_Where_to_Use):
             top_10_S_results = S_result_list[:10]
 
             # JSON 파일에 상위 10개 항목 저장
-            with open(f'Samu/S_result_{int(money_range/100000)}.json', 'w', encoding='utf-8') as json_file:
+            with open('Samu/S_result_{int(money_range/100000)}.json', 'w', encoding='utf-8') as json_file:
                 json.dump(top_10_S_results, json_file, indent=2, ensure_ascii=False)
 
         added_vga_count = {}
@@ -274,7 +274,7 @@ def get_data(cursor, Choice_Where_to_Use):
             G_result_list = [vga for vga in G_result_list if vga['VGA'] not in added_vga_count and not added_vga_count.update({vga['VGA']: True})][:10]
 
             # JSON 파일에 상위 10개 항목 저장
-            with open(f'Game/G_result_{int(money_range/100000)}.json', 'w', encoding='utf-8') as json_file:
+            with open('Game/G_result_{int(money_range/100000)}.json', 'w', encoding='utf-8') as json_file:
                 json.dump(G_result_list, json_file, indent=2, ensure_ascii=False)
 
 # DB 설정

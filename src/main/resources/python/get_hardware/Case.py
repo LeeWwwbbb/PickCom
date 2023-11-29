@@ -12,17 +12,12 @@ import json
 options = webdriver.ChromeOptions()
 options.add_argument('headless')
 
-driver = webdriver.Chrome(executable_path='C:/Users/pojun/Documents/GitHub/PickCom/src/main/resources/python/get_hardware/chromedriver.exe', chrome_options=options)
+#driver = webdriver.Chrome(executable_path='C:/Users/pojun/Documents/GitHub/PickCom/src/main/resources/python/get_hardware/chromedriver.exe', chrome_options=options)
+driver = webdriver.Chrome(executable_path='C:/Users/byung/Desktop/JSP Project/PickCom/src/main/resources/python/get_hardware/chromedriver.exe', chrome_options=options)
 
 Case_url = 'http://prod.danawa.com/list/?cate=112775'
 driver.get(Case_url)
 Case_range = 10
-
-excluded_items = ["HDD (NAS용)", "쿼드로", "고정핀/나사", "VGA 지지대", "써멀패드", "SSD/HDD 주변기기", "임베디드 보드", "방열판", "제온", "중고",
-                  "VR 지원 장비", "PowerLink", "SLI Bridge", "노트북", "노트북용", "전용 액세서리", "외장그래픽 독", "HDD (CCTV용)", "DC to DC",
-                  "중고 여부 확인요망", "RAM 쿨러", "구매 시 주의사항: 쿨링팬 수(선택), OC(선택), 채굴 여부 판매자 별도 문의 요망", "가이드", "서버용 파워", "서버용",
-                  "수랭 부속품", "오일", "인텔(CPU내장)", "조명기기", "채굴용 케이스", "케이블", "튜닝 부속품", "팬 부속품", "팬컨트롤러", "서버용 파워",
-                  "제품 상세 정보는 판매중인 쇼핑몰에서 반드시 확인하시기 바랍니다", "DDR2", "방열판 분류용 상품"]
 
 data = []
 

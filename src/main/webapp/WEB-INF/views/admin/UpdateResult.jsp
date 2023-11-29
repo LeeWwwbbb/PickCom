@@ -11,6 +11,6 @@
     <title>Title</title>
 </head>
 <body>
-  update중
+  update완료
 </body>
 </html>
