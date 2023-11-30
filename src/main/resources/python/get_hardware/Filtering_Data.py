@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 import json
-import subprocess
 import codecs  # 추가된 부분
 
 def read_json(file_path):

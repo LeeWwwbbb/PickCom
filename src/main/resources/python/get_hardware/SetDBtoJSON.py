@@ -1,9 +1,8 @@
 # -*- coding: utf-8 -*-
 
 import json
-import mysql.connector
+import pymysql
 import re
-from com.ziclix.python.sql import zxJDBC
 
 # MariaDB 연결 정보
 db_config = {
@@ -12,7 +11,7 @@ db_config = {
     'password': '1234',
     'database': 'pcom'
 }
-connection = mysql.connector.connect(**db_config)
+connection = pymysql.connect(**db_config)
 cursor = connection.cursor()
 
 with open('HARDWARE_DATA_new/Case_List.json', 'r') as f:
@@ -194,37 +193,70 @@ for hdd in hdd_data:
     form_factor = hdd.get('spec')[2]
     rpm = hdd.get('spec')[3]
     product_img = hdd.get('img')
-    insert_query = "INSERT INTO pc_hdd(manufacturer_name, product_name, product_salePrice, product_originalPrice, Capacity, Form_Factor, RPM, product_description, product_IMG) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)"
+    insert_query = "INSERT INTO pc_hdd(manufacturer_name, product_name, product_salePrice, product_originalPrice, D_Size, product_description, product_IMG) VALUES (%s, %s, %s, %s, %s, %s, %s)"
     cursor.execute(insert_query,
-                   (manufacturer_name, product_name, product_salePrice, product_originalPrice, capacity, form_factor,
-                    rpm, product_description, product_img))
+                   (manufacturer_name, product_name, product_salePrice, product_originalPrice, capacity, product_description, product_img))
 
-for mboard in mboard_data:
-    manufacturer_name = mboard.get('brand')
-    product_name = mboard.get('name')
-    product_price = mboard.get('price')
+for pc_mboard in mboard_data:
+    manufacturer_name = pc_mboard.get('brand')
+    product_name = pc_mboard.get('name')
+    product_price = pc_mboard.get('price')
 
-    if product_price == '일시품절':
+    if product_price == u'일시품절':
         product_originalPrice = 0
-        product_salePrice = 0  # '일시품절'인 경우 0으로 할당
-    elif product_price == '가격비교예정':
+        product_salePrice = 0
+    elif product_price == u'가격비교예정':
         product_originalPrice = 0
-        product_salePrice = 0  # '가격비교예정'인 경우 0으로 할당
-    elif product_price == '가격비교중지':
+        product_salePrice = 0
+    elif product_price == u'가격비교중지':
         product_originalPrice = 0
-        product_salePrice = 0  # '가격비교예정'인 경우 0으로 할당
+        product_salePrice = 0
     else:
         product_originalPrice = int(product_price)
         product_salePrice = int(product_price) * 0.95
 
-    product_description = ';'.join(mboard.get('spec'))
-    socket_type = mboard.get('spec')[1]
-    form_factor = mboard.get('spec')[2]
-    product_img = mboard.get('img')
-    insert_query = "INSERT INTO pc_mboard(manufacturer_name, product_name, product_salePrice, product_originalPrice, Socket_Type, Form_Factor, product_description, product_IMG) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)"
-    cursor.execute(insert_query,
-                   (manufacturer_name, product_name, product_salePrice, product_originalPrice, socket_type, form_factor,
-                    product_description, product_img))
+    product_description = u';'.join(pc_mboard.get('spec'))
+    Size = pc_mboard.get('spec')[2]
+    pattern = r'\([^)]*\)'
+    result = re.sub(pattern, '', Size)
+    M_Size = result.strip()
+
+    Socket = pc_mboard.get('spec')[0]
+    WhatSocket = list(Socket)
+    formatted_socket_info = ""
+
+    if WhatSocket[0] == "인":
+        matches1 = re.search(r'인텔\(소켓(\d+)\)', Socket)
+        if matches1:
+            socket_number = matches1.group(1)
+            formatted_socket_info = u"LGA{}".format(socket_number)
+    elif WhatSocket[0] == "A":
+        matches2 = re.search(r'AMD\(소켓([A-Za-z0-9]+)\)', Socket)
+        if matches2:
+            socket_number = matches2.group(1)
+            formatted_socket_info = u"{}".format(socket_number)
+
+    get_Memory = r'\b메모리\s+(DDR[0-9]+)\b'
+    Memory_match = re.search(get_Memory, product_description)
+    memory_type = u""
+    if Memory_match:
+        memory_type = Memory_match.group(1)
+        print memory_type
+
+    MHzType = product_description
+    getMHz = r'(;\d{1,4}(?:,\d{3})*MHz)'
+    MHz_match = re.search(getMHz, MHzType)
+
+    product_img = pc_mboard.get('img')
+    MHz = 0
+    if MHz_match:
+        MHz_raw = u''.join(re.findall(r'\d', MHz_match.group())).replace(',', '')
+        MHz = int(MHz_raw)
+
+    if MHz != "":
+        insert_query = "INSERT INTO pc_mboard(manufacturer_name, product_name, product_salePrice, product_originalPrice, Socket, Memory_Type, MHz, MBoard_Size, product_description, product_IMG) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
+        insert_value = (manufacturer_name, product_name, product_salePrice, product_originalPrice, formatted_socket_info, memory_type, MHz, M_Size, product_description, product_img)
+        cursor.execute(insert_query, insert_value)
 
 for power in power_data:
     manufacturer_name = power.get('brand')
@@ -323,15 +355,15 @@ for pc_vga in vga_data:
     product_name = pc_vga.get('name')
     product_price = pc_vga.get('price')
 
-    if product_price == '일시품절':
+    if product_price == u'일시품절':
         product_originalPrice = 0
-        product_salePrice = 0  # '일시품절'인 경우 0으로 할당
-    elif product_price == '가격비교예정':
+        product_salePrice = 0
+    elif product_price == u'가격비교예정':
         product_originalPrice = 0
-        product_salePrice = 0  # '가격비교예정'인 경우 0으로 할당
-    elif product_price == '가격비교중지':
+        product_salePrice = 0
+    elif product_price == u'가격비교중지':
         product_originalPrice = 0
-        product_salePrice = 0  # '가격비교예정'인 경우 0으로 할당
+        product_salePrice = 0
     else:
         product_originalPrice = int(product_price)
         product_salePrice = int(product_price) * 0.95
@@ -353,6 +385,7 @@ for pc_vga in vga_data:
     matches2 = re.search(maxW, product_description)
     if matches2:
         Max_Used = matches2.group(1)
+        print "최대 사용 와트 : " + Max_Used
     else:
         Max_Used = 0
 
