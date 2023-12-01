@@ -406,5 +406,40 @@ for pc_vga in vga_data:
         insert_query = "INSERT INTO pc_vga(manufacturer_name, product_name, product_salePrice, product_originalPrice, VGA_Name, VGA_Size, TDP, Max_Used_W, Boost_Clock, product_description, product_IMG) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
         insert_value = (manufacturer_name, product_name, product_salePrice, product_originalPrice, VGA_Name, VGA_size, TDP, Max_Used, boost_clock, product_description, product_img)
         cursor.execute(insert_query, insert_value)
+
+made_default_query = """INSERT INTO pc_default(
+    cpu_product_num, cpu_product_name, cpu_product_originalPrice, 
+    cpu_InterGrated_graphics, cpu_TDP, cpu_Stock_Cooler, cpu_Socket_Type,
+    mboard_product_num, mboard_product_name, mboard_product_originalPrice, 
+    mboard_MBoard_Size, ram_product_num, ram_product_name, ram_product_originalPrice, ram_R_Size,
+    cooler_product_num, cooler_product_name, cooler_product_originalPrice, cooler_Color
+)
+SELECT
+    cpu.product_num, cpu.product_name, cpu.product_originalPrice, 
+    cpu.InterGrated_graphics, cpu.TDP, cpu.Stock_Cooler, cpu.Socket_Type,
+    mboard.product_num, mboard.product_name, mboard.product_originalPrice, 
+    mboard.MBoard_Size, ram.product_num, ram.product_name, ram.product_originalPrice, ram.R_Size,
+    cooler.product_num, cooler.product_name, cooler.product_originalPrice, cooler.Color
+FROM (
+    SELECT *
+    FROM pc_ram
+    WHERE pc_ram.R_Size < 32
+    ORDER BY product_num ASC
+) AS ram
+JOIN pc_cpu AS cpu ON FIND_IN_SET(ram.Version, cpu.Memory_Type) > 0
+JOIN (
+    SELECT *
+    FROM pc_mboard
+    ORDER BY product_num ASC
+    LIMIT 500
+) AS mboard ON cpu.Socket_Type = mboard.Socket
+JOIN (
+    SELECT *
+    FROM pc_cooler
+    ORDER BY product_num ASC
+    LIMIT 10
+) AS cooler ON FIND_IN_SET(cpu.Socket_Type, cooler.Socket_Type) > 0
+WHERE ABS(CAST(REGEXP_REPLACE(ram.MHz, '[^0-9]', '') AS SIGNED) - mboard.MHz) <= 500;"""
+cursor.execute(made_default_query)
 connection.commit()
 connection.close()

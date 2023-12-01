@@ -44,7 +44,7 @@
             "2", 
             "TB"
         ], 
-        "price": "78950", 
+        "price": "80390", 
         "name": "Western Digital WD BLUE 7200/256M", 
         "brand": "Western"
     }, 
@@ -69,7 +69,7 @@
             "2", 
             "TB"
         ], 
-        "price": "83000", 
+        "price": "81500", 
         "name": "Seagate BarraCuda 7200/256M", 
         "brand": "Seagate"
     }, 
@@ -95,7 +95,7 @@
             "8", 
             "TB"
         ], 
-        "price": "219970", 
+        "price": "219900", 
         "name": "Seagate BarraCuda 5400/256M", 
         "brand": "Seagate"
     }, 
@@ -147,7 +147,7 @@
             "4", 
             "TB"
         ], 
-        "price": "132090", 
+        "price": "130630", 
         "name": "Seagate BarraCuda 5400/256M", 
         "brand": "Seagate"
     }, 
@@ -247,7 +247,7 @@
             "6", 
             "TB"
         ], 
-        "price": "156890", 
+        "price": "157280", 
         "name": "Western Digital WD BLUE 5400/256M", 
         "brand": "Western"
     }, 
@@ -272,7 +272,7 @@
             "4", 
             "TB"
         ], 
-        "price": "115340", 
+        "price": "115060", 
         "name": "Western Digital WD BLUE 5400/256M", 
         "brand": "Western"
     }, 
@@ -297,7 +297,7 @@
             "4", 
             "TB"
         ], 
-        "price": "117480", 
+        "price": "117230", 
         "name": "Western Digital WD BLUE 5400/256M", 
         "brand": "Western"
     }, 
@@ -375,60 +375,6 @@
         "price": "65000", 
         "name": "Western Digital WD BLUE 5400/256M", 
         "brand": "Western"
-    }, 
-    {
-        "img": "//img.danawa.com/prod_img/500000/629/295/img/6295629_1.jpg?shrink=330:*&_v=20200528134738", 
-        "spec": [
-            "HDD (PC용)", 
-            "8.9cm(3.5인치)", 
-            "10TB", 
-            "SATA3 (6Gb/s)", 
-            "7,200RPM", 
-            "메모리 256MB", 
-            "기록방식: 확인요망(PMR)", 
-            "두께: 26.1mm", 
-            "DSA", 
-            "사용보증: 60만시간", 
-            "소음(유휴/탐색): 34dB", 
-            "A/S 정보: 2년", 
-            "충격 감지센서", 
-            "램프로딩 기술"
-        ], 
-        "Cate": "HDD", 
-        "size": [
-            "10", 
-            "TB"
-        ], 
-        "price": "349970", 
-        "name": "도시바 X300 7200/256M", 
-        "brand": "도시바"
-    }, 
-    {
-        "img": "//img.danawa.com/prod_img/500000/629/295/img/6295629_1.jpg?shrink=330:*&_v=20200528134738", 
-        "spec": [
-            "HDD (PC용)", 
-            "8.9cm(3.5인치)", 
-            "10TB", 
-            "SATA3 (6Gb/s)", 
-            "7,200RPM", 
-            "메모리 256MB", 
-            "기록방식: 확인요망(PMR)", 
-            "두께: 26.1mm", 
-            "DSA", 
-            "사용보증: 60만시간", 
-            "소음(유휴/탐색): 34dB", 
-            "A/S 정보: 2년", 
-            "충격 감지센서", 
-            "램프로딩 기술"
-        ], 
-        "Cate": "HDD", 
-        "size": [
-            "8", 
-            "TB"
-        ], 
-        "price": "290000", 
-        "name": "도시바 X300 7200/256M", 
-        "brand": "도시바"
     }, 
     {
         "img": "//img.danawa.com/prod_img/500000/034/490/img/4490034_1.jpg?shrink=330:*&_v=20220629140659", 
@@ -582,16 +528,16 @@
             "2", 
             "TB"
         ], 
-        "price": "80370", 
+        "price": "80810", 
         "name": "도시바 P300 7200/256M", 
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/821/288/img/6288821_1.jpg?shrink=330:*&_v=20211115130302", 
+        "img": "//img.danawa.com/prod_img/500000/809/288/img/6288809_1.jpg?shrink=330:*&_v=20211115130146", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "3TB", 
+            "2TB", 
             "SATA3 (6Gb/s)", 
             "7,200RPM", 
             "메모리 64MB", 
@@ -608,16 +554,16 @@
             "3", 
             "TB"
         ], 
-        "price": "119000", 
+        "price": "118980", 
         "name": "도시바 P300 7200/64M", 
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/821/288/img/6288821_1.jpg?shrink=330:*&_v=20211115130302", 
+        "img": "//img.danawa.com/prod_img/500000/809/288/img/6288809_1.jpg?shrink=330:*&_v=20211115130146", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "3TB", 
+            "2TB", 
             "SATA3 (6Gb/s)", 
             "7,200RPM", 
             "메모리 64MB", 
@@ -634,16 +580,16 @@
             "2", 
             "TB"
         ], 
-        "price": "97480", 
+        "price": "97160", 
         "name": "도시바 P300 7200/64M", 
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/821/288/img/6288821_1.jpg?shrink=330:*&_v=20211115130302", 
+        "img": "//img.danawa.com/prod_img/500000/809/288/img/6288809_1.jpg?shrink=330:*&_v=20211115130146", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "3TB", 
+            "2TB", 
             "SATA3 (6Gb/s)", 
             "7,200RPM", 
             "메모리 64MB", 
@@ -660,16 +606,16 @@
             "1", 
             "TB"
         ], 
-        "price": "70720", 
+        "price": "70650", 
         "name": "도시바 P300 7200/64M", 
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/821/288/img/6288821_1.jpg?shrink=330:*&_v=20211115130302", 
+        "img": "//img.danawa.com/prod_img/500000/809/288/img/6288809_1.jpg?shrink=330:*&_v=20211115130146", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "3TB", 
+            "2TB", 
             "SATA3 (6Gb/s)", 
             "7,200RPM", 
             "메모리 64MB", 
@@ -691,87 +637,57 @@
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/960/008/img/12008960_1.jpg?shrink=330:*&_v=20220617085106", 
+        "img": "//img.danawa.com/prod_img/500000/608/295/img/6295608_1.jpg?shrink=330:*&_v=20200528134739", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "4TB", 
+            "8TB", 
             "SATA3 (6Gb/s)", 
-            "5,400RPM", 
-            "메모리 128MB", 
-            "최대 185MB/s", 
-            "기록방식: SMR(PMR)", 
+            "7,200RPM", 
+            "메모리 256MB", 
+            "기록방식: 확인요망(PMR)", 
             "두께: 26.1mm", 
             "DSA", 
-            "저전력", 
-            "소음(유휴/탐색): 22/24dB", 
+            "사용보증: 60만시간", 
+            "소음(유휴/탐색): 33dB", 
             "A/S 정보: 2년", 
             "충격 감지센서", 
             "램프로딩 기술"
         ], 
         "Cate": "HDD", 
         "size": [
-            "6", 
+            "10", 
             "TB"
         ], 
-        "price": "163890", 
-        "name": "도시바 P300 5400/128M", 
+        "price": "349970", 
+        "name": "도시바 X300 7200/256M", 
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/960/008/img/12008960_1.jpg?shrink=330:*&_v=20220617085106", 
+        "img": "//img.danawa.com/prod_img/500000/608/295/img/6295608_1.jpg?shrink=330:*&_v=20200528134739", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "4TB", 
+            "8TB", 
             "SATA3 (6Gb/s)", 
-            "5,400RPM", 
-            "메모리 128MB", 
-            "최대 185MB/s", 
-            "기록방식: SMR(PMR)", 
+            "7,200RPM", 
+            "메모리 256MB", 
+            "기록방식: 확인요망(PMR)", 
             "두께: 26.1mm", 
             "DSA", 
-            "저전력", 
-            "소음(유휴/탐색): 22/24dB", 
+            "사용보증: 60만시간", 
+            "소음(유휴/탐색): 33dB", 
             "A/S 정보: 2년", 
             "충격 감지센서", 
             "램프로딩 기술"
         ], 
         "Cate": "HDD", 
         "size": [
-            "4", 
+            "8", 
             "TB"
         ], 
-        "price": "116230", 
-        "name": "도시바 P300 5400/128M", 
-        "brand": "도시바"
-    }, 
-    {
-        "img": "//img.danawa.com/prod_img/500000/960/008/img/12008960_1.jpg?shrink=330:*&_v=20220617085106", 
-        "spec": [
-            "HDD (PC용)", 
-            "8.9cm(3.5인치)", 
-            "4TB", 
-            "SATA3 (6Gb/s)", 
-            "5,400RPM", 
-            "메모리 128MB", 
-            "최대 185MB/s", 
-            "기록방식: SMR(PMR)", 
-            "두께: 26.1mm", 
-            "DSA", 
-            "저전력", 
-            "소음(유휴/탐색): 22/24dB", 
-            "A/S 정보: 2년", 
-            "충격 감지센서", 
-            "램프로딩 기술"
-        ], 
-        "Cate": "HDD", 
-        "size": [
-            "2", 
-            "TB"
-        ], 
-        "price": "83500", 
-        "name": "도시바 P300 5400/128M", 
+        "price": "290000", 
+        "name": "도시바 X300 7200/256M", 
         "brand": "도시바"
     }, 
     {
@@ -819,7 +735,7 @@
             "2", 
             "TB"
         ], 
-        "price": "78950", 
+        "price": "80390", 
         "name": "Western Digital WD BLUE 7200/256M", 
         "brand": "Western"
     }, 
@@ -844,7 +760,7 @@
             "2", 
             "TB"
         ], 
-        "price": "83000", 
+        "price": "81500", 
         "name": "Seagate BarraCuda 7200/256M", 
         "brand": "Seagate"
     }, 
@@ -870,7 +786,7 @@
             "8", 
             "TB"
         ], 
-        "price": "219970", 
+        "price": "219900", 
         "name": "Seagate BarraCuda 5400/256M", 
         "brand": "Seagate"
     }, 
@@ -922,7 +838,7 @@
             "4", 
             "TB"
         ], 
-        "price": "132090", 
+        "price": "130630", 
         "name": "Seagate BarraCuda 5400/256M", 
         "brand": "Seagate"
     }, 
@@ -1022,7 +938,7 @@
             "6", 
             "TB"
         ], 
-        "price": "156890", 
+        "price": "157280", 
         "name": "Western Digital WD BLUE 5400/256M", 
         "brand": "Western"
     }, 
@@ -1047,7 +963,7 @@
             "4", 
             "TB"
         ], 
-        "price": "115340", 
+        "price": "115060", 
         "name": "Western Digital WD BLUE 5400/256M", 
         "brand": "Western"
     }, 
@@ -1072,7 +988,7 @@
             "4", 
             "TB"
         ], 
-        "price": "117480", 
+        "price": "117230", 
         "name": "Western Digital WD BLUE 5400/256M", 
         "brand": "Western"
     }, 
@@ -1150,60 +1066,6 @@
         "price": "65000", 
         "name": "Western Digital WD BLUE 5400/256M", 
         "brand": "Western"
-    }, 
-    {
-        "img": "//img.danawa.com/prod_img/500000/629/295/img/6295629_1.jpg?shrink=330:*&_v=20200528134738", 
-        "spec": [
-            "HDD (PC용)", 
-            "8.9cm(3.5인치)", 
-            "10TB", 
-            "SATA3 (6Gb/s)", 
-            "7,200RPM", 
-            "메모리 256MB", 
-            "기록방식: 확인요망(PMR)", 
-            "두께: 26.1mm", 
-            "DSA", 
-            "사용보증: 60만시간", 
-            "소음(유휴/탐색): 34dB", 
-            "A/S 정보: 2년", 
-            "충격 감지센서", 
-            "램프로딩 기술"
-        ], 
-        "Cate": "HDD", 
-        "size": [
-            "10", 
-            "TB"
-        ], 
-        "price": "349970", 
-        "name": "도시바 X300 7200/256M", 
-        "brand": "도시바"
-    }, 
-    {
-        "img": "//img.danawa.com/prod_img/500000/629/295/img/6295629_1.jpg?shrink=330:*&_v=20200528134738", 
-        "spec": [
-            "HDD (PC용)", 
-            "8.9cm(3.5인치)", 
-            "10TB", 
-            "SATA3 (6Gb/s)", 
-            "7,200RPM", 
-            "메모리 256MB", 
-            "기록방식: 확인요망(PMR)", 
-            "두께: 26.1mm", 
-            "DSA", 
-            "사용보증: 60만시간", 
-            "소음(유휴/탐색): 34dB", 
-            "A/S 정보: 2년", 
-            "충격 감지센서", 
-            "램프로딩 기술"
-        ], 
-        "Cate": "HDD", 
-        "size": [
-            "8", 
-            "TB"
-        ], 
-        "price": "290000", 
-        "name": "도시바 X300 7200/256M", 
-        "brand": "도시바"
     }, 
     {
         "img": "//img.danawa.com/prod_img/500000/034/490/img/4490034_1.jpg?shrink=330:*&_v=20220629140659", 
@@ -1357,16 +1219,16 @@
             "2", 
             "TB"
         ], 
-        "price": "80370", 
+        "price": "80810", 
         "name": "도시바 P300 7200/256M", 
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/821/288/img/6288821_1.jpg?shrink=330:*&_v=20211115130302", 
+        "img": "//img.danawa.com/prod_img/500000/809/288/img/6288809_1.jpg?shrink=330:*&_v=20211115130146", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "3TB", 
+            "2TB", 
             "SATA3 (6Gb/s)", 
             "7,200RPM", 
             "메모리 64MB", 
@@ -1383,16 +1245,16 @@
             "3", 
             "TB"
         ], 
-        "price": "119000", 
+        "price": "118980", 
         "name": "도시바 P300 7200/64M", 
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/821/288/img/6288821_1.jpg?shrink=330:*&_v=20211115130302", 
+        "img": "//img.danawa.com/prod_img/500000/809/288/img/6288809_1.jpg?shrink=330:*&_v=20211115130146", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "3TB", 
+            "2TB", 
             "SATA3 (6Gb/s)", 
             "7,200RPM", 
             "메모리 64MB", 
@@ -1409,16 +1271,16 @@
             "2", 
             "TB"
         ], 
-        "price": "97480", 
+        "price": "97160", 
         "name": "도시바 P300 7200/64M", 
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/821/288/img/6288821_1.jpg?shrink=330:*&_v=20211115130302", 
+        "img": "//img.danawa.com/prod_img/500000/809/288/img/6288809_1.jpg?shrink=330:*&_v=20211115130146", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "3TB", 
+            "2TB", 
             "SATA3 (6Gb/s)", 
             "7,200RPM", 
             "메모리 64MB", 
@@ -1435,16 +1297,16 @@
             "1", 
             "TB"
         ], 
-        "price": "70720", 
+        "price": "70650", 
         "name": "도시바 P300 7200/64M", 
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/821/288/img/6288821_1.jpg?shrink=330:*&_v=20211115130302", 
+        "img": "//img.danawa.com/prod_img/500000/809/288/img/6288809_1.jpg?shrink=330:*&_v=20211115130146", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "3TB", 
+            "2TB", 
             "SATA3 (6Gb/s)", 
             "7,200RPM", 
             "메모리 64MB", 
@@ -1466,87 +1328,57 @@
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/960/008/img/12008960_1.jpg?shrink=330:*&_v=20220617085106", 
+        "img": "//img.danawa.com/prod_img/500000/608/295/img/6295608_1.jpg?shrink=330:*&_v=20200528134739", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "4TB", 
+            "8TB", 
             "SATA3 (6Gb/s)", 
-            "5,400RPM", 
-            "메모리 128MB", 
-            "최대 185MB/s", 
-            "기록방식: SMR(PMR)", 
+            "7,200RPM", 
+            "메모리 256MB", 
+            "기록방식: 확인요망(PMR)", 
             "두께: 26.1mm", 
             "DSA", 
-            "저전력", 
-            "소음(유휴/탐색): 22/24dB", 
+            "사용보증: 60만시간", 
+            "소음(유휴/탐색): 33dB", 
             "A/S 정보: 2년", 
             "충격 감지센서", 
             "램프로딩 기술"
         ], 
         "Cate": "HDD", 
         "size": [
-            "6", 
+            "10", 
             "TB"
         ], 
-        "price": "163890", 
-        "name": "도시바 P300 5400/128M", 
+        "price": "349970", 
+        "name": "도시바 X300 7200/256M", 
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/960/008/img/12008960_1.jpg?shrink=330:*&_v=20220617085106", 
+        "img": "//img.danawa.com/prod_img/500000/608/295/img/6295608_1.jpg?shrink=330:*&_v=20200528134739", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "4TB", 
+            "8TB", 
             "SATA3 (6Gb/s)", 
-            "5,400RPM", 
-            "메모리 128MB", 
-            "최대 185MB/s", 
-            "기록방식: SMR(PMR)", 
+            "7,200RPM", 
+            "메모리 256MB", 
+            "기록방식: 확인요망(PMR)", 
             "두께: 26.1mm", 
             "DSA", 
-            "저전력", 
-            "소음(유휴/탐색): 22/24dB", 
+            "사용보증: 60만시간", 
+            "소음(유휴/탐색): 33dB", 
             "A/S 정보: 2년", 
             "충격 감지센서", 
             "램프로딩 기술"
         ], 
         "Cate": "HDD", 
         "size": [
-            "4", 
+            "8", 
             "TB"
         ], 
-        "price": "116230", 
-        "name": "도시바 P300 5400/128M", 
-        "brand": "도시바"
-    }, 
-    {
-        "img": "//img.danawa.com/prod_img/500000/960/008/img/12008960_1.jpg?shrink=330:*&_v=20220617085106", 
-        "spec": [
-            "HDD (PC용)", 
-            "8.9cm(3.5인치)", 
-            "4TB", 
-            "SATA3 (6Gb/s)", 
-            "5,400RPM", 
-            "메모리 128MB", 
-            "최대 185MB/s", 
-            "기록방식: SMR(PMR)", 
-            "두께: 26.1mm", 
-            "DSA", 
-            "저전력", 
-            "소음(유휴/탐색): 22/24dB", 
-            "A/S 정보: 2년", 
-            "충격 감지센서", 
-            "램프로딩 기술"
-        ], 
-        "Cate": "HDD", 
-        "size": [
-            "2", 
-            "TB"
-        ], 
-        "price": "83500", 
-        "name": "도시바 P300 5400/128M", 
+        "price": "290000", 
+        "name": "도시바 X300 7200/256M", 
         "brand": "도시바"
     }, 
     {
@@ -1594,7 +1426,7 @@
             "2", 
             "TB"
         ], 
-        "price": "78950", 
+        "price": "80390", 
         "name": "Western Digital WD BLUE 7200/256M", 
         "brand": "Western"
     }, 
@@ -1619,7 +1451,7 @@
             "2", 
             "TB"
         ], 
-        "price": "83000", 
+        "price": "81500", 
         "name": "Seagate BarraCuda 7200/256M", 
         "brand": "Seagate"
     }, 
@@ -1645,7 +1477,7 @@
             "8", 
             "TB"
         ], 
-        "price": "219970", 
+        "price": "219900", 
         "name": "Seagate BarraCuda 5400/256M", 
         "brand": "Seagate"
     }, 
@@ -1697,7 +1529,7 @@
             "4", 
             "TB"
         ], 
-        "price": "132090", 
+        "price": "130630", 
         "name": "Seagate BarraCuda 5400/256M", 
         "brand": "Seagate"
     }, 
@@ -1797,7 +1629,7 @@
             "6", 
             "TB"
         ], 
-        "price": "156890", 
+        "price": "157280", 
         "name": "Western Digital WD BLUE 5400/256M", 
         "brand": "Western"
     }, 
@@ -1822,7 +1654,7 @@
             "4", 
             "TB"
         ], 
-        "price": "115340", 
+        "price": "115060", 
         "name": "Western Digital WD BLUE 5400/256M", 
         "brand": "Western"
     }, 
@@ -1847,7 +1679,7 @@
             "4", 
             "TB"
         ], 
-        "price": "117480", 
+        "price": "117230", 
         "name": "Western Digital WD BLUE 5400/256M", 
         "brand": "Western"
     }, 
@@ -1925,60 +1757,6 @@
         "price": "65000", 
         "name": "Western Digital WD BLUE 5400/256M", 
         "brand": "Western"
-    }, 
-    {
-        "img": "//img.danawa.com/prod_img/500000/629/295/img/6295629_1.jpg?shrink=330:*&_v=20200528134738", 
-        "spec": [
-            "HDD (PC용)", 
-            "8.9cm(3.5인치)", 
-            "10TB", 
-            "SATA3 (6Gb/s)", 
-            "7,200RPM", 
-            "메모리 256MB", 
-            "기록방식: 확인요망(PMR)", 
-            "두께: 26.1mm", 
-            "DSA", 
-            "사용보증: 60만시간", 
-            "소음(유휴/탐색): 34dB", 
-            "A/S 정보: 2년", 
-            "충격 감지센서", 
-            "램프로딩 기술"
-        ], 
-        "Cate": "HDD", 
-        "size": [
-            "10", 
-            "TB"
-        ], 
-        "price": "349970", 
-        "name": "도시바 X300 7200/256M", 
-        "brand": "도시바"
-    }, 
-    {
-        "img": "//img.danawa.com/prod_img/500000/629/295/img/6295629_1.jpg?shrink=330:*&_v=20200528134738", 
-        "spec": [
-            "HDD (PC용)", 
-            "8.9cm(3.5인치)", 
-            "10TB", 
-            "SATA3 (6Gb/s)", 
-            "7,200RPM", 
-            "메모리 256MB", 
-            "기록방식: 확인요망(PMR)", 
-            "두께: 26.1mm", 
-            "DSA", 
-            "사용보증: 60만시간", 
-            "소음(유휴/탐색): 34dB", 
-            "A/S 정보: 2년", 
-            "충격 감지센서", 
-            "램프로딩 기술"
-        ], 
-        "Cate": "HDD", 
-        "size": [
-            "8", 
-            "TB"
-        ], 
-        "price": "290000", 
-        "name": "도시바 X300 7200/256M", 
-        "brand": "도시바"
     }, 
     {
         "img": "//img.danawa.com/prod_img/500000/034/490/img/4490034_1.jpg?shrink=330:*&_v=20220629140659", 
@@ -2132,16 +1910,16 @@
             "2", 
             "TB"
         ], 
-        "price": "80370", 
+        "price": "80810", 
         "name": "도시바 P300 7200/256M", 
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/821/288/img/6288821_1.jpg?shrink=330:*&_v=20211115130302", 
+        "img": "//img.danawa.com/prod_img/500000/809/288/img/6288809_1.jpg?shrink=330:*&_v=20211115130146", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "3TB", 
+            "2TB", 
             "SATA3 (6Gb/s)", 
             "7,200RPM", 
             "메모리 64MB", 
@@ -2158,16 +1936,16 @@
             "3", 
             "TB"
         ], 
-        "price": "119000", 
+        "price": "118980", 
         "name": "도시바 P300 7200/64M", 
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/821/288/img/6288821_1.jpg?shrink=330:*&_v=20211115130302", 
+        "img": "//img.danawa.com/prod_img/500000/809/288/img/6288809_1.jpg?shrink=330:*&_v=20211115130146", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "3TB", 
+            "2TB", 
             "SATA3 (6Gb/s)", 
             "7,200RPM", 
             "메모리 64MB", 
@@ -2184,16 +1962,16 @@
             "2", 
             "TB"
         ], 
-        "price": "97480", 
+        "price": "97160", 
         "name": "도시바 P300 7200/64M", 
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/821/288/img/6288821_1.jpg?shrink=330:*&_v=20211115130302", 
+        "img": "//img.danawa.com/prod_img/500000/809/288/img/6288809_1.jpg?shrink=330:*&_v=20211115130146", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "3TB", 
+            "2TB", 
             "SATA3 (6Gb/s)", 
             "7,200RPM", 
             "메모리 64MB", 
@@ -2210,16 +1988,16 @@
             "1", 
             "TB"
         ], 
-        "price": "70720", 
+        "price": "70650", 
         "name": "도시바 P300 7200/64M", 
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/821/288/img/6288821_1.jpg?shrink=330:*&_v=20211115130302", 
+        "img": "//img.danawa.com/prod_img/500000/809/288/img/6288809_1.jpg?shrink=330:*&_v=20211115130146", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "3TB", 
+            "2TB", 
             "SATA3 (6Gb/s)", 
             "7,200RPM", 
             "메모리 64MB", 
@@ -2241,87 +2019,57 @@
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/960/008/img/12008960_1.jpg?shrink=330:*&_v=20220617085106", 
+        "img": "//img.danawa.com/prod_img/500000/608/295/img/6295608_1.jpg?shrink=330:*&_v=20200528134739", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "4TB", 
+            "8TB", 
             "SATA3 (6Gb/s)", 
-            "5,400RPM", 
-            "메모리 128MB", 
-            "최대 185MB/s", 
-            "기록방식: SMR(PMR)", 
+            "7,200RPM", 
+            "메모리 256MB", 
+            "기록방식: 확인요망(PMR)", 
             "두께: 26.1mm", 
             "DSA", 
-            "저전력", 
-            "소음(유휴/탐색): 22/24dB", 
+            "사용보증: 60만시간", 
+            "소음(유휴/탐색): 33dB", 
             "A/S 정보: 2년", 
             "충격 감지센서", 
             "램프로딩 기술"
         ], 
         "Cate": "HDD", 
         "size": [
-            "6", 
+            "10", 
             "TB"
         ], 
-        "price": "163890", 
-        "name": "도시바 P300 5400/128M", 
+        "price": "349970", 
+        "name": "도시바 X300 7200/256M", 
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/960/008/img/12008960_1.jpg?shrink=330:*&_v=20220617085106", 
+        "img": "//img.danawa.com/prod_img/500000/608/295/img/6295608_1.jpg?shrink=330:*&_v=20200528134739", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "4TB", 
+            "8TB", 
             "SATA3 (6Gb/s)", 
-            "5,400RPM", 
-            "메모리 128MB", 
-            "최대 185MB/s", 
-            "기록방식: SMR(PMR)", 
+            "7,200RPM", 
+            "메모리 256MB", 
+            "기록방식: 확인요망(PMR)", 
             "두께: 26.1mm", 
             "DSA", 
-            "저전력", 
-            "소음(유휴/탐색): 22/24dB", 
+            "사용보증: 60만시간", 
+            "소음(유휴/탐색): 33dB", 
             "A/S 정보: 2년", 
             "충격 감지센서", 
             "램프로딩 기술"
         ], 
         "Cate": "HDD", 
         "size": [
-            "4", 
+            "8", 
             "TB"
         ], 
-        "price": "116230", 
-        "name": "도시바 P300 5400/128M", 
-        "brand": "도시바"
-    }, 
-    {
-        "img": "//img.danawa.com/prod_img/500000/960/008/img/12008960_1.jpg?shrink=330:*&_v=20220617085106", 
-        "spec": [
-            "HDD (PC용)", 
-            "8.9cm(3.5인치)", 
-            "4TB", 
-            "SATA3 (6Gb/s)", 
-            "5,400RPM", 
-            "메모리 128MB", 
-            "최대 185MB/s", 
-            "기록방식: SMR(PMR)", 
-            "두께: 26.1mm", 
-            "DSA", 
-            "저전력", 
-            "소음(유휴/탐색): 22/24dB", 
-            "A/S 정보: 2년", 
-            "충격 감지센서", 
-            "램프로딩 기술"
-        ], 
-        "Cate": "HDD", 
-        "size": [
-            "2", 
-            "TB"
-        ], 
-        "price": "83500", 
-        "name": "도시바 P300 5400/128M", 
+        "price": "290000", 
+        "name": "도시바 X300 7200/256M", 
         "brand": "도시바"
     }, 
     {
@@ -2369,7 +2117,7 @@
             "2", 
             "TB"
         ], 
-        "price": "78950", 
+        "price": "80390", 
         "name": "Western Digital WD BLUE 7200/256M", 
         "brand": "Western"
     }, 
@@ -2394,7 +2142,7 @@
             "2", 
             "TB"
         ], 
-        "price": "83000", 
+        "price": "81500", 
         "name": "Seagate BarraCuda 7200/256M", 
         "brand": "Seagate"
     }, 
@@ -2420,7 +2168,7 @@
             "8", 
             "TB"
         ], 
-        "price": "219970", 
+        "price": "219900", 
         "name": "Seagate BarraCuda 5400/256M", 
         "brand": "Seagate"
     }, 
@@ -2472,7 +2220,7 @@
             "4", 
             "TB"
         ], 
-        "price": "132090", 
+        "price": "130630", 
         "name": "Seagate BarraCuda 5400/256M", 
         "brand": "Seagate"
     }, 
@@ -2572,7 +2320,7 @@
             "6", 
             "TB"
         ], 
-        "price": "156890", 
+        "price": "157280", 
         "name": "Western Digital WD BLUE 5400/256M", 
         "brand": "Western"
     }, 
@@ -2597,7 +2345,7 @@
             "4", 
             "TB"
         ], 
-        "price": "115340", 
+        "price": "115060", 
         "name": "Western Digital WD BLUE 5400/256M", 
         "brand": "Western"
     }, 
@@ -2622,7 +2370,7 @@
             "4", 
             "TB"
         ], 
-        "price": "117480", 
+        "price": "117230", 
         "name": "Western Digital WD BLUE 5400/256M", 
         "brand": "Western"
     }, 
@@ -2700,60 +2448,6 @@
         "price": "65000", 
         "name": "Western Digital WD BLUE 5400/256M", 
         "brand": "Western"
-    }, 
-    {
-        "img": "//img.danawa.com/prod_img/500000/629/295/img/6295629_1.jpg?shrink=330:*&_v=20200528134738", 
-        "spec": [
-            "HDD (PC용)", 
-            "8.9cm(3.5인치)", 
-            "10TB", 
-            "SATA3 (6Gb/s)", 
-            "7,200RPM", 
-            "메모리 256MB", 
-            "기록방식: 확인요망(PMR)", 
-            "두께: 26.1mm", 
-            "DSA", 
-            "사용보증: 60만시간", 
-            "소음(유휴/탐색): 34dB", 
-            "A/S 정보: 2년", 
-            "충격 감지센서", 
-            "램프로딩 기술"
-        ], 
-        "Cate": "HDD", 
-        "size": [
-            "10", 
-            "TB"
-        ], 
-        "price": "349970", 
-        "name": "도시바 X300 7200/256M", 
-        "brand": "도시바"
-    }, 
-    {
-        "img": "//img.danawa.com/prod_img/500000/629/295/img/6295629_1.jpg?shrink=330:*&_v=20200528134738", 
-        "spec": [
-            "HDD (PC용)", 
-            "8.9cm(3.5인치)", 
-            "10TB", 
-            "SATA3 (6Gb/s)", 
-            "7,200RPM", 
-            "메모리 256MB", 
-            "기록방식: 확인요망(PMR)", 
-            "두께: 26.1mm", 
-            "DSA", 
-            "사용보증: 60만시간", 
-            "소음(유휴/탐색): 34dB", 
-            "A/S 정보: 2년", 
-            "충격 감지센서", 
-            "램프로딩 기술"
-        ], 
-        "Cate": "HDD", 
-        "size": [
-            "8", 
-            "TB"
-        ], 
-        "price": "290000", 
-        "name": "도시바 X300 7200/256M", 
-        "brand": "도시바"
     }, 
     {
         "img": "//img.danawa.com/prod_img/500000/034/490/img/4490034_1.jpg?shrink=330:*&_v=20220629140659", 
@@ -2907,16 +2601,16 @@
             "2", 
             "TB"
         ], 
-        "price": "80370", 
+        "price": "80810", 
         "name": "도시바 P300 7200/256M", 
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/821/288/img/6288821_1.jpg?shrink=330:*&_v=20211115130302", 
+        "img": "//img.danawa.com/prod_img/500000/809/288/img/6288809_1.jpg?shrink=330:*&_v=20211115130146", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "3TB", 
+            "2TB", 
             "SATA3 (6Gb/s)", 
             "7,200RPM", 
             "메모리 64MB", 
@@ -2933,16 +2627,16 @@
             "3", 
             "TB"
         ], 
-        "price": "119000", 
+        "price": "118980", 
         "name": "도시바 P300 7200/64M", 
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/821/288/img/6288821_1.jpg?shrink=330:*&_v=20211115130302", 
+        "img": "//img.danawa.com/prod_img/500000/809/288/img/6288809_1.jpg?shrink=330:*&_v=20211115130146", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "3TB", 
+            "2TB", 
             "SATA3 (6Gb/s)", 
             "7,200RPM", 
             "메모리 64MB", 
@@ -2959,16 +2653,16 @@
             "2", 
             "TB"
         ], 
-        "price": "97480", 
+        "price": "97160", 
         "name": "도시바 P300 7200/64M", 
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/821/288/img/6288821_1.jpg?shrink=330:*&_v=20211115130302", 
+        "img": "//img.danawa.com/prod_img/500000/809/288/img/6288809_1.jpg?shrink=330:*&_v=20211115130146", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "3TB", 
+            "2TB", 
             "SATA3 (6Gb/s)", 
             "7,200RPM", 
             "메모리 64MB", 
@@ -2985,16 +2679,16 @@
             "1", 
             "TB"
         ], 
-        "price": "70720", 
+        "price": "70650", 
         "name": "도시바 P300 7200/64M", 
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/821/288/img/6288821_1.jpg?shrink=330:*&_v=20211115130302", 
+        "img": "//img.danawa.com/prod_img/500000/809/288/img/6288809_1.jpg?shrink=330:*&_v=20211115130146", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "3TB", 
+            "2TB", 
             "SATA3 (6Gb/s)", 
             "7,200RPM", 
             "메모리 64MB", 
@@ -3016,87 +2710,57 @@
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/960/008/img/12008960_1.jpg?shrink=330:*&_v=20220617085106", 
+        "img": "//img.danawa.com/prod_img/500000/608/295/img/6295608_1.jpg?shrink=330:*&_v=20200528134739", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "4TB", 
+            "8TB", 
             "SATA3 (6Gb/s)", 
-            "5,400RPM", 
-            "메모리 128MB", 
-            "최대 185MB/s", 
-            "기록방식: SMR(PMR)", 
+            "7,200RPM", 
+            "메모리 256MB", 
+            "기록방식: 확인요망(PMR)", 
             "두께: 26.1mm", 
             "DSA", 
-            "저전력", 
-            "소음(유휴/탐색): 22/24dB", 
+            "사용보증: 60만시간", 
+            "소음(유휴/탐색): 33dB", 
             "A/S 정보: 2년", 
             "충격 감지센서", 
             "램프로딩 기술"
         ], 
         "Cate": "HDD", 
         "size": [
-            "6", 
+            "10", 
             "TB"
         ], 
-        "price": "163890", 
-        "name": "도시바 P300 5400/128M", 
+        "price": "349970", 
+        "name": "도시바 X300 7200/256M", 
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/960/008/img/12008960_1.jpg?shrink=330:*&_v=20220617085106", 
+        "img": "//img.danawa.com/prod_img/500000/608/295/img/6295608_1.jpg?shrink=330:*&_v=20200528134739", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "4TB", 
+            "8TB", 
             "SATA3 (6Gb/s)", 
-            "5,400RPM", 
-            "메모리 128MB", 
-            "최대 185MB/s", 
-            "기록방식: SMR(PMR)", 
+            "7,200RPM", 
+            "메모리 256MB", 
+            "기록방식: 확인요망(PMR)", 
             "두께: 26.1mm", 
             "DSA", 
-            "저전력", 
-            "소음(유휴/탐색): 22/24dB", 
+            "사용보증: 60만시간", 
+            "소음(유휴/탐색): 33dB", 
             "A/S 정보: 2년", 
             "충격 감지센서", 
             "램프로딩 기술"
         ], 
         "Cate": "HDD", 
         "size": [
-            "4", 
+            "8", 
             "TB"
         ], 
-        "price": "116230", 
-        "name": "도시바 P300 5400/128M", 
-        "brand": "도시바"
-    }, 
-    {
-        "img": "//img.danawa.com/prod_img/500000/960/008/img/12008960_1.jpg?shrink=330:*&_v=20220617085106", 
-        "spec": [
-            "HDD (PC용)", 
-            "8.9cm(3.5인치)", 
-            "4TB", 
-            "SATA3 (6Gb/s)", 
-            "5,400RPM", 
-            "메모리 128MB", 
-            "최대 185MB/s", 
-            "기록방식: SMR(PMR)", 
-            "두께: 26.1mm", 
-            "DSA", 
-            "저전력", 
-            "소음(유휴/탐색): 22/24dB", 
-            "A/S 정보: 2년", 
-            "충격 감지센서", 
-            "램프로딩 기술"
-        ], 
-        "Cate": "HDD", 
-        "size": [
-            "2", 
-            "TB"
-        ], 
-        "price": "83500", 
-        "name": "도시바 P300 5400/128M", 
+        "price": "290000", 
+        "name": "도시바 X300 7200/256M", 
         "brand": "도시바"
     }, 
     {
@@ -3144,7 +2808,7 @@
             "2", 
             "TB"
         ], 
-        "price": "78950", 
+        "price": "80390", 
         "name": "Western Digital WD BLUE 7200/256M", 
         "brand": "Western"
     }, 
@@ -3169,7 +2833,7 @@
             "2", 
             "TB"
         ], 
-        "price": "83000", 
+        "price": "81500", 
         "name": "Seagate BarraCuda 7200/256M", 
         "brand": "Seagate"
     }, 
@@ -3195,7 +2859,7 @@
             "8", 
             "TB"
         ], 
-        "price": "219970", 
+        "price": "219900", 
         "name": "Seagate BarraCuda 5400/256M", 
         "brand": "Seagate"
     }, 
@@ -3247,7 +2911,7 @@
             "4", 
             "TB"
         ], 
-        "price": "132090", 
+        "price": "130630", 
         "name": "Seagate BarraCuda 5400/256M", 
         "brand": "Seagate"
     }, 
@@ -3347,7 +3011,7 @@
             "6", 
             "TB"
         ], 
-        "price": "156890", 
+        "price": "157280", 
         "name": "Western Digital WD BLUE 5400/256M", 
         "brand": "Western"
     }, 
@@ -3372,7 +3036,7 @@
             "4", 
             "TB"
         ], 
-        "price": "115340", 
+        "price": "115060", 
         "name": "Western Digital WD BLUE 5400/256M", 
         "brand": "Western"
     }, 
@@ -3397,7 +3061,7 @@
             "4", 
             "TB"
         ], 
-        "price": "117480", 
+        "price": "117230", 
         "name": "Western Digital WD BLUE 5400/256M", 
         "brand": "Western"
     }, 
@@ -3475,60 +3139,6 @@
         "price": "65000", 
         "name": "Western Digital WD BLUE 5400/256M", 
         "brand": "Western"
-    }, 
-    {
-        "img": "//img.danawa.com/prod_img/500000/629/295/img/6295629_1.jpg?shrink=330:*&_v=20200528134738", 
-        "spec": [
-            "HDD (PC용)", 
-            "8.9cm(3.5인치)", 
-            "10TB", 
-            "SATA3 (6Gb/s)", 
-            "7,200RPM", 
-            "메모리 256MB", 
-            "기록방식: 확인요망(PMR)", 
-            "두께: 26.1mm", 
-            "DSA", 
-            "사용보증: 60만시간", 
-            "소음(유휴/탐색): 34dB", 
-            "A/S 정보: 2년", 
-            "충격 감지센서", 
-            "램프로딩 기술"
-        ], 
-        "Cate": "HDD", 
-        "size": [
-            "10", 
-            "TB"
-        ], 
-        "price": "349970", 
-        "name": "도시바 X300 7200/256M", 
-        "brand": "도시바"
-    }, 
-    {
-        "img": "//img.danawa.com/prod_img/500000/629/295/img/6295629_1.jpg?shrink=330:*&_v=20200528134738", 
-        "spec": [
-            "HDD (PC용)", 
-            "8.9cm(3.5인치)", 
-            "10TB", 
-            "SATA3 (6Gb/s)", 
-            "7,200RPM", 
-            "메모리 256MB", 
-            "기록방식: 확인요망(PMR)", 
-            "두께: 26.1mm", 
-            "DSA", 
-            "사용보증: 60만시간", 
-            "소음(유휴/탐색): 34dB", 
-            "A/S 정보: 2년", 
-            "충격 감지센서", 
-            "램프로딩 기술"
-        ], 
-        "Cate": "HDD", 
-        "size": [
-            "8", 
-            "TB"
-        ], 
-        "price": "290000", 
-        "name": "도시바 X300 7200/256M", 
-        "brand": "도시바"
     }, 
     {
         "img": "//img.danawa.com/prod_img/500000/034/490/img/4490034_1.jpg?shrink=330:*&_v=20220629140659", 
@@ -3682,16 +3292,16 @@
             "2", 
             "TB"
         ], 
-        "price": "80370", 
+        "price": "80810", 
         "name": "도시바 P300 7200/256M", 
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/821/288/img/6288821_1.jpg?shrink=330:*&_v=20211115130302", 
+        "img": "//img.danawa.com/prod_img/500000/809/288/img/6288809_1.jpg?shrink=330:*&_v=20211115130146", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "3TB", 
+            "2TB", 
             "SATA3 (6Gb/s)", 
             "7,200RPM", 
             "메모리 64MB", 
@@ -3708,16 +3318,16 @@
             "3", 
             "TB"
         ], 
-        "price": "119000", 
+        "price": "118980", 
         "name": "도시바 P300 7200/64M", 
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/821/288/img/6288821_1.jpg?shrink=330:*&_v=20211115130302", 
+        "img": "//img.danawa.com/prod_img/500000/809/288/img/6288809_1.jpg?shrink=330:*&_v=20211115130146", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "3TB", 
+            "2TB", 
             "SATA3 (6Gb/s)", 
             "7,200RPM", 
             "메모리 64MB", 
@@ -3734,16 +3344,16 @@
             "2", 
             "TB"
         ], 
-        "price": "97480", 
+        "price": "97160", 
         "name": "도시바 P300 7200/64M", 
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/821/288/img/6288821_1.jpg?shrink=330:*&_v=20211115130302", 
+        "img": "//img.danawa.com/prod_img/500000/809/288/img/6288809_1.jpg?shrink=330:*&_v=20211115130146", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "3TB", 
+            "2TB", 
             "SATA3 (6Gb/s)", 
             "7,200RPM", 
             "메모리 64MB", 
@@ -3760,16 +3370,16 @@
             "1", 
             "TB"
         ], 
-        "price": "70720", 
+        "price": "70650", 
         "name": "도시바 P300 7200/64M", 
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/821/288/img/6288821_1.jpg?shrink=330:*&_v=20211115130302", 
+        "img": "//img.danawa.com/prod_img/500000/809/288/img/6288809_1.jpg?shrink=330:*&_v=20211115130146", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "3TB", 
+            "2TB", 
             "SATA3 (6Gb/s)", 
             "7,200RPM", 
             "메모리 64MB", 
@@ -3791,87 +3401,57 @@
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/960/008/img/12008960_1.jpg?shrink=330:*&_v=20220617085106", 
+        "img": "//img.danawa.com/prod_img/500000/608/295/img/6295608_1.jpg?shrink=330:*&_v=20200528134739", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "4TB", 
+            "8TB", 
             "SATA3 (6Gb/s)", 
-            "5,400RPM", 
-            "메모리 128MB", 
-            "최대 185MB/s", 
-            "기록방식: SMR(PMR)", 
+            "7,200RPM", 
+            "메모리 256MB", 
+            "기록방식: 확인요망(PMR)", 
             "두께: 26.1mm", 
             "DSA", 
-            "저전력", 
-            "소음(유휴/탐색): 22/24dB", 
+            "사용보증: 60만시간", 
+            "소음(유휴/탐색): 33dB", 
             "A/S 정보: 2년", 
             "충격 감지센서", 
             "램프로딩 기술"
         ], 
         "Cate": "HDD", 
         "size": [
-            "6", 
+            "10", 
             "TB"
         ], 
-        "price": "163890", 
-        "name": "도시바 P300 5400/128M", 
+        "price": "349970", 
+        "name": "도시바 X300 7200/256M", 
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/960/008/img/12008960_1.jpg?shrink=330:*&_v=20220617085106", 
+        "img": "//img.danawa.com/prod_img/500000/608/295/img/6295608_1.jpg?shrink=330:*&_v=20200528134739", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "4TB", 
+            "8TB", 
             "SATA3 (6Gb/s)", 
-            "5,400RPM", 
-            "메모리 128MB", 
-            "최대 185MB/s", 
-            "기록방식: SMR(PMR)", 
+            "7,200RPM", 
+            "메모리 256MB", 
+            "기록방식: 확인요망(PMR)", 
             "두께: 26.1mm", 
             "DSA", 
-            "저전력", 
-            "소음(유휴/탐색): 22/24dB", 
+            "사용보증: 60만시간", 
+            "소음(유휴/탐색): 33dB", 
             "A/S 정보: 2년", 
             "충격 감지센서", 
             "램프로딩 기술"
         ], 
         "Cate": "HDD", 
         "size": [
-            "4", 
+            "8", 
             "TB"
         ], 
-        "price": "116230", 
-        "name": "도시바 P300 5400/128M", 
-        "brand": "도시바"
-    }, 
-    {
-        "img": "//img.danawa.com/prod_img/500000/960/008/img/12008960_1.jpg?shrink=330:*&_v=20220617085106", 
-        "spec": [
-            "HDD (PC용)", 
-            "8.9cm(3.5인치)", 
-            "4TB", 
-            "SATA3 (6Gb/s)", 
-            "5,400RPM", 
-            "메모리 128MB", 
-            "최대 185MB/s", 
-            "기록방식: SMR(PMR)", 
-            "두께: 26.1mm", 
-            "DSA", 
-            "저전력", 
-            "소음(유휴/탐색): 22/24dB", 
-            "A/S 정보: 2년", 
-            "충격 감지센서", 
-            "램프로딩 기술"
-        ], 
-        "Cate": "HDD", 
-        "size": [
-            "2", 
-            "TB"
-        ], 
-        "price": "83500", 
-        "name": "도시바 P300 5400/128M", 
+        "price": "290000", 
+        "name": "도시바 X300 7200/256M", 
         "brand": "도시바"
     }, 
     {
@@ -3919,7 +3499,7 @@
             "2", 
             "TB"
         ], 
-        "price": "78950", 
+        "price": "80390", 
         "name": "Western Digital WD BLUE 7200/256M", 
         "brand": "Western"
     }, 
@@ -3944,7 +3524,7 @@
             "2", 
             "TB"
         ], 
-        "price": "83000", 
+        "price": "81500", 
         "name": "Seagate BarraCuda 7200/256M", 
         "brand": "Seagate"
     }, 
@@ -3970,7 +3550,7 @@
             "8", 
             "TB"
         ], 
-        "price": "219970", 
+        "price": "219900", 
         "name": "Seagate BarraCuda 5400/256M", 
         "brand": "Seagate"
     }, 
@@ -4022,7 +3602,7 @@
             "4", 
             "TB"
         ], 
-        "price": "132090", 
+        "price": "130630", 
         "name": "Seagate BarraCuda 5400/256M", 
         "brand": "Seagate"
     }, 
@@ -4122,7 +3702,7 @@
             "6", 
             "TB"
         ], 
-        "price": "156890", 
+        "price": "157280", 
         "name": "Western Digital WD BLUE 5400/256M", 
         "brand": "Western"
     }, 
@@ -4147,7 +3727,7 @@
             "4", 
             "TB"
         ], 
-        "price": "115340", 
+        "price": "115060", 
         "name": "Western Digital WD BLUE 5400/256M", 
         "brand": "Western"
     }, 
@@ -4172,7 +3752,7 @@
             "4", 
             "TB"
         ], 
-        "price": "117480", 
+        "price": "117230", 
         "name": "Western Digital WD BLUE 5400/256M", 
         "brand": "Western"
     }, 
@@ -4250,60 +3830,6 @@
         "price": "65000", 
         "name": "Western Digital WD BLUE 5400/256M", 
         "brand": "Western"
-    }, 
-    {
-        "img": "//img.danawa.com/prod_img/500000/629/295/img/6295629_1.jpg?shrink=330:*&_v=20200528134738", 
-        "spec": [
-            "HDD (PC용)", 
-            "8.9cm(3.5인치)", 
-            "10TB", 
-            "SATA3 (6Gb/s)", 
-            "7,200RPM", 
-            "메모리 256MB", 
-            "기록방식: 확인요망(PMR)", 
-            "두께: 26.1mm", 
-            "DSA", 
-            "사용보증: 60만시간", 
-            "소음(유휴/탐색): 34dB", 
-            "A/S 정보: 2년", 
-            "충격 감지센서", 
-            "램프로딩 기술"
-        ], 
-        "Cate": "HDD", 
-        "size": [
-            "10", 
-            "TB"
-        ], 
-        "price": "349970", 
-        "name": "도시바 X300 7200/256M", 
-        "brand": "도시바"
-    }, 
-    {
-        "img": "//img.danawa.com/prod_img/500000/629/295/img/6295629_1.jpg?shrink=330:*&_v=20200528134738", 
-        "spec": [
-            "HDD (PC용)", 
-            "8.9cm(3.5인치)", 
-            "10TB", 
-            "SATA3 (6Gb/s)", 
-            "7,200RPM", 
-            "메모리 256MB", 
-            "기록방식: 확인요망(PMR)", 
-            "두께: 26.1mm", 
-            "DSA", 
-            "사용보증: 60만시간", 
-            "소음(유휴/탐색): 34dB", 
-            "A/S 정보: 2년", 
-            "충격 감지센서", 
-            "램프로딩 기술"
-        ], 
-        "Cate": "HDD", 
-        "size": [
-            "8", 
-            "TB"
-        ], 
-        "price": "290000", 
-        "name": "도시바 X300 7200/256M", 
-        "brand": "도시바"
     }, 
     {
         "img": "//img.danawa.com/prod_img/500000/034/490/img/4490034_1.jpg?shrink=330:*&_v=20220629140659", 
@@ -4457,16 +3983,16 @@
             "2", 
             "TB"
         ], 
-        "price": "80370", 
+        "price": "80810", 
         "name": "도시바 P300 7200/256M", 
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/821/288/img/6288821_1.jpg?shrink=330:*&_v=20211115130302", 
+        "img": "//img.danawa.com/prod_img/500000/809/288/img/6288809_1.jpg?shrink=330:*&_v=20211115130146", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "3TB", 
+            "2TB", 
             "SATA3 (6Gb/s)", 
             "7,200RPM", 
             "메모리 64MB", 
@@ -4483,16 +4009,16 @@
             "3", 
             "TB"
         ], 
-        "price": "119000", 
+        "price": "118980", 
         "name": "도시바 P300 7200/64M", 
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/821/288/img/6288821_1.jpg?shrink=330:*&_v=20211115130302", 
+        "img": "//img.danawa.com/prod_img/500000/809/288/img/6288809_1.jpg?shrink=330:*&_v=20211115130146", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "3TB", 
+            "2TB", 
             "SATA3 (6Gb/s)", 
             "7,200RPM", 
             "메모리 64MB", 
@@ -4509,16 +4035,16 @@
             "2", 
             "TB"
         ], 
-        "price": "97480", 
+        "price": "97160", 
         "name": "도시바 P300 7200/64M", 
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/821/288/img/6288821_1.jpg?shrink=330:*&_v=20211115130302", 
+        "img": "//img.danawa.com/prod_img/500000/809/288/img/6288809_1.jpg?shrink=330:*&_v=20211115130146", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "3TB", 
+            "2TB", 
             "SATA3 (6Gb/s)", 
             "7,200RPM", 
             "메모리 64MB", 
@@ -4535,16 +4061,16 @@
             "1", 
             "TB"
         ], 
-        "price": "70720", 
+        "price": "70650", 
         "name": "도시바 P300 7200/64M", 
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/821/288/img/6288821_1.jpg?shrink=330:*&_v=20211115130302", 
+        "img": "//img.danawa.com/prod_img/500000/809/288/img/6288809_1.jpg?shrink=330:*&_v=20211115130146", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "3TB", 
+            "2TB", 
             "SATA3 (6Gb/s)", 
             "7,200RPM", 
             "메모리 64MB", 
@@ -4566,87 +4092,57 @@
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/960/008/img/12008960_1.jpg?shrink=330:*&_v=20220617085106", 
+        "img": "//img.danawa.com/prod_img/500000/608/295/img/6295608_1.jpg?shrink=330:*&_v=20200528134739", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "4TB", 
+            "8TB", 
             "SATA3 (6Gb/s)", 
-            "5,400RPM", 
-            "메모리 128MB", 
-            "최대 185MB/s", 
-            "기록방식: SMR(PMR)", 
+            "7,200RPM", 
+            "메모리 256MB", 
+            "기록방식: 확인요망(PMR)", 
             "두께: 26.1mm", 
             "DSA", 
-            "저전력", 
-            "소음(유휴/탐색): 22/24dB", 
+            "사용보증: 60만시간", 
+            "소음(유휴/탐색): 33dB", 
             "A/S 정보: 2년", 
             "충격 감지센서", 
             "램프로딩 기술"
         ], 
         "Cate": "HDD", 
         "size": [
-            "6", 
+            "10", 
             "TB"
         ], 
-        "price": "163890", 
-        "name": "도시바 P300 5400/128M", 
+        "price": "349970", 
+        "name": "도시바 X300 7200/256M", 
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/960/008/img/12008960_1.jpg?shrink=330:*&_v=20220617085106", 
+        "img": "//img.danawa.com/prod_img/500000/608/295/img/6295608_1.jpg?shrink=330:*&_v=20200528134739", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "4TB", 
+            "8TB", 
             "SATA3 (6Gb/s)", 
-            "5,400RPM", 
-            "메모리 128MB", 
-            "최대 185MB/s", 
-            "기록방식: SMR(PMR)", 
+            "7,200RPM", 
+            "메모리 256MB", 
+            "기록방식: 확인요망(PMR)", 
             "두께: 26.1mm", 
             "DSA", 
-            "저전력", 
-            "소음(유휴/탐색): 22/24dB", 
+            "사용보증: 60만시간", 
+            "소음(유휴/탐색): 33dB", 
             "A/S 정보: 2년", 
             "충격 감지센서", 
             "램프로딩 기술"
         ], 
         "Cate": "HDD", 
         "size": [
-            "4", 
+            "8", 
             "TB"
         ], 
-        "price": "116230", 
-        "name": "도시바 P300 5400/128M", 
-        "brand": "도시바"
-    }, 
-    {
-        "img": "//img.danawa.com/prod_img/500000/960/008/img/12008960_1.jpg?shrink=330:*&_v=20220617085106", 
-        "spec": [
-            "HDD (PC용)", 
-            "8.9cm(3.5인치)", 
-            "4TB", 
-            "SATA3 (6Gb/s)", 
-            "5,400RPM", 
-            "메모리 128MB", 
-            "최대 185MB/s", 
-            "기록방식: SMR(PMR)", 
-            "두께: 26.1mm", 
-            "DSA", 
-            "저전력", 
-            "소음(유휴/탐색): 22/24dB", 
-            "A/S 정보: 2년", 
-            "충격 감지센서", 
-            "램프로딩 기술"
-        ], 
-        "Cate": "HDD", 
-        "size": [
-            "2", 
-            "TB"
-        ], 
-        "price": "83500", 
-        "name": "도시바 P300 5400/128M", 
+        "price": "290000", 
+        "name": "도시바 X300 7200/256M", 
         "brand": "도시바"
     }, 
     {
@@ -4694,7 +4190,7 @@
             "2", 
             "TB"
         ], 
-        "price": "78950", 
+        "price": "80390", 
         "name": "Western Digital WD BLUE 7200/256M", 
         "brand": "Western"
     }, 
@@ -4719,7 +4215,7 @@
             "2", 
             "TB"
         ], 
-        "price": "83000", 
+        "price": "81500", 
         "name": "Seagate BarraCuda 7200/256M", 
         "brand": "Seagate"
     }, 
@@ -4745,7 +4241,7 @@
             "8", 
             "TB"
         ], 
-        "price": "219970", 
+        "price": "219900", 
         "name": "Seagate BarraCuda 5400/256M", 
         "brand": "Seagate"
     }, 
@@ -4797,7 +4293,7 @@
             "4", 
             "TB"
         ], 
-        "price": "132090", 
+        "price": "130630", 
         "name": "Seagate BarraCuda 5400/256M", 
         "brand": "Seagate"
     }, 
@@ -4897,7 +4393,7 @@
             "6", 
             "TB"
         ], 
-        "price": "156890", 
+        "price": "157280", 
         "name": "Western Digital WD BLUE 5400/256M", 
         "brand": "Western"
     }, 
@@ -4922,7 +4418,7 @@
             "4", 
             "TB"
         ], 
-        "price": "115340", 
+        "price": "115060", 
         "name": "Western Digital WD BLUE 5400/256M", 
         "brand": "Western"
     }, 
@@ -4947,7 +4443,7 @@
             "4", 
             "TB"
         ], 
-        "price": "117480", 
+        "price": "117230", 
         "name": "Western Digital WD BLUE 5400/256M", 
         "brand": "Western"
     }, 
@@ -5025,60 +4521,6 @@
         "price": "65000", 
         "name": "Western Digital WD BLUE 5400/256M", 
         "brand": "Western"
-    }, 
-    {
-        "img": "//img.danawa.com/prod_img/500000/629/295/img/6295629_1.jpg?shrink=330:*&_v=20200528134738", 
-        "spec": [
-            "HDD (PC용)", 
-            "8.9cm(3.5인치)", 
-            "10TB", 
-            "SATA3 (6Gb/s)", 
-            "7,200RPM", 
-            "메모리 256MB", 
-            "기록방식: 확인요망(PMR)", 
-            "두께: 26.1mm", 
-            "DSA", 
-            "사용보증: 60만시간", 
-            "소음(유휴/탐색): 34dB", 
-            "A/S 정보: 2년", 
-            "충격 감지센서", 
-            "램프로딩 기술"
-        ], 
-        "Cate": "HDD", 
-        "size": [
-            "10", 
-            "TB"
-        ], 
-        "price": "349970", 
-        "name": "도시바 X300 7200/256M", 
-        "brand": "도시바"
-    }, 
-    {
-        "img": "//img.danawa.com/prod_img/500000/629/295/img/6295629_1.jpg?shrink=330:*&_v=20200528134738", 
-        "spec": [
-            "HDD (PC용)", 
-            "8.9cm(3.5인치)", 
-            "10TB", 
-            "SATA3 (6Gb/s)", 
-            "7,200RPM", 
-            "메모리 256MB", 
-            "기록방식: 확인요망(PMR)", 
-            "두께: 26.1mm", 
-            "DSA", 
-            "사용보증: 60만시간", 
-            "소음(유휴/탐색): 34dB", 
-            "A/S 정보: 2년", 
-            "충격 감지센서", 
-            "램프로딩 기술"
-        ], 
-        "Cate": "HDD", 
-        "size": [
-            "8", 
-            "TB"
-        ], 
-        "price": "290000", 
-        "name": "도시바 X300 7200/256M", 
-        "brand": "도시바"
     }, 
     {
         "img": "//img.danawa.com/prod_img/500000/034/490/img/4490034_1.jpg?shrink=330:*&_v=20220629140659", 
@@ -5232,16 +4674,16 @@
             "2", 
             "TB"
         ], 
-        "price": "80370", 
+        "price": "80810", 
         "name": "도시바 P300 7200/256M", 
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/821/288/img/6288821_1.jpg?shrink=330:*&_v=20211115130302", 
+        "img": "//img.danawa.com/prod_img/500000/809/288/img/6288809_1.jpg?shrink=330:*&_v=20211115130146", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "3TB", 
+            "2TB", 
             "SATA3 (6Gb/s)", 
             "7,200RPM", 
             "메모리 64MB", 
@@ -5258,16 +4700,16 @@
             "3", 
             "TB"
         ], 
-        "price": "119000", 
+        "price": "118980", 
         "name": "도시바 P300 7200/64M", 
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/821/288/img/6288821_1.jpg?shrink=330:*&_v=20211115130302", 
+        "img": "//img.danawa.com/prod_img/500000/809/288/img/6288809_1.jpg?shrink=330:*&_v=20211115130146", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "3TB", 
+            "2TB", 
             "SATA3 (6Gb/s)", 
             "7,200RPM", 
             "메모리 64MB", 
@@ -5284,16 +4726,16 @@
             "2", 
             "TB"
         ], 
-        "price": "97480", 
+        "price": "97160", 
         "name": "도시바 P300 7200/64M", 
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/821/288/img/6288821_1.jpg?shrink=330:*&_v=20211115130302", 
+        "img": "//img.danawa.com/prod_img/500000/809/288/img/6288809_1.jpg?shrink=330:*&_v=20211115130146", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "3TB", 
+            "2TB", 
             "SATA3 (6Gb/s)", 
             "7,200RPM", 
             "메모리 64MB", 
@@ -5310,16 +4752,16 @@
             "1", 
             "TB"
         ], 
-        "price": "70720", 
+        "price": "70650", 
         "name": "도시바 P300 7200/64M", 
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/821/288/img/6288821_1.jpg?shrink=330:*&_v=20211115130302", 
+        "img": "//img.danawa.com/prod_img/500000/809/288/img/6288809_1.jpg?shrink=330:*&_v=20211115130146", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "3TB", 
+            "2TB", 
             "SATA3 (6Gb/s)", 
             "7,200RPM", 
             "메모리 64MB", 
@@ -5341,87 +4783,57 @@
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/960/008/img/12008960_1.jpg?shrink=330:*&_v=20220617085106", 
+        "img": "//img.danawa.com/prod_img/500000/608/295/img/6295608_1.jpg?shrink=330:*&_v=20200528134739", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "4TB", 
+            "8TB", 
             "SATA3 (6Gb/s)", 
-            "5,400RPM", 
-            "메모리 128MB", 
-            "최대 185MB/s", 
-            "기록방식: SMR(PMR)", 
+            "7,200RPM", 
+            "메모리 256MB", 
+            "기록방식: 확인요망(PMR)", 
             "두께: 26.1mm", 
             "DSA", 
-            "저전력", 
-            "소음(유휴/탐색): 22/24dB", 
+            "사용보증: 60만시간", 
+            "소음(유휴/탐색): 33dB", 
             "A/S 정보: 2년", 
             "충격 감지센서", 
             "램프로딩 기술"
         ], 
         "Cate": "HDD", 
         "size": [
-            "6", 
+            "10", 
             "TB"
         ], 
-        "price": "163890", 
-        "name": "도시바 P300 5400/128M", 
+        "price": "349970", 
+        "name": "도시바 X300 7200/256M", 
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/960/008/img/12008960_1.jpg?shrink=330:*&_v=20220617085106", 
+        "img": "//img.danawa.com/prod_img/500000/608/295/img/6295608_1.jpg?shrink=330:*&_v=20200528134739", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "4TB", 
+            "8TB", 
             "SATA3 (6Gb/s)", 
-            "5,400RPM", 
-            "메모리 128MB", 
-            "최대 185MB/s", 
-            "기록방식: SMR(PMR)", 
+            "7,200RPM", 
+            "메모리 256MB", 
+            "기록방식: 확인요망(PMR)", 
             "두께: 26.1mm", 
             "DSA", 
-            "저전력", 
-            "소음(유휴/탐색): 22/24dB", 
+            "사용보증: 60만시간", 
+            "소음(유휴/탐색): 33dB", 
             "A/S 정보: 2년", 
             "충격 감지센서", 
             "램프로딩 기술"
         ], 
         "Cate": "HDD", 
         "size": [
-            "4", 
+            "8", 
             "TB"
         ], 
-        "price": "116230", 
-        "name": "도시바 P300 5400/128M", 
-        "brand": "도시바"
-    }, 
-    {
-        "img": "//img.danawa.com/prod_img/500000/960/008/img/12008960_1.jpg?shrink=330:*&_v=20220617085106", 
-        "spec": [
-            "HDD (PC용)", 
-            "8.9cm(3.5인치)", 
-            "4TB", 
-            "SATA3 (6Gb/s)", 
-            "5,400RPM", 
-            "메모리 128MB", 
-            "최대 185MB/s", 
-            "기록방식: SMR(PMR)", 
-            "두께: 26.1mm", 
-            "DSA", 
-            "저전력", 
-            "소음(유휴/탐색): 22/24dB", 
-            "A/S 정보: 2년", 
-            "충격 감지센서", 
-            "램프로딩 기술"
-        ], 
-        "Cate": "HDD", 
-        "size": [
-            "2", 
-            "TB"
-        ], 
-        "price": "83500", 
-        "name": "도시바 P300 5400/128M", 
+        "price": "290000", 
+        "name": "도시바 X300 7200/256M", 
         "brand": "도시바"
     }, 
     {
@@ -5469,7 +4881,7 @@
             "2", 
             "TB"
         ], 
-        "price": "78950", 
+        "price": "80390", 
         "name": "Western Digital WD BLUE 7200/256M", 
         "brand": "Western"
     }, 
@@ -5494,7 +4906,7 @@
             "2", 
             "TB"
         ], 
-        "price": "83000", 
+        "price": "81500", 
         "name": "Seagate BarraCuda 7200/256M", 
         "brand": "Seagate"
     }, 
@@ -5520,7 +4932,7 @@
             "8", 
             "TB"
         ], 
-        "price": "219970", 
+        "price": "219900", 
         "name": "Seagate BarraCuda 5400/256M", 
         "brand": "Seagate"
     }, 
@@ -5572,7 +4984,7 @@
             "4", 
             "TB"
         ], 
-        "price": "132090", 
+        "price": "130630", 
         "name": "Seagate BarraCuda 5400/256M", 
         "brand": "Seagate"
     }, 
@@ -5672,7 +5084,7 @@
             "6", 
             "TB"
         ], 
-        "price": "156890", 
+        "price": "157280", 
         "name": "Western Digital WD BLUE 5400/256M", 
         "brand": "Western"
     }, 
@@ -5697,7 +5109,7 @@
             "4", 
             "TB"
         ], 
-        "price": "115340", 
+        "price": "115060", 
         "name": "Western Digital WD BLUE 5400/256M", 
         "brand": "Western"
     }, 
@@ -5722,7 +5134,7 @@
             "4", 
             "TB"
         ], 
-        "price": "117480", 
+        "price": "117230", 
         "name": "Western Digital WD BLUE 5400/256M", 
         "brand": "Western"
     }, 
@@ -5800,60 +5212,6 @@
         "price": "65000", 
         "name": "Western Digital WD BLUE 5400/256M", 
         "brand": "Western"
-    }, 
-    {
-        "img": "//img.danawa.com/prod_img/500000/629/295/img/6295629_1.jpg?shrink=330:*&_v=20200528134738", 
-        "spec": [
-            "HDD (PC용)", 
-            "8.9cm(3.5인치)", 
-            "10TB", 
-            "SATA3 (6Gb/s)", 
-            "7,200RPM", 
-            "메모리 256MB", 
-            "기록방식: 확인요망(PMR)", 
-            "두께: 26.1mm", 
-            "DSA", 
-            "사용보증: 60만시간", 
-            "소음(유휴/탐색): 34dB", 
-            "A/S 정보: 2년", 
-            "충격 감지센서", 
-            "램프로딩 기술"
-        ], 
-        "Cate": "HDD", 
-        "size": [
-            "10", 
-            "TB"
-        ], 
-        "price": "349970", 
-        "name": "도시바 X300 7200/256M", 
-        "brand": "도시바"
-    }, 
-    {
-        "img": "//img.danawa.com/prod_img/500000/629/295/img/6295629_1.jpg?shrink=330:*&_v=20200528134738", 
-        "spec": [
-            "HDD (PC용)", 
-            "8.9cm(3.5인치)", 
-            "10TB", 
-            "SATA3 (6Gb/s)", 
-            "7,200RPM", 
-            "메모리 256MB", 
-            "기록방식: 확인요망(PMR)", 
-            "두께: 26.1mm", 
-            "DSA", 
-            "사용보증: 60만시간", 
-            "소음(유휴/탐색): 34dB", 
-            "A/S 정보: 2년", 
-            "충격 감지센서", 
-            "램프로딩 기술"
-        ], 
-        "Cate": "HDD", 
-        "size": [
-            "8", 
-            "TB"
-        ], 
-        "price": "290000", 
-        "name": "도시바 X300 7200/256M", 
-        "brand": "도시바"
     }, 
     {
         "img": "//img.danawa.com/prod_img/500000/034/490/img/4490034_1.jpg?shrink=330:*&_v=20220629140659", 
@@ -6007,16 +5365,16 @@
             "2", 
             "TB"
         ], 
-        "price": "80370", 
+        "price": "80810", 
         "name": "도시바 P300 7200/256M", 
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/821/288/img/6288821_1.jpg?shrink=330:*&_v=20211115130302", 
+        "img": "//img.danawa.com/prod_img/500000/809/288/img/6288809_1.jpg?shrink=330:*&_v=20211115130146", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "3TB", 
+            "2TB", 
             "SATA3 (6Gb/s)", 
             "7,200RPM", 
             "메모리 64MB", 
@@ -6033,16 +5391,16 @@
             "3", 
             "TB"
         ], 
-        "price": "119000", 
+        "price": "118980", 
         "name": "도시바 P300 7200/64M", 
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/821/288/img/6288821_1.jpg?shrink=330:*&_v=20211115130302", 
+        "img": "//img.danawa.com/prod_img/500000/809/288/img/6288809_1.jpg?shrink=330:*&_v=20211115130146", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "3TB", 
+            "2TB", 
             "SATA3 (6Gb/s)", 
             "7,200RPM", 
             "메모리 64MB", 
@@ -6059,16 +5417,16 @@
             "2", 
             "TB"
         ], 
-        "price": "97480", 
+        "price": "97160", 
         "name": "도시바 P300 7200/64M", 
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/821/288/img/6288821_1.jpg?shrink=330:*&_v=20211115130302", 
+        "img": "//img.danawa.com/prod_img/500000/809/288/img/6288809_1.jpg?shrink=330:*&_v=20211115130146", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "3TB", 
+            "2TB", 
             "SATA3 (6Gb/s)", 
             "7,200RPM", 
             "메모리 64MB", 
@@ -6085,16 +5443,16 @@
             "1", 
             "TB"
         ], 
-        "price": "70720", 
+        "price": "70650", 
         "name": "도시바 P300 7200/64M", 
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/821/288/img/6288821_1.jpg?shrink=330:*&_v=20211115130302", 
+        "img": "//img.danawa.com/prod_img/500000/809/288/img/6288809_1.jpg?shrink=330:*&_v=20211115130146", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "3TB", 
+            "2TB", 
             "SATA3 (6Gb/s)", 
             "7,200RPM", 
             "메모리 64MB", 
@@ -6116,87 +5474,57 @@
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/960/008/img/12008960_1.jpg?shrink=330:*&_v=20220617085106", 
+        "img": "//img.danawa.com/prod_img/500000/608/295/img/6295608_1.jpg?shrink=330:*&_v=20200528134739", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "4TB", 
+            "8TB", 
             "SATA3 (6Gb/s)", 
-            "5,400RPM", 
-            "메모리 128MB", 
-            "최대 185MB/s", 
-            "기록방식: SMR(PMR)", 
+            "7,200RPM", 
+            "메모리 256MB", 
+            "기록방식: 확인요망(PMR)", 
             "두께: 26.1mm", 
             "DSA", 
-            "저전력", 
-            "소음(유휴/탐색): 22/24dB", 
+            "사용보증: 60만시간", 
+            "소음(유휴/탐색): 33dB", 
             "A/S 정보: 2년", 
             "충격 감지센서", 
             "램프로딩 기술"
         ], 
         "Cate": "HDD", 
         "size": [
-            "6", 
+            "10", 
             "TB"
         ], 
-        "price": "163890", 
-        "name": "도시바 P300 5400/128M", 
+        "price": "349970", 
+        "name": "도시바 X300 7200/256M", 
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/960/008/img/12008960_1.jpg?shrink=330:*&_v=20220617085106", 
+        "img": "//img.danawa.com/prod_img/500000/608/295/img/6295608_1.jpg?shrink=330:*&_v=20200528134739", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "4TB", 
+            "8TB", 
             "SATA3 (6Gb/s)", 
-            "5,400RPM", 
-            "메모리 128MB", 
-            "최대 185MB/s", 
-            "기록방식: SMR(PMR)", 
+            "7,200RPM", 
+            "메모리 256MB", 
+            "기록방식: 확인요망(PMR)", 
             "두께: 26.1mm", 
             "DSA", 
-            "저전력", 
-            "소음(유휴/탐색): 22/24dB", 
+            "사용보증: 60만시간", 
+            "소음(유휴/탐색): 33dB", 
             "A/S 정보: 2년", 
             "충격 감지센서", 
             "램프로딩 기술"
         ], 
         "Cate": "HDD", 
         "size": [
-            "4", 
+            "8", 
             "TB"
         ], 
-        "price": "116230", 
-        "name": "도시바 P300 5400/128M", 
-        "brand": "도시바"
-    }, 
-    {
-        "img": "//img.danawa.com/prod_img/500000/960/008/img/12008960_1.jpg?shrink=330:*&_v=20220617085106", 
-        "spec": [
-            "HDD (PC용)", 
-            "8.9cm(3.5인치)", 
-            "4TB", 
-            "SATA3 (6Gb/s)", 
-            "5,400RPM", 
-            "메모리 128MB", 
-            "최대 185MB/s", 
-            "기록방식: SMR(PMR)", 
-            "두께: 26.1mm", 
-            "DSA", 
-            "저전력", 
-            "소음(유휴/탐색): 22/24dB", 
-            "A/S 정보: 2년", 
-            "충격 감지센서", 
-            "램프로딩 기술"
-        ], 
-        "Cate": "HDD", 
-        "size": [
-            "2", 
-            "TB"
-        ], 
-        "price": "83500", 
-        "name": "도시바 P300 5400/128M", 
+        "price": "290000", 
+        "name": "도시바 X300 7200/256M", 
         "brand": "도시바"
     }
 ]

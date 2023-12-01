@@ -6,6 +6,7 @@ import json
 
 
 def get_data(cursor, Choice_Where_to_Use):
+    print ("Choice_Where" + Choice_Where_to_Use)
     default_query = """
     SELECT
         cpu_product_num, cpu_product_name, cpu_product_originalPrice, cpu_InterGrated_graphics,
@@ -51,7 +52,7 @@ def get_data(cursor, Choice_Where_to_Use):
         cursor.execute(G_ssd_query)
         G_ssd_data = cursor.fetchall()
         # vga 정보 가져오기
-        G_vga_query = "SELECT product_num, product_name, product_originalPrice, VGA_Name, VGA_Size, TDP, Max_Used_W, Boost_Clock FROM pc_vga WHERE (VGA_Name, product_num) IN (SELECT VGA_Name, product_num FROM (SELECT VGA_Name, product_num, ROW_NUMBER() OVER (PARTITION BY VGA_Name ORDER BY product_num) as row_num FROM pc_vga) ranked WHERE row_num <= 2) ORDER BY product_num;"
+        G_vga_query = "SELECT product_num, product_name, product_originalPrice, VGA_Name, VGA_Size, TDP, Max_Used_W FROM pc_vga WHERE (VGA_Name, product_num) IN (SELECT VGA_Name, product_num FROM (SELECT VGA_Name, product_num, ROW_NUMBER() OVER (PARTITION BY VGA_Name ORDER BY product_num) as row_num FROM pc_vga) ranked WHERE row_num <= 2) ORDER BY product_num;"
         cursor.execute(G_vga_query)
         G_vga_data = cursor.fetchall()
         # power 정보 가져오기
@@ -87,7 +88,7 @@ def get_data(cursor, Choice_Where_to_Use):
                 cooler_product_originalPrice = default[17]
                 cooler_Color = default[18]
                 if cpu_TDP < 150:
-                    cpu_TDP = 500
+                    cpu_TDP = 400
                 for pc_power in S_power_data:
                     power_rec = pc_power[0]
                     power_name = pc_power[1]
@@ -160,7 +161,8 @@ def get_data(cursor, Choice_Where_to_Use):
             top_10_S_results = S_result_list[:10]
 
             # JSON 파일에 상위 10개 항목 저장
-            with open('C:/Users/byung/Desktop/JSP Project/PickCom/src/main/resources/python/get_build/Samu/S_result_{}.json'.format(int(money_range / 100000)), 'w') as json_file:
+            #with open('C:/Users/byung/Desktop/JSP Project/PickCom/src/main/resources/python/get_build/Samu/S_result_{}.json'.format(int(money_range / 100000)), 'w') as json_file:
+            with open('C:/Users/pojun/Documents/GitHub/PickCom/src/main/resources/python/get_build/Samu/S_result_{}.json'.format(int(money_range / 100000)), 'w') as json_file:
                 json.dump(top_10_S_results, json_file, indent=2, ensure_ascii=False)
 
     added_vga_count = {}
@@ -290,7 +292,8 @@ def get_data(cursor, Choice_Where_to_Use):
                          vga['VGA'] not in added_vga_count and not added_vga_count.update({vga['VGA']: True})][:10]
 
         # JSON 파일에 상위 10개 항목 저장
-        with open('C:/Users/byung/Desktop/JSP Project/PickCom/src/main/resources/python/get_build/Game/G_result_{}.json'.format(int(money_range / 100000)), 'w') as json_file:
+        with open('C:/Users/pojun/Documents/GitHub/PickCom/src/main/resources/python/get_build/Game/G_result_{}.json'.format(int(money_range / 100000)), 'w') as json_file:
+        #with open('C:/Users/byung/Desktop/JSP Project/PickCom/src/main/resources/python/get_build/Game/G_result_{}.json'.format(int(money_range / 100000)), 'w') as json_file:
             json.dump(G_result_list, json_file, ensure_ascii=False, indent=2)
 
 

@@ -19,7 +19,6 @@ import java.io.InputStreamReader;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import com.ziclix.python.sql.zxJDBC;
 
 @Controller
 public class AdminController {
@@ -166,7 +165,7 @@ public class AdminController {
     // 데이터 업데이트
     @RequestMapping(value = "/Update_Data")
     public ModelAndView Update_Data() throws Exception {
-        String[] exePaths = {
+        /*String[] exePaths = {
                 "C:\\Users\\byung\\Desktop\\JSP Project\\PickCom\\Case.exe",
                 "C:\\Users\\byung\\Desktop\\JSP Project\\PickCom\\Cooler.exe",
                 "C:\\Users\\byung\\Desktop\\JSP Project\\PickCom\\CPU.exe",
@@ -176,6 +175,17 @@ public class AdminController {
                 "C:\\Users\\byung\\Desktop\\JSP Project\\PickCom\\RAM.exe",
                 "C:\\Users\\byung\\Desktop\\JSP Project\\PickCom\\SSD.exe",
                 "C:\\Users\\byung\\Desktop\\JSP Project\\PickCom\\VGA.exe"
+        };*/
+        String[] exePaths = {
+                "C:\\Users\\pojun\\Documents\\GitHub\\PickCom\\Case.exe",
+                "C:\\Users\\pojun\\Documents\\GitHub\\PickCom\\Cooler.exe",
+                "C:\\Users\\pojun\\Documents\\GitHub\\PickCom\\CPU.exe",
+                "C:\\Users\\pojun\\Documents\\GitHub\\PickCom\\HDD.exe",
+                "C:\\Users\\pojun\\Documents\\GitHub\\PickCom\\MBoard.exe",
+                "C:\\Users\\pojun\\Documents\\GitHub\\PickCom\\Power.exe",
+                "C:\\Users\\pojun\\Documents\\GitHub\\PickCom\\RAM.exe",
+                "C:\\Users\\pojun\\Documents\\GitHub\\PickCom\\SSD.exe",
+                "C:\\Users\\pojun\\Documents\\GitHub\\PickCom\\VGA.exe"
         };
 
         try {
@@ -213,14 +223,19 @@ public class AdminController {
     private static PythonInterpreter intPre;
     // 필터링
     @RequestMapping(value = "/Filtering_Data")
-    public ModelAndView Filtering_Data(){
+    public ModelAndView Filtering_Data() {
         System.out.println("시작");
 
         System.setProperty("python.import.site", "false");
         intPre = new PythonInterpreter();
         // 파이썬 스크립트 실행 명령어
-        intPre.execfile("C:/Users/byung/Desktop/JSP Project/PickCom/src/main/resources/python/get_hardware/Filtering_Data.py");
-        //intPre.execfile("C:/Users/pojun/Documents/GitHub/PickCom/src/main/resources/python/get_hardware/Case.py");
+        try {
+            //intPre.execfile("C:/Users/byung/Desktop/JSP Project/PickCom/src/main/resources/python/get_hardware/Filtering_Data.py");
+            intPre.execfile("C:/Users/pojun/Documents/GitHub/PickCom/src/main/resources/python/get_hardware/Filtering_Data.py");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
         ModelAndView mv = new ModelAndView("redirect:/SetDBtoJSON");
         return mv;
     }
@@ -228,7 +243,8 @@ public class AdminController {
     @RequestMapping(value = "/SetDBtoJSON")
     public ModelAndView SetDB(){
         intPre = new PythonInterpreter();
-        intPre.execfile("C:/Users/byung/Desktop/JSP Project/PickCom/src/main/resources/python/get_hardware/SetDBtoJSON.py");
+        //intPre.execfile("C:/Users/byung/Desktop/JSP Project/PickCom/src/main/resources/python/get_hardware/SetDBtoJSON.py");
+        intPre.execfile("C:/Users/pojun/Documents/GitHub/PickCom/src/main/resources/python/get_hardware/SetDBtoJSON.py");
         ModelAndView mv = new ModelAndView("redirect:/PickCom");
         return mv;
     }
@@ -237,7 +253,8 @@ public class AdminController {
     @RequestMapping(value = "/PickCom")
     public ModelAndView PickCom(){
         intPre = new PythonInterpreter();
-        intPre.execfile("C:/Users/byung/Desktop/JSP Project/PickCom/src/main/resources/python/get_build/PickCom_py.py");
+        //intPre.execfile("C:/Users/byung/Desktop/JSP Project/PickCom/src/main/resources/python/get_build/PickCom_py.py");
+        intPre.execfile("C:/Users/pojun/Documents/GitHub/PickCom/src/main/resources/python/get_build/PickCom_py.py");
         ModelAndView mv = new ModelAndView("/admin/UpdateResult");
         return mv;
     }
