@@ -162,7 +162,7 @@ public class BoardController {
     }
 
     // 글 작성 폼
-    @RequestMapping(value="/board/write")
+    @RequestMapping(value="/board/write", method = RequestMethod.POST)
     public ModelAndView openBoardWrite(CommandMap commandMap) throws Exception{
         ModelAndView mv = new ModelAndView("/board/Write");
         String category = (String)commandMap.get("wCate");
@@ -212,7 +212,9 @@ public class BoardController {
     public ModelAndView openBoardUpdate(CommandMap commandMap, @PathVariable int idx) throws Exception{
         ModelAndView mv = new ModelAndView("/board/Edit");
         commandMap.put("board_num", idx);
-
+        String category = (String)commandMap.get("wCate");
+        System.out.println(category);
+        mv.addObject("category", category);
         Map<String,Object> map = boardService.openBoardUpdate(commandMap.getMap());
         mv.addObject("map", map.get("map"));
 

@@ -18,6 +18,7 @@
         .sendBtn {
             white-space: nowrap;
         }
+
         .vfBtn {
             white-space: nowrap;
         }
@@ -29,58 +30,52 @@
 </head>
 <body>
 <main>
-    <div class="position-absolute top-50 start-50 d-inline-block">
-        <h4>비밀번호 찾기</h4>
-        <form action="/findPwAction" method="post" name="pwFindForm"
-              onsubmit="return validateForm(this);">
-            <div class="row">
-                <div class="col-2">
-                    <label for="userId" class="form-label">아이디</label>
+    <div class="d-flex justify-content-center align-items-center vh-100">
+        <div class="border border-black border-2 p-3" style="width: 40%">
+            <h4>비밀번호 찾기</h4>
+            <form action="/findPwAction" method="post" name="pwFindForm"
+                  onsubmit="return validateForm(this);">
+                <div class="row">
+                    <div class="col-3">
+                        <label for="userId" class="form-label">아이디</label>
+                    </div>
+                    <div class="col-6">
+                        <input type="text" class="form-control" id="userId" name="member_id"
+                               required>
+                    </div>
                 </div>
-                <div class="col-8">
-                    <input type="text" class="form-control" id="userId" name="member_id"
-                           required>
+                <div class="row">
+                    <div class="col-3">
+                        <label for="email" class="form-label">이메일</label>
+                    </div>
+                    <div class="col-6">
+                        <input type="email" id="email" name="MEMBER_EMAIL" class="form-control"/>
+                    </div>
+                    <div class="d-grid gap-2 col-3 mx-auto">
+                        <button type="button" class="btn btn-secondary sendBtn" id="sendBtn"
+                                onclick="sendEmailVerificationCode()">
+                            전송
+                        </button>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-2">
-                    <label for="email" class="form-label">이메일</label>
+                <div class="row">
+                    <div class="col-3">
+                        <label for="email" class="form-label">인증번호</label>
+                    </div>
+                    <div class="col-6">
+                        <input type="text" class="form-control" id="authCode"/>
+                    </div>
+                    <div class="d-grid gap-2 col-3 mx-auto">
+                        <button type="button" class="btn btn-secondary vfBtn" id="codeBtn" onclick="verifyEmailCode()">
+                            확인
+                        </button>
+                    </div>
                 </div>
-                <div class="col">
-                    <input type="email" id="email" name="MEMBER_EMAIL" class="form-control"/>
+                <div>
+                    <button type="submit" class="btn btn-success">비밀번호 찾기</button>
                 </div>
-                <%--<div class="col-2">
-                    <select class="form-select" id="address" name="address"
-                        aria-label="Default select example">
-                        <option selected value="naver.com">naver.com</option>
-                        <option value="gmail.com">gmail.com</option>
-                        <option value="">직접 입력하기</option>
-                    </select>
-                </div>--%>
-                <div class="col-2">
-                    <button type="button" class="btn btn-secondary sendBtn" id="sendBtn" onclick="sendEmailVerificationCode()">
-                        인증번호
-                        전송
-                    </button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-2">
-                    <label for="email" class="form-label">인증번호</label>
-                </div>
-                <div class="col-8">
-                    <input type="text" class="form-control" id="authCode"/>
-                </div>
-                <div class="col-2">
-                    <button type="button" class="btn btn-secondary vfBtn" id="codeBtn" onclick="verifyEmailCode()">인증번호
-                        확인
-                    </button>
-                </div>
-            </div>
-            <div>
-                <button type="submit" class="btn btn-primary">비밀번호 찾기</button>
-            </div>
-        </form>
+            </form>
+        </div>
     </div>
 </main>
 <script>
