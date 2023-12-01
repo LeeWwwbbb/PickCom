@@ -37,13 +37,24 @@
                         <c:when test="${ sessionScope.rank > 0 }">
                             <c:forEach var="option" items="${['공지', '자유', '리뷰', '사진', '질문']}">
                                 <c:set var="selected" value="${option eq category ? 'selected' : ''}"/>
-                                <option value="${option}" ${selected}>${option}</option>
+                                <option name="board_cate" value="<c:out value='${
+        option == "공지" ? "notice" :
+        option == "자유" ? "free" :
+        option == "리뷰" ? "review" :
+        option == "사진" ? "image" :
+        option == "질문" ? "question" :
+        ""}'/>" ${selected}>${option}</option>
                             </c:forEach>
                         </c:when>
                         <c:otherwise>
                             <c:forEach var="option" items="${['자유', '리뷰', '사진', '질문']}">
                                 <c:set var="selected" value="${option eq category ? 'selected' : ''}"/>
-                                <option value="${option}" ${selected}>${option}</option>
+                                <option name="board_cate" value="<c:out value='${
+        option == "자유" ? "free" :
+        option == "리뷰" ? "review" :
+        option == "사진" ? "image" :
+        option == "질문" ? "question" :
+        ""}'/>" ${selected} >${option}</option>
                             </c:forEach>
                         </c:otherwise>
                     </c:choose>

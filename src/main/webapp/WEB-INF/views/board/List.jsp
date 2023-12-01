@@ -25,6 +25,18 @@
             color: black;
             text-decoration-line: none;
         }
+
+        td {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        th {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
     </style>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
             integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -97,7 +109,7 @@
                     </div>
                     <div class="col-2">
                         <c:if test="${ not empty sessionScope.name }">
-                            <form action="/board/write">
+                            <form action="/board/write" method="POST">
                                 <input type="hidden" name="wCate" value="${cate}">
                                 <button type="submit" class="btn btn-primary w-100">글쓰기
                                 </button>

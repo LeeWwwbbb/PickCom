@@ -13,12 +13,14 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpSession;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
 import com.ziclix.python.sql.zxJDBC;
 
 @Controller
@@ -36,41 +38,46 @@ public class AdminController {
 
     // 유저 관리창 리스트
     @RequestMapping(value = "/userList")
-    public ModelAndView MemberList(CommandMap map, @RequestParam(required = false) String pageNum) throws Exception {
-        ModelAndView mv = new ModelAndView("admin/userManager");
+    public ModelAndView MemberList(CommandMap map, HttpSession session, @RequestParam(required = false) String pageNum) throws Exception {
+        ModelAndView mv = new ModelAndView();
 
-        // 페이징 설정
-        int pageSize = 10; // 한 페이지에 표시할 게시물 수
-        int page = (pageNum != null) ? Integer.parseInt(pageNum) : 1;
-        int start = (page - 1) * pageSize;
-        int end = page * pageSize;
+        int chk = (Integer) session.getAttribute("rank");
 
-        //유저 리스트를 가져오는 서비스 호출
-        map.put("start", start);
-        map.put("end", end);
-        map.put("pageSize", pageSize);
-        List<Map<String, Object>> list = null;
-        try {
-            list = adminService.MemberList(map.getMap());
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        if (chk > 0) {
+            mv = new ModelAndView("admin/userManager");
+            // 페이징 설정
+            int pageSize = 10; // 한 페이지에 표시할 게시물 수
+            int page = (pageNum != null) ? Integer.parseInt(pageNum) : 1;
+            int start = (page - 1) * pageSize;
+            int end = page * pageSize;
+
+            //유저 리스트를 가져오는 서비스 호출
+            map.put("start", start);
+            map.put("end", end);
+            map.put("pageSize", pageSize);
+            List<Map<String, Object>> list = null;
+            try {
+                list = adminService.MemberList(map.getMap());
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
 //        System.out.println(list);
 //        mv.addObject("adminList", list);
 
-        if (!list.isEmpty()) {
-            int totalCount = Integer.parseInt(list.get(0).get("TOTAL_COUNT").toString());
-            int pageCount = (int) Math.ceil((double) totalCount / pageSize);
+            if (!list.isEmpty()) {
+                int totalCount = Integer.parseInt(list.get(0).get("TOTAL_COUNT").toString());
+                int pageCount = (int) Math.ceil((double) totalCount / pageSize);
 
-            // 페이징 문자열 생성
-            String pagingStr = AdminPage.pagingStr(totalCount, pageSize, pageCount, page, "/userList/");
+                // 페이징 문자열 생성
+                String pagingStr = AdminPage.pagingStr(totalCount, pageSize, pageCount, page, "/userList/");
 
-            // 모델에 페이징 문자열과 게시물 리스트를 추가
-            mv.addObject("pagingStr", pagingStr);
-            mv.addObject("adminList", list);
-        } else {
-            mv.addObject("pagingStr", "");
-            mv.addObject("adminList", list);
+                // 모델에 페이징 문자열과 게시물 리스트를 추가
+                mv.addObject("pagingStr", pagingStr);
+                mv.addObject("adminList", list);
+            } else {
+                mv.addObject("pagingStr", "");
+                mv.addObject("adminList", list);
+            }
         }
 
         return mv;
@@ -210,10 +217,12 @@ public class AdminController {
         ModelAndView mv = new ModelAndView("redirect:/Filtering_Data");
         return mv;
     }
+
     private static PythonInterpreter intPre;
+
     // 필터링
     @RequestMapping(value = "/Filtering_Data")
-    public ModelAndView Filtering_Data(){
+    public ModelAndView Filtering_Data() {
         System.out.println("시작");
 
         System.setProperty("python.import.site", "false");
@@ -224,9 +233,10 @@ public class AdminController {
         ModelAndView mv = new ModelAndView("redirect:/SetDBtoJSON");
         return mv;
     }
+
     // json파일 db에 입력
     @RequestMapping(value = "/SetDBtoJSON")
-    public ModelAndView SetDB(){
+    public ModelAndView SetDB() {
         intPre = new PythonInterpreter();
         intPre.execfile("C:/Users/byung/Desktop/JSP Project/PickCom/src/main/resources/python/get_hardware/SetDBtoJSON.py");
         ModelAndView mv = new ModelAndView("redirect:/PickCom");
@@ -235,7 +245,7 @@ public class AdminController {
 
     // 각 가격별 추천 제품 json화
     @RequestMapping(value = "/PickCom")
-    public ModelAndView PickCom(){
+    public ModelAndView PickCom() {
         intPre = new PythonInterpreter();
         intPre.execfile("C:/Users/byung/Desktop/JSP Project/PickCom/src/main/resources/python/get_build/PickCom_py.py");
         ModelAndView mv = new ModelAndView("/admin/UpdateResult");

@@ -103,9 +103,11 @@
                         <div class="col-2">
                             <c:if
                                     test="${ sessionScope.rank > 0 || map.member_nickName == sessionScope.name }">
-                                <button type="button" class="btn btn-success w-100"
-                                        onclick="location.href='/board/openBoardUpdate/${ map.board_num }';">수정
-                                </button>
+                                <form action="/board/openBoardUpdate/${ map.board_num }" method="POST">
+                                    <input type="hidden" name="wCate" value="${cate}">
+                                    <button type="submit" class="btn btn-success w-100">수정
+                                    </button>
+                                </form>
                             </c:if>
                         </div>
                     </div>

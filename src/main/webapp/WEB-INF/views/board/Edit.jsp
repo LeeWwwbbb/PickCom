@@ -28,16 +28,33 @@
                 </tr>
                 <tr>
                     <td>분류</td>
-                    <td>
-                        <select name="board_cate" class="form-select">
-                            <c:if test="${sessionScope.rank != 0}">
-                                <option value="notice">공지</option>
-                            </c:if>
-                            <option selected value="review">리뷰</option>
-                            <option value="free">자유</option>
-                            <option value="image">사진</option>
-                            <option value="question">질문</option>
-                        </select>
+                    <td><select name="board_cate" class="form-select">
+                        <c:choose>
+                            <c:when test="${ sessionScope.rank > 0 }">
+                                <c:forEach var="option" items="${['공지', '자유', '리뷰', '사진', '질문']}">
+                                    <c:set var="selected" value="${option eq category ? 'selected' : ''}"/>
+                                    <option name="board_cate" value="<c:out value='${
+        option == "공지" ? "notice" :
+        option == "자유" ? "free" :
+        option == "리뷰" ? "review" :
+        option == "사진" ? "image" :
+        option == "질문" ? "question" :
+        ""}'/>" ${selected}>${option}</option>
+                                </c:forEach>
+                            </c:when>
+                            <c:otherwise>
+                                <c:forEach var="option" items="${['자유', '리뷰', '사진', '질문']}">
+                                    <c:set var="selected" value="${option eq category ? 'selected' : ''}"/>
+                                    <option name="board_cate" value="<c:out value='${
+        option == "자유" ? "free" :
+        option == "리뷰" ? "review" :
+        option == "사진" ? "image" :
+        option == "질문" ? "question" :
+        ""}'/>" ${selected} >${option}</option>
+                                </c:forEach>
+                            </c:otherwise>
+                        </c:choose>
+                    </select>
                     </td>
                 </tr>
                 <tr>

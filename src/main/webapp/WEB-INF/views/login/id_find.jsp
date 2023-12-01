@@ -21,54 +21,49 @@
 </head>
 <body>
 <main>
-    <div class="position-absolute top-50 start-50 translate-middle border border-black border-2 p-3">
-        <h2>아이디 찾기</h2>
-        <form action="/findIdAction" method="post" name="idFindForm"
-              onsubmit="return validateForm(this);">
-            <div class="row">
-                <div class="col-2">
-                    <label for="email" class="form-label">이메일</label>
+    <div class="d-flex justify-content-center align-items-center vh-100">
+        <div class="border border-black border-2 p-3" style="width: 40%">
+            <h3>아이디 찾기</h3>
+            <form action="/findIdAction" method="post" name="idFindForm"
+                  onsubmit="return validateForm(this);">
+                <div class="row">
+                    <div class="col-3">
+                        <label for="email" class="form-label">이메일</label>
+                    </div>
+                    <div class="col-6">
+                        <input type="email" id="email" name="MEMBER_EMAIL" class="form-control"/>
+                    </div>
+                    <div class="d-grid gap-2 col-3 mx-auto">
+                        <button type="button" class="btn btn-secondary" id="sendBtn"
+                                onclick="sendEmailVerificationCode()">
+                            전송
+                        </button>
+                    </div>
                 </div>
-                <div class="col">
-                    <input type="email" id="email" name="MEMBER_EMAIL" class="form-control"/>
+                <div class="row">
+                    <div class="col-3">
+                        <label for="email" class="form-label">인증번호</label>
+                    </div>
+                    <div class="col-6">
+                        <input type="text" class="form-control" id="authCode"/>
+                    </div>
+                    <div class="d-grid gap-2 col-3 mx-auto">
+                        <button type="button" class="btn btn-secondary" id="codeBtn" onclick="verifyEmailCode()">
+                            확인
+                        </button>
+                    </div>
                 </div>
-                <%--<div class="col-2">
-                    <select class="form-select" id="address" name="address"
-                        aria-label="Default select example">
-                        <option selected value="naver.com">naver.com</option>
-                        <option value="gmail.com">gmail.com</option>
-                        <option value="">직접 입력하기</option>
-                    </select>
-                </div>--%>
-                <div class="col-4">
-                    <button type="button" class="btn btn-secondary" id="sendBtn" onclick="sendEmailVerificationCode()">
-                        인증번호
-                        전송
-                    </button>
+                <div>
+                    <button type="submit" class="btn btn-success">아이디 찾기</button>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-2">
-                    <label for="email" class="form-label">인증번호</label>
-                </div>
-                <div class="col-6">
-                    <input type="text" class="form-control" id="authCode"/>
-                </div>
-                <div class="col-4">
-                    <button type="button" class="btn btn-secondary" id="codeBtn" onclick="verifyEmailCode()">인증번호
-                        확인
-                    </button>
-                </div>
-            </div>
-            <div>
-                <button type="submit" class="btn btn-primary">아이디 찾기</button>
-            </div>
-        </form>
+            </form>
+        </div>
     </div>
 </main>
 <script>
     var emailChk = false;
     var numberChk = false;
+
     function validateForm(form) {
         if (form.email.value == "") {
             alert("이메일을 입력하세요.");
