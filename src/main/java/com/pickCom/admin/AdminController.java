@@ -20,12 +20,8 @@ import java.io.InputStreamReader;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-<<<<<<< HEAD
-=======
 
 import com.ziclix.python.sql.zxJDBC;
->>>>>>> 048ee7e820d8b850af26872f7ac40783184067df
-
 @Controller
 public class AdminController {
 

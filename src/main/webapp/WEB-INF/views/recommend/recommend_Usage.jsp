@@ -36,11 +36,11 @@
                     option: selectedOption.value,
                     priceRange: selectedPriceRange.value
                 },
-                success: function(response){
+                success: function (response) {
                     console.log(response);
                     // 서버 응답에 따른 처리
                 },
-                error: function(error){
+                error: function (error) {
                     console.log(error);
                 }
             });
@@ -48,8 +48,8 @@
             return true; // 폼 제출 진행
         }
 
-        $(document).ready(function(){
-            $(".next-button").click(function(){
+        $(document).ready(function () {
+            $(".next-button").click(function () {
                 var selectedOption = $("input[name='option']:checked").val();
                 var selectedPriceRange = $("input[name='priceRange']:checked").val();
 
@@ -61,11 +61,11 @@
                         option: selectedOption,
                         priceRange: selectedPriceRange
                     },
-                    success: function(response){
+                    success: function (response) {
                         console.log(response);
                         // 서버 응답에 따른 처리
                     },
-                    error: function(error){
+                    error: function (error) {
                         console.log(error);
                     }
                 });
@@ -102,15 +102,18 @@
             background-color: #333;
             color: #fff;
         }
+
         .centered-content {
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh; /* 화면 전체 높이로 설정 */
         }
+
         .selection-title {
             text-align: center;
         }
+
         .next-button {
             display: inline-block;
             padding: 15px 10px;
@@ -125,16 +128,19 @@
             background-color: #fff;
             color: #333;
         }
+
         .next-button:hover {
             background-color: #333;
             color: #fff;
         }
+
         .next-button-container {
             position: fixed;
             bottom: 10px;
             right: 50px;
             z-index: 999; /* 다른 요소 위에 위치하도록 설정 */
         }
+
         .price-range {
             display: flex;
             flex-direction: column; /* Set the flex direction to column for vertical alignment */
@@ -163,54 +169,82 @@
         }
     </style>
 </head>
-<body>
+<body class="bg-dark text-white">
 <main>
-    <div class="container-fluid">
+    <div class="container">
         <form id="selectionForm" action="/recommend_Result" method="post" onsubmit="return validateForm(this);">
-            <div class="row centered-content">
-                <!-- 왼쪽 선택지 -->
-                <div class="col-md-6">
+            <br>
+            <h1 class="text-center mb-5">견적 추천</h1> <!-- 수정된 부분 -->
+            <div class="row mt-5 justify-content-center ">
+                <div class="col-md-6 bg-light p-4 text-dark rounded-3">
+                    <h3 class="text-center mb-4">사용처 선택</h3>
                     <div class="row">
-                        <div class="col-12">
-                            <h3 class="selection-title">사용처</h3>
-                        </div>
                         <!-- 선택지 1 -->
                         <div class="col-md-6 col-12">
                             <div class="used">
-                                <img src="../../../img/office.png" alt="사무용" class="img-fluid office-image">
-                                <input type="radio" name="option" value="S" id="officeOption" onclick="selectOption(this)">
+                                <img src="../../../img/office.png" alt="사무용" class="img-fluid office-image m-2">
+                                <input type="radio" name="option" value="S" id="officeOption"
+                                       onclick="selectOption(this)">
                                 <label for="officeOption">사무용</label>
                             </div>
                         </div>
                         <!-- 선택지 2 -->
                         <div class="col-md-6 col-12">
                             <div class="used">
-                                <img src="../../../img/gaming.png" alt="게이밍" class="img-fluid gaming-image">
-                                <input type="radio" name="option" value="G" id="gamingOption" onclick="selectOption(this)">
+                                <img src="../../../img/gaming.png" alt="게이밍" class="img-fluid gaming-image m-2">
+                                <input type="radio" name="option" value="G" id="gamingOption"
+                                       onclick="selectOption(this)">
                                 <label for="gamingOption">게이밍</label>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="col-12">
-                        <div class="price-range">
-                            <input type="radio" name="priceRange" value="60" id="price60" onclick="selectPriceRange(this)">
-                            <label for="price60">60만원대</label>
-                            <input type="radio" name="priceRange" value="70" id="price70" onclick="selectPriceRange(this)">
-                            <label for="price70">70만원대</label>
-                            <input type="radio" name="priceRange" value="80" id="price80" onclick="selectPriceRange(this)">
-                            <label for="price80">80만원대</label>
-                            <input type="radio" name="priceRange" value="100" id="price100" onclick="selectPriceRange(this)">
-                            <label for="price100">100만원대</label>
-                            <input type="radio" name="priceRange" value="130" id="price130" onclick="selectPriceRange(this)">
-                            <label for="price130">130만원대</label>
-                            <input type="radio" name="priceRange" value="200" id="price200" onclick="selectPriceRange(this)">
-                            <label for="price200">200만원대</label>
+                    <div class="col-md-12 bg-light p-4 text-dark rounded-3">
+                        <h3 class="text-center mb-4">가격대 선택</h3>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="price-range">
+                                    <input type="radio" name="priceRange" value="60" id="price60" onclick="selectPriceRange(this)">
+                                    <label for="price60">60만원대</label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="price-range">
+                                    <input type="radio" name="priceRange" value="70" id="price70" onclick="selectPriceRange(this)">
+                                    <label for="price70">70만원대</label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="price-range">
+                                    <input type="radio" name="priceRange" value="80" id="price80" onclick="selectPriceRange(this)">
+                                    <label for="price80">80만원대</label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="price-range">
+                                    <input type="radio" name="priceRange" value="100" id="price100" onclick="selectPriceRange(this)">
+                                    <label for="price100">100만원대</label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="price-range">
+                                    <input type="radio" name="priceRange" value="130" id="price130" onclick="selectPriceRange(this)">
+                                    <label for="price130">130만원대</label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="price-range">
+                                    <input type="radio" name="priceRange" value="200" id="price200" onclick="selectPriceRange(this)">
+                                    <label for="price200">200만원대</label>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="next-button-container">
-                        <button type="submit" class="btn btn-primary next-button">다음</button>
+                </div>
+            </div>
+            <div class="row justify-content-center mt-4">
+                <div class="col-lg-6">
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary btn-lg">다음</button>
                     </div>
                 </div>
             </div>
