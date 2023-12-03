@@ -69,6 +69,7 @@
                     $(".price-range_S").hide();
                 }
             });
+        $(document).ready(function () {
             $(".next-button").click(function () {
                 var selectedOption = $("input[name='option']:checked").val();
                 var selectedPriceRange_S = $("input[name='priceRange_S']:checked").val(); // 수정된 부분
@@ -162,7 +163,6 @@
             right: 50px;
             z-index: 999; /* 다른 요소 위에 위치하도록 설정 */
         }
-<<<<<<< HEAD
         .price-range_G {
             display: flex;
             flex-direction: column; /* Set the flex direction to column for vertical alignment */
@@ -170,10 +170,6 @@
             margin-bottom: 20px;
         }
         .price-range_S {
-=======
-
-        .price-range {
->>>>>>> 2b589768e6018a04a0190cd987bac06253311823
             display: flex;
             flex-direction: column; /* Set the flex direction to column for vertical alignment */
             align-items: flex-start; /* Align items to the start of the column */
@@ -248,7 +244,6 @@
                             </div>
                         </div>
                     </div>
-<<<<<<< HEAD
                 </div>
                 <div class="col-md-6">
                     <div class="col-12">
@@ -268,24 +263,6 @@
                             <input type="radio" name="priceRange_S" value="200" id="S_price200" onclick="selectPriceRange(this)">
                             <label for="S_price200">200만원대</label>
                         </div>
-                        <div class="price-range_G">
-                            <input type="radio" name="priceRange_G" value="60" id="price60" onclick="selectPriceRange(this)">
-                            <label for="price60">60만원대</label>
-                            <input type="radio" name="priceRange_G" value="70" id="price70" onclick="selectPriceRange(this)">
-                            <label for="price70">70만원대</label>
-                            <input type="radio" name="priceRange_G" value="80" id="price80" onclick="selectPriceRange(this)">
-                            <label for="price80">80만원대</label>
-                            <input type="radio" name="priceRange_G" value="100" id="price100" onclick="selectPriceRange(this)">
-                            <label for="price100">100만원대</label>
-                            <input type="radio" name="priceRange_G" value="130" id="price130" onclick="selectPriceRange(this)">
-                            <label for="price130">130만원대</label>
-                            <input type="radio" name="priceRange_G" value="200" id="price200" onclick="selectPriceRange(this)">
-                            <label for="price200">200만원대</label>
-                            <input type="radio" name="priceRange_G" value="240" id="price240" onclick="selectPriceRange(this)">
-                            <label for="price240">240만원대</label>
-                            <input type="radio" name="priceRange_G" value="300" id="price300" onclick="selectPriceRange(this)">
-                            <label for="price300">300만원대</label>
-=======
                     <div class="col-md-12 bg-light p-4 text-dark rounded-3">
                         <h3 class="text-center mb-4">가격대 선택</h3>
                         <div class="row">
@@ -325,7 +302,6 @@
                                     <label for="price200">200만원대</label>
                                 </div>
                             </div>
->>>>>>> 2b589768e6018a04a0190cd987bac06253311823
                         </div>
                     </div>
                 </div>
