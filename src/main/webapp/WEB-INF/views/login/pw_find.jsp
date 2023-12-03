@@ -74,7 +74,7 @@
                 <div class="row m-1">
                     <div class="col-9"></div>
                     <div class="d-grid gap-2 col-3 mx-auto">
-                        <button type="submit" class="btn btn-success">비밀번호 찾기</button>
+                        <button type="submit" class="btn btn-success" style="font-size: small">비밀번호찾기</button>
                     </div>
                 </div>
             </form>
