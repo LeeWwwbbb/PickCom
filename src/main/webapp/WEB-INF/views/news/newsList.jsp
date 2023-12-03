@@ -62,7 +62,7 @@
                                        value="${ row.totalCount - (((map.pageNum-1) * map.pageSize) + loop.index)}"/>
                             </a>
                         </div>
-                        <hr style="width: 100%">
+                        <hr style="width: 95%">
                     </div>
                 </c:forEach>
             </c:otherwise>

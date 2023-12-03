@@ -48,7 +48,7 @@
 
     <!-- 글 검색 -->
     <select id="openBoardDetail" parameterType="hashmap" resultType="hashmap">
-        SELECT b.*, m.member_nickName, m.member_name, COUNT(l.like_num) AS like_count
+        SELECT b.*, m.member_nickName, TO_CHAR(b.board_createdDate, 'YYYY.MM.DD') AS board_createDate, m.member_name, COUNT(l.like_num) AS like_count
         FROM board b
                  LEFT JOIN member m ON b.member_num = m.member_num
                  LEFT JOIN `like` l ON b.board_num = l.board_num

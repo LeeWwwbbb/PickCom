@@ -35,7 +35,7 @@
             <h4>비밀번호 찾기</h4>
             <form action="/findPwAction" method="post" name="pwFindForm"
                   onsubmit="return validateForm(this);">
-                <div class="row">
+                <div class="row m-1">
                     <div class="col-3">
                         <label for="userId" class="form-label">아이디</label>
                     </div>
@@ -44,7 +44,7 @@
                                required>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row m-1">
                     <div class="col-3">
                         <label for="email" class="form-label">이메일</label>
                     </div>
@@ -58,7 +58,7 @@
                         </button>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row m-1">
                     <div class="col-3">
                         <label for="email" class="form-label">인증번호</label>
                     </div>
@@ -71,8 +71,11 @@
                         </button>
                     </div>
                 </div>
-                <div>
-                    <button type="submit" class="btn btn-success">비밀번호 찾기</button>
+                <div class="row m-1">
+                    <div class="col-9"></div>
+                    <div class="d-grid gap-2 col-3 mx-auto">
+                        <button type="submit" class="btn btn-success">비밀번호 찾기</button>
+                    </div>
                 </div>
             </form>
         </div>

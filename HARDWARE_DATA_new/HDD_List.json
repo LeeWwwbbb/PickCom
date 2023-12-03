@@ -44,7 +44,7 @@
             "2", 
             "TB"
         ], 
-        "price": "80390", 
+        "price": "78940", 
         "name": "Western Digital WD BLUE 7200/256M", 
         "brand": "Western"
     }, 
@@ -69,7 +69,7 @@
             "2", 
             "TB"
         ], 
-        "price": "81500", 
+        "price": "77000", 
         "name": "Seagate BarraCuda 7200/256M", 
         "brand": "Seagate"
     }, 
@@ -95,7 +95,7 @@
             "8", 
             "TB"
         ], 
-        "price": "219900", 
+        "price": "185900", 
         "name": "Seagate BarraCuda 5400/256M", 
         "brand": "Seagate"
     }, 
@@ -147,7 +147,7 @@
             "4", 
             "TB"
         ], 
-        "price": "130630", 
+        "price": "128940", 
         "name": "Seagate BarraCuda 5400/256M", 
         "brand": "Seagate"
     }, 
@@ -173,7 +173,7 @@
             "3", 
             "TB"
         ], 
-        "price": "145980", 
+        "price": "144460", 
         "name": "Seagate BarraCuda 5400/256M", 
         "brand": "Seagate"
     }, 
@@ -197,7 +197,7 @@
             "1", 
             "TB"
         ], 
-        "price": "66140", 
+        "price": "63000", 
         "name": "Western Digital WD BLUE 7200/64M", 
         "brand": "Western"
     }, 
@@ -222,7 +222,7 @@
             "6", 
             "TB"
         ], 
-        "price": "164990", 
+        "price": "165000", 
         "name": "Western Digital WD BLUE 5400/256M", 
         "brand": "Western"
     }, 
@@ -247,7 +247,7 @@
             "6", 
             "TB"
         ], 
-        "price": "157280", 
+        "price": "161850", 
         "name": "Western Digital WD BLUE 5400/256M", 
         "brand": "Western"
     }, 
@@ -297,7 +297,7 @@
             "4", 
             "TB"
         ], 
-        "price": "117230", 
+        "price": "112990", 
         "name": "Western Digital WD BLUE 5400/256M", 
         "brand": "Western"
     }, 
@@ -322,7 +322,7 @@
             "3", 
             "TB"
         ], 
-        "price": "123040", 
+        "price": "122560", 
         "name": "Western Digital WD BLUE 5400/256M", 
         "brand": "Western"
     }, 
@@ -398,7 +398,7 @@
             "3", 
             "TB"
         ], 
-        "price": "177450", 
+        "price": "187200", 
         "name": "Seagate BarraCuda 7200/64M", 
         "brand": "Seagate"
     }, 
@@ -450,7 +450,7 @@
             "2", 
             "TB"
         ], 
-        "price": "87180", 
+        "price": "90050", 
         "name": "Seagate BarraCuda 7200/64M", 
         "brand": "Seagate"
     }, 
@@ -502,7 +502,7 @@
             "1", 
             "TB"
         ], 
-        "price": "73060", 
+        "price": "68990", 
         "name": "Seagate BarraCuda 7200/64M", 
         "brand": "Seagate"
     }, 
@@ -533,18 +533,17 @@
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/809/288/img/6288809_1.jpg?shrink=330:*&_v=20211115130146", 
+        "img": "//img.danawa.com/prod_img/500000/798/288/img/6288798_1.jpg?shrink=330:*&_v=20211115130248", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "2TB", 
+            "1TB", 
             "SATA3 (6Gb/s)", 
             "7,200RPM", 
             "메모리 64MB", 
             "기록방식: CMR(PMR)", 
             "두께: 26.1mm", 
-            "DSA", 
-            "소음(유휴/탐색): 27/28dB", 
+            "소음(유휴/탐색): 25/26dB", 
             "A/S 정보: 2년", 
             "충격 감지센서", 
             "램프로딩 기술"
@@ -554,23 +553,22 @@
             "3", 
             "TB"
         ], 
-        "price": "118980", 
+        "price": "118990", 
         "name": "도시바 P300 7200/64M", 
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/809/288/img/6288809_1.jpg?shrink=330:*&_v=20211115130146", 
+        "img": "//img.danawa.com/prod_img/500000/798/288/img/6288798_1.jpg?shrink=330:*&_v=20211115130248", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "2TB", 
+            "1TB", 
             "SATA3 (6Gb/s)", 
             "7,200RPM", 
             "메모리 64MB", 
             "기록방식: CMR(PMR)", 
             "두께: 26.1mm", 
-            "DSA", 
-            "소음(유휴/탐색): 27/28dB", 
+            "소음(유휴/탐색): 25/26dB", 
             "A/S 정보: 2년", 
             "충격 감지센서", 
             "램프로딩 기술"
@@ -580,23 +578,22 @@
             "2", 
             "TB"
         ], 
-        "price": "97160", 
+        "price": "95120", 
         "name": "도시바 P300 7200/64M", 
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/809/288/img/6288809_1.jpg?shrink=330:*&_v=20211115130146", 
+        "img": "//img.danawa.com/prod_img/500000/798/288/img/6288798_1.jpg?shrink=330:*&_v=20211115130248", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "2TB", 
+            "1TB", 
             "SATA3 (6Gb/s)", 
             "7,200RPM", 
             "메모리 64MB", 
             "기록방식: CMR(PMR)", 
             "두께: 26.1mm", 
-            "DSA", 
-            "소음(유휴/탐색): 27/28dB", 
+            "소음(유휴/탐색): 25/26dB", 
             "A/S 정보: 2년", 
             "충격 감지센서", 
             "램프로딩 기술"
@@ -606,23 +603,22 @@
             "1", 
             "TB"
         ], 
-        "price": "70650", 
+        "price": "70020", 
         "name": "도시바 P300 7200/64M", 
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/809/288/img/6288809_1.jpg?shrink=330:*&_v=20211115130146", 
+        "img": "//img.danawa.com/prod_img/500000/798/288/img/6288798_1.jpg?shrink=330:*&_v=20211115130248", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "2TB", 
+            "1TB", 
             "SATA3 (6Gb/s)", 
             "7,200RPM", 
             "메모리 64MB", 
             "기록방식: CMR(PMR)", 
             "두께: 26.1mm", 
-            "DSA", 
-            "소음(유휴/탐색): 27/28dB", 
+            "소음(유휴/탐색): 25/26dB", 
             "A/S 정보: 2년", 
             "충격 감지센서", 
             "램프로딩 기술"
@@ -735,7 +731,7 @@
             "2", 
             "TB"
         ], 
-        "price": "80390", 
+        "price": "78940", 
         "name": "Western Digital WD BLUE 7200/256M", 
         "brand": "Western"
     }, 
@@ -760,7 +756,7 @@
             "2", 
             "TB"
         ], 
-        "price": "81500", 
+        "price": "77000", 
         "name": "Seagate BarraCuda 7200/256M", 
         "brand": "Seagate"
     }, 
@@ -786,7 +782,7 @@
             "8", 
             "TB"
         ], 
-        "price": "219900", 
+        "price": "185900", 
         "name": "Seagate BarraCuda 5400/256M", 
         "brand": "Seagate"
     }, 
@@ -838,7 +834,7 @@
             "4", 
             "TB"
         ], 
-        "price": "130630", 
+        "price": "128940", 
         "name": "Seagate BarraCuda 5400/256M", 
         "brand": "Seagate"
     }, 
@@ -864,7 +860,7 @@
             "3", 
             "TB"
         ], 
-        "price": "145980", 
+        "price": "144460", 
         "name": "Seagate BarraCuda 5400/256M", 
         "brand": "Seagate"
     }, 
@@ -888,7 +884,7 @@
             "1", 
             "TB"
         ], 
-        "price": "66140", 
+        "price": "63000", 
         "name": "Western Digital WD BLUE 7200/64M", 
         "brand": "Western"
     }, 
@@ -913,7 +909,7 @@
             "6", 
             "TB"
         ], 
-        "price": "164990", 
+        "price": "165000", 
         "name": "Western Digital WD BLUE 5400/256M", 
         "brand": "Western"
     }, 
@@ -938,7 +934,7 @@
             "6", 
             "TB"
         ], 
-        "price": "157280", 
+        "price": "161850", 
         "name": "Western Digital WD BLUE 5400/256M", 
         "brand": "Western"
     }, 
@@ -988,7 +984,7 @@
             "4", 
             "TB"
         ], 
-        "price": "117230", 
+        "price": "112990", 
         "name": "Western Digital WD BLUE 5400/256M", 
         "brand": "Western"
     }, 
@@ -1013,7 +1009,7 @@
             "3", 
             "TB"
         ], 
-        "price": "123040", 
+        "price": "122560", 
         "name": "Western Digital WD BLUE 5400/256M", 
         "brand": "Western"
     }, 
@@ -1089,7 +1085,7 @@
             "3", 
             "TB"
         ], 
-        "price": "177450", 
+        "price": "187200", 
         "name": "Seagate BarraCuda 7200/64M", 
         "brand": "Seagate"
     }, 
@@ -1141,7 +1137,7 @@
             "2", 
             "TB"
         ], 
-        "price": "87180", 
+        "price": "90050", 
         "name": "Seagate BarraCuda 7200/64M", 
         "brand": "Seagate"
     }, 
@@ -1193,7 +1189,7 @@
             "1", 
             "TB"
         ], 
-        "price": "73060", 
+        "price": "68990", 
         "name": "Seagate BarraCuda 7200/64M", 
         "brand": "Seagate"
     }, 
@@ -1224,18 +1220,17 @@
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/809/288/img/6288809_1.jpg?shrink=330:*&_v=20211115130146", 
+        "img": "//img.danawa.com/prod_img/500000/798/288/img/6288798_1.jpg?shrink=330:*&_v=20211115130248", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "2TB", 
+            "1TB", 
             "SATA3 (6Gb/s)", 
             "7,200RPM", 
             "메모리 64MB", 
             "기록방식: CMR(PMR)", 
             "두께: 26.1mm", 
-            "DSA", 
-            "소음(유휴/탐색): 27/28dB", 
+            "소음(유휴/탐색): 25/26dB", 
             "A/S 정보: 2년", 
             "충격 감지센서", 
             "램프로딩 기술"
@@ -1245,23 +1240,22 @@
             "3", 
             "TB"
         ], 
-        "price": "118980", 
+        "price": "118990", 
         "name": "도시바 P300 7200/64M", 
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/809/288/img/6288809_1.jpg?shrink=330:*&_v=20211115130146", 
+        "img": "//img.danawa.com/prod_img/500000/798/288/img/6288798_1.jpg?shrink=330:*&_v=20211115130248", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "2TB", 
+            "1TB", 
             "SATA3 (6Gb/s)", 
             "7,200RPM", 
             "메모리 64MB", 
             "기록방식: CMR(PMR)", 
             "두께: 26.1mm", 
-            "DSA", 
-            "소음(유휴/탐색): 27/28dB", 
+            "소음(유휴/탐색): 25/26dB", 
             "A/S 정보: 2년", 
             "충격 감지센서", 
             "램프로딩 기술"
@@ -1271,23 +1265,22 @@
             "2", 
             "TB"
         ], 
-        "price": "97160", 
+        "price": "95120", 
         "name": "도시바 P300 7200/64M", 
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/809/288/img/6288809_1.jpg?shrink=330:*&_v=20211115130146", 
+        "img": "//img.danawa.com/prod_img/500000/798/288/img/6288798_1.jpg?shrink=330:*&_v=20211115130248", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "2TB", 
+            "1TB", 
             "SATA3 (6Gb/s)", 
             "7,200RPM", 
             "메모리 64MB", 
             "기록방식: CMR(PMR)", 
             "두께: 26.1mm", 
-            "DSA", 
-            "소음(유휴/탐색): 27/28dB", 
+            "소음(유휴/탐색): 25/26dB", 
             "A/S 정보: 2년", 
             "충격 감지센서", 
             "램프로딩 기술"
@@ -1297,23 +1290,22 @@
             "1", 
             "TB"
         ], 
-        "price": "70650", 
+        "price": "70020", 
         "name": "도시바 P300 7200/64M", 
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/809/288/img/6288809_1.jpg?shrink=330:*&_v=20211115130146", 
+        "img": "//img.danawa.com/prod_img/500000/798/288/img/6288798_1.jpg?shrink=330:*&_v=20211115130248", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "2TB", 
+            "1TB", 
             "SATA3 (6Gb/s)", 
             "7,200RPM", 
             "메모리 64MB", 
             "기록방식: CMR(PMR)", 
             "두께: 26.1mm", 
-            "DSA", 
-            "소음(유휴/탐색): 27/28dB", 
+            "소음(유휴/탐색): 25/26dB", 
             "A/S 정보: 2년", 
             "충격 감지센서", 
             "램프로딩 기술"
@@ -1426,7 +1418,7 @@
             "2", 
             "TB"
         ], 
-        "price": "80390", 
+        "price": "78940", 
         "name": "Western Digital WD BLUE 7200/256M", 
         "brand": "Western"
     }, 
@@ -1451,7 +1443,7 @@
             "2", 
             "TB"
         ], 
-        "price": "81500", 
+        "price": "77000", 
         "name": "Seagate BarraCuda 7200/256M", 
         "brand": "Seagate"
     }, 
@@ -1477,7 +1469,7 @@
             "8", 
             "TB"
         ], 
-        "price": "219900", 
+        "price": "185900", 
         "name": "Seagate BarraCuda 5400/256M", 
         "brand": "Seagate"
     }, 
@@ -1529,7 +1521,7 @@
             "4", 
             "TB"
         ], 
-        "price": "130630", 
+        "price": "128940", 
         "name": "Seagate BarraCuda 5400/256M", 
         "brand": "Seagate"
     }, 
@@ -1555,7 +1547,7 @@
             "3", 
             "TB"
         ], 
-        "price": "145980", 
+        "price": "144460", 
         "name": "Seagate BarraCuda 5400/256M", 
         "brand": "Seagate"
     }, 
@@ -1579,7 +1571,7 @@
             "1", 
             "TB"
         ], 
-        "price": "66140", 
+        "price": "63000", 
         "name": "Western Digital WD BLUE 7200/64M", 
         "brand": "Western"
     }, 
@@ -1604,7 +1596,7 @@
             "6", 
             "TB"
         ], 
-        "price": "164990", 
+        "price": "165000", 
         "name": "Western Digital WD BLUE 5400/256M", 
         "brand": "Western"
     }, 
@@ -1629,7 +1621,7 @@
             "6", 
             "TB"
         ], 
-        "price": "157280", 
+        "price": "161850", 
         "name": "Western Digital WD BLUE 5400/256M", 
         "brand": "Western"
     }, 
@@ -1679,7 +1671,7 @@
             "4", 
             "TB"
         ], 
-        "price": "117230", 
+        "price": "112990", 
         "name": "Western Digital WD BLUE 5400/256M", 
         "brand": "Western"
     }, 
@@ -1704,7 +1696,7 @@
             "3", 
             "TB"
         ], 
-        "price": "123040", 
+        "price": "122560", 
         "name": "Western Digital WD BLUE 5400/256M", 
         "brand": "Western"
     }, 
@@ -1780,7 +1772,7 @@
             "3", 
             "TB"
         ], 
-        "price": "177450", 
+        "price": "187200", 
         "name": "Seagate BarraCuda 7200/64M", 
         "brand": "Seagate"
     }, 
@@ -1832,7 +1824,7 @@
             "2", 
             "TB"
         ], 
-        "price": "87180", 
+        "price": "90050", 
         "name": "Seagate BarraCuda 7200/64M", 
         "brand": "Seagate"
     }, 
@@ -1884,7 +1876,7 @@
             "1", 
             "TB"
         ], 
-        "price": "73060", 
+        "price": "68990", 
         "name": "Seagate BarraCuda 7200/64M", 
         "brand": "Seagate"
     }, 
@@ -1915,18 +1907,17 @@
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/809/288/img/6288809_1.jpg?shrink=330:*&_v=20211115130146", 
+        "img": "//img.danawa.com/prod_img/500000/798/288/img/6288798_1.jpg?shrink=330:*&_v=20211115130248", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "2TB", 
+            "1TB", 
             "SATA3 (6Gb/s)", 
             "7,200RPM", 
             "메모리 64MB", 
             "기록방식: CMR(PMR)", 
             "두께: 26.1mm", 
-            "DSA", 
-            "소음(유휴/탐색): 27/28dB", 
+            "소음(유휴/탐색): 25/26dB", 
             "A/S 정보: 2년", 
             "충격 감지센서", 
             "램프로딩 기술"
@@ -1936,23 +1927,22 @@
             "3", 
             "TB"
         ], 
-        "price": "118980", 
+        "price": "118990", 
         "name": "도시바 P300 7200/64M", 
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/809/288/img/6288809_1.jpg?shrink=330:*&_v=20211115130146", 
+        "img": "//img.danawa.com/prod_img/500000/798/288/img/6288798_1.jpg?shrink=330:*&_v=20211115130248", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "2TB", 
+            "1TB", 
             "SATA3 (6Gb/s)", 
             "7,200RPM", 
             "메모리 64MB", 
             "기록방식: CMR(PMR)", 
             "두께: 26.1mm", 
-            "DSA", 
-            "소음(유휴/탐색): 27/28dB", 
+            "소음(유휴/탐색): 25/26dB", 
             "A/S 정보: 2년", 
             "충격 감지센서", 
             "램프로딩 기술"
@@ -1962,23 +1952,22 @@
             "2", 
             "TB"
         ], 
-        "price": "97160", 
+        "price": "95120", 
         "name": "도시바 P300 7200/64M", 
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/809/288/img/6288809_1.jpg?shrink=330:*&_v=20211115130146", 
+        "img": "//img.danawa.com/prod_img/500000/798/288/img/6288798_1.jpg?shrink=330:*&_v=20211115130248", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "2TB", 
+            "1TB", 
             "SATA3 (6Gb/s)", 
             "7,200RPM", 
             "메모리 64MB", 
             "기록방식: CMR(PMR)", 
             "두께: 26.1mm", 
-            "DSA", 
-            "소음(유휴/탐색): 27/28dB", 
+            "소음(유휴/탐색): 25/26dB", 
             "A/S 정보: 2년", 
             "충격 감지센서", 
             "램프로딩 기술"
@@ -1988,23 +1977,22 @@
             "1", 
             "TB"
         ], 
-        "price": "70650", 
+        "price": "70020", 
         "name": "도시바 P300 7200/64M", 
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/809/288/img/6288809_1.jpg?shrink=330:*&_v=20211115130146", 
+        "img": "//img.danawa.com/prod_img/500000/798/288/img/6288798_1.jpg?shrink=330:*&_v=20211115130248", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "2TB", 
+            "1TB", 
             "SATA3 (6Gb/s)", 
             "7,200RPM", 
             "메모리 64MB", 
             "기록방식: CMR(PMR)", 
             "두께: 26.1mm", 
-            "DSA", 
-            "소음(유휴/탐색): 27/28dB", 
+            "소음(유휴/탐색): 25/26dB", 
             "A/S 정보: 2년", 
             "충격 감지센서", 
             "램프로딩 기술"
@@ -2117,7 +2105,7 @@
             "2", 
             "TB"
         ], 
-        "price": "80390", 
+        "price": "78940", 
         "name": "Western Digital WD BLUE 7200/256M", 
         "brand": "Western"
     }, 
@@ -2142,7 +2130,7 @@
             "2", 
             "TB"
         ], 
-        "price": "81500", 
+        "price": "77000", 
         "name": "Seagate BarraCuda 7200/256M", 
         "brand": "Seagate"
     }, 
@@ -2168,7 +2156,7 @@
             "8", 
             "TB"
         ], 
-        "price": "219900", 
+        "price": "185900", 
         "name": "Seagate BarraCuda 5400/256M", 
         "brand": "Seagate"
     }, 
@@ -2220,7 +2208,7 @@
             "4", 
             "TB"
         ], 
-        "price": "130630", 
+        "price": "128940", 
         "name": "Seagate BarraCuda 5400/256M", 
         "brand": "Seagate"
     }, 
@@ -2246,7 +2234,7 @@
             "3", 
             "TB"
         ], 
-        "price": "145980", 
+        "price": "144460", 
         "name": "Seagate BarraCuda 5400/256M", 
         "brand": "Seagate"
     }, 
@@ -2270,7 +2258,7 @@
             "1", 
             "TB"
         ], 
-        "price": "66140", 
+        "price": "63000", 
         "name": "Western Digital WD BLUE 7200/64M", 
         "brand": "Western"
     }, 
@@ -2295,7 +2283,7 @@
             "6", 
             "TB"
         ], 
-        "price": "164990", 
+        "price": "165000", 
         "name": "Western Digital WD BLUE 5400/256M", 
         "brand": "Western"
     }, 
@@ -2320,7 +2308,7 @@
             "6", 
             "TB"
         ], 
-        "price": "157280", 
+        "price": "161850", 
         "name": "Western Digital WD BLUE 5400/256M", 
         "brand": "Western"
     }, 
@@ -2370,7 +2358,7 @@
             "4", 
             "TB"
         ], 
-        "price": "117230", 
+        "price": "112990", 
         "name": "Western Digital WD BLUE 5400/256M", 
         "brand": "Western"
     }, 
@@ -2395,7 +2383,7 @@
             "3", 
             "TB"
         ], 
-        "price": "123040", 
+        "price": "122560", 
         "name": "Western Digital WD BLUE 5400/256M", 
         "brand": "Western"
     }, 
@@ -2471,7 +2459,7 @@
             "3", 
             "TB"
         ], 
-        "price": "177450", 
+        "price": "187200", 
         "name": "Seagate BarraCuda 7200/64M", 
         "brand": "Seagate"
     }, 
@@ -2523,7 +2511,7 @@
             "2", 
             "TB"
         ], 
-        "price": "87180", 
+        "price": "90050", 
         "name": "Seagate BarraCuda 7200/64M", 
         "brand": "Seagate"
     }, 
@@ -2575,7 +2563,7 @@
             "1", 
             "TB"
         ], 
-        "price": "73060", 
+        "price": "68990", 
         "name": "Seagate BarraCuda 7200/64M", 
         "brand": "Seagate"
     }, 
@@ -2606,18 +2594,17 @@
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/809/288/img/6288809_1.jpg?shrink=330:*&_v=20211115130146", 
+        "img": "//img.danawa.com/prod_img/500000/798/288/img/6288798_1.jpg?shrink=330:*&_v=20211115130248", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "2TB", 
+            "1TB", 
             "SATA3 (6Gb/s)", 
             "7,200RPM", 
             "메모리 64MB", 
             "기록방식: CMR(PMR)", 
             "두께: 26.1mm", 
-            "DSA", 
-            "소음(유휴/탐색): 27/28dB", 
+            "소음(유휴/탐색): 25/26dB", 
             "A/S 정보: 2년", 
             "충격 감지센서", 
             "램프로딩 기술"
@@ -2627,23 +2614,22 @@
             "3", 
             "TB"
         ], 
-        "price": "118980", 
+        "price": "118990", 
         "name": "도시바 P300 7200/64M", 
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/809/288/img/6288809_1.jpg?shrink=330:*&_v=20211115130146", 
+        "img": "//img.danawa.com/prod_img/500000/798/288/img/6288798_1.jpg?shrink=330:*&_v=20211115130248", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "2TB", 
+            "1TB", 
             "SATA3 (6Gb/s)", 
             "7,200RPM", 
             "메모리 64MB", 
             "기록방식: CMR(PMR)", 
             "두께: 26.1mm", 
-            "DSA", 
-            "소음(유휴/탐색): 27/28dB", 
+            "소음(유휴/탐색): 25/26dB", 
             "A/S 정보: 2년", 
             "충격 감지센서", 
             "램프로딩 기술"
@@ -2653,23 +2639,22 @@
             "2", 
             "TB"
         ], 
-        "price": "97160", 
+        "price": "95120", 
         "name": "도시바 P300 7200/64M", 
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/809/288/img/6288809_1.jpg?shrink=330:*&_v=20211115130146", 
+        "img": "//img.danawa.com/prod_img/500000/798/288/img/6288798_1.jpg?shrink=330:*&_v=20211115130248", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "2TB", 
+            "1TB", 
             "SATA3 (6Gb/s)", 
             "7,200RPM", 
             "메모리 64MB", 
             "기록방식: CMR(PMR)", 
             "두께: 26.1mm", 
-            "DSA", 
-            "소음(유휴/탐색): 27/28dB", 
+            "소음(유휴/탐색): 25/26dB", 
             "A/S 정보: 2년", 
             "충격 감지센서", 
             "램프로딩 기술"
@@ -2679,23 +2664,22 @@
             "1", 
             "TB"
         ], 
-        "price": "70650", 
+        "price": "70020", 
         "name": "도시바 P300 7200/64M", 
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/809/288/img/6288809_1.jpg?shrink=330:*&_v=20211115130146", 
+        "img": "//img.danawa.com/prod_img/500000/798/288/img/6288798_1.jpg?shrink=330:*&_v=20211115130248", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "2TB", 
+            "1TB", 
             "SATA3 (6Gb/s)", 
             "7,200RPM", 
             "메모리 64MB", 
             "기록방식: CMR(PMR)", 
             "두께: 26.1mm", 
-            "DSA", 
-            "소음(유휴/탐색): 27/28dB", 
+            "소음(유휴/탐색): 25/26dB", 
             "A/S 정보: 2년", 
             "충격 감지센서", 
             "램프로딩 기술"
@@ -2808,7 +2792,7 @@
             "2", 
             "TB"
         ], 
-        "price": "80390", 
+        "price": "78940", 
         "name": "Western Digital WD BLUE 7200/256M", 
         "brand": "Western"
     }, 
@@ -2833,7 +2817,7 @@
             "2", 
             "TB"
         ], 
-        "price": "81500", 
+        "price": "77000", 
         "name": "Seagate BarraCuda 7200/256M", 
         "brand": "Seagate"
     }, 
@@ -2859,7 +2843,7 @@
             "8", 
             "TB"
         ], 
-        "price": "219900", 
+        "price": "185900", 
         "name": "Seagate BarraCuda 5400/256M", 
         "brand": "Seagate"
     }, 
@@ -2911,7 +2895,7 @@
             "4", 
             "TB"
         ], 
-        "price": "130630", 
+        "price": "128940", 
         "name": "Seagate BarraCuda 5400/256M", 
         "brand": "Seagate"
     }, 
@@ -2937,7 +2921,7 @@
             "3", 
             "TB"
         ], 
-        "price": "145980", 
+        "price": "144460", 
         "name": "Seagate BarraCuda 5400/256M", 
         "brand": "Seagate"
     }, 
@@ -2961,7 +2945,7 @@
             "1", 
             "TB"
         ], 
-        "price": "66140", 
+        "price": "63000", 
         "name": "Western Digital WD BLUE 7200/64M", 
         "brand": "Western"
     }, 
@@ -2986,7 +2970,7 @@
             "6", 
             "TB"
         ], 
-        "price": "164990", 
+        "price": "165000", 
         "name": "Western Digital WD BLUE 5400/256M", 
         "brand": "Western"
     }, 
@@ -3011,7 +2995,7 @@
             "6", 
             "TB"
         ], 
-        "price": "157280", 
+        "price": "161850", 
         "name": "Western Digital WD BLUE 5400/256M", 
         "brand": "Western"
     }, 
@@ -3061,7 +3045,7 @@
             "4", 
             "TB"
         ], 
-        "price": "117230", 
+        "price": "112990", 
         "name": "Western Digital WD BLUE 5400/256M", 
         "brand": "Western"
     }, 
@@ -3086,7 +3070,7 @@
             "3", 
             "TB"
         ], 
-        "price": "123040", 
+        "price": "122560", 
         "name": "Western Digital WD BLUE 5400/256M", 
         "brand": "Western"
     }, 
@@ -3162,7 +3146,7 @@
             "3", 
             "TB"
         ], 
-        "price": "177450", 
+        "price": "187200", 
         "name": "Seagate BarraCuda 7200/64M", 
         "brand": "Seagate"
     }, 
@@ -3214,7 +3198,7 @@
             "2", 
             "TB"
         ], 
-        "price": "87180", 
+        "price": "90050", 
         "name": "Seagate BarraCuda 7200/64M", 
         "brand": "Seagate"
     }, 
@@ -3266,7 +3250,7 @@
             "1", 
             "TB"
         ], 
-        "price": "73060", 
+        "price": "68990", 
         "name": "Seagate BarraCuda 7200/64M", 
         "brand": "Seagate"
     }, 
@@ -3297,18 +3281,17 @@
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/809/288/img/6288809_1.jpg?shrink=330:*&_v=20211115130146", 
+        "img": "//img.danawa.com/prod_img/500000/798/288/img/6288798_1.jpg?shrink=330:*&_v=20211115130248", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "2TB", 
+            "1TB", 
             "SATA3 (6Gb/s)", 
             "7,200RPM", 
             "메모리 64MB", 
             "기록방식: CMR(PMR)", 
             "두께: 26.1mm", 
-            "DSA", 
-            "소음(유휴/탐색): 27/28dB", 
+            "소음(유휴/탐색): 25/26dB", 
             "A/S 정보: 2년", 
             "충격 감지센서", 
             "램프로딩 기술"
@@ -3318,23 +3301,22 @@
             "3", 
             "TB"
         ], 
-        "price": "118980", 
+        "price": "118990", 
         "name": "도시바 P300 7200/64M", 
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/809/288/img/6288809_1.jpg?shrink=330:*&_v=20211115130146", 
+        "img": "//img.danawa.com/prod_img/500000/798/288/img/6288798_1.jpg?shrink=330:*&_v=20211115130248", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "2TB", 
+            "1TB", 
             "SATA3 (6Gb/s)", 
             "7,200RPM", 
             "메모리 64MB", 
             "기록방식: CMR(PMR)", 
             "두께: 26.1mm", 
-            "DSA", 
-            "소음(유휴/탐색): 27/28dB", 
+            "소음(유휴/탐색): 25/26dB", 
             "A/S 정보: 2년", 
             "충격 감지센서", 
             "램프로딩 기술"
@@ -3344,23 +3326,22 @@
             "2", 
             "TB"
         ], 
-        "price": "97160", 
+        "price": "95120", 
         "name": "도시바 P300 7200/64M", 
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/809/288/img/6288809_1.jpg?shrink=330:*&_v=20211115130146", 
+        "img": "//img.danawa.com/prod_img/500000/798/288/img/6288798_1.jpg?shrink=330:*&_v=20211115130248", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "2TB", 
+            "1TB", 
             "SATA3 (6Gb/s)", 
             "7,200RPM", 
             "메모리 64MB", 
             "기록방식: CMR(PMR)", 
             "두께: 26.1mm", 
-            "DSA", 
-            "소음(유휴/탐색): 27/28dB", 
+            "소음(유휴/탐색): 25/26dB", 
             "A/S 정보: 2년", 
             "충격 감지센서", 
             "램프로딩 기술"
@@ -3370,23 +3351,22 @@
             "1", 
             "TB"
         ], 
-        "price": "70650", 
+        "price": "70020", 
         "name": "도시바 P300 7200/64M", 
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/809/288/img/6288809_1.jpg?shrink=330:*&_v=20211115130146", 
+        "img": "//img.danawa.com/prod_img/500000/798/288/img/6288798_1.jpg?shrink=330:*&_v=20211115130248", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "2TB", 
+            "1TB", 
             "SATA3 (6Gb/s)", 
             "7,200RPM", 
             "메모리 64MB", 
             "기록방식: CMR(PMR)", 
             "두께: 26.1mm", 
-            "DSA", 
-            "소음(유휴/탐색): 27/28dB", 
+            "소음(유휴/탐색): 25/26dB", 
             "A/S 정보: 2년", 
             "충격 감지센서", 
             "램프로딩 기술"
@@ -3499,7 +3479,7 @@
             "2", 
             "TB"
         ], 
-        "price": "80390", 
+        "price": "78940", 
         "name": "Western Digital WD BLUE 7200/256M", 
         "brand": "Western"
     }, 
@@ -3524,7 +3504,7 @@
             "2", 
             "TB"
         ], 
-        "price": "81500", 
+        "price": "77000", 
         "name": "Seagate BarraCuda 7200/256M", 
         "brand": "Seagate"
     }, 
@@ -3550,7 +3530,7 @@
             "8", 
             "TB"
         ], 
-        "price": "219900", 
+        "price": "185900", 
         "name": "Seagate BarraCuda 5400/256M", 
         "brand": "Seagate"
     }, 
@@ -3602,7 +3582,7 @@
             "4", 
             "TB"
         ], 
-        "price": "130630", 
+        "price": "128940", 
         "name": "Seagate BarraCuda 5400/256M", 
         "brand": "Seagate"
     }, 
@@ -3628,7 +3608,7 @@
             "3", 
             "TB"
         ], 
-        "price": "145980", 
+        "price": "144460", 
         "name": "Seagate BarraCuda 5400/256M", 
         "brand": "Seagate"
     }, 
@@ -3652,7 +3632,7 @@
             "1", 
             "TB"
         ], 
-        "price": "66140", 
+        "price": "63000", 
         "name": "Western Digital WD BLUE 7200/64M", 
         "brand": "Western"
     }, 
@@ -3677,7 +3657,7 @@
             "6", 
             "TB"
         ], 
-        "price": "164990", 
+        "price": "165000", 
         "name": "Western Digital WD BLUE 5400/256M", 
         "brand": "Western"
     }, 
@@ -3702,7 +3682,7 @@
             "6", 
             "TB"
         ], 
-        "price": "157280", 
+        "price": "161850", 
         "name": "Western Digital WD BLUE 5400/256M", 
         "brand": "Western"
     }, 
@@ -3752,7 +3732,7 @@
             "4", 
             "TB"
         ], 
-        "price": "117230", 
+        "price": "112990", 
         "name": "Western Digital WD BLUE 5400/256M", 
         "brand": "Western"
     }, 
@@ -3777,7 +3757,7 @@
             "3", 
             "TB"
         ], 
-        "price": "123040", 
+        "price": "122560", 
         "name": "Western Digital WD BLUE 5400/256M", 
         "brand": "Western"
     }, 
@@ -3853,7 +3833,7 @@
             "3", 
             "TB"
         ], 
-        "price": "177450", 
+        "price": "187200", 
         "name": "Seagate BarraCuda 7200/64M", 
         "brand": "Seagate"
     }, 
@@ -3905,7 +3885,7 @@
             "2", 
             "TB"
         ], 
-        "price": "87180", 
+        "price": "90050", 
         "name": "Seagate BarraCuda 7200/64M", 
         "brand": "Seagate"
     }, 
@@ -3957,7 +3937,7 @@
             "1", 
             "TB"
         ], 
-        "price": "73060", 
+        "price": "68990", 
         "name": "Seagate BarraCuda 7200/64M", 
         "brand": "Seagate"
     }, 
@@ -3988,18 +3968,17 @@
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/809/288/img/6288809_1.jpg?shrink=330:*&_v=20211115130146", 
+        "img": "//img.danawa.com/prod_img/500000/798/288/img/6288798_1.jpg?shrink=330:*&_v=20211115130248", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "2TB", 
+            "1TB", 
             "SATA3 (6Gb/s)", 
             "7,200RPM", 
             "메모리 64MB", 
             "기록방식: CMR(PMR)", 
             "두께: 26.1mm", 
-            "DSA", 
-            "소음(유휴/탐색): 27/28dB", 
+            "소음(유휴/탐색): 25/26dB", 
             "A/S 정보: 2년", 
             "충격 감지센서", 
             "램프로딩 기술"
@@ -4009,23 +3988,22 @@
             "3", 
             "TB"
         ], 
-        "price": "118980", 
+        "price": "118990", 
         "name": "도시바 P300 7200/64M", 
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/809/288/img/6288809_1.jpg?shrink=330:*&_v=20211115130146", 
+        "img": "//img.danawa.com/prod_img/500000/798/288/img/6288798_1.jpg?shrink=330:*&_v=20211115130248", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "2TB", 
+            "1TB", 
             "SATA3 (6Gb/s)", 
             "7,200RPM", 
             "메모리 64MB", 
             "기록방식: CMR(PMR)", 
             "두께: 26.1mm", 
-            "DSA", 
-            "소음(유휴/탐색): 27/28dB", 
+            "소음(유휴/탐색): 25/26dB", 
             "A/S 정보: 2년", 
             "충격 감지센서", 
             "램프로딩 기술"
@@ -4035,23 +4013,22 @@
             "2", 
             "TB"
         ], 
-        "price": "97160", 
+        "price": "95120", 
         "name": "도시바 P300 7200/64M", 
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/809/288/img/6288809_1.jpg?shrink=330:*&_v=20211115130146", 
+        "img": "//img.danawa.com/prod_img/500000/798/288/img/6288798_1.jpg?shrink=330:*&_v=20211115130248", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "2TB", 
+            "1TB", 
             "SATA3 (6Gb/s)", 
             "7,200RPM", 
             "메모리 64MB", 
             "기록방식: CMR(PMR)", 
             "두께: 26.1mm", 
-            "DSA", 
-            "소음(유휴/탐색): 27/28dB", 
+            "소음(유휴/탐색): 25/26dB", 
             "A/S 정보: 2년", 
             "충격 감지센서", 
             "램프로딩 기술"
@@ -4061,23 +4038,22 @@
             "1", 
             "TB"
         ], 
-        "price": "70650", 
+        "price": "70020", 
         "name": "도시바 P300 7200/64M", 
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/809/288/img/6288809_1.jpg?shrink=330:*&_v=20211115130146", 
+        "img": "//img.danawa.com/prod_img/500000/798/288/img/6288798_1.jpg?shrink=330:*&_v=20211115130248", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "2TB", 
+            "1TB", 
             "SATA3 (6Gb/s)", 
             "7,200RPM", 
             "메모리 64MB", 
             "기록방식: CMR(PMR)", 
             "두께: 26.1mm", 
-            "DSA", 
-            "소음(유휴/탐색): 27/28dB", 
+            "소음(유휴/탐색): 25/26dB", 
             "A/S 정보: 2년", 
             "충격 감지센서", 
             "램프로딩 기술"
@@ -4190,7 +4166,7 @@
             "2", 
             "TB"
         ], 
-        "price": "80390", 
+        "price": "78940", 
         "name": "Western Digital WD BLUE 7200/256M", 
         "brand": "Western"
     }, 
@@ -4215,7 +4191,7 @@
             "2", 
             "TB"
         ], 
-        "price": "81500", 
+        "price": "77000", 
         "name": "Seagate BarraCuda 7200/256M", 
         "brand": "Seagate"
     }, 
@@ -4241,7 +4217,7 @@
             "8", 
             "TB"
         ], 
-        "price": "219900", 
+        "price": "185900", 
         "name": "Seagate BarraCuda 5400/256M", 
         "brand": "Seagate"
     }, 
@@ -4293,7 +4269,7 @@
             "4", 
             "TB"
         ], 
-        "price": "130630", 
+        "price": "128940", 
         "name": "Seagate BarraCuda 5400/256M", 
         "brand": "Seagate"
     }, 
@@ -4319,7 +4295,7 @@
             "3", 
             "TB"
         ], 
-        "price": "145980", 
+        "price": "144460", 
         "name": "Seagate BarraCuda 5400/256M", 
         "brand": "Seagate"
     }, 
@@ -4343,7 +4319,7 @@
             "1", 
             "TB"
         ], 
-        "price": "66140", 
+        "price": "63000", 
         "name": "Western Digital WD BLUE 7200/64M", 
         "brand": "Western"
     }, 
@@ -4368,7 +4344,7 @@
             "6", 
             "TB"
         ], 
-        "price": "164990", 
+        "price": "165000", 
         "name": "Western Digital WD BLUE 5400/256M", 
         "brand": "Western"
     }, 
@@ -4393,7 +4369,7 @@
             "6", 
             "TB"
         ], 
-        "price": "157280", 
+        "price": "161850", 
         "name": "Western Digital WD BLUE 5400/256M", 
         "brand": "Western"
     }, 
@@ -4443,7 +4419,7 @@
             "4", 
             "TB"
         ], 
-        "price": "117230", 
+        "price": "112990", 
         "name": "Western Digital WD BLUE 5400/256M", 
         "brand": "Western"
     }, 
@@ -4468,7 +4444,7 @@
             "3", 
             "TB"
         ], 
-        "price": "123040", 
+        "price": "122560", 
         "name": "Western Digital WD BLUE 5400/256M", 
         "brand": "Western"
     }, 
@@ -4544,7 +4520,7 @@
             "3", 
             "TB"
         ], 
-        "price": "177450", 
+        "price": "187200", 
         "name": "Seagate BarraCuda 7200/64M", 
         "brand": "Seagate"
     }, 
@@ -4596,7 +4572,7 @@
             "2", 
             "TB"
         ], 
-        "price": "87180", 
+        "price": "90050", 
         "name": "Seagate BarraCuda 7200/64M", 
         "brand": "Seagate"
     }, 
@@ -4648,7 +4624,7 @@
             "1", 
             "TB"
         ], 
-        "price": "73060", 
+        "price": "68990", 
         "name": "Seagate BarraCuda 7200/64M", 
         "brand": "Seagate"
     }, 
@@ -4679,18 +4655,17 @@
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/809/288/img/6288809_1.jpg?shrink=330:*&_v=20211115130146", 
+        "img": "//img.danawa.com/prod_img/500000/798/288/img/6288798_1.jpg?shrink=330:*&_v=20211115130248", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "2TB", 
+            "1TB", 
             "SATA3 (6Gb/s)", 
             "7,200RPM", 
             "메모리 64MB", 
             "기록방식: CMR(PMR)", 
             "두께: 26.1mm", 
-            "DSA", 
-            "소음(유휴/탐색): 27/28dB", 
+            "소음(유휴/탐색): 25/26dB", 
             "A/S 정보: 2년", 
             "충격 감지센서", 
             "램프로딩 기술"
@@ -4700,23 +4675,22 @@
             "3", 
             "TB"
         ], 
-        "price": "118980", 
+        "price": "118990", 
         "name": "도시바 P300 7200/64M", 
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/809/288/img/6288809_1.jpg?shrink=330:*&_v=20211115130146", 
+        "img": "//img.danawa.com/prod_img/500000/798/288/img/6288798_1.jpg?shrink=330:*&_v=20211115130248", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "2TB", 
+            "1TB", 
             "SATA3 (6Gb/s)", 
             "7,200RPM", 
             "메모리 64MB", 
             "기록방식: CMR(PMR)", 
             "두께: 26.1mm", 
-            "DSA", 
-            "소음(유휴/탐색): 27/28dB", 
+            "소음(유휴/탐색): 25/26dB", 
             "A/S 정보: 2년", 
             "충격 감지센서", 
             "램프로딩 기술"
@@ -4726,23 +4700,22 @@
             "2", 
             "TB"
         ], 
-        "price": "97160", 
+        "price": "95120", 
         "name": "도시바 P300 7200/64M", 
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/809/288/img/6288809_1.jpg?shrink=330:*&_v=20211115130146", 
+        "img": "//img.danawa.com/prod_img/500000/798/288/img/6288798_1.jpg?shrink=330:*&_v=20211115130248", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "2TB", 
+            "1TB", 
             "SATA3 (6Gb/s)", 
             "7,200RPM", 
             "메모리 64MB", 
             "기록방식: CMR(PMR)", 
             "두께: 26.1mm", 
-            "DSA", 
-            "소음(유휴/탐색): 27/28dB", 
+            "소음(유휴/탐색): 25/26dB", 
             "A/S 정보: 2년", 
             "충격 감지센서", 
             "램프로딩 기술"
@@ -4752,23 +4725,22 @@
             "1", 
             "TB"
         ], 
-        "price": "70650", 
+        "price": "70020", 
         "name": "도시바 P300 7200/64M", 
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/809/288/img/6288809_1.jpg?shrink=330:*&_v=20211115130146", 
+        "img": "//img.danawa.com/prod_img/500000/798/288/img/6288798_1.jpg?shrink=330:*&_v=20211115130248", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "2TB", 
+            "1TB", 
             "SATA3 (6Gb/s)", 
             "7,200RPM", 
             "메모리 64MB", 
             "기록방식: CMR(PMR)", 
             "두께: 26.1mm", 
-            "DSA", 
-            "소음(유휴/탐색): 27/28dB", 
+            "소음(유휴/탐색): 25/26dB", 
             "A/S 정보: 2년", 
             "충격 감지센서", 
             "램프로딩 기술"
@@ -4881,7 +4853,7 @@
             "2", 
             "TB"
         ], 
-        "price": "80390", 
+        "price": "78940", 
         "name": "Western Digital WD BLUE 7200/256M", 
         "brand": "Western"
     }, 
@@ -4906,7 +4878,7 @@
             "2", 
             "TB"
         ], 
-        "price": "81500", 
+        "price": "77000", 
         "name": "Seagate BarraCuda 7200/256M", 
         "brand": "Seagate"
     }, 
@@ -4932,7 +4904,7 @@
             "8", 
             "TB"
         ], 
-        "price": "219900", 
+        "price": "185900", 
         "name": "Seagate BarraCuda 5400/256M", 
         "brand": "Seagate"
     }, 
@@ -4984,7 +4956,7 @@
             "4", 
             "TB"
         ], 
-        "price": "130630", 
+        "price": "128940", 
         "name": "Seagate BarraCuda 5400/256M", 
         "brand": "Seagate"
     }, 
@@ -5010,7 +4982,7 @@
             "3", 
             "TB"
         ], 
-        "price": "145980", 
+        "price": "144460", 
         "name": "Seagate BarraCuda 5400/256M", 
         "brand": "Seagate"
     }, 
@@ -5034,7 +5006,7 @@
             "1", 
             "TB"
         ], 
-        "price": "66140", 
+        "price": "63000", 
         "name": "Western Digital WD BLUE 7200/64M", 
         "brand": "Western"
     }, 
@@ -5059,7 +5031,7 @@
             "6", 
             "TB"
         ], 
-        "price": "164990", 
+        "price": "165000", 
         "name": "Western Digital WD BLUE 5400/256M", 
         "brand": "Western"
     }, 
@@ -5084,7 +5056,7 @@
             "6", 
             "TB"
         ], 
-        "price": "157280", 
+        "price": "161850", 
         "name": "Western Digital WD BLUE 5400/256M", 
         "brand": "Western"
     }, 
@@ -5134,7 +5106,7 @@
             "4", 
             "TB"
         ], 
-        "price": "117230", 
+        "price": "112990", 
         "name": "Western Digital WD BLUE 5400/256M", 
         "brand": "Western"
     }, 
@@ -5159,7 +5131,7 @@
             "3", 
             "TB"
         ], 
-        "price": "123040", 
+        "price": "122560", 
         "name": "Western Digital WD BLUE 5400/256M", 
         "brand": "Western"
     }, 
@@ -5235,7 +5207,7 @@
             "3", 
             "TB"
         ], 
-        "price": "177450", 
+        "price": "187200", 
         "name": "Seagate BarraCuda 7200/64M", 
         "brand": "Seagate"
     }, 
@@ -5287,7 +5259,7 @@
             "2", 
             "TB"
         ], 
-        "price": "87180", 
+        "price": "90050", 
         "name": "Seagate BarraCuda 7200/64M", 
         "brand": "Seagate"
     }, 
@@ -5339,7 +5311,7 @@
             "1", 
             "TB"
         ], 
-        "price": "73060", 
+        "price": "68990", 
         "name": "Seagate BarraCuda 7200/64M", 
         "brand": "Seagate"
     }, 
@@ -5370,18 +5342,17 @@
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/809/288/img/6288809_1.jpg?shrink=330:*&_v=20211115130146", 
+        "img": "//img.danawa.com/prod_img/500000/798/288/img/6288798_1.jpg?shrink=330:*&_v=20211115130248", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "2TB", 
+            "1TB", 
             "SATA3 (6Gb/s)", 
             "7,200RPM", 
             "메모리 64MB", 
             "기록방식: CMR(PMR)", 
             "두께: 26.1mm", 
-            "DSA", 
-            "소음(유휴/탐색): 27/28dB", 
+            "소음(유휴/탐색): 25/26dB", 
             "A/S 정보: 2년", 
             "충격 감지센서", 
             "램프로딩 기술"
@@ -5391,23 +5362,22 @@
             "3", 
             "TB"
         ], 
-        "price": "118980", 
+        "price": "118990", 
         "name": "도시바 P300 7200/64M", 
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/809/288/img/6288809_1.jpg?shrink=330:*&_v=20211115130146", 
+        "img": "//img.danawa.com/prod_img/500000/798/288/img/6288798_1.jpg?shrink=330:*&_v=20211115130248", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "2TB", 
+            "1TB", 
             "SATA3 (6Gb/s)", 
             "7,200RPM", 
             "메모리 64MB", 
             "기록방식: CMR(PMR)", 
             "두께: 26.1mm", 
-            "DSA", 
-            "소음(유휴/탐색): 27/28dB", 
+            "소음(유휴/탐색): 25/26dB", 
             "A/S 정보: 2년", 
             "충격 감지센서", 
             "램프로딩 기술"
@@ -5417,23 +5387,22 @@
             "2", 
             "TB"
         ], 
-        "price": "97160", 
+        "price": "95120", 
         "name": "도시바 P300 7200/64M", 
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/809/288/img/6288809_1.jpg?shrink=330:*&_v=20211115130146", 
+        "img": "//img.danawa.com/prod_img/500000/798/288/img/6288798_1.jpg?shrink=330:*&_v=20211115130248", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "2TB", 
+            "1TB", 
             "SATA3 (6Gb/s)", 
             "7,200RPM", 
             "메모리 64MB", 
             "기록방식: CMR(PMR)", 
             "두께: 26.1mm", 
-            "DSA", 
-            "소음(유휴/탐색): 27/28dB", 
+            "소음(유휴/탐색): 25/26dB", 
             "A/S 정보: 2년", 
             "충격 감지센서", 
             "램프로딩 기술"
@@ -5443,23 +5412,22 @@
             "1", 
             "TB"
         ], 
-        "price": "70650", 
+        "price": "70020", 
         "name": "도시바 P300 7200/64M", 
         "brand": "도시바"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/809/288/img/6288809_1.jpg?shrink=330:*&_v=20211115130146", 
+        "img": "//img.danawa.com/prod_img/500000/798/288/img/6288798_1.jpg?shrink=330:*&_v=20211115130248", 
         "spec": [
             "HDD (PC용)", 
             "8.9cm(3.5인치)", 
-            "2TB", 
+            "1TB", 
             "SATA3 (6Gb/s)", 
             "7,200RPM", 
             "메모리 64MB", 
             "기록방식: CMR(PMR)", 
             "두께: 26.1mm", 
-            "DSA", 
-            "소음(유휴/탐색): 27/28dB", 
+            "소음(유휴/탐색): 25/26dB", 
             "A/S 정보: 2년", 
             "충격 감지센서", 
             "램프로딩 기술"

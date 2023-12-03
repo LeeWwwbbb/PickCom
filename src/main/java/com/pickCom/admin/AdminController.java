@@ -20,12 +20,6 @@ import java.io.InputStreamReader;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-<<<<<<< HEAD
-=======
-
-import com.ziclix.python.sql.zxJDBC;
->>>>>>> 048ee7e820d8b850af26872f7ac40783184067df
-
 @Controller
 public class AdminController {
 
@@ -176,19 +170,19 @@ public class AdminController {
     // 데이터 업데이트
     @RequestMapping(value = "/Update_Data")
     public ModelAndView Update_Data() throws Exception {
-        /*String[] exePaths = {
-                "C:\\Users\\byung\\Desktop\\JSP Project\\PickCom\\Case.exe",
-                "C:\\Users\\byung\\Desktop\\JSP Project\\PickCom\\Cooler.exe",
-                "C:\\Users\\byung\\Desktop\\JSP Project\\PickCom\\CPU.exe",
-                "C:\\Users\\byung\\Desktop\\JSP Project\\PickCom\\HDD.exe",
-                "C:\\Users\\byung\\Desktop\\JSP Project\\PickCom\\MBoard.exe",
-                "C:\\Users\\byung\\Desktop\\JSP Project\\PickCom\\Power.exe",
-                "C:\\Users\\byung\\Desktop\\JSP Project\\PickCom\\RAM.exe",
-                "C:\\Users\\byung\\Desktop\\JSP Project\\PickCom\\SSD.exe",
-                "C:\\Users\\byung\\Desktop\\JSP Project\\PickCom\\VGA.exe"
-        };*/
         String[] exePaths = {
-                "C:\\Users\\pojun\\Documents\\GitHub\\PickCom\\Case.exe",
+                "C:\\Users\\byung\\Desktop\\JSP Project\\PickCom\\python\\Case.exe",
+                "C:\\Users\\byung\\Desktop\\JSP Project\\PickCom\\python\\Cooler.exe",
+                "C:\\Users\\byung\\Desktop\\JSP Project\\PickCom\\python\\CPU.exe",
+                "C:\\Users\\byung\\Desktop\\JSP Project\\PickCom\\python\\HDD.exe",
+                "C:\\Users\\byung\\Desktop\\JSP Project\\PickCom\\python\\MBoard.exe",
+                "C:\\Users\\byung\\Desktop\\JSP Project\\PickCom\\python\\Power.exe",
+                "C:\\Users\\byung\\Desktop\\JSP Project\\PickCom\\python\\RAM.exe",
+                "C:\\Users\\byung\\Desktop\\JSP Project\\PickCom\\python\\SSD.exe",
+                "C:\\Users\\byung\\Desktop\\JSP Project\\PickCom\\python\\VGA.exe"
+        };
+        /*String[] exePaths = {
+                "C:\\Users\\pojun\\Documents\\GitHub\\PickCom\\python\\Case.exe",
                 "C:\\Users\\pojun\\Documents\\GitHub\\PickCom\\Cooler.exe",
                 "C:\\Users\\pojun\\Documents\\GitHub\\PickCom\\CPU.exe",
                 "C:\\Users\\pojun\\Documents\\GitHub\\PickCom\\HDD.exe",
@@ -198,6 +192,8 @@ public class AdminController {
                 "C:\\Users\\pojun\\Documents\\GitHub\\PickCom\\SSD.exe",
                 "C:\\Users\\pojun\\Documents\\GitHub\\PickCom\\VGA.exe"
         };
+
+         */
 
         try {
             // 각 exe 파일에 대해 별도의 프로세스를 생성하고 시작
@@ -243,8 +239,8 @@ public class AdminController {
         intPre = new PythonInterpreter();
         // 파이썬 스크립트 실행 명령어
         try {
-            //intPre.execfile("C:/Users/byung/Desktop/JSP Project/PickCom/src/main/resources/python/get_hardware/Filtering_Data.py");
-            intPre.execfile("C:/Users/pojun/Documents/GitHub/PickCom/src/main/resources/python/get_hardware/Filtering_Data.py");
+            intPre.execfile("C:/Users/byung/Desktop/JSP Project/PickCom/src/main/resources/python/get_hardware/Filtering_Data.py");
+            //intPre.execfile("C:/Users/pojun/Documents/GitHub/PickCom/src/main/resources/python/get_hardware/Filtering_Data.py");
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -257,8 +253,8 @@ public class AdminController {
     @RequestMapping(value = "/SetDBtoJSON")
     public ModelAndView SetDB() {
         intPre = new PythonInterpreter();
-        //intPre.execfile("C:/Users/byung/Desktop/JSP Project/PickCom/src/main/resources/python/get_hardware/SetDBtoJSON.py");
-        intPre.execfile("C:/Users/pojun/Documents/GitHub/PickCom/src/main/resources/python/get_hardware/SetDBtoJSON.py");
+        intPre.execfile("C:/Users/byung/Desktop/JSP Project/PickCom/src/main/resources/python/get_hardware/SetDBtoJSON.py");
+        //intPre.execfile("C:/Users/pojun/Documents/GitHub/PickCom/src/main/resources/python/get_hardware/SetDBtoJSON.py");
         ModelAndView mv = new ModelAndView("redirect:/PickCom");
         return mv;
     }
@@ -267,8 +263,8 @@ public class AdminController {
     @RequestMapping(value = "/PickCom")
     public ModelAndView PickCom() {
         intPre = new PythonInterpreter();
-        //intPre.execfile("C:/Users/byung/Desktop/JSP Project/PickCom/src/main/resources/python/get_build/PickCom_py.py");
-        intPre.execfile("C:/Users/pojun/Documents/GitHub/PickCom/src/main/resources/python/get_build/PickCom_py.py");
+        intPre.execfile("C:/Users/byung/Desktop/JSP Project/PickCom/src/main/resources/python/get_build/PickCom_py.py");
+        //intPre.execfile("C:/Users/pojun/Documents/GitHub/PickCom/src/main/resources/python/get_build/PickCom_py.py");
         ModelAndView mv = new ModelAndView("/admin/UpdateResult");
         return mv;
     }
