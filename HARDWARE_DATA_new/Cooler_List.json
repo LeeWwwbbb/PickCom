@@ -28,7 +28,7 @@
             "[구성품/기타] 21년 11월부로 소켓 호환 추가"
         ], 
         "Cate": "Cooler", 
-        "price": "29430", 
+        "price": "29290", 
         "color_text": "BLACK", 
         "name": "PCCOOLER PALADIN 400", 
         "brand": "PCCOOLER"
@@ -62,7 +62,7 @@
             "[구성품/기타] 21년 11월부로 소켓 호환 추가"
         ], 
         "Cate": "Cooler", 
-        "price": "35130", 
+        "price": "34990", 
         "color_text": "WHITE", 
         "name": "PCCOOLER PALADIN 400", 
         "brand": "PCCOOLER"
@@ -96,7 +96,7 @@
             "23년 11월 부로 팬 스티커 및 TDP 200→220W 변경"
         ], 
         "Cate": "Cooler", 
-        "price": "22570", 
+        "price": "21830", 
         "color_text": "", 
         "name": "DEEPCOOL AG400", 
         "brand": "DEEPCOOL"
@@ -133,7 +133,7 @@
             "열전도율: 12.4W/(m·K)"
         ], 
         "Cate": "Cooler", 
-        "price": "67000", 
+        "price": "63500", 
         "color_text": "BLACK", 
         "name": "3RSYS Socoool RC-1800 Quiet 솔더링", 
         "brand": "3RSYS"
@@ -170,10 +170,45 @@
             "열전도율: 12.4W/(m·K)"
         ], 
         "Cate": "Cooler", 
-        "price": "67000", 
+        "price": "64000", 
         "color_text": "WHITE", 
         "name": "3RSYS Socoool RC-1800 Quiet 솔더링", 
         "brand": "3RSYS"
+    }, 
+    {
+        "img": "//img.danawa.com/prod_img/500000/058/525/img/16525058_1.jpg?shrink=330:*&_v=20231128175409", 
+        "spec": [
+            "CPU 쿨러", 
+            "듀얼타워형", 
+            "공랭", 
+            "팬 쿨러", 
+            "A/S기간: 3년", 
+            "[호환/크기] 인텔 소켓: LGA1700, LGA1200, LGA115x", 
+            "AMD 소켓: AM5, AM4", 
+            "가로: 125mm", 
+            "세로: 135mm", 
+            "높이: 155mm", 
+            "무게: 850g", 
+            "[쿨링팬] 팬 크기: 120mm", 
+            "팬 개수: 2개", 
+            "25T", 
+            "4핀", 
+            "베어링: S-FDB(유체)", 
+            "1550 RPM", 
+            "최대 풍량: 66.17 CFM", 
+            "풍압(정압): 1.53mmH₂O", 
+            "최대 팬소음: 25.6dBA", 
+            "PWM 지원", 
+            "non-LED", 
+            "[구성품/기타] 써멀유형: 주사기형", 
+            "열전도율: 12.8W/(m·K)", 
+            "23년 11월부로 AM5 소켓 호환 추가"
+        ], 
+        "Cate": "Cooler", 
+        "price": "36170", 
+        "color_text": "", 
+        "name": "Thermalright Peerless Assassin 120 SE 서린", 
+        "brand": "Thermalright"
     }, 
     {
         "img": "//img.danawa.com/prod_img/500000/001/690/img/19690001_1.jpg?shrink=330:*&_v=20230407154257", 
@@ -204,7 +239,7 @@
             "써멀컴파운드 CryoFuze 제공"
         ], 
         "Cate": "Cooler", 
-        "price": "38970", 
+        "price": "38960", 
         "color_text": "", 
         "name": "쿨러마스터 HYPER 620S ARGB", 
         "brand": "쿨러마스터"
@@ -276,41 +311,6 @@
         "brand": "잘만"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/058/525/img/16525058_1.jpg?shrink=330:*&_v=20231128175409", 
-        "spec": [
-            "CPU 쿨러", 
-            "듀얼타워형", 
-            "공랭", 
-            "팬 쿨러", 
-            "A/S기간: 3년", 
-            "[호환/크기] 인텔 소켓: LGA1700, LGA1200, LGA115x", 
-            "AMD 소켓: AM5, AM4", 
-            "가로: 125mm", 
-            "세로: 135mm", 
-            "높이: 155mm", 
-            "무게: 850g", 
-            "[쿨링팬] 팬 크기: 120mm", 
-            "팬 개수: 2개", 
-            "25T", 
-            "4핀", 
-            "베어링: S-FDB(유체)", 
-            "1550 RPM", 
-            "최대 풍량: 66.17 CFM", 
-            "풍압(정압): 1.53mmH₂O", 
-            "최대 팬소음: 25.6dBA", 
-            "PWM 지원", 
-            "non-LED", 
-            "[구성품/기타] 써멀유형: 주사기형", 
-            "열전도율: 12.8W/(m·K)", 
-            "23년 11월부로 AM5 소켓 호환 추가"
-        ], 
-        "Cate": "Cooler", 
-        "price": "36940", 
-        "color_text": "", 
-        "name": "Thermalright Peerless Assassin 120 SE 서린", 
-        "brand": "Thermalright"
-    }, 
-    {
         "img": "//img.danawa.com/prod_img/500000/107/869/img/19869107_1.jpg?shrink=330:*&_v=20230516121158", 
         "spec": [
             "CPU 쿨러", 
@@ -345,7 +345,7 @@
             "LED시스템: 제조사 소프트웨어"
         ], 
         "Cate": "Cooler", 
-        "price": "303058", 
+        "price": "296678", 
         "color_text": "BLACK", 
         "name": "NZXT KRAKEN 360 RGB", 
         "brand": "NZXT"
@@ -385,7 +385,7 @@
             "LED시스템: 제조사 소프트웨어"
         ], 
         "Cate": "Cooler", 
-        "price": "316110", 
+        "price": "308100", 
         "color_text": "WHITE", 
         "name": "NZXT KRAKEN 360 RGB", 
         "brand": "NZXT"
@@ -422,7 +422,7 @@
             "[구성품/기타] 써멀유형: 주사기형"
         ], 
         "Cate": "Cooler", 
-        "price": "167200", 
+        "price": "163300", 
         "color_text": "BLACK", 
         "name": "3RSYS Socoool 라니 XY-360 Quiet", 
         "brand": "3RSYS"
@@ -459,10 +459,90 @@
             "[구성품/기타] 써멀유형: 주사기형"
         ], 
         "Cate": "Cooler", 
-        "price": "174000", 
+        "price": "168000", 
         "color_text": "WHITE", 
         "name": "3RSYS Socoool 라니 XY-360 Quiet", 
         "brand": "3RSYS"
+    }, 
+    {
+        "img": "//img.danawa.com/prod_img/500000/021/371/img/18371021_1.jpg?shrink=330:*&_v=20221128082841", 
+        "spec": [
+            "써멀컴파운드(그리스)", 
+            "써멀유형: 주사기형", 
+            "용량: 4g", 
+            "비전도성", 
+            "점도: 87Pa·s", 
+            "밀도: 2.5g/cm³"
+        ], 
+        "Cate": "Cooler", 
+        "price": "4740", 
+        "color_text": "2g", 
+        "name": "ARCTIC MX-4 서린", 
+        "brand": "ARCTIC"
+    }, 
+    {
+        "img": "//img.danawa.com/prod_img/500000/021/371/img/18371021_1.jpg?shrink=330:*&_v=20221128082841", 
+        "spec": [
+            "써멀컴파운드(그리스)", 
+            "써멀유형: 주사기형", 
+            "용량: 4g", 
+            "비전도성", 
+            "점도: 87Pa·s", 
+            "밀도: 2.5g/cm³"
+        ], 
+        "Cate": "Cooler", 
+        "price": "32960", 
+        "color_text": "45g", 
+        "name": "ARCTIC MX-4 서린", 
+        "brand": "ARCTIC"
+    }, 
+    {
+        "img": "//img.danawa.com/prod_img/500000/021/371/img/18371021_1.jpg?shrink=330:*&_v=20221128082841", 
+        "spec": [
+            "써멀컴파운드(그리스)", 
+            "써멀유형: 주사기형", 
+            "용량: 4g", 
+            "비전도성", 
+            "점도: 87Pa·s", 
+            "밀도: 2.5g/cm³"
+        ], 
+        "Cate": "Cooler", 
+        "price": "6800", 
+        "color_text": "4g", 
+        "name": "ARCTIC MX-4 서린", 
+        "brand": "ARCTIC"
+    }, 
+    {
+        "img": "//img.danawa.com/prod_img/500000/021/371/img/18371021_1.jpg?shrink=330:*&_v=20221128082841", 
+        "spec": [
+            "써멀컴파운드(그리스)", 
+            "써멀유형: 주사기형", 
+            "용량: 4g", 
+            "비전도성", 
+            "점도: 87Pa·s", 
+            "밀도: 2.5g/cm³"
+        ], 
+        "Cate": "Cooler", 
+        "price": "10900", 
+        "color_text": "8g", 
+        "name": "ARCTIC MX-4 서린", 
+        "brand": "ARCTIC"
+    }, 
+    {
+        "img": "//img.danawa.com/prod_img/500000/021/371/img/18371021_1.jpg?shrink=330:*&_v=20221128082841", 
+        "spec": [
+            "써멀컴파운드(그리스)", 
+            "써멀유형: 주사기형", 
+            "용량: 4g", 
+            "비전도성", 
+            "점도: 87Pa·s", 
+            "밀도: 2.5g/cm³"
+        ], 
+        "Cate": "Cooler", 
+        "price": "22900", 
+        "color_text": "20g", 
+        "name": "ARCTIC MX-4 서린", 
+        "brand": "ARCTIC"
     }, 
     {
         "img": "//img.danawa.com/prod_img/500000/317/076/img/14076317_1.jpg?shrink=330:*&_v=20230920153435", 
@@ -531,76 +611,68 @@
         "brand": "잘만"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/720/551/img/21551720_1.jpg?shrink=330:*&_v=20230717173905", 
+        "img": "//img.danawa.com/prod_img/500000/642/360/img/20360642_1.jpg?shrink=330:*&_v=20230531140257", 
         "spec": [
             "CPU 쿨러", 
-            "수랭", 
+            "듀얼타워형", 
+            "공랭", 
             "팬 쿨러", 
-            "A/S기간: 5년+누수보상", 
+            "TDP: 270W", 
+            "A/S기간: 3년", 
             "[호환/크기] 인텔 소켓: LGA1700, LGA1200, LGA115x", 
             "AMD 소켓: AM5, AM4", 
-            "[수랭] 라디에이터: 3열", 
-            "라디에이터 길이: 397.5mm", 
-            "라디에이터 두께: 27mm", 
-            "호스 길이: 350mm", 
-            "[쿨링팬] 팬 크기: 120mm", 
-            "팬 개수: 3개", 
+            "가로: 135mm", 
+            "세로: 136mm", 
+            "높이: 156mm", 
+            "[쿨링팬] 팬 크기: 130mm, 120mm", 
+            "팬 개수: 2개", 
+            "25T", 
             "4핀", 
-            "베어링: FDB(유체)", 
-            "2150 RPM", 
-            "최대 풍량: 61.3 CFM", 
-            "풍압(정압): 2.66mmH₂O", 
-            "최대 팬소음: 29dBA", 
-            "작동전압: 팬 12V, LED 5V", 
-            "[부가기능] LED 라이트", 
+            "베어링: HDB(유체)", 
+            "1600 RPM", 
+            "최대 풍량: 85 CFM, 70.5 CFM", 
+            "풍압(정압): 2.0mmH₂O, 1.74mmH₂O", 
+            "최대 팬소음: 30dBA", 
             "PWM 지원", 
-            "팬 컨트롤러", 
-            "데이지체인", 
-            "RGB", 
-            "LED시스템: AURA SYNC, MYSTIC LIGHT, RGB FUSION, POLYCHROME, 제조사 소프트웨어", 
-            "[구성품/기타] 써멀유형: 주사기형"
+            "non-LED"
         ], 
         "Cate": "Cooler", 
-        "price": "274550", 
+        "price": "53100", 
         "color_text": "BLACK", 
-        "name": "리안리 GALAHAD II Trinity SL-INF 360", 
-        "brand": "리안리"
+        "name": "3RSYS Socoool RC1800 LITE", 
+        "brand": "3RSYS"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/720/551/img/21551720_1.jpg?shrink=330:*&_v=20230717173905", 
+        "img": "//img.danawa.com/prod_img/500000/642/360/img/20360642_1.jpg?shrink=330:*&_v=20230531140257", 
         "spec": [
             "CPU 쿨러", 
-            "수랭", 
+            "듀얼타워형", 
+            "공랭", 
             "팬 쿨러", 
-            "A/S기간: 5년+누수보상", 
+            "TDP: 270W", 
+            "A/S기간: 3년", 
             "[호환/크기] 인텔 소켓: LGA1700, LGA1200, LGA115x", 
             "AMD 소켓: AM5, AM4", 
-            "[수랭] 라디에이터: 3열", 
-            "라디에이터 길이: 397.5mm", 
-            "라디에이터 두께: 27mm", 
-            "호스 길이: 350mm", 
-            "[쿨링팬] 팬 크기: 120mm", 
-            "팬 개수: 3개", 
+            "가로: 135mm", 
+            "세로: 136mm", 
+            "높이: 156mm", 
+            "[쿨링팬] 팬 크기: 130mm, 120mm", 
+            "팬 개수: 2개", 
+            "25T", 
             "4핀", 
-            "베어링: FDB(유체)", 
-            "2150 RPM", 
-            "최대 풍량: 61.3 CFM", 
-            "풍압(정압): 2.66mmH₂O", 
-            "최대 팬소음: 29dBA", 
-            "작동전압: 팬 12V, LED 5V", 
-            "[부가기능] LED 라이트", 
+            "베어링: HDB(유체)", 
+            "1600 RPM", 
+            "최대 풍량: 85 CFM, 70.5 CFM", 
+            "풍압(정압): 2.0mmH₂O, 1.74mmH₂O", 
+            "최대 팬소음: 30dBA", 
             "PWM 지원", 
-            "팬 컨트롤러", 
-            "데이지체인", 
-            "RGB", 
-            "LED시스템: AURA SYNC, MYSTIC LIGHT, RGB FUSION, POLYCHROME, 제조사 소프트웨어", 
-            "[구성품/기타] 써멀유형: 주사기형"
+            "non-LED"
         ], 
         "Cate": "Cooler", 
-        "price": "274550", 
+        "price": "55200", 
         "color_text": "WHITE", 
-        "name": "리안리 GALAHAD II Trinity SL-INF 360", 
-        "brand": "리안리"
+        "name": "3RSYS Socoool RC1800 LITE", 
+        "brand": "3RSYS"
     }, 
     {
         "img": "//img.danawa.com/prod_img/500000/323/640/img/17640323_1.jpg?shrink=330:*&_v=20220823145141", 
@@ -630,7 +702,7 @@
             "non-LED"
         ], 
         "Cate": "Cooler", 
-        "price": "29490", 
+        "price": "28300", 
         "color_text": "BLACK", 
         "name": "DEEPCOOL AK400", 
         "brand": "DEEPCOOL"
@@ -698,38 +770,6 @@
         "brand": "쿨러마스터"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/768/393/img/17393768_1.jpg?shrink=330:*&_v=20230502155839", 
-        "spec": [
-            "CPU 쿨러", 
-            "싱글타워형", 
-            "공랭", 
-            "TDP: 200W", 
-            "A/S기간: 2년", 
-            "[호환/크기] 인텔 소켓: LGA1700, LGA1200, LGA115x, LGA1366", 
-            "AMD 소켓: AM5, AM4, FMx/AMx(AM1/4외)", 
-            "가로: 122mm", 
-            "세로: 75mm", 
-            "높이: 154mm", 
-            "[쿨링팬] 팬 크기: 120mm", 
-            "팬 개수: 1개", 
-            "25T", 
-            "4핀", 
-            "베어링: Hydro(유체)", 
-            "1700 RPM", 
-            "최대 풍량: 66 CFM", 
-            "풍압(정압): 2.22mmH₂O", 
-            "최대 팬소음: 29.7dBA", 
-            "PWM 지원", 
-            "non-LED", 
-            "[구성품/기타] 23년 5월부로 AM5 소켓 호환 추가"
-        ], 
-        "Cate": "Cooler", 
-        "price": "31900", 
-        "color_text": "", 
-        "name": "앱코 타이폰 120X5", 
-        "brand": "앱코"
-    }, 
-    {
         "img": "//img.danawa.com/prod_img/500000/437/447/img/12447437_1.jpg?shrink=330:*&_v=20220927150613", 
         "spec": [
             "CPU 쿨러", 
@@ -794,44 +834,10 @@
             "[구성품/기타] 22년 1월부로 소켓 호환 추가"
         ], 
         "Cate": "Cooler", 
-        "price": "28750", 
+        "price": "27540", 
         "color_text": "WHITE", 
         "name": "DEEPCOOL GAMMAXX 400 XT", 
         "brand": "DEEPCOOL"
-    }, 
-    {
-        "img": "//img.danawa.com/prod_img/500000/862/002/img/17002862_1.jpg?shrink=330:*&_v=20230920152454", 
-        "spec": [
-            "CPU 쿨러", 
-            "싱글타워형", 
-            "공랭", 
-            "팬 쿨러", 
-            "TDP: 180W", 
-            "A/S기간: 2년", 
-            "[호환/크기] 인텔 소켓: LGA1700, LGA1200, LGA115x", 
-            "AMD 소켓: AM5, AM4", 
-            "가로: 130mm", 
-            "세로: 75mm", 
-            "높이: 157mm", 
-            "무게: 500g", 
-            "[쿨링팬] 팬 크기: 120mm", 
-            "팬 개수: 1개", 
-            "25T", 
-            "3-4핀", 
-            "베어링: Hydraulic(유체)", 
-            "1800 RPM", 
-            "최대 풍량: 73.6 CFM", 
-            "풍압(정압): 2.1mmH₂O", 
-            "최대 팬소음: 28.6dBA", 
-            "[부가기능] LED 라이트", 
-            "PWM 지원", 
-            "RGB"
-        ], 
-        "Cate": "Cooler", 
-        "price": "22220", 
-        "color_text": "", 
-        "name": "PCCOOLER PALADIN EX400 ARGB", 
-        "brand": "PCCOOLER"
     }, 
     {
         "img": "//img.danawa.com/prod_img/500000/475/110/img/14110475_1.jpg?shrink=330:*&_v=20231031130000", 
@@ -862,7 +868,7 @@
             "[구성품/기타] 21년 11월부로 소켓 호환 추가"
         ], 
         "Cate": "Cooler", 
-        "price": "29430", 
+        "price": "29290", 
         "color_text": "BLACK", 
         "name": "PCCOOLER PALADIN 400", 
         "brand": "PCCOOLER"
@@ -896,7 +902,7 @@
             "[구성품/기타] 21년 11월부로 소켓 호환 추가"
         ], 
         "Cate": "Cooler", 
-        "price": "35130", 
+        "price": "34990", 
         "color_text": "WHITE", 
         "name": "PCCOOLER PALADIN 400", 
         "brand": "PCCOOLER"
@@ -930,7 +936,7 @@
             "23년 11월 부로 팬 스티커 및 TDP 200→220W 변경"
         ], 
         "Cate": "Cooler", 
-        "price": "22570", 
+        "price": "21830", 
         "color_text": "", 
         "name": "DEEPCOOL AG400", 
         "brand": "DEEPCOOL"
@@ -967,7 +973,7 @@
             "열전도율: 12.4W/(m·K)"
         ], 
         "Cate": "Cooler", 
-        "price": "67000", 
+        "price": "63500", 
         "color_text": "BLACK", 
         "name": "3RSYS Socoool RC-1800 Quiet 솔더링", 
         "brand": "3RSYS"
@@ -1004,10 +1010,45 @@
             "열전도율: 12.4W/(m·K)"
         ], 
         "Cate": "Cooler", 
-        "price": "67000", 
+        "price": "64000", 
         "color_text": "WHITE", 
         "name": "3RSYS Socoool RC-1800 Quiet 솔더링", 
         "brand": "3RSYS"
+    }, 
+    {
+        "img": "//img.danawa.com/prod_img/500000/058/525/img/16525058_1.jpg?shrink=330:*&_v=20231128175409", 
+        "spec": [
+            "CPU 쿨러", 
+            "듀얼타워형", 
+            "공랭", 
+            "팬 쿨러", 
+            "A/S기간: 3년", 
+            "[호환/크기] 인텔 소켓: LGA1700, LGA1200, LGA115x", 
+            "AMD 소켓: AM5, AM4", 
+            "가로: 125mm", 
+            "세로: 135mm", 
+            "높이: 155mm", 
+            "무게: 850g", 
+            "[쿨링팬] 팬 크기: 120mm", 
+            "팬 개수: 2개", 
+            "25T", 
+            "4핀", 
+            "베어링: S-FDB(유체)", 
+            "1550 RPM", 
+            "최대 풍량: 66.17 CFM", 
+            "풍압(정압): 1.53mmH₂O", 
+            "최대 팬소음: 25.6dBA", 
+            "PWM 지원", 
+            "non-LED", 
+            "[구성품/기타] 써멀유형: 주사기형", 
+            "열전도율: 12.8W/(m·K)", 
+            "23년 11월부로 AM5 소켓 호환 추가"
+        ], 
+        "Cate": "Cooler", 
+        "price": "36170", 
+        "color_text": "", 
+        "name": "Thermalright Peerless Assassin 120 SE 서린", 
+        "brand": "Thermalright"
     }, 
     {
         "img": "//img.danawa.com/prod_img/500000/001/690/img/19690001_1.jpg?shrink=330:*&_v=20230407154257", 
@@ -1038,7 +1079,7 @@
             "써멀컴파운드 CryoFuze 제공"
         ], 
         "Cate": "Cooler", 
-        "price": "38970", 
+        "price": "38960", 
         "color_text": "", 
         "name": "쿨러마스터 HYPER 620S ARGB", 
         "brand": "쿨러마스터"
@@ -1110,41 +1151,6 @@
         "brand": "잘만"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/058/525/img/16525058_1.jpg?shrink=330:*&_v=20231128175409", 
-        "spec": [
-            "CPU 쿨러", 
-            "듀얼타워형", 
-            "공랭", 
-            "팬 쿨러", 
-            "A/S기간: 3년", 
-            "[호환/크기] 인텔 소켓: LGA1700, LGA1200, LGA115x", 
-            "AMD 소켓: AM5, AM4", 
-            "가로: 125mm", 
-            "세로: 135mm", 
-            "높이: 155mm", 
-            "무게: 850g", 
-            "[쿨링팬] 팬 크기: 120mm", 
-            "팬 개수: 2개", 
-            "25T", 
-            "4핀", 
-            "베어링: S-FDB(유체)", 
-            "1550 RPM", 
-            "최대 풍량: 66.17 CFM", 
-            "풍압(정압): 1.53mmH₂O", 
-            "최대 팬소음: 25.6dBA", 
-            "PWM 지원", 
-            "non-LED", 
-            "[구성품/기타] 써멀유형: 주사기형", 
-            "열전도율: 12.8W/(m·K)", 
-            "23년 11월부로 AM5 소켓 호환 추가"
-        ], 
-        "Cate": "Cooler", 
-        "price": "36940", 
-        "color_text": "", 
-        "name": "Thermalright Peerless Assassin 120 SE 서린", 
-        "brand": "Thermalright"
-    }, 
-    {
         "img": "//img.danawa.com/prod_img/500000/107/869/img/19869107_1.jpg?shrink=330:*&_v=20230516121158", 
         "spec": [
             "CPU 쿨러", 
@@ -1179,7 +1185,7 @@
             "LED시스템: 제조사 소프트웨어"
         ], 
         "Cate": "Cooler", 
-        "price": "303058", 
+        "price": "296678", 
         "color_text": "BLACK", 
         "name": "NZXT KRAKEN 360 RGB", 
         "brand": "NZXT"
@@ -1219,7 +1225,7 @@
             "LED시스템: 제조사 소프트웨어"
         ], 
         "Cate": "Cooler", 
-        "price": "316110", 
+        "price": "308100", 
         "color_text": "WHITE", 
         "name": "NZXT KRAKEN 360 RGB", 
         "brand": "NZXT"
@@ -1256,7 +1262,7 @@
             "[구성품/기타] 써멀유형: 주사기형"
         ], 
         "Cate": "Cooler", 
-        "price": "167200", 
+        "price": "163300", 
         "color_text": "BLACK", 
         "name": "3RSYS Socoool 라니 XY-360 Quiet", 
         "brand": "3RSYS"
@@ -1293,10 +1299,90 @@
             "[구성품/기타] 써멀유형: 주사기형"
         ], 
         "Cate": "Cooler", 
-        "price": "174000", 
+        "price": "168000", 
         "color_text": "WHITE", 
         "name": "3RSYS Socoool 라니 XY-360 Quiet", 
         "brand": "3RSYS"
+    }, 
+    {
+        "img": "//img.danawa.com/prod_img/500000/021/371/img/18371021_1.jpg?shrink=330:*&_v=20221128082841", 
+        "spec": [
+            "써멀컴파운드(그리스)", 
+            "써멀유형: 주사기형", 
+            "용량: 4g", 
+            "비전도성", 
+            "점도: 87Pa·s", 
+            "밀도: 2.5g/cm³"
+        ], 
+        "Cate": "Cooler", 
+        "price": "4740", 
+        "color_text": "2g", 
+        "name": "ARCTIC MX-4 서린", 
+        "brand": "ARCTIC"
+    }, 
+    {
+        "img": "//img.danawa.com/prod_img/500000/021/371/img/18371021_1.jpg?shrink=330:*&_v=20221128082841", 
+        "spec": [
+            "써멀컴파운드(그리스)", 
+            "써멀유형: 주사기형", 
+            "용량: 4g", 
+            "비전도성", 
+            "점도: 87Pa·s", 
+            "밀도: 2.5g/cm³"
+        ], 
+        "Cate": "Cooler", 
+        "price": "32960", 
+        "color_text": "45g", 
+        "name": "ARCTIC MX-4 서린", 
+        "brand": "ARCTIC"
+    }, 
+    {
+        "img": "//img.danawa.com/prod_img/500000/021/371/img/18371021_1.jpg?shrink=330:*&_v=20221128082841", 
+        "spec": [
+            "써멀컴파운드(그리스)", 
+            "써멀유형: 주사기형", 
+            "용량: 4g", 
+            "비전도성", 
+            "점도: 87Pa·s", 
+            "밀도: 2.5g/cm³"
+        ], 
+        "Cate": "Cooler", 
+        "price": "6800", 
+        "color_text": "4g", 
+        "name": "ARCTIC MX-4 서린", 
+        "brand": "ARCTIC"
+    }, 
+    {
+        "img": "//img.danawa.com/prod_img/500000/021/371/img/18371021_1.jpg?shrink=330:*&_v=20221128082841", 
+        "spec": [
+            "써멀컴파운드(그리스)", 
+            "써멀유형: 주사기형", 
+            "용량: 4g", 
+            "비전도성", 
+            "점도: 87Pa·s", 
+            "밀도: 2.5g/cm³"
+        ], 
+        "Cate": "Cooler", 
+        "price": "10900", 
+        "color_text": "8g", 
+        "name": "ARCTIC MX-4 서린", 
+        "brand": "ARCTIC"
+    }, 
+    {
+        "img": "//img.danawa.com/prod_img/500000/021/371/img/18371021_1.jpg?shrink=330:*&_v=20221128082841", 
+        "spec": [
+            "써멀컴파운드(그리스)", 
+            "써멀유형: 주사기형", 
+            "용량: 4g", 
+            "비전도성", 
+            "점도: 87Pa·s", 
+            "밀도: 2.5g/cm³"
+        ], 
+        "Cate": "Cooler", 
+        "price": "22900", 
+        "color_text": "20g", 
+        "name": "ARCTIC MX-4 서린", 
+        "brand": "ARCTIC"
     }, 
     {
         "img": "//img.danawa.com/prod_img/500000/317/076/img/14076317_1.jpg?shrink=330:*&_v=20230920153435", 
@@ -1365,76 +1451,68 @@
         "brand": "잘만"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/720/551/img/21551720_1.jpg?shrink=330:*&_v=20230717173905", 
+        "img": "//img.danawa.com/prod_img/500000/642/360/img/20360642_1.jpg?shrink=330:*&_v=20230531140257", 
         "spec": [
             "CPU 쿨러", 
-            "수랭", 
+            "듀얼타워형", 
+            "공랭", 
             "팬 쿨러", 
-            "A/S기간: 5년+누수보상", 
+            "TDP: 270W", 
+            "A/S기간: 3년", 
             "[호환/크기] 인텔 소켓: LGA1700, LGA1200, LGA115x", 
             "AMD 소켓: AM5, AM4", 
-            "[수랭] 라디에이터: 3열", 
-            "라디에이터 길이: 397.5mm", 
-            "라디에이터 두께: 27mm", 
-            "호스 길이: 350mm", 
-            "[쿨링팬] 팬 크기: 120mm", 
-            "팬 개수: 3개", 
+            "가로: 135mm", 
+            "세로: 136mm", 
+            "높이: 156mm", 
+            "[쿨링팬] 팬 크기: 130mm, 120mm", 
+            "팬 개수: 2개", 
+            "25T", 
             "4핀", 
-            "베어링: FDB(유체)", 
-            "2150 RPM", 
-            "최대 풍량: 61.3 CFM", 
-            "풍압(정압): 2.66mmH₂O", 
-            "최대 팬소음: 29dBA", 
-            "작동전압: 팬 12V, LED 5V", 
-            "[부가기능] LED 라이트", 
+            "베어링: HDB(유체)", 
+            "1600 RPM", 
+            "최대 풍량: 85 CFM, 70.5 CFM", 
+            "풍압(정압): 2.0mmH₂O, 1.74mmH₂O", 
+            "최대 팬소음: 30dBA", 
             "PWM 지원", 
-            "팬 컨트롤러", 
-            "데이지체인", 
-            "RGB", 
-            "LED시스템: AURA SYNC, MYSTIC LIGHT, RGB FUSION, POLYCHROME, 제조사 소프트웨어", 
-            "[구성품/기타] 써멀유형: 주사기형"
+            "non-LED"
         ], 
         "Cate": "Cooler", 
-        "price": "274550", 
+        "price": "53100", 
         "color_text": "BLACK", 
-        "name": "리안리 GALAHAD II Trinity SL-INF 360", 
-        "brand": "리안리"
+        "name": "3RSYS Socoool RC1800 LITE", 
+        "brand": "3RSYS"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/720/551/img/21551720_1.jpg?shrink=330:*&_v=20230717173905", 
+        "img": "//img.danawa.com/prod_img/500000/642/360/img/20360642_1.jpg?shrink=330:*&_v=20230531140257", 
         "spec": [
             "CPU 쿨러", 
-            "수랭", 
+            "듀얼타워형", 
+            "공랭", 
             "팬 쿨러", 
-            "A/S기간: 5년+누수보상", 
+            "TDP: 270W", 
+            "A/S기간: 3년", 
             "[호환/크기] 인텔 소켓: LGA1700, LGA1200, LGA115x", 
             "AMD 소켓: AM5, AM4", 
-            "[수랭] 라디에이터: 3열", 
-            "라디에이터 길이: 397.5mm", 
-            "라디에이터 두께: 27mm", 
-            "호스 길이: 350mm", 
-            "[쿨링팬] 팬 크기: 120mm", 
-            "팬 개수: 3개", 
+            "가로: 135mm", 
+            "세로: 136mm", 
+            "높이: 156mm", 
+            "[쿨링팬] 팬 크기: 130mm, 120mm", 
+            "팬 개수: 2개", 
+            "25T", 
             "4핀", 
-            "베어링: FDB(유체)", 
-            "2150 RPM", 
-            "최대 풍량: 61.3 CFM", 
-            "풍압(정압): 2.66mmH₂O", 
-            "최대 팬소음: 29dBA", 
-            "작동전압: 팬 12V, LED 5V", 
-            "[부가기능] LED 라이트", 
+            "베어링: HDB(유체)", 
+            "1600 RPM", 
+            "최대 풍량: 85 CFM, 70.5 CFM", 
+            "풍압(정압): 2.0mmH₂O, 1.74mmH₂O", 
+            "최대 팬소음: 30dBA", 
             "PWM 지원", 
-            "팬 컨트롤러", 
-            "데이지체인", 
-            "RGB", 
-            "LED시스템: AURA SYNC, MYSTIC LIGHT, RGB FUSION, POLYCHROME, 제조사 소프트웨어", 
-            "[구성품/기타] 써멀유형: 주사기형"
+            "non-LED"
         ], 
         "Cate": "Cooler", 
-        "price": "274550", 
+        "price": "55200", 
         "color_text": "WHITE", 
-        "name": "리안리 GALAHAD II Trinity SL-INF 360", 
-        "brand": "리안리"
+        "name": "3RSYS Socoool RC1800 LITE", 
+        "brand": "3RSYS"
     }, 
     {
         "img": "//img.danawa.com/prod_img/500000/323/640/img/17640323_1.jpg?shrink=330:*&_v=20220823145141", 
@@ -1464,7 +1542,7 @@
             "non-LED"
         ], 
         "Cate": "Cooler", 
-        "price": "29490", 
+        "price": "28300", 
         "color_text": "BLACK", 
         "name": "DEEPCOOL AK400", 
         "brand": "DEEPCOOL"
@@ -1532,38 +1610,6 @@
         "brand": "쿨러마스터"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/768/393/img/17393768_1.jpg?shrink=330:*&_v=20230502155839", 
-        "spec": [
-            "CPU 쿨러", 
-            "싱글타워형", 
-            "공랭", 
-            "TDP: 200W", 
-            "A/S기간: 2년", 
-            "[호환/크기] 인텔 소켓: LGA1700, LGA1200, LGA115x, LGA1366", 
-            "AMD 소켓: AM5, AM4, FMx/AMx(AM1/4외)", 
-            "가로: 122mm", 
-            "세로: 75mm", 
-            "높이: 154mm", 
-            "[쿨링팬] 팬 크기: 120mm", 
-            "팬 개수: 1개", 
-            "25T", 
-            "4핀", 
-            "베어링: Hydro(유체)", 
-            "1700 RPM", 
-            "최대 풍량: 66 CFM", 
-            "풍압(정압): 2.22mmH₂O", 
-            "최대 팬소음: 29.7dBA", 
-            "PWM 지원", 
-            "non-LED", 
-            "[구성품/기타] 23년 5월부로 AM5 소켓 호환 추가"
-        ], 
-        "Cate": "Cooler", 
-        "price": "31900", 
-        "color_text": "", 
-        "name": "앱코 타이폰 120X5", 
-        "brand": "앱코"
-    }, 
-    {
         "img": "//img.danawa.com/prod_img/500000/437/447/img/12447437_1.jpg?shrink=330:*&_v=20220927150613", 
         "spec": [
             "CPU 쿨러", 
@@ -1628,44 +1674,10 @@
             "[구성품/기타] 22년 1월부로 소켓 호환 추가"
         ], 
         "Cate": "Cooler", 
-        "price": "28750", 
+        "price": "27540", 
         "color_text": "WHITE", 
         "name": "DEEPCOOL GAMMAXX 400 XT", 
         "brand": "DEEPCOOL"
-    }, 
-    {
-        "img": "//img.danawa.com/prod_img/500000/862/002/img/17002862_1.jpg?shrink=330:*&_v=20230920152454", 
-        "spec": [
-            "CPU 쿨러", 
-            "싱글타워형", 
-            "공랭", 
-            "팬 쿨러", 
-            "TDP: 180W", 
-            "A/S기간: 2년", 
-            "[호환/크기] 인텔 소켓: LGA1700, LGA1200, LGA115x", 
-            "AMD 소켓: AM5, AM4", 
-            "가로: 130mm", 
-            "세로: 75mm", 
-            "높이: 157mm", 
-            "무게: 500g", 
-            "[쿨링팬] 팬 크기: 120mm", 
-            "팬 개수: 1개", 
-            "25T", 
-            "3-4핀", 
-            "베어링: Hydraulic(유체)", 
-            "1800 RPM", 
-            "최대 풍량: 73.6 CFM", 
-            "풍압(정압): 2.1mmH₂O", 
-            "최대 팬소음: 28.6dBA", 
-            "[부가기능] LED 라이트", 
-            "PWM 지원", 
-            "RGB"
-        ], 
-        "Cate": "Cooler", 
-        "price": "22220", 
-        "color_text": "", 
-        "name": "PCCOOLER PALADIN EX400 ARGB", 
-        "brand": "PCCOOLER"
     }, 
     {
         "img": "//img.danawa.com/prod_img/500000/475/110/img/14110475_1.jpg?shrink=330:*&_v=20231031130000", 
@@ -1696,7 +1708,7 @@
             "[구성품/기타] 21년 11월부로 소켓 호환 추가"
         ], 
         "Cate": "Cooler", 
-        "price": "29430", 
+        "price": "29290", 
         "color_text": "BLACK", 
         "name": "PCCOOLER PALADIN 400", 
         "brand": "PCCOOLER"
@@ -1730,7 +1742,7 @@
             "[구성품/기타] 21년 11월부로 소켓 호환 추가"
         ], 
         "Cate": "Cooler", 
-        "price": "35130", 
+        "price": "34990", 
         "color_text": "WHITE", 
         "name": "PCCOOLER PALADIN 400", 
         "brand": "PCCOOLER"
@@ -1764,7 +1776,7 @@
             "23년 11월 부로 팬 스티커 및 TDP 200→220W 변경"
         ], 
         "Cate": "Cooler", 
-        "price": "22570", 
+        "price": "21830", 
         "color_text": "", 
         "name": "DEEPCOOL AG400", 
         "brand": "DEEPCOOL"
@@ -1801,7 +1813,7 @@
             "열전도율: 12.4W/(m·K)"
         ], 
         "Cate": "Cooler", 
-        "price": "67000", 
+        "price": "63500", 
         "color_text": "BLACK", 
         "name": "3RSYS Socoool RC-1800 Quiet 솔더링", 
         "brand": "3RSYS"
@@ -1838,10 +1850,45 @@
             "열전도율: 12.4W/(m·K)"
         ], 
         "Cate": "Cooler", 
-        "price": "67000", 
+        "price": "64000", 
         "color_text": "WHITE", 
         "name": "3RSYS Socoool RC-1800 Quiet 솔더링", 
         "brand": "3RSYS"
+    }, 
+    {
+        "img": "//img.danawa.com/prod_img/500000/058/525/img/16525058_1.jpg?shrink=330:*&_v=20231128175409", 
+        "spec": [
+            "CPU 쿨러", 
+            "듀얼타워형", 
+            "공랭", 
+            "팬 쿨러", 
+            "A/S기간: 3년", 
+            "[호환/크기] 인텔 소켓: LGA1700, LGA1200, LGA115x", 
+            "AMD 소켓: AM5, AM4", 
+            "가로: 125mm", 
+            "세로: 135mm", 
+            "높이: 155mm", 
+            "무게: 850g", 
+            "[쿨링팬] 팬 크기: 120mm", 
+            "팬 개수: 2개", 
+            "25T", 
+            "4핀", 
+            "베어링: S-FDB(유체)", 
+            "1550 RPM", 
+            "최대 풍량: 66.17 CFM", 
+            "풍압(정압): 1.53mmH₂O", 
+            "최대 팬소음: 25.6dBA", 
+            "PWM 지원", 
+            "non-LED", 
+            "[구성품/기타] 써멀유형: 주사기형", 
+            "열전도율: 12.8W/(m·K)", 
+            "23년 11월부로 AM5 소켓 호환 추가"
+        ], 
+        "Cate": "Cooler", 
+        "price": "36170", 
+        "color_text": "", 
+        "name": "Thermalright Peerless Assassin 120 SE 서린", 
+        "brand": "Thermalright"
     }, 
     {
         "img": "//img.danawa.com/prod_img/500000/001/690/img/19690001_1.jpg?shrink=330:*&_v=20230407154257", 
@@ -1872,7 +1919,7 @@
             "써멀컴파운드 CryoFuze 제공"
         ], 
         "Cate": "Cooler", 
-        "price": "38970", 
+        "price": "38960", 
         "color_text": "", 
         "name": "쿨러마스터 HYPER 620S ARGB", 
         "brand": "쿨러마스터"
@@ -1944,41 +1991,6 @@
         "brand": "잘만"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/058/525/img/16525058_1.jpg?shrink=330:*&_v=20231128175409", 
-        "spec": [
-            "CPU 쿨러", 
-            "듀얼타워형", 
-            "공랭", 
-            "팬 쿨러", 
-            "A/S기간: 3년", 
-            "[호환/크기] 인텔 소켓: LGA1700, LGA1200, LGA115x", 
-            "AMD 소켓: AM5, AM4", 
-            "가로: 125mm", 
-            "세로: 135mm", 
-            "높이: 155mm", 
-            "무게: 850g", 
-            "[쿨링팬] 팬 크기: 120mm", 
-            "팬 개수: 2개", 
-            "25T", 
-            "4핀", 
-            "베어링: S-FDB(유체)", 
-            "1550 RPM", 
-            "최대 풍량: 66.17 CFM", 
-            "풍압(정압): 1.53mmH₂O", 
-            "최대 팬소음: 25.6dBA", 
-            "PWM 지원", 
-            "non-LED", 
-            "[구성품/기타] 써멀유형: 주사기형", 
-            "열전도율: 12.8W/(m·K)", 
-            "23년 11월부로 AM5 소켓 호환 추가"
-        ], 
-        "Cate": "Cooler", 
-        "price": "36940", 
-        "color_text": "", 
-        "name": "Thermalright Peerless Assassin 120 SE 서린", 
-        "brand": "Thermalright"
-    }, 
-    {
         "img": "//img.danawa.com/prod_img/500000/107/869/img/19869107_1.jpg?shrink=330:*&_v=20230516121158", 
         "spec": [
             "CPU 쿨러", 
@@ -2013,7 +2025,7 @@
             "LED시스템: 제조사 소프트웨어"
         ], 
         "Cate": "Cooler", 
-        "price": "303058", 
+        "price": "296678", 
         "color_text": "BLACK", 
         "name": "NZXT KRAKEN 360 RGB", 
         "brand": "NZXT"
@@ -2053,7 +2065,7 @@
             "LED시스템: 제조사 소프트웨어"
         ], 
         "Cate": "Cooler", 
-        "price": "316110", 
+        "price": "308100", 
         "color_text": "WHITE", 
         "name": "NZXT KRAKEN 360 RGB", 
         "brand": "NZXT"
@@ -2090,7 +2102,7 @@
             "[구성품/기타] 써멀유형: 주사기형"
         ], 
         "Cate": "Cooler", 
-        "price": "167200", 
+        "price": "163300", 
         "color_text": "BLACK", 
         "name": "3RSYS Socoool 라니 XY-360 Quiet", 
         "brand": "3RSYS"
@@ -2127,10 +2139,90 @@
             "[구성품/기타] 써멀유형: 주사기형"
         ], 
         "Cate": "Cooler", 
-        "price": "174000", 
+        "price": "168000", 
         "color_text": "WHITE", 
         "name": "3RSYS Socoool 라니 XY-360 Quiet", 
         "brand": "3RSYS"
+    }, 
+    {
+        "img": "//img.danawa.com/prod_img/500000/021/371/img/18371021_1.jpg?shrink=330:*&_v=20221128082841", 
+        "spec": [
+            "써멀컴파운드(그리스)", 
+            "써멀유형: 주사기형", 
+            "용량: 4g", 
+            "비전도성", 
+            "점도: 87Pa·s", 
+            "밀도: 2.5g/cm³"
+        ], 
+        "Cate": "Cooler", 
+        "price": "4740", 
+        "color_text": "2g", 
+        "name": "ARCTIC MX-4 서린", 
+        "brand": "ARCTIC"
+    }, 
+    {
+        "img": "//img.danawa.com/prod_img/500000/021/371/img/18371021_1.jpg?shrink=330:*&_v=20221128082841", 
+        "spec": [
+            "써멀컴파운드(그리스)", 
+            "써멀유형: 주사기형", 
+            "용량: 4g", 
+            "비전도성", 
+            "점도: 87Pa·s", 
+            "밀도: 2.5g/cm³"
+        ], 
+        "Cate": "Cooler", 
+        "price": "32960", 
+        "color_text": "45g", 
+        "name": "ARCTIC MX-4 서린", 
+        "brand": "ARCTIC"
+    }, 
+    {
+        "img": "//img.danawa.com/prod_img/500000/021/371/img/18371021_1.jpg?shrink=330:*&_v=20221128082841", 
+        "spec": [
+            "써멀컴파운드(그리스)", 
+            "써멀유형: 주사기형", 
+            "용량: 4g", 
+            "비전도성", 
+            "점도: 87Pa·s", 
+            "밀도: 2.5g/cm³"
+        ], 
+        "Cate": "Cooler", 
+        "price": "6800", 
+        "color_text": "4g", 
+        "name": "ARCTIC MX-4 서린", 
+        "brand": "ARCTIC"
+    }, 
+    {
+        "img": "//img.danawa.com/prod_img/500000/021/371/img/18371021_1.jpg?shrink=330:*&_v=20221128082841", 
+        "spec": [
+            "써멀컴파운드(그리스)", 
+            "써멀유형: 주사기형", 
+            "용량: 4g", 
+            "비전도성", 
+            "점도: 87Pa·s", 
+            "밀도: 2.5g/cm³"
+        ], 
+        "Cate": "Cooler", 
+        "price": "10900", 
+        "color_text": "8g", 
+        "name": "ARCTIC MX-4 서린", 
+        "brand": "ARCTIC"
+    }, 
+    {
+        "img": "//img.danawa.com/prod_img/500000/021/371/img/18371021_1.jpg?shrink=330:*&_v=20221128082841", 
+        "spec": [
+            "써멀컴파운드(그리스)", 
+            "써멀유형: 주사기형", 
+            "용량: 4g", 
+            "비전도성", 
+            "점도: 87Pa·s", 
+            "밀도: 2.5g/cm³"
+        ], 
+        "Cate": "Cooler", 
+        "price": "22900", 
+        "color_text": "20g", 
+        "name": "ARCTIC MX-4 서린", 
+        "brand": "ARCTIC"
     }, 
     {
         "img": "//img.danawa.com/prod_img/500000/317/076/img/14076317_1.jpg?shrink=330:*&_v=20230920153435", 
@@ -2199,76 +2291,68 @@
         "brand": "잘만"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/720/551/img/21551720_1.jpg?shrink=330:*&_v=20230717173905", 
+        "img": "//img.danawa.com/prod_img/500000/642/360/img/20360642_1.jpg?shrink=330:*&_v=20230531140257", 
         "spec": [
             "CPU 쿨러", 
-            "수랭", 
+            "듀얼타워형", 
+            "공랭", 
             "팬 쿨러", 
-            "A/S기간: 5년+누수보상", 
+            "TDP: 270W", 
+            "A/S기간: 3년", 
             "[호환/크기] 인텔 소켓: LGA1700, LGA1200, LGA115x", 
             "AMD 소켓: AM5, AM4", 
-            "[수랭] 라디에이터: 3열", 
-            "라디에이터 길이: 397.5mm", 
-            "라디에이터 두께: 27mm", 
-            "호스 길이: 350mm", 
-            "[쿨링팬] 팬 크기: 120mm", 
-            "팬 개수: 3개", 
+            "가로: 135mm", 
+            "세로: 136mm", 
+            "높이: 156mm", 
+            "[쿨링팬] 팬 크기: 130mm, 120mm", 
+            "팬 개수: 2개", 
+            "25T", 
             "4핀", 
-            "베어링: FDB(유체)", 
-            "2150 RPM", 
-            "최대 풍량: 61.3 CFM", 
-            "풍압(정압): 2.66mmH₂O", 
-            "최대 팬소음: 29dBA", 
-            "작동전압: 팬 12V, LED 5V", 
-            "[부가기능] LED 라이트", 
+            "베어링: HDB(유체)", 
+            "1600 RPM", 
+            "최대 풍량: 85 CFM, 70.5 CFM", 
+            "풍압(정압): 2.0mmH₂O, 1.74mmH₂O", 
+            "최대 팬소음: 30dBA", 
             "PWM 지원", 
-            "팬 컨트롤러", 
-            "데이지체인", 
-            "RGB", 
-            "LED시스템: AURA SYNC, MYSTIC LIGHT, RGB FUSION, POLYCHROME, 제조사 소프트웨어", 
-            "[구성품/기타] 써멀유형: 주사기형"
+            "non-LED"
         ], 
         "Cate": "Cooler", 
-        "price": "274550", 
+        "price": "53100", 
         "color_text": "BLACK", 
-        "name": "리안리 GALAHAD II Trinity SL-INF 360", 
-        "brand": "리안리"
+        "name": "3RSYS Socoool RC1800 LITE", 
+        "brand": "3RSYS"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/720/551/img/21551720_1.jpg?shrink=330:*&_v=20230717173905", 
+        "img": "//img.danawa.com/prod_img/500000/642/360/img/20360642_1.jpg?shrink=330:*&_v=20230531140257", 
         "spec": [
             "CPU 쿨러", 
-            "수랭", 
+            "듀얼타워형", 
+            "공랭", 
             "팬 쿨러", 
-            "A/S기간: 5년+누수보상", 
+            "TDP: 270W", 
+            "A/S기간: 3년", 
             "[호환/크기] 인텔 소켓: LGA1700, LGA1200, LGA115x", 
             "AMD 소켓: AM5, AM4", 
-            "[수랭] 라디에이터: 3열", 
-            "라디에이터 길이: 397.5mm", 
-            "라디에이터 두께: 27mm", 
-            "호스 길이: 350mm", 
-            "[쿨링팬] 팬 크기: 120mm", 
-            "팬 개수: 3개", 
+            "가로: 135mm", 
+            "세로: 136mm", 
+            "높이: 156mm", 
+            "[쿨링팬] 팬 크기: 130mm, 120mm", 
+            "팬 개수: 2개", 
+            "25T", 
             "4핀", 
-            "베어링: FDB(유체)", 
-            "2150 RPM", 
-            "최대 풍량: 61.3 CFM", 
-            "풍압(정압): 2.66mmH₂O", 
-            "최대 팬소음: 29dBA", 
-            "작동전압: 팬 12V, LED 5V", 
-            "[부가기능] LED 라이트", 
+            "베어링: HDB(유체)", 
+            "1600 RPM", 
+            "최대 풍량: 85 CFM, 70.5 CFM", 
+            "풍압(정압): 2.0mmH₂O, 1.74mmH₂O", 
+            "최대 팬소음: 30dBA", 
             "PWM 지원", 
-            "팬 컨트롤러", 
-            "데이지체인", 
-            "RGB", 
-            "LED시스템: AURA SYNC, MYSTIC LIGHT, RGB FUSION, POLYCHROME, 제조사 소프트웨어", 
-            "[구성품/기타] 써멀유형: 주사기형"
+            "non-LED"
         ], 
         "Cate": "Cooler", 
-        "price": "274550", 
+        "price": "55200", 
         "color_text": "WHITE", 
-        "name": "리안리 GALAHAD II Trinity SL-INF 360", 
-        "brand": "리안리"
+        "name": "3RSYS Socoool RC1800 LITE", 
+        "brand": "3RSYS"
     }, 
     {
         "img": "//img.danawa.com/prod_img/500000/323/640/img/17640323_1.jpg?shrink=330:*&_v=20220823145141", 
@@ -2298,7 +2382,7 @@
             "non-LED"
         ], 
         "Cate": "Cooler", 
-        "price": "29490", 
+        "price": "28300", 
         "color_text": "BLACK", 
         "name": "DEEPCOOL AK400", 
         "brand": "DEEPCOOL"
@@ -2366,38 +2450,6 @@
         "brand": "쿨러마스터"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/768/393/img/17393768_1.jpg?shrink=330:*&_v=20230502155839", 
-        "spec": [
-            "CPU 쿨러", 
-            "싱글타워형", 
-            "공랭", 
-            "TDP: 200W", 
-            "A/S기간: 2년", 
-            "[호환/크기] 인텔 소켓: LGA1700, LGA1200, LGA115x, LGA1366", 
-            "AMD 소켓: AM5, AM4, FMx/AMx(AM1/4외)", 
-            "가로: 122mm", 
-            "세로: 75mm", 
-            "높이: 154mm", 
-            "[쿨링팬] 팬 크기: 120mm", 
-            "팬 개수: 1개", 
-            "25T", 
-            "4핀", 
-            "베어링: Hydro(유체)", 
-            "1700 RPM", 
-            "최대 풍량: 66 CFM", 
-            "풍압(정압): 2.22mmH₂O", 
-            "최대 팬소음: 29.7dBA", 
-            "PWM 지원", 
-            "non-LED", 
-            "[구성품/기타] 23년 5월부로 AM5 소켓 호환 추가"
-        ], 
-        "Cate": "Cooler", 
-        "price": "31900", 
-        "color_text": "", 
-        "name": "앱코 타이폰 120X5", 
-        "brand": "앱코"
-    }, 
-    {
         "img": "//img.danawa.com/prod_img/500000/437/447/img/12447437_1.jpg?shrink=330:*&_v=20220927150613", 
         "spec": [
             "CPU 쿨러", 
@@ -2462,44 +2514,10 @@
             "[구성품/기타] 22년 1월부로 소켓 호환 추가"
         ], 
         "Cate": "Cooler", 
-        "price": "28750", 
+        "price": "27540", 
         "color_text": "WHITE", 
         "name": "DEEPCOOL GAMMAXX 400 XT", 
         "brand": "DEEPCOOL"
-    }, 
-    {
-        "img": "//img.danawa.com/prod_img/500000/862/002/img/17002862_1.jpg?shrink=330:*&_v=20230920152454", 
-        "spec": [
-            "CPU 쿨러", 
-            "싱글타워형", 
-            "공랭", 
-            "팬 쿨러", 
-            "TDP: 180W", 
-            "A/S기간: 2년", 
-            "[호환/크기] 인텔 소켓: LGA1700, LGA1200, LGA115x", 
-            "AMD 소켓: AM5, AM4", 
-            "가로: 130mm", 
-            "세로: 75mm", 
-            "높이: 157mm", 
-            "무게: 500g", 
-            "[쿨링팬] 팬 크기: 120mm", 
-            "팬 개수: 1개", 
-            "25T", 
-            "3-4핀", 
-            "베어링: Hydraulic(유체)", 
-            "1800 RPM", 
-            "최대 풍량: 73.6 CFM", 
-            "풍압(정압): 2.1mmH₂O", 
-            "최대 팬소음: 28.6dBA", 
-            "[부가기능] LED 라이트", 
-            "PWM 지원", 
-            "RGB"
-        ], 
-        "Cate": "Cooler", 
-        "price": "22220", 
-        "color_text": "", 
-        "name": "PCCOOLER PALADIN EX400 ARGB", 
-        "brand": "PCCOOLER"
     }, 
     {
         "img": "//img.danawa.com/prod_img/500000/475/110/img/14110475_1.jpg?shrink=330:*&_v=20231031130000", 
@@ -2530,7 +2548,7 @@
             "[구성품/기타] 21년 11월부로 소켓 호환 추가"
         ], 
         "Cate": "Cooler", 
-        "price": "29430", 
+        "price": "29290", 
         "color_text": "BLACK", 
         "name": "PCCOOLER PALADIN 400", 
         "brand": "PCCOOLER"
@@ -2564,7 +2582,7 @@
             "[구성품/기타] 21년 11월부로 소켓 호환 추가"
         ], 
         "Cate": "Cooler", 
-        "price": "35130", 
+        "price": "34990", 
         "color_text": "WHITE", 
         "name": "PCCOOLER PALADIN 400", 
         "brand": "PCCOOLER"
@@ -2598,7 +2616,7 @@
             "23년 11월 부로 팬 스티커 및 TDP 200→220W 변경"
         ], 
         "Cate": "Cooler", 
-        "price": "22570", 
+        "price": "21830", 
         "color_text": "", 
         "name": "DEEPCOOL AG400", 
         "brand": "DEEPCOOL"
@@ -2635,7 +2653,7 @@
             "열전도율: 12.4W/(m·K)"
         ], 
         "Cate": "Cooler", 
-        "price": "67000", 
+        "price": "63500", 
         "color_text": "BLACK", 
         "name": "3RSYS Socoool RC-1800 Quiet 솔더링", 
         "brand": "3RSYS"
@@ -2672,10 +2690,45 @@
             "열전도율: 12.4W/(m·K)"
         ], 
         "Cate": "Cooler", 
-        "price": "67000", 
+        "price": "64000", 
         "color_text": "WHITE", 
         "name": "3RSYS Socoool RC-1800 Quiet 솔더링", 
         "brand": "3RSYS"
+    }, 
+    {
+        "img": "//img.danawa.com/prod_img/500000/058/525/img/16525058_1.jpg?shrink=330:*&_v=20231128175409", 
+        "spec": [
+            "CPU 쿨러", 
+            "듀얼타워형", 
+            "공랭", 
+            "팬 쿨러", 
+            "A/S기간: 3년", 
+            "[호환/크기] 인텔 소켓: LGA1700, LGA1200, LGA115x", 
+            "AMD 소켓: AM5, AM4", 
+            "가로: 125mm", 
+            "세로: 135mm", 
+            "높이: 155mm", 
+            "무게: 850g", 
+            "[쿨링팬] 팬 크기: 120mm", 
+            "팬 개수: 2개", 
+            "25T", 
+            "4핀", 
+            "베어링: S-FDB(유체)", 
+            "1550 RPM", 
+            "최대 풍량: 66.17 CFM", 
+            "풍압(정압): 1.53mmH₂O", 
+            "최대 팬소음: 25.6dBA", 
+            "PWM 지원", 
+            "non-LED", 
+            "[구성품/기타] 써멀유형: 주사기형", 
+            "열전도율: 12.8W/(m·K)", 
+            "23년 11월부로 AM5 소켓 호환 추가"
+        ], 
+        "Cate": "Cooler", 
+        "price": "36170", 
+        "color_text": "", 
+        "name": "Thermalright Peerless Assassin 120 SE 서린", 
+        "brand": "Thermalright"
     }, 
     {
         "img": "//img.danawa.com/prod_img/500000/001/690/img/19690001_1.jpg?shrink=330:*&_v=20230407154257", 
@@ -2706,7 +2759,7 @@
             "써멀컴파운드 CryoFuze 제공"
         ], 
         "Cate": "Cooler", 
-        "price": "38970", 
+        "price": "38960", 
         "color_text": "", 
         "name": "쿨러마스터 HYPER 620S ARGB", 
         "brand": "쿨러마스터"
@@ -2778,41 +2831,6 @@
         "brand": "잘만"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/058/525/img/16525058_1.jpg?shrink=330:*&_v=20231128175409", 
-        "spec": [
-            "CPU 쿨러", 
-            "듀얼타워형", 
-            "공랭", 
-            "팬 쿨러", 
-            "A/S기간: 3년", 
-            "[호환/크기] 인텔 소켓: LGA1700, LGA1200, LGA115x", 
-            "AMD 소켓: AM5, AM4", 
-            "가로: 125mm", 
-            "세로: 135mm", 
-            "높이: 155mm", 
-            "무게: 850g", 
-            "[쿨링팬] 팬 크기: 120mm", 
-            "팬 개수: 2개", 
-            "25T", 
-            "4핀", 
-            "베어링: S-FDB(유체)", 
-            "1550 RPM", 
-            "최대 풍량: 66.17 CFM", 
-            "풍압(정압): 1.53mmH₂O", 
-            "최대 팬소음: 25.6dBA", 
-            "PWM 지원", 
-            "non-LED", 
-            "[구성품/기타] 써멀유형: 주사기형", 
-            "열전도율: 12.8W/(m·K)", 
-            "23년 11월부로 AM5 소켓 호환 추가"
-        ], 
-        "Cate": "Cooler", 
-        "price": "36940", 
-        "color_text": "", 
-        "name": "Thermalright Peerless Assassin 120 SE 서린", 
-        "brand": "Thermalright"
-    }, 
-    {
         "img": "//img.danawa.com/prod_img/500000/107/869/img/19869107_1.jpg?shrink=330:*&_v=20230516121158", 
         "spec": [
             "CPU 쿨러", 
@@ -2847,7 +2865,7 @@
             "LED시스템: 제조사 소프트웨어"
         ], 
         "Cate": "Cooler", 
-        "price": "303058", 
+        "price": "296678", 
         "color_text": "BLACK", 
         "name": "NZXT KRAKEN 360 RGB", 
         "brand": "NZXT"
@@ -2887,7 +2905,7 @@
             "LED시스템: 제조사 소프트웨어"
         ], 
         "Cate": "Cooler", 
-        "price": "316110", 
+        "price": "308100", 
         "color_text": "WHITE", 
         "name": "NZXT KRAKEN 360 RGB", 
         "brand": "NZXT"
@@ -2924,7 +2942,7 @@
             "[구성품/기타] 써멀유형: 주사기형"
         ], 
         "Cate": "Cooler", 
-        "price": "167200", 
+        "price": "163300", 
         "color_text": "BLACK", 
         "name": "3RSYS Socoool 라니 XY-360 Quiet", 
         "brand": "3RSYS"
@@ -2961,10 +2979,90 @@
             "[구성품/기타] 써멀유형: 주사기형"
         ], 
         "Cate": "Cooler", 
-        "price": "174000", 
+        "price": "168000", 
         "color_text": "WHITE", 
         "name": "3RSYS Socoool 라니 XY-360 Quiet", 
         "brand": "3RSYS"
+    }, 
+    {
+        "img": "//img.danawa.com/prod_img/500000/021/371/img/18371021_1.jpg?shrink=330:*&_v=20221128082841", 
+        "spec": [
+            "써멀컴파운드(그리스)", 
+            "써멀유형: 주사기형", 
+            "용량: 4g", 
+            "비전도성", 
+            "점도: 87Pa·s", 
+            "밀도: 2.5g/cm³"
+        ], 
+        "Cate": "Cooler", 
+        "price": "4740", 
+        "color_text": "2g", 
+        "name": "ARCTIC MX-4 서린", 
+        "brand": "ARCTIC"
+    }, 
+    {
+        "img": "//img.danawa.com/prod_img/500000/021/371/img/18371021_1.jpg?shrink=330:*&_v=20221128082841", 
+        "spec": [
+            "써멀컴파운드(그리스)", 
+            "써멀유형: 주사기형", 
+            "용량: 4g", 
+            "비전도성", 
+            "점도: 87Pa·s", 
+            "밀도: 2.5g/cm³"
+        ], 
+        "Cate": "Cooler", 
+        "price": "32960", 
+        "color_text": "45g", 
+        "name": "ARCTIC MX-4 서린", 
+        "brand": "ARCTIC"
+    }, 
+    {
+        "img": "//img.danawa.com/prod_img/500000/021/371/img/18371021_1.jpg?shrink=330:*&_v=20221128082841", 
+        "spec": [
+            "써멀컴파운드(그리스)", 
+            "써멀유형: 주사기형", 
+            "용량: 4g", 
+            "비전도성", 
+            "점도: 87Pa·s", 
+            "밀도: 2.5g/cm³"
+        ], 
+        "Cate": "Cooler", 
+        "price": "6800", 
+        "color_text": "4g", 
+        "name": "ARCTIC MX-4 서린", 
+        "brand": "ARCTIC"
+    }, 
+    {
+        "img": "//img.danawa.com/prod_img/500000/021/371/img/18371021_1.jpg?shrink=330:*&_v=20221128082841", 
+        "spec": [
+            "써멀컴파운드(그리스)", 
+            "써멀유형: 주사기형", 
+            "용량: 4g", 
+            "비전도성", 
+            "점도: 87Pa·s", 
+            "밀도: 2.5g/cm³"
+        ], 
+        "Cate": "Cooler", 
+        "price": "10900", 
+        "color_text": "8g", 
+        "name": "ARCTIC MX-4 서린", 
+        "brand": "ARCTIC"
+    }, 
+    {
+        "img": "//img.danawa.com/prod_img/500000/021/371/img/18371021_1.jpg?shrink=330:*&_v=20221128082841", 
+        "spec": [
+            "써멀컴파운드(그리스)", 
+            "써멀유형: 주사기형", 
+            "용량: 4g", 
+            "비전도성", 
+            "점도: 87Pa·s", 
+            "밀도: 2.5g/cm³"
+        ], 
+        "Cate": "Cooler", 
+        "price": "22900", 
+        "color_text": "20g", 
+        "name": "ARCTIC MX-4 서린", 
+        "brand": "ARCTIC"
     }, 
     {
         "img": "//img.danawa.com/prod_img/500000/317/076/img/14076317_1.jpg?shrink=330:*&_v=20230920153435", 
@@ -3033,76 +3131,68 @@
         "brand": "잘만"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/720/551/img/21551720_1.jpg?shrink=330:*&_v=20230717173905", 
+        "img": "//img.danawa.com/prod_img/500000/642/360/img/20360642_1.jpg?shrink=330:*&_v=20230531140257", 
         "spec": [
             "CPU 쿨러", 
-            "수랭", 
+            "듀얼타워형", 
+            "공랭", 
             "팬 쿨러", 
-            "A/S기간: 5년+누수보상", 
+            "TDP: 270W", 
+            "A/S기간: 3년", 
             "[호환/크기] 인텔 소켓: LGA1700, LGA1200, LGA115x", 
             "AMD 소켓: AM5, AM4", 
-            "[수랭] 라디에이터: 3열", 
-            "라디에이터 길이: 397.5mm", 
-            "라디에이터 두께: 27mm", 
-            "호스 길이: 350mm", 
-            "[쿨링팬] 팬 크기: 120mm", 
-            "팬 개수: 3개", 
+            "가로: 135mm", 
+            "세로: 136mm", 
+            "높이: 156mm", 
+            "[쿨링팬] 팬 크기: 130mm, 120mm", 
+            "팬 개수: 2개", 
+            "25T", 
             "4핀", 
-            "베어링: FDB(유체)", 
-            "2150 RPM", 
-            "최대 풍량: 61.3 CFM", 
-            "풍압(정압): 2.66mmH₂O", 
-            "최대 팬소음: 29dBA", 
-            "작동전압: 팬 12V, LED 5V", 
-            "[부가기능] LED 라이트", 
+            "베어링: HDB(유체)", 
+            "1600 RPM", 
+            "최대 풍량: 85 CFM, 70.5 CFM", 
+            "풍압(정압): 2.0mmH₂O, 1.74mmH₂O", 
+            "최대 팬소음: 30dBA", 
             "PWM 지원", 
-            "팬 컨트롤러", 
-            "데이지체인", 
-            "RGB", 
-            "LED시스템: AURA SYNC, MYSTIC LIGHT, RGB FUSION, POLYCHROME, 제조사 소프트웨어", 
-            "[구성품/기타] 써멀유형: 주사기형"
+            "non-LED"
         ], 
         "Cate": "Cooler", 
-        "price": "274550", 
+        "price": "53100", 
         "color_text": "BLACK", 
-        "name": "리안리 GALAHAD II Trinity SL-INF 360", 
-        "brand": "리안리"
+        "name": "3RSYS Socoool RC1800 LITE", 
+        "brand": "3RSYS"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/720/551/img/21551720_1.jpg?shrink=330:*&_v=20230717173905", 
+        "img": "//img.danawa.com/prod_img/500000/642/360/img/20360642_1.jpg?shrink=330:*&_v=20230531140257", 
         "spec": [
             "CPU 쿨러", 
-            "수랭", 
+            "듀얼타워형", 
+            "공랭", 
             "팬 쿨러", 
-            "A/S기간: 5년+누수보상", 
+            "TDP: 270W", 
+            "A/S기간: 3년", 
             "[호환/크기] 인텔 소켓: LGA1700, LGA1200, LGA115x", 
             "AMD 소켓: AM5, AM4", 
-            "[수랭] 라디에이터: 3열", 
-            "라디에이터 길이: 397.5mm", 
-            "라디에이터 두께: 27mm", 
-            "호스 길이: 350mm", 
-            "[쿨링팬] 팬 크기: 120mm", 
-            "팬 개수: 3개", 
+            "가로: 135mm", 
+            "세로: 136mm", 
+            "높이: 156mm", 
+            "[쿨링팬] 팬 크기: 130mm, 120mm", 
+            "팬 개수: 2개", 
+            "25T", 
             "4핀", 
-            "베어링: FDB(유체)", 
-            "2150 RPM", 
-            "최대 풍량: 61.3 CFM", 
-            "풍압(정압): 2.66mmH₂O", 
-            "최대 팬소음: 29dBA", 
-            "작동전압: 팬 12V, LED 5V", 
-            "[부가기능] LED 라이트", 
+            "베어링: HDB(유체)", 
+            "1600 RPM", 
+            "최대 풍량: 85 CFM, 70.5 CFM", 
+            "풍압(정압): 2.0mmH₂O, 1.74mmH₂O", 
+            "최대 팬소음: 30dBA", 
             "PWM 지원", 
-            "팬 컨트롤러", 
-            "데이지체인", 
-            "RGB", 
-            "LED시스템: AURA SYNC, MYSTIC LIGHT, RGB FUSION, POLYCHROME, 제조사 소프트웨어", 
-            "[구성품/기타] 써멀유형: 주사기형"
+            "non-LED"
         ], 
         "Cate": "Cooler", 
-        "price": "274550", 
+        "price": "55200", 
         "color_text": "WHITE", 
-        "name": "리안리 GALAHAD II Trinity SL-INF 360", 
-        "brand": "리안리"
+        "name": "3RSYS Socoool RC1800 LITE", 
+        "brand": "3RSYS"
     }, 
     {
         "img": "//img.danawa.com/prod_img/500000/323/640/img/17640323_1.jpg?shrink=330:*&_v=20220823145141", 
@@ -3132,7 +3222,7 @@
             "non-LED"
         ], 
         "Cate": "Cooler", 
-        "price": "29490", 
+        "price": "28300", 
         "color_text": "BLACK", 
         "name": "DEEPCOOL AK400", 
         "brand": "DEEPCOOL"
@@ -3200,38 +3290,6 @@
         "brand": "쿨러마스터"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/768/393/img/17393768_1.jpg?shrink=330:*&_v=20230502155839", 
-        "spec": [
-            "CPU 쿨러", 
-            "싱글타워형", 
-            "공랭", 
-            "TDP: 200W", 
-            "A/S기간: 2년", 
-            "[호환/크기] 인텔 소켓: LGA1700, LGA1200, LGA115x, LGA1366", 
-            "AMD 소켓: AM5, AM4, FMx/AMx(AM1/4외)", 
-            "가로: 122mm", 
-            "세로: 75mm", 
-            "높이: 154mm", 
-            "[쿨링팬] 팬 크기: 120mm", 
-            "팬 개수: 1개", 
-            "25T", 
-            "4핀", 
-            "베어링: Hydro(유체)", 
-            "1700 RPM", 
-            "최대 풍량: 66 CFM", 
-            "풍압(정압): 2.22mmH₂O", 
-            "최대 팬소음: 29.7dBA", 
-            "PWM 지원", 
-            "non-LED", 
-            "[구성품/기타] 23년 5월부로 AM5 소켓 호환 추가"
-        ], 
-        "Cate": "Cooler", 
-        "price": "31900", 
-        "color_text": "", 
-        "name": "앱코 타이폰 120X5", 
-        "brand": "앱코"
-    }, 
-    {
         "img": "//img.danawa.com/prod_img/500000/437/447/img/12447437_1.jpg?shrink=330:*&_v=20220927150613", 
         "spec": [
             "CPU 쿨러", 
@@ -3296,44 +3354,10 @@
             "[구성품/기타] 22년 1월부로 소켓 호환 추가"
         ], 
         "Cate": "Cooler", 
-        "price": "28750", 
+        "price": "27540", 
         "color_text": "WHITE", 
         "name": "DEEPCOOL GAMMAXX 400 XT", 
         "brand": "DEEPCOOL"
-    }, 
-    {
-        "img": "//img.danawa.com/prod_img/500000/862/002/img/17002862_1.jpg?shrink=330:*&_v=20230920152454", 
-        "spec": [
-            "CPU 쿨러", 
-            "싱글타워형", 
-            "공랭", 
-            "팬 쿨러", 
-            "TDP: 180W", 
-            "A/S기간: 2년", 
-            "[호환/크기] 인텔 소켓: LGA1700, LGA1200, LGA115x", 
-            "AMD 소켓: AM5, AM4", 
-            "가로: 130mm", 
-            "세로: 75mm", 
-            "높이: 157mm", 
-            "무게: 500g", 
-            "[쿨링팬] 팬 크기: 120mm", 
-            "팬 개수: 1개", 
-            "25T", 
-            "3-4핀", 
-            "베어링: Hydraulic(유체)", 
-            "1800 RPM", 
-            "최대 풍량: 73.6 CFM", 
-            "풍압(정압): 2.1mmH₂O", 
-            "최대 팬소음: 28.6dBA", 
-            "[부가기능] LED 라이트", 
-            "PWM 지원", 
-            "RGB"
-        ], 
-        "Cate": "Cooler", 
-        "price": "22220", 
-        "color_text": "", 
-        "name": "PCCOOLER PALADIN EX400 ARGB", 
-        "brand": "PCCOOLER"
     }, 
     {
         "img": "//img.danawa.com/prod_img/500000/475/110/img/14110475_1.jpg?shrink=330:*&_v=20231031130000", 
@@ -3364,7 +3388,7 @@
             "[구성품/기타] 21년 11월부로 소켓 호환 추가"
         ], 
         "Cate": "Cooler", 
-        "price": "29430", 
+        "price": "29290", 
         "color_text": "BLACK", 
         "name": "PCCOOLER PALADIN 400", 
         "brand": "PCCOOLER"
@@ -3398,7 +3422,7 @@
             "[구성품/기타] 21년 11월부로 소켓 호환 추가"
         ], 
         "Cate": "Cooler", 
-        "price": "35130", 
+        "price": "34990", 
         "color_text": "WHITE", 
         "name": "PCCOOLER PALADIN 400", 
         "brand": "PCCOOLER"
@@ -3432,7 +3456,7 @@
             "23년 11월 부로 팬 스티커 및 TDP 200→220W 변경"
         ], 
         "Cate": "Cooler", 
-        "price": "22570", 
+        "price": "21830", 
         "color_text": "", 
         "name": "DEEPCOOL AG400", 
         "brand": "DEEPCOOL"
@@ -3469,7 +3493,7 @@
             "열전도율: 12.4W/(m·K)"
         ], 
         "Cate": "Cooler", 
-        "price": "67000", 
+        "price": "63500", 
         "color_text": "BLACK", 
         "name": "3RSYS Socoool RC-1800 Quiet 솔더링", 
         "brand": "3RSYS"
@@ -3506,10 +3530,45 @@
             "열전도율: 12.4W/(m·K)"
         ], 
         "Cate": "Cooler", 
-        "price": "67000", 
+        "price": "64000", 
         "color_text": "WHITE", 
         "name": "3RSYS Socoool RC-1800 Quiet 솔더링", 
         "brand": "3RSYS"
+    }, 
+    {
+        "img": "//img.danawa.com/prod_img/500000/058/525/img/16525058_1.jpg?shrink=330:*&_v=20231128175409", 
+        "spec": [
+            "CPU 쿨러", 
+            "듀얼타워형", 
+            "공랭", 
+            "팬 쿨러", 
+            "A/S기간: 3년", 
+            "[호환/크기] 인텔 소켓: LGA1700, LGA1200, LGA115x", 
+            "AMD 소켓: AM5, AM4", 
+            "가로: 125mm", 
+            "세로: 135mm", 
+            "높이: 155mm", 
+            "무게: 850g", 
+            "[쿨링팬] 팬 크기: 120mm", 
+            "팬 개수: 2개", 
+            "25T", 
+            "4핀", 
+            "베어링: S-FDB(유체)", 
+            "1550 RPM", 
+            "최대 풍량: 66.17 CFM", 
+            "풍압(정압): 1.53mmH₂O", 
+            "최대 팬소음: 25.6dBA", 
+            "PWM 지원", 
+            "non-LED", 
+            "[구성품/기타] 써멀유형: 주사기형", 
+            "열전도율: 12.8W/(m·K)", 
+            "23년 11월부로 AM5 소켓 호환 추가"
+        ], 
+        "Cate": "Cooler", 
+        "price": "36170", 
+        "color_text": "", 
+        "name": "Thermalright Peerless Assassin 120 SE 서린", 
+        "brand": "Thermalright"
     }, 
     {
         "img": "//img.danawa.com/prod_img/500000/001/690/img/19690001_1.jpg?shrink=330:*&_v=20230407154257", 
@@ -3540,7 +3599,7 @@
             "써멀컴파운드 CryoFuze 제공"
         ], 
         "Cate": "Cooler", 
-        "price": "38970", 
+        "price": "38960", 
         "color_text": "", 
         "name": "쿨러마스터 HYPER 620S ARGB", 
         "brand": "쿨러마스터"
@@ -3612,41 +3671,6 @@
         "brand": "잘만"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/058/525/img/16525058_1.jpg?shrink=330:*&_v=20231128175409", 
-        "spec": [
-            "CPU 쿨러", 
-            "듀얼타워형", 
-            "공랭", 
-            "팬 쿨러", 
-            "A/S기간: 3년", 
-            "[호환/크기] 인텔 소켓: LGA1700, LGA1200, LGA115x", 
-            "AMD 소켓: AM5, AM4", 
-            "가로: 125mm", 
-            "세로: 135mm", 
-            "높이: 155mm", 
-            "무게: 850g", 
-            "[쿨링팬] 팬 크기: 120mm", 
-            "팬 개수: 2개", 
-            "25T", 
-            "4핀", 
-            "베어링: S-FDB(유체)", 
-            "1550 RPM", 
-            "최대 풍량: 66.17 CFM", 
-            "풍압(정압): 1.53mmH₂O", 
-            "최대 팬소음: 25.6dBA", 
-            "PWM 지원", 
-            "non-LED", 
-            "[구성품/기타] 써멀유형: 주사기형", 
-            "열전도율: 12.8W/(m·K)", 
-            "23년 11월부로 AM5 소켓 호환 추가"
-        ], 
-        "Cate": "Cooler", 
-        "price": "36940", 
-        "color_text": "", 
-        "name": "Thermalright Peerless Assassin 120 SE 서린", 
-        "brand": "Thermalright"
-    }, 
-    {
         "img": "//img.danawa.com/prod_img/500000/107/869/img/19869107_1.jpg?shrink=330:*&_v=20230516121158", 
         "spec": [
             "CPU 쿨러", 
@@ -3681,7 +3705,7 @@
             "LED시스템: 제조사 소프트웨어"
         ], 
         "Cate": "Cooler", 
-        "price": "303058", 
+        "price": "296678", 
         "color_text": "BLACK", 
         "name": "NZXT KRAKEN 360 RGB", 
         "brand": "NZXT"
@@ -3721,7 +3745,7 @@
             "LED시스템: 제조사 소프트웨어"
         ], 
         "Cate": "Cooler", 
-        "price": "316110", 
+        "price": "308100", 
         "color_text": "WHITE", 
         "name": "NZXT KRAKEN 360 RGB", 
         "brand": "NZXT"
@@ -3758,7 +3782,7 @@
             "[구성품/기타] 써멀유형: 주사기형"
         ], 
         "Cate": "Cooler", 
-        "price": "167200", 
+        "price": "163300", 
         "color_text": "BLACK", 
         "name": "3RSYS Socoool 라니 XY-360 Quiet", 
         "brand": "3RSYS"
@@ -3795,10 +3819,90 @@
             "[구성품/기타] 써멀유형: 주사기형"
         ], 
         "Cate": "Cooler", 
-        "price": "174000", 
+        "price": "168000", 
         "color_text": "WHITE", 
         "name": "3RSYS Socoool 라니 XY-360 Quiet", 
         "brand": "3RSYS"
+    }, 
+    {
+        "img": "//img.danawa.com/prod_img/500000/021/371/img/18371021_1.jpg?shrink=330:*&_v=20221128082841", 
+        "spec": [
+            "써멀컴파운드(그리스)", 
+            "써멀유형: 주사기형", 
+            "용량: 4g", 
+            "비전도성", 
+            "점도: 87Pa·s", 
+            "밀도: 2.5g/cm³"
+        ], 
+        "Cate": "Cooler", 
+        "price": "4740", 
+        "color_text": "2g", 
+        "name": "ARCTIC MX-4 서린", 
+        "brand": "ARCTIC"
+    }, 
+    {
+        "img": "//img.danawa.com/prod_img/500000/021/371/img/18371021_1.jpg?shrink=330:*&_v=20221128082841", 
+        "spec": [
+            "써멀컴파운드(그리스)", 
+            "써멀유형: 주사기형", 
+            "용량: 4g", 
+            "비전도성", 
+            "점도: 87Pa·s", 
+            "밀도: 2.5g/cm³"
+        ], 
+        "Cate": "Cooler", 
+        "price": "32960", 
+        "color_text": "45g", 
+        "name": "ARCTIC MX-4 서린", 
+        "brand": "ARCTIC"
+    }, 
+    {
+        "img": "//img.danawa.com/prod_img/500000/021/371/img/18371021_1.jpg?shrink=330:*&_v=20221128082841", 
+        "spec": [
+            "써멀컴파운드(그리스)", 
+            "써멀유형: 주사기형", 
+            "용량: 4g", 
+            "비전도성", 
+            "점도: 87Pa·s", 
+            "밀도: 2.5g/cm³"
+        ], 
+        "Cate": "Cooler", 
+        "price": "6800", 
+        "color_text": "4g", 
+        "name": "ARCTIC MX-4 서린", 
+        "brand": "ARCTIC"
+    }, 
+    {
+        "img": "//img.danawa.com/prod_img/500000/021/371/img/18371021_1.jpg?shrink=330:*&_v=20221128082841", 
+        "spec": [
+            "써멀컴파운드(그리스)", 
+            "써멀유형: 주사기형", 
+            "용량: 4g", 
+            "비전도성", 
+            "점도: 87Pa·s", 
+            "밀도: 2.5g/cm³"
+        ], 
+        "Cate": "Cooler", 
+        "price": "10900", 
+        "color_text": "8g", 
+        "name": "ARCTIC MX-4 서린", 
+        "brand": "ARCTIC"
+    }, 
+    {
+        "img": "//img.danawa.com/prod_img/500000/021/371/img/18371021_1.jpg?shrink=330:*&_v=20221128082841", 
+        "spec": [
+            "써멀컴파운드(그리스)", 
+            "써멀유형: 주사기형", 
+            "용량: 4g", 
+            "비전도성", 
+            "점도: 87Pa·s", 
+            "밀도: 2.5g/cm³"
+        ], 
+        "Cate": "Cooler", 
+        "price": "22900", 
+        "color_text": "20g", 
+        "name": "ARCTIC MX-4 서린", 
+        "brand": "ARCTIC"
     }, 
     {
         "img": "//img.danawa.com/prod_img/500000/317/076/img/14076317_1.jpg?shrink=330:*&_v=20230920153435", 
@@ -3867,76 +3971,68 @@
         "brand": "잘만"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/720/551/img/21551720_1.jpg?shrink=330:*&_v=20230717173905", 
+        "img": "//img.danawa.com/prod_img/500000/642/360/img/20360642_1.jpg?shrink=330:*&_v=20230531140257", 
         "spec": [
             "CPU 쿨러", 
-            "수랭", 
+            "듀얼타워형", 
+            "공랭", 
             "팬 쿨러", 
-            "A/S기간: 5년+누수보상", 
+            "TDP: 270W", 
+            "A/S기간: 3년", 
             "[호환/크기] 인텔 소켓: LGA1700, LGA1200, LGA115x", 
             "AMD 소켓: AM5, AM4", 
-            "[수랭] 라디에이터: 3열", 
-            "라디에이터 길이: 397.5mm", 
-            "라디에이터 두께: 27mm", 
-            "호스 길이: 350mm", 
-            "[쿨링팬] 팬 크기: 120mm", 
-            "팬 개수: 3개", 
+            "가로: 135mm", 
+            "세로: 136mm", 
+            "높이: 156mm", 
+            "[쿨링팬] 팬 크기: 130mm, 120mm", 
+            "팬 개수: 2개", 
+            "25T", 
             "4핀", 
-            "베어링: FDB(유체)", 
-            "2150 RPM", 
-            "최대 풍량: 61.3 CFM", 
-            "풍압(정압): 2.66mmH₂O", 
-            "최대 팬소음: 29dBA", 
-            "작동전압: 팬 12V, LED 5V", 
-            "[부가기능] LED 라이트", 
+            "베어링: HDB(유체)", 
+            "1600 RPM", 
+            "최대 풍량: 85 CFM, 70.5 CFM", 
+            "풍압(정압): 2.0mmH₂O, 1.74mmH₂O", 
+            "최대 팬소음: 30dBA", 
             "PWM 지원", 
-            "팬 컨트롤러", 
-            "데이지체인", 
-            "RGB", 
-            "LED시스템: AURA SYNC, MYSTIC LIGHT, RGB FUSION, POLYCHROME, 제조사 소프트웨어", 
-            "[구성품/기타] 써멀유형: 주사기형"
+            "non-LED"
         ], 
         "Cate": "Cooler", 
-        "price": "274550", 
+        "price": "53100", 
         "color_text": "BLACK", 
-        "name": "리안리 GALAHAD II Trinity SL-INF 360", 
-        "brand": "리안리"
+        "name": "3RSYS Socoool RC1800 LITE", 
+        "brand": "3RSYS"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/720/551/img/21551720_1.jpg?shrink=330:*&_v=20230717173905", 
+        "img": "//img.danawa.com/prod_img/500000/642/360/img/20360642_1.jpg?shrink=330:*&_v=20230531140257", 
         "spec": [
             "CPU 쿨러", 
-            "수랭", 
+            "듀얼타워형", 
+            "공랭", 
             "팬 쿨러", 
-            "A/S기간: 5년+누수보상", 
+            "TDP: 270W", 
+            "A/S기간: 3년", 
             "[호환/크기] 인텔 소켓: LGA1700, LGA1200, LGA115x", 
             "AMD 소켓: AM5, AM4", 
-            "[수랭] 라디에이터: 3열", 
-            "라디에이터 길이: 397.5mm", 
-            "라디에이터 두께: 27mm", 
-            "호스 길이: 350mm", 
-            "[쿨링팬] 팬 크기: 120mm", 
-            "팬 개수: 3개", 
+            "가로: 135mm", 
+            "세로: 136mm", 
+            "높이: 156mm", 
+            "[쿨링팬] 팬 크기: 130mm, 120mm", 
+            "팬 개수: 2개", 
+            "25T", 
             "4핀", 
-            "베어링: FDB(유체)", 
-            "2150 RPM", 
-            "최대 풍량: 61.3 CFM", 
-            "풍압(정압): 2.66mmH₂O", 
-            "최대 팬소음: 29dBA", 
-            "작동전압: 팬 12V, LED 5V", 
-            "[부가기능] LED 라이트", 
+            "베어링: HDB(유체)", 
+            "1600 RPM", 
+            "최대 풍량: 85 CFM, 70.5 CFM", 
+            "풍압(정압): 2.0mmH₂O, 1.74mmH₂O", 
+            "최대 팬소음: 30dBA", 
             "PWM 지원", 
-            "팬 컨트롤러", 
-            "데이지체인", 
-            "RGB", 
-            "LED시스템: AURA SYNC, MYSTIC LIGHT, RGB FUSION, POLYCHROME, 제조사 소프트웨어", 
-            "[구성품/기타] 써멀유형: 주사기형"
+            "non-LED"
         ], 
         "Cate": "Cooler", 
-        "price": "274550", 
+        "price": "55200", 
         "color_text": "WHITE", 
-        "name": "리안리 GALAHAD II Trinity SL-INF 360", 
-        "brand": "리안리"
+        "name": "3RSYS Socoool RC1800 LITE", 
+        "brand": "3RSYS"
     }, 
     {
         "img": "//img.danawa.com/prod_img/500000/323/640/img/17640323_1.jpg?shrink=330:*&_v=20220823145141", 
@@ -3966,7 +4062,7 @@
             "non-LED"
         ], 
         "Cate": "Cooler", 
-        "price": "29490", 
+        "price": "28300", 
         "color_text": "BLACK", 
         "name": "DEEPCOOL AK400", 
         "brand": "DEEPCOOL"
@@ -4034,38 +4130,6 @@
         "brand": "쿨러마스터"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/768/393/img/17393768_1.jpg?shrink=330:*&_v=20230502155839", 
-        "spec": [
-            "CPU 쿨러", 
-            "싱글타워형", 
-            "공랭", 
-            "TDP: 200W", 
-            "A/S기간: 2년", 
-            "[호환/크기] 인텔 소켓: LGA1700, LGA1200, LGA115x, LGA1366", 
-            "AMD 소켓: AM5, AM4, FMx/AMx(AM1/4외)", 
-            "가로: 122mm", 
-            "세로: 75mm", 
-            "높이: 154mm", 
-            "[쿨링팬] 팬 크기: 120mm", 
-            "팬 개수: 1개", 
-            "25T", 
-            "4핀", 
-            "베어링: Hydro(유체)", 
-            "1700 RPM", 
-            "최대 풍량: 66 CFM", 
-            "풍압(정압): 2.22mmH₂O", 
-            "최대 팬소음: 29.7dBA", 
-            "PWM 지원", 
-            "non-LED", 
-            "[구성품/기타] 23년 5월부로 AM5 소켓 호환 추가"
-        ], 
-        "Cate": "Cooler", 
-        "price": "31900", 
-        "color_text": "", 
-        "name": "앱코 타이폰 120X5", 
-        "brand": "앱코"
-    }, 
-    {
         "img": "//img.danawa.com/prod_img/500000/437/447/img/12447437_1.jpg?shrink=330:*&_v=20220927150613", 
         "spec": [
             "CPU 쿨러", 
@@ -4130,44 +4194,10 @@
             "[구성품/기타] 22년 1월부로 소켓 호환 추가"
         ], 
         "Cate": "Cooler", 
-        "price": "28750", 
+        "price": "27540", 
         "color_text": "WHITE", 
         "name": "DEEPCOOL GAMMAXX 400 XT", 
         "brand": "DEEPCOOL"
-    }, 
-    {
-        "img": "//img.danawa.com/prod_img/500000/862/002/img/17002862_1.jpg?shrink=330:*&_v=20230920152454", 
-        "spec": [
-            "CPU 쿨러", 
-            "싱글타워형", 
-            "공랭", 
-            "팬 쿨러", 
-            "TDP: 180W", 
-            "A/S기간: 2년", 
-            "[호환/크기] 인텔 소켓: LGA1700, LGA1200, LGA115x", 
-            "AMD 소켓: AM5, AM4", 
-            "가로: 130mm", 
-            "세로: 75mm", 
-            "높이: 157mm", 
-            "무게: 500g", 
-            "[쿨링팬] 팬 크기: 120mm", 
-            "팬 개수: 1개", 
-            "25T", 
-            "3-4핀", 
-            "베어링: Hydraulic(유체)", 
-            "1800 RPM", 
-            "최대 풍량: 73.6 CFM", 
-            "풍압(정압): 2.1mmH₂O", 
-            "최대 팬소음: 28.6dBA", 
-            "[부가기능] LED 라이트", 
-            "PWM 지원", 
-            "RGB"
-        ], 
-        "Cate": "Cooler", 
-        "price": "22220", 
-        "color_text": "", 
-        "name": "PCCOOLER PALADIN EX400 ARGB", 
-        "brand": "PCCOOLER"
     }, 
     {
         "img": "//img.danawa.com/prod_img/500000/475/110/img/14110475_1.jpg?shrink=330:*&_v=20231031130000", 
@@ -4198,7 +4228,7 @@
             "[구성품/기타] 21년 11월부로 소켓 호환 추가"
         ], 
         "Cate": "Cooler", 
-        "price": "29430", 
+        "price": "29290", 
         "color_text": "BLACK", 
         "name": "PCCOOLER PALADIN 400", 
         "brand": "PCCOOLER"
@@ -4232,7 +4262,7 @@
             "[구성품/기타] 21년 11월부로 소켓 호환 추가"
         ], 
         "Cate": "Cooler", 
-        "price": "35130", 
+        "price": "34990", 
         "color_text": "WHITE", 
         "name": "PCCOOLER PALADIN 400", 
         "brand": "PCCOOLER"
@@ -4266,7 +4296,7 @@
             "23년 11월 부로 팬 스티커 및 TDP 200→220W 변경"
         ], 
         "Cate": "Cooler", 
-        "price": "22570", 
+        "price": "21830", 
         "color_text": "", 
         "name": "DEEPCOOL AG400", 
         "brand": "DEEPCOOL"
@@ -4303,7 +4333,7 @@
             "열전도율: 12.4W/(m·K)"
         ], 
         "Cate": "Cooler", 
-        "price": "67000", 
+        "price": "63500", 
         "color_text": "BLACK", 
         "name": "3RSYS Socoool RC-1800 Quiet 솔더링", 
         "brand": "3RSYS"
@@ -4340,10 +4370,45 @@
             "열전도율: 12.4W/(m·K)"
         ], 
         "Cate": "Cooler", 
-        "price": "67000", 
+        "price": "64000", 
         "color_text": "WHITE", 
         "name": "3RSYS Socoool RC-1800 Quiet 솔더링", 
         "brand": "3RSYS"
+    }, 
+    {
+        "img": "//img.danawa.com/prod_img/500000/058/525/img/16525058_1.jpg?shrink=330:*&_v=20231128175409", 
+        "spec": [
+            "CPU 쿨러", 
+            "듀얼타워형", 
+            "공랭", 
+            "팬 쿨러", 
+            "A/S기간: 3년", 
+            "[호환/크기] 인텔 소켓: LGA1700, LGA1200, LGA115x", 
+            "AMD 소켓: AM5, AM4", 
+            "가로: 125mm", 
+            "세로: 135mm", 
+            "높이: 155mm", 
+            "무게: 850g", 
+            "[쿨링팬] 팬 크기: 120mm", 
+            "팬 개수: 2개", 
+            "25T", 
+            "4핀", 
+            "베어링: S-FDB(유체)", 
+            "1550 RPM", 
+            "최대 풍량: 66.17 CFM", 
+            "풍압(정압): 1.53mmH₂O", 
+            "최대 팬소음: 25.6dBA", 
+            "PWM 지원", 
+            "non-LED", 
+            "[구성품/기타] 써멀유형: 주사기형", 
+            "열전도율: 12.8W/(m·K)", 
+            "23년 11월부로 AM5 소켓 호환 추가"
+        ], 
+        "Cate": "Cooler", 
+        "price": "36170", 
+        "color_text": "", 
+        "name": "Thermalright Peerless Assassin 120 SE 서린", 
+        "brand": "Thermalright"
     }, 
     {
         "img": "//img.danawa.com/prod_img/500000/001/690/img/19690001_1.jpg?shrink=330:*&_v=20230407154257", 
@@ -4374,7 +4439,7 @@
             "써멀컴파운드 CryoFuze 제공"
         ], 
         "Cate": "Cooler", 
-        "price": "38970", 
+        "price": "38960", 
         "color_text": "", 
         "name": "쿨러마스터 HYPER 620S ARGB", 
         "brand": "쿨러마스터"
@@ -4446,41 +4511,6 @@
         "brand": "잘만"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/058/525/img/16525058_1.jpg?shrink=330:*&_v=20231128175409", 
-        "spec": [
-            "CPU 쿨러", 
-            "듀얼타워형", 
-            "공랭", 
-            "팬 쿨러", 
-            "A/S기간: 3년", 
-            "[호환/크기] 인텔 소켓: LGA1700, LGA1200, LGA115x", 
-            "AMD 소켓: AM5, AM4", 
-            "가로: 125mm", 
-            "세로: 135mm", 
-            "높이: 155mm", 
-            "무게: 850g", 
-            "[쿨링팬] 팬 크기: 120mm", 
-            "팬 개수: 2개", 
-            "25T", 
-            "4핀", 
-            "베어링: S-FDB(유체)", 
-            "1550 RPM", 
-            "최대 풍량: 66.17 CFM", 
-            "풍압(정압): 1.53mmH₂O", 
-            "최대 팬소음: 25.6dBA", 
-            "PWM 지원", 
-            "non-LED", 
-            "[구성품/기타] 써멀유형: 주사기형", 
-            "열전도율: 12.8W/(m·K)", 
-            "23년 11월부로 AM5 소켓 호환 추가"
-        ], 
-        "Cate": "Cooler", 
-        "price": "36940", 
-        "color_text": "", 
-        "name": "Thermalright Peerless Assassin 120 SE 서린", 
-        "brand": "Thermalright"
-    }, 
-    {
         "img": "//img.danawa.com/prod_img/500000/107/869/img/19869107_1.jpg?shrink=330:*&_v=20230516121158", 
         "spec": [
             "CPU 쿨러", 
@@ -4515,7 +4545,7 @@
             "LED시스템: 제조사 소프트웨어"
         ], 
         "Cate": "Cooler", 
-        "price": "303058", 
+        "price": "296678", 
         "color_text": "BLACK", 
         "name": "NZXT KRAKEN 360 RGB", 
         "brand": "NZXT"
@@ -4555,7 +4585,7 @@
             "LED시스템: 제조사 소프트웨어"
         ], 
         "Cate": "Cooler", 
-        "price": "316110", 
+        "price": "308100", 
         "color_text": "WHITE", 
         "name": "NZXT KRAKEN 360 RGB", 
         "brand": "NZXT"
@@ -4592,7 +4622,7 @@
             "[구성품/기타] 써멀유형: 주사기형"
         ], 
         "Cate": "Cooler", 
-        "price": "167200", 
+        "price": "163300", 
         "color_text": "BLACK", 
         "name": "3RSYS Socoool 라니 XY-360 Quiet", 
         "brand": "3RSYS"
@@ -4629,10 +4659,90 @@
             "[구성품/기타] 써멀유형: 주사기형"
         ], 
         "Cate": "Cooler", 
-        "price": "174000", 
+        "price": "168000", 
         "color_text": "WHITE", 
         "name": "3RSYS Socoool 라니 XY-360 Quiet", 
         "brand": "3RSYS"
+    }, 
+    {
+        "img": "//img.danawa.com/prod_img/500000/021/371/img/18371021_1.jpg?shrink=330:*&_v=20221128082841", 
+        "spec": [
+            "써멀컴파운드(그리스)", 
+            "써멀유형: 주사기형", 
+            "용량: 4g", 
+            "비전도성", 
+            "점도: 87Pa·s", 
+            "밀도: 2.5g/cm³"
+        ], 
+        "Cate": "Cooler", 
+        "price": "4740", 
+        "color_text": "2g", 
+        "name": "ARCTIC MX-4 서린", 
+        "brand": "ARCTIC"
+    }, 
+    {
+        "img": "//img.danawa.com/prod_img/500000/021/371/img/18371021_1.jpg?shrink=330:*&_v=20221128082841", 
+        "spec": [
+            "써멀컴파운드(그리스)", 
+            "써멀유형: 주사기형", 
+            "용량: 4g", 
+            "비전도성", 
+            "점도: 87Pa·s", 
+            "밀도: 2.5g/cm³"
+        ], 
+        "Cate": "Cooler", 
+        "price": "32960", 
+        "color_text": "45g", 
+        "name": "ARCTIC MX-4 서린", 
+        "brand": "ARCTIC"
+    }, 
+    {
+        "img": "//img.danawa.com/prod_img/500000/021/371/img/18371021_1.jpg?shrink=330:*&_v=20221128082841", 
+        "spec": [
+            "써멀컴파운드(그리스)", 
+            "써멀유형: 주사기형", 
+            "용량: 4g", 
+            "비전도성", 
+            "점도: 87Pa·s", 
+            "밀도: 2.5g/cm³"
+        ], 
+        "Cate": "Cooler", 
+        "price": "6800", 
+        "color_text": "4g", 
+        "name": "ARCTIC MX-4 서린", 
+        "brand": "ARCTIC"
+    }, 
+    {
+        "img": "//img.danawa.com/prod_img/500000/021/371/img/18371021_1.jpg?shrink=330:*&_v=20221128082841", 
+        "spec": [
+            "써멀컴파운드(그리스)", 
+            "써멀유형: 주사기형", 
+            "용량: 4g", 
+            "비전도성", 
+            "점도: 87Pa·s", 
+            "밀도: 2.5g/cm³"
+        ], 
+        "Cate": "Cooler", 
+        "price": "10900", 
+        "color_text": "8g", 
+        "name": "ARCTIC MX-4 서린", 
+        "brand": "ARCTIC"
+    }, 
+    {
+        "img": "//img.danawa.com/prod_img/500000/021/371/img/18371021_1.jpg?shrink=330:*&_v=20221128082841", 
+        "spec": [
+            "써멀컴파운드(그리스)", 
+            "써멀유형: 주사기형", 
+            "용량: 4g", 
+            "비전도성", 
+            "점도: 87Pa·s", 
+            "밀도: 2.5g/cm³"
+        ], 
+        "Cate": "Cooler", 
+        "price": "22900", 
+        "color_text": "20g", 
+        "name": "ARCTIC MX-4 서린", 
+        "brand": "ARCTIC"
     }, 
     {
         "img": "//img.danawa.com/prod_img/500000/317/076/img/14076317_1.jpg?shrink=330:*&_v=20230920153435", 
@@ -4701,76 +4811,68 @@
         "brand": "잘만"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/720/551/img/21551720_1.jpg?shrink=330:*&_v=20230717173905", 
+        "img": "//img.danawa.com/prod_img/500000/642/360/img/20360642_1.jpg?shrink=330:*&_v=20230531140257", 
         "spec": [
             "CPU 쿨러", 
-            "수랭", 
+            "듀얼타워형", 
+            "공랭", 
             "팬 쿨러", 
-            "A/S기간: 5년+누수보상", 
+            "TDP: 270W", 
+            "A/S기간: 3년", 
             "[호환/크기] 인텔 소켓: LGA1700, LGA1200, LGA115x", 
             "AMD 소켓: AM5, AM4", 
-            "[수랭] 라디에이터: 3열", 
-            "라디에이터 길이: 397.5mm", 
-            "라디에이터 두께: 27mm", 
-            "호스 길이: 350mm", 
-            "[쿨링팬] 팬 크기: 120mm", 
-            "팬 개수: 3개", 
+            "가로: 135mm", 
+            "세로: 136mm", 
+            "높이: 156mm", 
+            "[쿨링팬] 팬 크기: 130mm, 120mm", 
+            "팬 개수: 2개", 
+            "25T", 
             "4핀", 
-            "베어링: FDB(유체)", 
-            "2150 RPM", 
-            "최대 풍량: 61.3 CFM", 
-            "풍압(정압): 2.66mmH₂O", 
-            "최대 팬소음: 29dBA", 
-            "작동전압: 팬 12V, LED 5V", 
-            "[부가기능] LED 라이트", 
+            "베어링: HDB(유체)", 
+            "1600 RPM", 
+            "최대 풍량: 85 CFM, 70.5 CFM", 
+            "풍압(정압): 2.0mmH₂O, 1.74mmH₂O", 
+            "최대 팬소음: 30dBA", 
             "PWM 지원", 
-            "팬 컨트롤러", 
-            "데이지체인", 
-            "RGB", 
-            "LED시스템: AURA SYNC, MYSTIC LIGHT, RGB FUSION, POLYCHROME, 제조사 소프트웨어", 
-            "[구성품/기타] 써멀유형: 주사기형"
+            "non-LED"
         ], 
         "Cate": "Cooler", 
-        "price": "274550", 
+        "price": "53100", 
         "color_text": "BLACK", 
-        "name": "리안리 GALAHAD II Trinity SL-INF 360", 
-        "brand": "리안리"
+        "name": "3RSYS Socoool RC1800 LITE", 
+        "brand": "3RSYS"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/720/551/img/21551720_1.jpg?shrink=330:*&_v=20230717173905", 
+        "img": "//img.danawa.com/prod_img/500000/642/360/img/20360642_1.jpg?shrink=330:*&_v=20230531140257", 
         "spec": [
             "CPU 쿨러", 
-            "수랭", 
+            "듀얼타워형", 
+            "공랭", 
             "팬 쿨러", 
-            "A/S기간: 5년+누수보상", 
+            "TDP: 270W", 
+            "A/S기간: 3년", 
             "[호환/크기] 인텔 소켓: LGA1700, LGA1200, LGA115x", 
             "AMD 소켓: AM5, AM4", 
-            "[수랭] 라디에이터: 3열", 
-            "라디에이터 길이: 397.5mm", 
-            "라디에이터 두께: 27mm", 
-            "호스 길이: 350mm", 
-            "[쿨링팬] 팬 크기: 120mm", 
-            "팬 개수: 3개", 
+            "가로: 135mm", 
+            "세로: 136mm", 
+            "높이: 156mm", 
+            "[쿨링팬] 팬 크기: 130mm, 120mm", 
+            "팬 개수: 2개", 
+            "25T", 
             "4핀", 
-            "베어링: FDB(유체)", 
-            "2150 RPM", 
-            "최대 풍량: 61.3 CFM", 
-            "풍압(정압): 2.66mmH₂O", 
-            "최대 팬소음: 29dBA", 
-            "작동전압: 팬 12V, LED 5V", 
-            "[부가기능] LED 라이트", 
+            "베어링: HDB(유체)", 
+            "1600 RPM", 
+            "최대 풍량: 85 CFM, 70.5 CFM", 
+            "풍압(정압): 2.0mmH₂O, 1.74mmH₂O", 
+            "최대 팬소음: 30dBA", 
             "PWM 지원", 
-            "팬 컨트롤러", 
-            "데이지체인", 
-            "RGB", 
-            "LED시스템: AURA SYNC, MYSTIC LIGHT, RGB FUSION, POLYCHROME, 제조사 소프트웨어", 
-            "[구성품/기타] 써멀유형: 주사기형"
+            "non-LED"
         ], 
         "Cate": "Cooler", 
-        "price": "274550", 
+        "price": "55200", 
         "color_text": "WHITE", 
-        "name": "리안리 GALAHAD II Trinity SL-INF 360", 
-        "brand": "리안리"
+        "name": "3RSYS Socoool RC1800 LITE", 
+        "brand": "3RSYS"
     }, 
     {
         "img": "//img.danawa.com/prod_img/500000/323/640/img/17640323_1.jpg?shrink=330:*&_v=20220823145141", 
@@ -4800,7 +4902,7 @@
             "non-LED"
         ], 
         "Cate": "Cooler", 
-        "price": "29490", 
+        "price": "28300", 
         "color_text": "BLACK", 
         "name": "DEEPCOOL AK400", 
         "brand": "DEEPCOOL"
@@ -4868,38 +4970,6 @@
         "brand": "쿨러마스터"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/768/393/img/17393768_1.jpg?shrink=330:*&_v=20230502155839", 
-        "spec": [
-            "CPU 쿨러", 
-            "싱글타워형", 
-            "공랭", 
-            "TDP: 200W", 
-            "A/S기간: 2년", 
-            "[호환/크기] 인텔 소켓: LGA1700, LGA1200, LGA115x, LGA1366", 
-            "AMD 소켓: AM5, AM4, FMx/AMx(AM1/4외)", 
-            "가로: 122mm", 
-            "세로: 75mm", 
-            "높이: 154mm", 
-            "[쿨링팬] 팬 크기: 120mm", 
-            "팬 개수: 1개", 
-            "25T", 
-            "4핀", 
-            "베어링: Hydro(유체)", 
-            "1700 RPM", 
-            "최대 풍량: 66 CFM", 
-            "풍압(정압): 2.22mmH₂O", 
-            "최대 팬소음: 29.7dBA", 
-            "PWM 지원", 
-            "non-LED", 
-            "[구성품/기타] 23년 5월부로 AM5 소켓 호환 추가"
-        ], 
-        "Cate": "Cooler", 
-        "price": "31900", 
-        "color_text": "", 
-        "name": "앱코 타이폰 120X5", 
-        "brand": "앱코"
-    }, 
-    {
         "img": "//img.danawa.com/prod_img/500000/437/447/img/12447437_1.jpg?shrink=330:*&_v=20220927150613", 
         "spec": [
             "CPU 쿨러", 
@@ -4964,44 +5034,10 @@
             "[구성품/기타] 22년 1월부로 소켓 호환 추가"
         ], 
         "Cate": "Cooler", 
-        "price": "28750", 
+        "price": "27540", 
         "color_text": "WHITE", 
         "name": "DEEPCOOL GAMMAXX 400 XT", 
         "brand": "DEEPCOOL"
-    }, 
-    {
-        "img": "//img.danawa.com/prod_img/500000/862/002/img/17002862_1.jpg?shrink=330:*&_v=20230920152454", 
-        "spec": [
-            "CPU 쿨러", 
-            "싱글타워형", 
-            "공랭", 
-            "팬 쿨러", 
-            "TDP: 180W", 
-            "A/S기간: 2년", 
-            "[호환/크기] 인텔 소켓: LGA1700, LGA1200, LGA115x", 
-            "AMD 소켓: AM5, AM4", 
-            "가로: 130mm", 
-            "세로: 75mm", 
-            "높이: 157mm", 
-            "무게: 500g", 
-            "[쿨링팬] 팬 크기: 120mm", 
-            "팬 개수: 1개", 
-            "25T", 
-            "3-4핀", 
-            "베어링: Hydraulic(유체)", 
-            "1800 RPM", 
-            "최대 풍량: 73.6 CFM", 
-            "풍압(정압): 2.1mmH₂O", 
-            "최대 팬소음: 28.6dBA", 
-            "[부가기능] LED 라이트", 
-            "PWM 지원", 
-            "RGB"
-        ], 
-        "Cate": "Cooler", 
-        "price": "22220", 
-        "color_text": "", 
-        "name": "PCCOOLER PALADIN EX400 ARGB", 
-        "brand": "PCCOOLER"
     }, 
     {
         "img": "//img.danawa.com/prod_img/500000/475/110/img/14110475_1.jpg?shrink=330:*&_v=20231031130000", 
@@ -5032,7 +5068,7 @@
             "[구성품/기타] 21년 11월부로 소켓 호환 추가"
         ], 
         "Cate": "Cooler", 
-        "price": "29430", 
+        "price": "29290", 
         "color_text": "BLACK", 
         "name": "PCCOOLER PALADIN 400", 
         "brand": "PCCOOLER"
@@ -5066,7 +5102,7 @@
             "[구성품/기타] 21년 11월부로 소켓 호환 추가"
         ], 
         "Cate": "Cooler", 
-        "price": "35130", 
+        "price": "34990", 
         "color_text": "WHITE", 
         "name": "PCCOOLER PALADIN 400", 
         "brand": "PCCOOLER"
@@ -5100,7 +5136,7 @@
             "23년 11월 부로 팬 스티커 및 TDP 200→220W 변경"
         ], 
         "Cate": "Cooler", 
-        "price": "22570", 
+        "price": "21830", 
         "color_text": "", 
         "name": "DEEPCOOL AG400", 
         "brand": "DEEPCOOL"
@@ -5137,7 +5173,7 @@
             "열전도율: 12.4W/(m·K)"
         ], 
         "Cate": "Cooler", 
-        "price": "67000", 
+        "price": "63500", 
         "color_text": "BLACK", 
         "name": "3RSYS Socoool RC-1800 Quiet 솔더링", 
         "brand": "3RSYS"
@@ -5174,10 +5210,45 @@
             "열전도율: 12.4W/(m·K)"
         ], 
         "Cate": "Cooler", 
-        "price": "67000", 
+        "price": "64000", 
         "color_text": "WHITE", 
         "name": "3RSYS Socoool RC-1800 Quiet 솔더링", 
         "brand": "3RSYS"
+    }, 
+    {
+        "img": "//img.danawa.com/prod_img/500000/058/525/img/16525058_1.jpg?shrink=330:*&_v=20231128175409", 
+        "spec": [
+            "CPU 쿨러", 
+            "듀얼타워형", 
+            "공랭", 
+            "팬 쿨러", 
+            "A/S기간: 3년", 
+            "[호환/크기] 인텔 소켓: LGA1700, LGA1200, LGA115x", 
+            "AMD 소켓: AM5, AM4", 
+            "가로: 125mm", 
+            "세로: 135mm", 
+            "높이: 155mm", 
+            "무게: 850g", 
+            "[쿨링팬] 팬 크기: 120mm", 
+            "팬 개수: 2개", 
+            "25T", 
+            "4핀", 
+            "베어링: S-FDB(유체)", 
+            "1550 RPM", 
+            "최대 풍량: 66.17 CFM", 
+            "풍압(정압): 1.53mmH₂O", 
+            "최대 팬소음: 25.6dBA", 
+            "PWM 지원", 
+            "non-LED", 
+            "[구성품/기타] 써멀유형: 주사기형", 
+            "열전도율: 12.8W/(m·K)", 
+            "23년 11월부로 AM5 소켓 호환 추가"
+        ], 
+        "Cate": "Cooler", 
+        "price": "36170", 
+        "color_text": "", 
+        "name": "Thermalright Peerless Assassin 120 SE 서린", 
+        "brand": "Thermalright"
     }, 
     {
         "img": "//img.danawa.com/prod_img/500000/001/690/img/19690001_1.jpg?shrink=330:*&_v=20230407154257", 
@@ -5208,7 +5279,7 @@
             "써멀컴파운드 CryoFuze 제공"
         ], 
         "Cate": "Cooler", 
-        "price": "38970", 
+        "price": "38960", 
         "color_text": "", 
         "name": "쿨러마스터 HYPER 620S ARGB", 
         "brand": "쿨러마스터"
@@ -5280,41 +5351,6 @@
         "brand": "잘만"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/058/525/img/16525058_1.jpg?shrink=330:*&_v=20231128175409", 
-        "spec": [
-            "CPU 쿨러", 
-            "듀얼타워형", 
-            "공랭", 
-            "팬 쿨러", 
-            "A/S기간: 3년", 
-            "[호환/크기] 인텔 소켓: LGA1700, LGA1200, LGA115x", 
-            "AMD 소켓: AM5, AM4", 
-            "가로: 125mm", 
-            "세로: 135mm", 
-            "높이: 155mm", 
-            "무게: 850g", 
-            "[쿨링팬] 팬 크기: 120mm", 
-            "팬 개수: 2개", 
-            "25T", 
-            "4핀", 
-            "베어링: S-FDB(유체)", 
-            "1550 RPM", 
-            "최대 풍량: 66.17 CFM", 
-            "풍압(정압): 1.53mmH₂O", 
-            "최대 팬소음: 25.6dBA", 
-            "PWM 지원", 
-            "non-LED", 
-            "[구성품/기타] 써멀유형: 주사기형", 
-            "열전도율: 12.8W/(m·K)", 
-            "23년 11월부로 AM5 소켓 호환 추가"
-        ], 
-        "Cate": "Cooler", 
-        "price": "36940", 
-        "color_text": "", 
-        "name": "Thermalright Peerless Assassin 120 SE 서린", 
-        "brand": "Thermalright"
-    }, 
-    {
         "img": "//img.danawa.com/prod_img/500000/107/869/img/19869107_1.jpg?shrink=330:*&_v=20230516121158", 
         "spec": [
             "CPU 쿨러", 
@@ -5349,7 +5385,7 @@
             "LED시스템: 제조사 소프트웨어"
         ], 
         "Cate": "Cooler", 
-        "price": "303058", 
+        "price": "296678", 
         "color_text": "BLACK", 
         "name": "NZXT KRAKEN 360 RGB", 
         "brand": "NZXT"
@@ -5389,7 +5425,7 @@
             "LED시스템: 제조사 소프트웨어"
         ], 
         "Cate": "Cooler", 
-        "price": "316110", 
+        "price": "308100", 
         "color_text": "WHITE", 
         "name": "NZXT KRAKEN 360 RGB", 
         "brand": "NZXT"
@@ -5426,7 +5462,7 @@
             "[구성품/기타] 써멀유형: 주사기형"
         ], 
         "Cate": "Cooler", 
-        "price": "167200", 
+        "price": "163300", 
         "color_text": "BLACK", 
         "name": "3RSYS Socoool 라니 XY-360 Quiet", 
         "brand": "3RSYS"
@@ -5463,10 +5499,90 @@
             "[구성품/기타] 써멀유형: 주사기형"
         ], 
         "Cate": "Cooler", 
-        "price": "174000", 
+        "price": "168000", 
         "color_text": "WHITE", 
         "name": "3RSYS Socoool 라니 XY-360 Quiet", 
         "brand": "3RSYS"
+    }, 
+    {
+        "img": "//img.danawa.com/prod_img/500000/021/371/img/18371021_1.jpg?shrink=330:*&_v=20221128082841", 
+        "spec": [
+            "써멀컴파운드(그리스)", 
+            "써멀유형: 주사기형", 
+            "용량: 4g", 
+            "비전도성", 
+            "점도: 87Pa·s", 
+            "밀도: 2.5g/cm³"
+        ], 
+        "Cate": "Cooler", 
+        "price": "4740", 
+        "color_text": "2g", 
+        "name": "ARCTIC MX-4 서린", 
+        "brand": "ARCTIC"
+    }, 
+    {
+        "img": "//img.danawa.com/prod_img/500000/021/371/img/18371021_1.jpg?shrink=330:*&_v=20221128082841", 
+        "spec": [
+            "써멀컴파운드(그리스)", 
+            "써멀유형: 주사기형", 
+            "용량: 4g", 
+            "비전도성", 
+            "점도: 87Pa·s", 
+            "밀도: 2.5g/cm³"
+        ], 
+        "Cate": "Cooler", 
+        "price": "32960", 
+        "color_text": "45g", 
+        "name": "ARCTIC MX-4 서린", 
+        "brand": "ARCTIC"
+    }, 
+    {
+        "img": "//img.danawa.com/prod_img/500000/021/371/img/18371021_1.jpg?shrink=330:*&_v=20221128082841", 
+        "spec": [
+            "써멀컴파운드(그리스)", 
+            "써멀유형: 주사기형", 
+            "용량: 4g", 
+            "비전도성", 
+            "점도: 87Pa·s", 
+            "밀도: 2.5g/cm³"
+        ], 
+        "Cate": "Cooler", 
+        "price": "6800", 
+        "color_text": "4g", 
+        "name": "ARCTIC MX-4 서린", 
+        "brand": "ARCTIC"
+    }, 
+    {
+        "img": "//img.danawa.com/prod_img/500000/021/371/img/18371021_1.jpg?shrink=330:*&_v=20221128082841", 
+        "spec": [
+            "써멀컴파운드(그리스)", 
+            "써멀유형: 주사기형", 
+            "용량: 4g", 
+            "비전도성", 
+            "점도: 87Pa·s", 
+            "밀도: 2.5g/cm³"
+        ], 
+        "Cate": "Cooler", 
+        "price": "10900", 
+        "color_text": "8g", 
+        "name": "ARCTIC MX-4 서린", 
+        "brand": "ARCTIC"
+    }, 
+    {
+        "img": "//img.danawa.com/prod_img/500000/021/371/img/18371021_1.jpg?shrink=330:*&_v=20221128082841", 
+        "spec": [
+            "써멀컴파운드(그리스)", 
+            "써멀유형: 주사기형", 
+            "용량: 4g", 
+            "비전도성", 
+            "점도: 87Pa·s", 
+            "밀도: 2.5g/cm³"
+        ], 
+        "Cate": "Cooler", 
+        "price": "22900", 
+        "color_text": "20g", 
+        "name": "ARCTIC MX-4 서린", 
+        "brand": "ARCTIC"
     }, 
     {
         "img": "//img.danawa.com/prod_img/500000/317/076/img/14076317_1.jpg?shrink=330:*&_v=20230920153435", 
@@ -5535,76 +5651,68 @@
         "brand": "잘만"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/720/551/img/21551720_1.jpg?shrink=330:*&_v=20230717173905", 
+        "img": "//img.danawa.com/prod_img/500000/642/360/img/20360642_1.jpg?shrink=330:*&_v=20230531140257", 
         "spec": [
             "CPU 쿨러", 
-            "수랭", 
+            "듀얼타워형", 
+            "공랭", 
             "팬 쿨러", 
-            "A/S기간: 5년+누수보상", 
+            "TDP: 270W", 
+            "A/S기간: 3년", 
             "[호환/크기] 인텔 소켓: LGA1700, LGA1200, LGA115x", 
             "AMD 소켓: AM5, AM4", 
-            "[수랭] 라디에이터: 3열", 
-            "라디에이터 길이: 397.5mm", 
-            "라디에이터 두께: 27mm", 
-            "호스 길이: 350mm", 
-            "[쿨링팬] 팬 크기: 120mm", 
-            "팬 개수: 3개", 
+            "가로: 135mm", 
+            "세로: 136mm", 
+            "높이: 156mm", 
+            "[쿨링팬] 팬 크기: 130mm, 120mm", 
+            "팬 개수: 2개", 
+            "25T", 
             "4핀", 
-            "베어링: FDB(유체)", 
-            "2150 RPM", 
-            "최대 풍량: 61.3 CFM", 
-            "풍압(정압): 2.66mmH₂O", 
-            "최대 팬소음: 29dBA", 
-            "작동전압: 팬 12V, LED 5V", 
-            "[부가기능] LED 라이트", 
+            "베어링: HDB(유체)", 
+            "1600 RPM", 
+            "최대 풍량: 85 CFM, 70.5 CFM", 
+            "풍압(정압): 2.0mmH₂O, 1.74mmH₂O", 
+            "최대 팬소음: 30dBA", 
             "PWM 지원", 
-            "팬 컨트롤러", 
-            "데이지체인", 
-            "RGB", 
-            "LED시스템: AURA SYNC, MYSTIC LIGHT, RGB FUSION, POLYCHROME, 제조사 소프트웨어", 
-            "[구성품/기타] 써멀유형: 주사기형"
+            "non-LED"
         ], 
         "Cate": "Cooler", 
-        "price": "274550", 
+        "price": "53100", 
         "color_text": "BLACK", 
-        "name": "리안리 GALAHAD II Trinity SL-INF 360", 
-        "brand": "리안리"
+        "name": "3RSYS Socoool RC1800 LITE", 
+        "brand": "3RSYS"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/720/551/img/21551720_1.jpg?shrink=330:*&_v=20230717173905", 
+        "img": "//img.danawa.com/prod_img/500000/642/360/img/20360642_1.jpg?shrink=330:*&_v=20230531140257", 
         "spec": [
             "CPU 쿨러", 
-            "수랭", 
+            "듀얼타워형", 
+            "공랭", 
             "팬 쿨러", 
-            "A/S기간: 5년+누수보상", 
+            "TDP: 270W", 
+            "A/S기간: 3년", 
             "[호환/크기] 인텔 소켓: LGA1700, LGA1200, LGA115x", 
             "AMD 소켓: AM5, AM4", 
-            "[수랭] 라디에이터: 3열", 
-            "라디에이터 길이: 397.5mm", 
-            "라디에이터 두께: 27mm", 
-            "호스 길이: 350mm", 
-            "[쿨링팬] 팬 크기: 120mm", 
-            "팬 개수: 3개", 
+            "가로: 135mm", 
+            "세로: 136mm", 
+            "높이: 156mm", 
+            "[쿨링팬] 팬 크기: 130mm, 120mm", 
+            "팬 개수: 2개", 
+            "25T", 
             "4핀", 
-            "베어링: FDB(유체)", 
-            "2150 RPM", 
-            "최대 풍량: 61.3 CFM", 
-            "풍압(정압): 2.66mmH₂O", 
-            "최대 팬소음: 29dBA", 
-            "작동전압: 팬 12V, LED 5V", 
-            "[부가기능] LED 라이트", 
+            "베어링: HDB(유체)", 
+            "1600 RPM", 
+            "최대 풍량: 85 CFM, 70.5 CFM", 
+            "풍압(정압): 2.0mmH₂O, 1.74mmH₂O", 
+            "최대 팬소음: 30dBA", 
             "PWM 지원", 
-            "팬 컨트롤러", 
-            "데이지체인", 
-            "RGB", 
-            "LED시스템: AURA SYNC, MYSTIC LIGHT, RGB FUSION, POLYCHROME, 제조사 소프트웨어", 
-            "[구성품/기타] 써멀유형: 주사기형"
+            "non-LED"
         ], 
         "Cate": "Cooler", 
-        "price": "274550", 
+        "price": "55200", 
         "color_text": "WHITE", 
-        "name": "리안리 GALAHAD II Trinity SL-INF 360", 
-        "brand": "리안리"
+        "name": "3RSYS Socoool RC1800 LITE", 
+        "brand": "3RSYS"
     }, 
     {
         "img": "//img.danawa.com/prod_img/500000/323/640/img/17640323_1.jpg?shrink=330:*&_v=20220823145141", 
@@ -5634,7 +5742,7 @@
             "non-LED"
         ], 
         "Cate": "Cooler", 
-        "price": "29490", 
+        "price": "28300", 
         "color_text": "BLACK", 
         "name": "DEEPCOOL AK400", 
         "brand": "DEEPCOOL"
@@ -5702,38 +5810,6 @@
         "brand": "쿨러마스터"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/768/393/img/17393768_1.jpg?shrink=330:*&_v=20230502155839", 
-        "spec": [
-            "CPU 쿨러", 
-            "싱글타워형", 
-            "공랭", 
-            "TDP: 200W", 
-            "A/S기간: 2년", 
-            "[호환/크기] 인텔 소켓: LGA1700, LGA1200, LGA115x, LGA1366", 
-            "AMD 소켓: AM5, AM4, FMx/AMx(AM1/4외)", 
-            "가로: 122mm", 
-            "세로: 75mm", 
-            "높이: 154mm", 
-            "[쿨링팬] 팬 크기: 120mm", 
-            "팬 개수: 1개", 
-            "25T", 
-            "4핀", 
-            "베어링: Hydro(유체)", 
-            "1700 RPM", 
-            "최대 풍량: 66 CFM", 
-            "풍압(정압): 2.22mmH₂O", 
-            "최대 팬소음: 29.7dBA", 
-            "PWM 지원", 
-            "non-LED", 
-            "[구성품/기타] 23년 5월부로 AM5 소켓 호환 추가"
-        ], 
-        "Cate": "Cooler", 
-        "price": "31900", 
-        "color_text": "", 
-        "name": "앱코 타이폰 120X5", 
-        "brand": "앱코"
-    }, 
-    {
         "img": "//img.danawa.com/prod_img/500000/437/447/img/12447437_1.jpg?shrink=330:*&_v=20220927150613", 
         "spec": [
             "CPU 쿨러", 
@@ -5798,44 +5874,10 @@
             "[구성품/기타] 22년 1월부로 소켓 호환 추가"
         ], 
         "Cate": "Cooler", 
-        "price": "28750", 
+        "price": "27540", 
         "color_text": "WHITE", 
         "name": "DEEPCOOL GAMMAXX 400 XT", 
         "brand": "DEEPCOOL"
-    }, 
-    {
-        "img": "//img.danawa.com/prod_img/500000/862/002/img/17002862_1.jpg?shrink=330:*&_v=20230920152454", 
-        "spec": [
-            "CPU 쿨러", 
-            "싱글타워형", 
-            "공랭", 
-            "팬 쿨러", 
-            "TDP: 180W", 
-            "A/S기간: 2년", 
-            "[호환/크기] 인텔 소켓: LGA1700, LGA1200, LGA115x", 
-            "AMD 소켓: AM5, AM4", 
-            "가로: 130mm", 
-            "세로: 75mm", 
-            "높이: 157mm", 
-            "무게: 500g", 
-            "[쿨링팬] 팬 크기: 120mm", 
-            "팬 개수: 1개", 
-            "25T", 
-            "3-4핀", 
-            "베어링: Hydraulic(유체)", 
-            "1800 RPM", 
-            "최대 풍량: 73.6 CFM", 
-            "풍압(정압): 2.1mmH₂O", 
-            "최대 팬소음: 28.6dBA", 
-            "[부가기능] LED 라이트", 
-            "PWM 지원", 
-            "RGB"
-        ], 
-        "Cate": "Cooler", 
-        "price": "22220", 
-        "color_text": "", 
-        "name": "PCCOOLER PALADIN EX400 ARGB", 
-        "brand": "PCCOOLER"
     }, 
     {
         "img": "//img.danawa.com/prod_img/500000/475/110/img/14110475_1.jpg?shrink=330:*&_v=20231031130000", 
@@ -5866,7 +5908,7 @@
             "[구성품/기타] 21년 11월부로 소켓 호환 추가"
         ], 
         "Cate": "Cooler", 
-        "price": "29430", 
+        "price": "29290", 
         "color_text": "BLACK", 
         "name": "PCCOOLER PALADIN 400", 
         "brand": "PCCOOLER"
@@ -5900,7 +5942,7 @@
             "[구성품/기타] 21년 11월부로 소켓 호환 추가"
         ], 
         "Cate": "Cooler", 
-        "price": "35130", 
+        "price": "34990", 
         "color_text": "WHITE", 
         "name": "PCCOOLER PALADIN 400", 
         "brand": "PCCOOLER"
@@ -5934,7 +5976,7 @@
             "23년 11월 부로 팬 스티커 및 TDP 200→220W 변경"
         ], 
         "Cate": "Cooler", 
-        "price": "22570", 
+        "price": "21830", 
         "color_text": "", 
         "name": "DEEPCOOL AG400", 
         "brand": "DEEPCOOL"
@@ -5971,7 +6013,7 @@
             "열전도율: 12.4W/(m·K)"
         ], 
         "Cate": "Cooler", 
-        "price": "67000", 
+        "price": "63500", 
         "color_text": "BLACK", 
         "name": "3RSYS Socoool RC-1800 Quiet 솔더링", 
         "brand": "3RSYS"
@@ -6008,10 +6050,45 @@
             "열전도율: 12.4W/(m·K)"
         ], 
         "Cate": "Cooler", 
-        "price": "67000", 
+        "price": "64000", 
         "color_text": "WHITE", 
         "name": "3RSYS Socoool RC-1800 Quiet 솔더링", 
         "brand": "3RSYS"
+    }, 
+    {
+        "img": "//img.danawa.com/prod_img/500000/058/525/img/16525058_1.jpg?shrink=330:*&_v=20231128175409", 
+        "spec": [
+            "CPU 쿨러", 
+            "듀얼타워형", 
+            "공랭", 
+            "팬 쿨러", 
+            "A/S기간: 3년", 
+            "[호환/크기] 인텔 소켓: LGA1700, LGA1200, LGA115x", 
+            "AMD 소켓: AM5, AM4", 
+            "가로: 125mm", 
+            "세로: 135mm", 
+            "높이: 155mm", 
+            "무게: 850g", 
+            "[쿨링팬] 팬 크기: 120mm", 
+            "팬 개수: 2개", 
+            "25T", 
+            "4핀", 
+            "베어링: S-FDB(유체)", 
+            "1550 RPM", 
+            "최대 풍량: 66.17 CFM", 
+            "풍압(정압): 1.53mmH₂O", 
+            "최대 팬소음: 25.6dBA", 
+            "PWM 지원", 
+            "non-LED", 
+            "[구성품/기타] 써멀유형: 주사기형", 
+            "열전도율: 12.8W/(m·K)", 
+            "23년 11월부로 AM5 소켓 호환 추가"
+        ], 
+        "Cate": "Cooler", 
+        "price": "36170", 
+        "color_text": "", 
+        "name": "Thermalright Peerless Assassin 120 SE 서린", 
+        "brand": "Thermalright"
     }, 
     {
         "img": "//img.danawa.com/prod_img/500000/001/690/img/19690001_1.jpg?shrink=330:*&_v=20230407154257", 
@@ -6042,7 +6119,7 @@
             "써멀컴파운드 CryoFuze 제공"
         ], 
         "Cate": "Cooler", 
-        "price": "38970", 
+        "price": "38960", 
         "color_text": "", 
         "name": "쿨러마스터 HYPER 620S ARGB", 
         "brand": "쿨러마스터"
@@ -6114,41 +6191,6 @@
         "brand": "잘만"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/058/525/img/16525058_1.jpg?shrink=330:*&_v=20231128175409", 
-        "spec": [
-            "CPU 쿨러", 
-            "듀얼타워형", 
-            "공랭", 
-            "팬 쿨러", 
-            "A/S기간: 3년", 
-            "[호환/크기] 인텔 소켓: LGA1700, LGA1200, LGA115x", 
-            "AMD 소켓: AM5, AM4", 
-            "가로: 125mm", 
-            "세로: 135mm", 
-            "높이: 155mm", 
-            "무게: 850g", 
-            "[쿨링팬] 팬 크기: 120mm", 
-            "팬 개수: 2개", 
-            "25T", 
-            "4핀", 
-            "베어링: S-FDB(유체)", 
-            "1550 RPM", 
-            "최대 풍량: 66.17 CFM", 
-            "풍압(정압): 1.53mmH₂O", 
-            "최대 팬소음: 25.6dBA", 
-            "PWM 지원", 
-            "non-LED", 
-            "[구성품/기타] 써멀유형: 주사기형", 
-            "열전도율: 12.8W/(m·K)", 
-            "23년 11월부로 AM5 소켓 호환 추가"
-        ], 
-        "Cate": "Cooler", 
-        "price": "36940", 
-        "color_text": "", 
-        "name": "Thermalright Peerless Assassin 120 SE 서린", 
-        "brand": "Thermalright"
-    }, 
-    {
         "img": "//img.danawa.com/prod_img/500000/107/869/img/19869107_1.jpg?shrink=330:*&_v=20230516121158", 
         "spec": [
             "CPU 쿨러", 
@@ -6183,7 +6225,7 @@
             "LED시스템: 제조사 소프트웨어"
         ], 
         "Cate": "Cooler", 
-        "price": "303058", 
+        "price": "296678", 
         "color_text": "BLACK", 
         "name": "NZXT KRAKEN 360 RGB", 
         "brand": "NZXT"
@@ -6223,7 +6265,7 @@
             "LED시스템: 제조사 소프트웨어"
         ], 
         "Cate": "Cooler", 
-        "price": "316110", 
+        "price": "308100", 
         "color_text": "WHITE", 
         "name": "NZXT KRAKEN 360 RGB", 
         "brand": "NZXT"
@@ -6260,7 +6302,7 @@
             "[구성품/기타] 써멀유형: 주사기형"
         ], 
         "Cate": "Cooler", 
-        "price": "167200", 
+        "price": "163300", 
         "color_text": "BLACK", 
         "name": "3RSYS Socoool 라니 XY-360 Quiet", 
         "brand": "3RSYS"
@@ -6297,10 +6339,90 @@
             "[구성품/기타] 써멀유형: 주사기형"
         ], 
         "Cate": "Cooler", 
-        "price": "174000", 
+        "price": "168000", 
         "color_text": "WHITE", 
         "name": "3RSYS Socoool 라니 XY-360 Quiet", 
         "brand": "3RSYS"
+    }, 
+    {
+        "img": "//img.danawa.com/prod_img/500000/021/371/img/18371021_1.jpg?shrink=330:*&_v=20221128082841", 
+        "spec": [
+            "써멀컴파운드(그리스)", 
+            "써멀유형: 주사기형", 
+            "용량: 4g", 
+            "비전도성", 
+            "점도: 87Pa·s", 
+            "밀도: 2.5g/cm³"
+        ], 
+        "Cate": "Cooler", 
+        "price": "4740", 
+        "color_text": "2g", 
+        "name": "ARCTIC MX-4 서린", 
+        "brand": "ARCTIC"
+    }, 
+    {
+        "img": "//img.danawa.com/prod_img/500000/021/371/img/18371021_1.jpg?shrink=330:*&_v=20221128082841", 
+        "spec": [
+            "써멀컴파운드(그리스)", 
+            "써멀유형: 주사기형", 
+            "용량: 4g", 
+            "비전도성", 
+            "점도: 87Pa·s", 
+            "밀도: 2.5g/cm³"
+        ], 
+        "Cate": "Cooler", 
+        "price": "32960", 
+        "color_text": "45g", 
+        "name": "ARCTIC MX-4 서린", 
+        "brand": "ARCTIC"
+    }, 
+    {
+        "img": "//img.danawa.com/prod_img/500000/021/371/img/18371021_1.jpg?shrink=330:*&_v=20221128082841", 
+        "spec": [
+            "써멀컴파운드(그리스)", 
+            "써멀유형: 주사기형", 
+            "용량: 4g", 
+            "비전도성", 
+            "점도: 87Pa·s", 
+            "밀도: 2.5g/cm³"
+        ], 
+        "Cate": "Cooler", 
+        "price": "6800", 
+        "color_text": "4g", 
+        "name": "ARCTIC MX-4 서린", 
+        "brand": "ARCTIC"
+    }, 
+    {
+        "img": "//img.danawa.com/prod_img/500000/021/371/img/18371021_1.jpg?shrink=330:*&_v=20221128082841", 
+        "spec": [
+            "써멀컴파운드(그리스)", 
+            "써멀유형: 주사기형", 
+            "용량: 4g", 
+            "비전도성", 
+            "점도: 87Pa·s", 
+            "밀도: 2.5g/cm³"
+        ], 
+        "Cate": "Cooler", 
+        "price": "10900", 
+        "color_text": "8g", 
+        "name": "ARCTIC MX-4 서린", 
+        "brand": "ARCTIC"
+    }, 
+    {
+        "img": "//img.danawa.com/prod_img/500000/021/371/img/18371021_1.jpg?shrink=330:*&_v=20221128082841", 
+        "spec": [
+            "써멀컴파운드(그리스)", 
+            "써멀유형: 주사기형", 
+            "용량: 4g", 
+            "비전도성", 
+            "점도: 87Pa·s", 
+            "밀도: 2.5g/cm³"
+        ], 
+        "Cate": "Cooler", 
+        "price": "22900", 
+        "color_text": "20g", 
+        "name": "ARCTIC MX-4 서린", 
+        "brand": "ARCTIC"
     }, 
     {
         "img": "//img.danawa.com/prod_img/500000/317/076/img/14076317_1.jpg?shrink=330:*&_v=20230920153435", 
@@ -6369,76 +6491,68 @@
         "brand": "잘만"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/720/551/img/21551720_1.jpg?shrink=330:*&_v=20230717173905", 
+        "img": "//img.danawa.com/prod_img/500000/642/360/img/20360642_1.jpg?shrink=330:*&_v=20230531140257", 
         "spec": [
             "CPU 쿨러", 
-            "수랭", 
+            "듀얼타워형", 
+            "공랭", 
             "팬 쿨러", 
-            "A/S기간: 5년+누수보상", 
+            "TDP: 270W", 
+            "A/S기간: 3년", 
             "[호환/크기] 인텔 소켓: LGA1700, LGA1200, LGA115x", 
             "AMD 소켓: AM5, AM4", 
-            "[수랭] 라디에이터: 3열", 
-            "라디에이터 길이: 397.5mm", 
-            "라디에이터 두께: 27mm", 
-            "호스 길이: 350mm", 
-            "[쿨링팬] 팬 크기: 120mm", 
-            "팬 개수: 3개", 
+            "가로: 135mm", 
+            "세로: 136mm", 
+            "높이: 156mm", 
+            "[쿨링팬] 팬 크기: 130mm, 120mm", 
+            "팬 개수: 2개", 
+            "25T", 
             "4핀", 
-            "베어링: FDB(유체)", 
-            "2150 RPM", 
-            "최대 풍량: 61.3 CFM", 
-            "풍압(정압): 2.66mmH₂O", 
-            "최대 팬소음: 29dBA", 
-            "작동전압: 팬 12V, LED 5V", 
-            "[부가기능] LED 라이트", 
+            "베어링: HDB(유체)", 
+            "1600 RPM", 
+            "최대 풍량: 85 CFM, 70.5 CFM", 
+            "풍압(정압): 2.0mmH₂O, 1.74mmH₂O", 
+            "최대 팬소음: 30dBA", 
             "PWM 지원", 
-            "팬 컨트롤러", 
-            "데이지체인", 
-            "RGB", 
-            "LED시스템: AURA SYNC, MYSTIC LIGHT, RGB FUSION, POLYCHROME, 제조사 소프트웨어", 
-            "[구성품/기타] 써멀유형: 주사기형"
+            "non-LED"
         ], 
         "Cate": "Cooler", 
-        "price": "274550", 
+        "price": "53100", 
         "color_text": "BLACK", 
-        "name": "리안리 GALAHAD II Trinity SL-INF 360", 
-        "brand": "리안리"
+        "name": "3RSYS Socoool RC1800 LITE", 
+        "brand": "3RSYS"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/720/551/img/21551720_1.jpg?shrink=330:*&_v=20230717173905", 
+        "img": "//img.danawa.com/prod_img/500000/642/360/img/20360642_1.jpg?shrink=330:*&_v=20230531140257", 
         "spec": [
             "CPU 쿨러", 
-            "수랭", 
+            "듀얼타워형", 
+            "공랭", 
             "팬 쿨러", 
-            "A/S기간: 5년+누수보상", 
+            "TDP: 270W", 
+            "A/S기간: 3년", 
             "[호환/크기] 인텔 소켓: LGA1700, LGA1200, LGA115x", 
             "AMD 소켓: AM5, AM4", 
-            "[수랭] 라디에이터: 3열", 
-            "라디에이터 길이: 397.5mm", 
-            "라디에이터 두께: 27mm", 
-            "호스 길이: 350mm", 
-            "[쿨링팬] 팬 크기: 120mm", 
-            "팬 개수: 3개", 
+            "가로: 135mm", 
+            "세로: 136mm", 
+            "높이: 156mm", 
+            "[쿨링팬] 팬 크기: 130mm, 120mm", 
+            "팬 개수: 2개", 
+            "25T", 
             "4핀", 
-            "베어링: FDB(유체)", 
-            "2150 RPM", 
-            "최대 풍량: 61.3 CFM", 
-            "풍압(정압): 2.66mmH₂O", 
-            "최대 팬소음: 29dBA", 
-            "작동전압: 팬 12V, LED 5V", 
-            "[부가기능] LED 라이트", 
+            "베어링: HDB(유체)", 
+            "1600 RPM", 
+            "최대 풍량: 85 CFM, 70.5 CFM", 
+            "풍압(정압): 2.0mmH₂O, 1.74mmH₂O", 
+            "최대 팬소음: 30dBA", 
             "PWM 지원", 
-            "팬 컨트롤러", 
-            "데이지체인", 
-            "RGB", 
-            "LED시스템: AURA SYNC, MYSTIC LIGHT, RGB FUSION, POLYCHROME, 제조사 소프트웨어", 
-            "[구성품/기타] 써멀유형: 주사기형"
+            "non-LED"
         ], 
         "Cate": "Cooler", 
-        "price": "274550", 
+        "price": "55200", 
         "color_text": "WHITE", 
-        "name": "리안리 GALAHAD II Trinity SL-INF 360", 
-        "brand": "리안리"
+        "name": "3RSYS Socoool RC1800 LITE", 
+        "brand": "3RSYS"
     }, 
     {
         "img": "//img.danawa.com/prod_img/500000/323/640/img/17640323_1.jpg?shrink=330:*&_v=20220823145141", 
@@ -6468,7 +6582,7 @@
             "non-LED"
         ], 
         "Cate": "Cooler", 
-        "price": "29490", 
+        "price": "28300", 
         "color_text": "BLACK", 
         "name": "DEEPCOOL AK400", 
         "brand": "DEEPCOOL"
@@ -6536,38 +6650,6 @@
         "brand": "쿨러마스터"
     }, 
     {
-        "img": "//img.danawa.com/prod_img/500000/768/393/img/17393768_1.jpg?shrink=330:*&_v=20230502155839", 
-        "spec": [
-            "CPU 쿨러", 
-            "싱글타워형", 
-            "공랭", 
-            "TDP: 200W", 
-            "A/S기간: 2년", 
-            "[호환/크기] 인텔 소켓: LGA1700, LGA1200, LGA115x, LGA1366", 
-            "AMD 소켓: AM5, AM4, FMx/AMx(AM1/4외)", 
-            "가로: 122mm", 
-            "세로: 75mm", 
-            "높이: 154mm", 
-            "[쿨링팬] 팬 크기: 120mm", 
-            "팬 개수: 1개", 
-            "25T", 
-            "4핀", 
-            "베어링: Hydro(유체)", 
-            "1700 RPM", 
-            "최대 풍량: 66 CFM", 
-            "풍압(정압): 2.22mmH₂O", 
-            "최대 팬소음: 29.7dBA", 
-            "PWM 지원", 
-            "non-LED", 
-            "[구성품/기타] 23년 5월부로 AM5 소켓 호환 추가"
-        ], 
-        "Cate": "Cooler", 
-        "price": "31900", 
-        "color_text": "", 
-        "name": "앱코 타이폰 120X5", 
-        "brand": "앱코"
-    }, 
-    {
         "img": "//img.danawa.com/prod_img/500000/437/447/img/12447437_1.jpg?shrink=330:*&_v=20220927150613", 
         "spec": [
             "CPU 쿨러", 
@@ -6632,43 +6714,9 @@
             "[구성품/기타] 22년 1월부로 소켓 호환 추가"
         ], 
         "Cate": "Cooler", 
-        "price": "28750", 
+        "price": "27540", 
         "color_text": "WHITE", 
         "name": "DEEPCOOL GAMMAXX 400 XT", 
         "brand": "DEEPCOOL"
-    }, 
-    {
-        "img": "//img.danawa.com/prod_img/500000/862/002/img/17002862_1.jpg?shrink=330:*&_v=20230920152454", 
-        "spec": [
-            "CPU 쿨러", 
-            "싱글타워형", 
-            "공랭", 
-            "팬 쿨러", 
-            "TDP: 180W", 
-            "A/S기간: 2년", 
-            "[호환/크기] 인텔 소켓: LGA1700, LGA1200, LGA115x", 
-            "AMD 소켓: AM5, AM4", 
-            "가로: 130mm", 
-            "세로: 75mm", 
-            "높이: 157mm", 
-            "무게: 500g", 
-            "[쿨링팬] 팬 크기: 120mm", 
-            "팬 개수: 1개", 
-            "25T", 
-            "3-4핀", 
-            "베어링: Hydraulic(유체)", 
-            "1800 RPM", 
-            "최대 풍량: 73.6 CFM", 
-            "풍압(정압): 2.1mmH₂O", 
-            "최대 팬소음: 28.6dBA", 
-            "[부가기능] LED 라이트", 
-            "PWM 지원", 
-            "RGB"
-        ], 
-        "Cate": "Cooler", 
-        "price": "22220", 
-        "color_text": "", 
-        "name": "PCCOOLER PALADIN EX400 ARGB", 
-        "brand": "PCCOOLER"
     }
 ]

@@ -27,23 +27,25 @@ public class RecommendController {
 
     @SneakyThrows
     @RequestMapping(value = "/recommend_Result", method = RequestMethod.POST)
-    public ModelAndView postrecommend(@RequestParam(name = "option") String option, @RequestParam(name = "priceRange") int priceRange) {
+    public ModelAndView postrecommend(
+            @RequestParam(name = "option") String option,
+            @RequestParam(name = "priceRange_S", required = false) Integer priceRange_S, // 수정된 부분
+            @RequestParam(name = "priceRange_G", required = false) Integer priceRange_G  // 수정된 부분
+    ) {
         JSONParser parser = new JSONParser();
-        String money = Integer.toString(priceRange / 10);
-
-        Reader reader = null;
         ModelAndView mv = null;
-        if (option.equals("S")) {
-            //reader = new FileReader("C:/Users/byung/Desktop/JSP Project/PickCom/src/main/resources/python/get_build/Samu/" + option + "_result_" + money + ".json");
-            reader = new FileReader("C:/Users/pojun/Documents/GitHub/PickCom/src/main/resources/python/get_build/Samu/" + option + "_result_" + money + ".json");
+
+        if (option.equals("S") && priceRange_S != null) {
+            String money = Integer.toString(priceRange_S / 10);
+            Reader reader = new FileReader("C:/Users/byung/Desktop/JSP Project/PickCom/src/main/resources/python/get_build/Samu/" + option + "_result_" + money + ".json");
             Object jsonData = parser.parse(reader);
             JSONArray jsonArray = (JSONArray) jsonData;
 
             mv = new ModelAndView("/recommend/recommend_Result_S");
             mv.addObject("jsonObject", jsonArray);
-        } else if (option.equals("G")) {
-            //프로그램 돌리기전 경로확인 필수
-            reader = new FileReader("C:/Users/byung/Desktop/JSP Project/PickCom/src/main/resources/python/get_build/Game/" + option + "_result_" + money + ".json");
+        } else if (option.equals("G") && priceRange_G != null) {
+            String money = Integer.toString(priceRange_G / 10);
+            Reader reader = new FileReader("C:/Users/byung/Desktop/JSP Project/PickCom/src/main/resources/python/get_build/Game/" + option + "_result_" + money + ".json");
             Object jsonData = parser.parse(reader);
             JSONArray jsonArray = (JSONArray) jsonData;
 
