@@ -87,7 +87,7 @@ public class BoardController {
         mv.addObject("keyword", kw);
 
         // 페이징 관련 설정
-        int pageSize = 10;
+        int pageSize = 300;
         int blockPage = 10;
         int page = (pageNum != null) ? Integer.parseInt(pageNum) : 1;
         int start = (page - 1) * pageSize;
