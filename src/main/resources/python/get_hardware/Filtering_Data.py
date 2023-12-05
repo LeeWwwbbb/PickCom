@@ -4,12 +4,10 @@ import codecs  # 추가된 부분
 
 def read_json(file_path):
     with open(file_path, 'r') as f:
-        # Python 2에서는 유니코드 디코딩이 필요합니다.
         return json.load(f)
 
 def write_json(file_path, data):
-    with codecs.open(file_path, 'w', encoding='utf-8') as f:  # 수정된 부분
-        # Python 2에서는 유니코드 인코딩이 필요합니다.
+    with codecs.open(file_path, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=4)
 
 # 제외할 항목
