@@ -6,6 +6,8 @@ import javax.mail.internet.MimeMessage;
 import java.util.Properties;
 
 public class MailSender {
+    String adminEamil = "";
+    String adminPw = "";
     public MailSender(String email, int ran) {
         Properties props = new Properties();
         props.put("mail.smtp.host", "smtp.gmail.com");
@@ -17,7 +19,7 @@ public class MailSender {
         Session session = Session.getInstance(props, new Authenticator() {
             @Override
             protected PasswordAuthentication getPasswordAuthentication() {
-                return new PasswordAuthentication("roozi8855@gmail.com", "zfhr jgil vfcd vlyi");
+                return new PasswordAuthentication(adminEamil, adminPw);
             }
         });
 
@@ -26,7 +28,7 @@ public class MailSender {
         String content = "<h2 style='color:blue'>인증번호는 " + ran + "입니다.</h2>";
         Message message = new MimeMessage(session);
         try {
-            message.setFrom(new InternetAddress("roozi8855@gmail.com", "PickCom", "utf-8"));
+            message.setFrom(new InternetAddress(adminEamil, "PickCom", "utf-8"));
             message.addRecipient(Message.RecipientType.TO, new InternetAddress(receiver));
             message.setSubject(title);
             message.setContent(content, "text/html; charset=utf-8");
